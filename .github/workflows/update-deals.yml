@@ -42,8 +42,8 @@ jobs:
 
       - name: Save new data
         run: |
-          git config user.name "kupp-bot"
-          git config user.email "kupp-bot@users.noreply.github.com"
+          git config user.name "prisfallet-bot"
+          git config user.email "prisfallet-bot@users.noreply.github.com"
           git add data/deals.json data/price-history.json
           if git diff --cached --quiet; then
             echo "No changes."

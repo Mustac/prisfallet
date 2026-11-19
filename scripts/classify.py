@@ -1,4 +1,4 @@
-"""Sort a product into a Kupp.no subcategory from its shop URL path and name.
+"""Sort a product into a Prisfallet subcategory from its shop URL path and name.
 
 Rules are checked in order; the first match wins. The URL path of most Norwegian
 shops already contains the shop's own category (e.g. "gaming/spill/..."), so it is

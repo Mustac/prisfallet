@@ -8,7 +8,7 @@ import urllib.error
 import urllib.request
 import zipfile
 
-USER_AGENT = "KuppDealsBot/1.0 (+https://mustac.github.io/kupp-no/)"
+USER_AGENT = "PrisfalletBot/1.0 (+https://prisfallet.no/)"
 
 
 def http_get(url, headers=None, timeout=60, retries=3, data=None, method=None):

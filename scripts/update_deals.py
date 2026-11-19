@@ -158,7 +158,7 @@ def main(argv=None):
     today = a.today or dt.date.today().isoformat()
     os.makedirs(a.out, exist_ok=True)
 
-    log(f"Kupp feed update {today}")
+    log(f"Prisfallet feed update {today}")
     offers, status = collect(a.fixtures)
     for o in offers:
         o["id"] = offer_id(o)

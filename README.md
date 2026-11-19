@@ -1,8 +1,8 @@
-# Kupp.no – feed version
+# Prisfallet.no
 
-This is the legal, affiliate-feed version of Kupp.no. It does **not** scrape shop websites. All products, prices and photos come from the official product feeds that shops publish through affiliate networks, and every shop link is an affiliate link (annonselenke).
+Prisfallet.no lists the biggest price drops in Norwegian online shops. It does **not** scrape shop websites. All products, prices and photos come from the official product feeds that shops publish through affiliate networks, and every shop link is an affiliate link (annonselenke).
 
-The old scraped site (github.com/Mustac/kupp-no) is left untouched.
+Live at https://prisfallet.no, hosted on Cloudflare. (The older scraped test site, github.com/Mustac/kupp-no, is separate and left untouched.)
 
 ## Try it now (sample data)
 
@@ -86,4 +86,4 @@ run-demo.bat / run-live.bat    for Windows
 
 ## Publishing
 
-Make a new GitHub repo (for example `kupp-feeds`), push this folder, then turn on GitHub Pages (Settings → Pages → Branch `main`, folder `/`). Add the secrets above, then run the workflow.
+The site is served by Cloudflare from this repo; every push to `main` (including the daily data commit) publishes automatically. Add the secrets above, then run the workflow.

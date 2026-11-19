@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kupp.no – Norway's best discounts</title>
+<title>Prisfallet.no – Norway's biggest price drops</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -161,10 +161,10 @@ footer a{color:var(--ink)}
 <defs id="icons"></defs>
 </svg>
 
-<div class="adbar"><b>Annonse</b> / Inneholder annonselenker — Kupp.no mottar provisjon ved kjøp eller klikk via lenkene.</div>
+<div class="adbar"><b>Annonse</b> / Inneholder annonselenker — Prisfallet.no mottar provisjon ved kjøp eller klikk via lenkene.</div>
 <div class="demo" id="demo" hidden>Eksempeldata — dette er ikke ekte tilbud. Siden viser ekte tilbud når affiliate-feedene er koblet til.</div>
 <header class="wrap">
-  <div class="brand"><div class="logo" id="home">kupp<span>.</span>no</div><div class="tag">Only the big discounts from Norwegian shops · from official shop product feeds</div></div>
+  <div class="brand"><div class="logo" id="home">prisfallet<span>.</span>no</div><div class="tag">Only the big discounts from Norwegian shops · from official shop product feeds</div></div>
   <div class="srchead"><span>Data sources</span><small id="srcsum"></small></div>
   <div class="srcs" id="srcs"></div>
   <div class="cats" id="cats"></div>
@@ -214,9 +214,9 @@ footer a{color:var(--ink)}
 
 <footer>
   <div class="wrap">
-    <p><b>Annonse.</b> All shop links on Kupp.no are affiliate links (annonselenker). If you buy or click through them, Kupp.no may get a commission from the shop or the affiliate network. This never changes the price you pay.</p>
+    <p><b>Annonse.</b> All shop links on Prisfallet.no are affiliate links (annonselenker). If you buy or click through them, Prisfallet.no may get a commission from the shop or the affiliate network. This never changes the price you pay.</p>
     <p>Prices, product names and photos come from the official product feeds that the shops publish through affiliate networks (<span id="netlist">Adtraction, Awin, Daisycon, Kelkoo</span>). Photos are shown straight from the shop or network, not copied. Updated once a day.</p>
-    <p><b>How we show discounts.</b> "Førpris (butikkens oppgitte)" is the before-price the shop gives in its feed. "Laveste pris siste 30 dager" is the lowest price Kupp.no itself has recorded for the product over the last 30 days. We only use the second label when we really have 30 days of our own price history. Only products in stock and at least 30% off are listed. Not affiliated with any shop.</p>
+    <p><b>How we show discounts.</b> "Førpris (butikkens oppgitte)" is the before-price the shop gives in its feed. "Laveste pris siste 30 dager" is the lowest price Prisfallet.no itself has recorded for the product over the last 30 days. We only use the second label when we really have 30 days of our own price history. Only products in stock and at least 30% off are listed. Not affiliated with any shop.</p>
   </div>
 </footer>
 
@@ -475,7 +475,7 @@ function render(keep){if(!keep)LIMIT=60;renderSources();renderCats();renderSubs(
 // ---------- detail sheet ----------
 function openSheet(d){
   const c=CAT[d.cat].c, max=d.was;
-  const refTxt=d.ref==="v"?"Compared with the lowest price Kupp.no itself recorded for this product in the 30 days before today.":"Compared with the before-price the shop gives in its product feed. Kupp.no has not yet followed this product for 30 days, so we can't confirm it was the lowest price in that period.";
+  const refTxt=d.ref==="v"?"Compared with the lowest price Prisfallet.no itself recorded for this product in the 30 days before today.":"Compared with the before-price the shop gives in its product feed. Prisfallet.no has not yet followed this product for 30 days, so we can't confirm it was the lowest price in that period.";
   $("sheet").innerHTML=`
    <div class="thumb${d.img?" has-img":""}" style="--c:${c};position:relative">${ico(d.sub)}${d.img?`<img referrerpolicy="no-referrer" alt="" src="${esc(d.img)}"><span class="photo-tag">Photo: ${esc(d.shop)}</span>`:""}<span class="badge">-${d.pct}%</span>${d.flag==="rec"?'<span class="rec" style="right:52px">RECORD LOW</span>':""}<span class="brandtag">${esc(d.brand)}</span><button class="x" id="x">✕</button></div>
    <div class="sb">
