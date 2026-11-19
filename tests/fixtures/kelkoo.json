@@ -1,0 +1,6 @@
+{"offers":[
+ {"offerId":"k-4001","title":"Bosch Serie 6 vaskemaskin 9 kg","brand":{"name":"Bosch"},"price":5490,"priceWithoutRebate":8990,"goUrl":"https://example.com/demo/kelkoo?o=4001&pub=demo","images":[{"url":"https://example.com/demo/img/4001.jpg"}],"merchant":{"id":1,"name":"Demo Hvitevarer"},"availabilityStatus":"in_stock","category":{"name":"Vaskemaskiner"}},
+ {"offerId":"k-4002","title":"Dyson V15 Detect støvsuger","brand":{"name":"Dyson"},"price":5990,"priceWithoutRebate":8990,"goUrl":"https://example.com/demo/kelkoo?o=4002&pub=demo","images":[],"merchant":{"id":2,"name":"Demo Elektro"},"availabilityStatus":"in_stock","category":{"name":"Støvsugere"}},
+ {"offerId":"k-4003","title":"Apple AirPods Pro 2","brand":{"name":"Apple"},"price":2290,"priceWithoutRebate":2990,"goUrl":"https://example.com/demo/kelkoo?o=4003&pub=demo","merchant":{"id":2,"name":"Demo Elektro"},"availabilityStatus":"in_stock","category":{"name":"Hodetelefoner"}},
+ {"offerId":"k-4004","title":"Feilpriset kabel 2m","brand":{"name":"Noname"},"price":9,"priceWithoutRebate":999,"goUrl":"https://example.com/demo/kelkoo?o=4004&pub=demo","merchant":{"id":2,"name":"Demo Elektro"},"availabilityStatus":"in_stock"}
+]}

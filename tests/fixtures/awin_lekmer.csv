@@ -1,0 +1,6 @@
+aw_deep_link,product_name,aw_product_id,merchant_product_id,merchant_image_url,merchant_category,search_price,product_price_old,merchant_name,brand_name,in_stock
+https://example.com/demo/awin?p=2001&clickref=demo,LEGO Technic Bugatti Chiron 42083,2001,L42083,,Leker/LEGO,2499,3999,Lekmer,LEGO,1
+https://example.com/demo/awin?p=2002&clickref=demo,BRIO jernbane startsett,2002,B33773,,Leker/Tog,399,549,Lekmer,BRIO,1
+https://example.com/demo/awin?p=2003&clickref=demo,Barnevogn Emmaljunga NXT90,2003,E90,,Baby/Barnevogn,5990,9990,Lekmer,Emmaljunga,1
+https://example.com/demo/awin?p=2004&clickref=demo,Playmobil brannstasjon,2004,P9462,,Leker/Playmobil,449,899,Lekmer,Playmobil,0
+https://example.com/demo/awin?p=2005&clickref=demo,Nintendo Switch OLED,2005,NSO,,Gaming/Konsoll,3290,3990,Lekmer,Nintendo,1

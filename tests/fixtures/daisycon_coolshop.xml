@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datafeed><programs><program><program_info><name>Coolshop NO</name></program_info><products>
+  <product><product_info><sku>3001</sku><title>PlayStation 5 DualSense kontroller</title><brand>Sony</brand><category>Gaming/Tilbehør</category><price>549</price><price_old>899</price_old><link>https://example.com/demo/daisycon?id=3001&amp;si=demo</link><stock_status>in stock</stock_status><images><image><location>https://example.com/demo/img/3001.jpg</location></image></images></product_info></product>
+  <product><product_info><sku>3002</sku><title>Ninja Air Fryer AF300EU</title><brand>Ninja</brand><category>Kjøkken/Airfryer</category><price>1290</price><price_old>2290</price_old><link>https://example.com/demo/daisycon?id=3002&amp;si=demo</link><stock_status>in stock</stock_status></product_info></product>
+  <product><product_info><sku>3003</sku><title>Braun Series 9 barbermaskin</title><brand>Braun</brand><category>Helse og skjønnhet/Barbering</category><price>2990</price><price_old>3290</price_old><link>https://example.com/demo/daisycon?id=3003&amp;si=demo</link><stock_status>in stock</stock_status></product_info></product>
+  <product><product_info><sku>3004</sku><title>Garmin Forerunner 265 GPS-klokke</title><brand>Garmin</brand><category>Sport/Klokker</category><price>2999</price><price_old>4999</price_old><link>https://example.com/demo/daisycon?id=3004&amp;si=demo</link><stock_status>out of stock</stock_status></product_info></product>
+</products></program></programs></datafeed>
