@@ -548,7 +548,7 @@ $("sheet").addEventListener("click",e=>{const a=e.target.closest("a.pri");if(a&&
 $("sort").onchange=e=>{S.sort=e.target.value;render();track({t:"filter",f:"sort",v:S.sort});};
 let fTimer={};const trackLater=(f,v)=>{clearTimeout(fTimer[f]);fTimer[f]=setTimeout(()=>track({t:"filter",f,v:String(v)}),1500);};
 (()=>{let r="direct";try{if(document.referrer){const h=new URL(document.referrer).hostname.replace(/^www\./,"");if(!/(^|\.)prisfallet\.(no|pages\.dev)$/.test(h))r=h;else r="";}}catch(e){}
-  if(r)track({t:"visit",r,c:location.hash.slice(1).split("-")[0]||""});})();
+  track({t:"pv",c:"/"});if(r)track({t:"visit",r,c:location.hash.slice(1).split("-")[0]||""});})();
 $("min").oninput=e=>{S.min=+e.target.value;$("minv").textContent=S.min+"%";render();trackLater("min",S.min);};
 $("pmin").oninput=e=>{S.pmin=e.target.value;render();trackLater("price",(S.pmin||0)+"-"+(S.pmax||""));};
 $("pmax").oninput=e=>{S.pmax=e.target.value;render();trackLater("price",(S.pmin||0)+"-"+(S.pmax||""));};

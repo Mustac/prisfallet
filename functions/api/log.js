@@ -4,7 +4,7 @@
 // (mobile/tablet/pc from screen width), referring site, and filter choices.
 // No IP address, no user agent, no cookies, no visitor or session IDs.
 
-const TYPES = new Set(["search", "view", "click", "cat", "visit", "filter"]);
+const TYPES = new Set(["pv", "search", "view", "click", "cat", "visit", "filter"]);
 const FILTERS = new Set(["sort", "min", "price", "brand", "shop"]);
 const DEVICES = new Set(["mobil", "nettbrett", "pc"]);
 const ALLOWED_HOSTS = new Set(["prisfallet.no", "www.prisfallet.no", "prisfallet.pages.dev"]);

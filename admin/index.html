@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#0c0c0e">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Prisfallet Admin</title>
+<link rel="manifest" href="/admin/manifest.webmanifest">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/admin/icon-192.png">
+<style>
+:root{--bg:#0c0c0e;--panel:#16161a;--panel2:#1d1d23;--line:#2a2a32;--ink:#f3f3f1;--mute:#9a9aa3;--acc:#d7ff3a;--bad:#ff6b6b;--ok:#5ee08a;--c2:#7aa7ff}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-tap-highlight-color:transparent}
+body{padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}
+.wrap{max-width:1100px;margin:0 auto;padding:16px 14px 80px}
+.top{display:flex;align-items:center;gap:10px;justify-content:space-between;margin-bottom:14px}
+.logo{font-weight:800;font-size:22px;letter-spacing:-.6px}.logo span{color:var(--acc)}
+.tag{font-size:11px;background:var(--panel2);border:1px solid var(--line);border-radius:999px;padding:2px 8px;color:var(--mute);margin-left:6px;vertical-align:middle}
+button,.btn{font:inherit;border:1px solid var(--line);background:var(--panel2);color:var(--ink);border-radius:10px;padding:9px 14px;cursor:pointer}
+button.pri{background:var(--acc);color:#111;border-color:var(--acc);font-weight:700}
+button:disabled{opacity:.5}
+input{font:inherit;width:100%;background:var(--panel2);color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:12px;margin:6px 0 12px}
+input:focus{outline:2px solid var(--acc);outline-offset:1px}
+label{font-size:13px;color:var(--mute)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px;margin-bottom:12px}
+.auth{max-width:380px;margin:8vh auto 0}
+.auth h1{font-size:22px;margin:0 0 4px}.auth p{color:var(--mute);margin:0 0 16px}
+.err{color:var(--bad);min-height:20px;font-size:14px}
+.tabs{display:flex;gap:6px;overflow-x:auto;margin-bottom:12px;scrollbar-width:none}
+.tabs button{white-space:nowrap;border-radius:999px;padding:7px 14px}
+.tabs button.on{background:var(--ink);color:#111;border-color:var(--ink);font-weight:600}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:12px}
+.kpi{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:14px}
+.kpi .l{font-size:12.5px;color:var(--mute)}.kpi .v{font-size:30px;font-weight:800;letter-spacing:-1px;font-variant-numeric:tabular-nums;margin-top:2px}
+.kpi .s{font-size:12px;color:var(--mute)}
+.kpi.acc .v{color:var(--acc)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:12px}
+.grid .card{margin:0}
+h2{font-size:15px;margin:0 0 10px;font-weight:700}
+h2 small{font-weight:400;color:var(--mute);font-size:12.5px;margin-left:6px}
+.chart{position:relative;height:220px}
+.chart svg{width:100%;height:100%;display:block}
+.chart .tip{position:absolute;top:0;pointer-events:none;background:#000c;border:1px solid var(--line);border-radius:8px;padding:6px 9px;font-size:12.5px;white-space:nowrap}
+.legend{display:flex;gap:14px;font-size:12.5px;color:var(--mute);margin-top:6px}.legend i{display:inline-block;width:10px;height:3px;border-radius:2px;margin-right:5px;vertical-align:middle}
+.bars{display:flex;flex-direction:column;gap:7px}
+.bar{display:grid;grid-template-columns:1fr auto;gap:8px;font-size:13.5px;position:relative;padding:5px 8px;border-radius:8px;overflow:hidden}
+.bar::before{content:"";position:absolute;inset:0;width:var(--w);background:var(--panel2);z-index:0}
+.bar>*{position:relative;z-index:1}.bar .n{font-variant-numeric:tabular-nums;color:var(--mute)}
+.bar .t{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.empty{color:var(--mute);font-size:13.5px;padding:6px 0}
+.health div{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px solid var(--line);font-size:14px}
+.health div:last-child{border-bottom:0}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:7px;vertical-align:middle}
+.foot{color:var(--mute);font-size:12px;text-align:center;margin-top:16px}
+.qr{background:#fff;border-radius:12px;padding:12px;width:220px;margin:8px auto;display:block}
+.mono{font-family:ui-monospace,Consolas,monospace;word-break:break-all;background:var(--panel2);padding:8px;border-radius:8px;font-size:13px}
+.hide{display:none!important}
+.spin{animation:spin 1s linear infinite;display:inline-block}@keyframes spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.spin{animation:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="top">
+    <div class="logo">prisfallet<span>.</span>no <span class="tag">admin</span></div>
+    <div id="topbtns" class="hide"><button id="refresh" aria-label="Refresh">↻</button> <button id="logout">Log out</button></div>
+  </div>
+
+  <!-- loading -->
+  <div id="v-loading" class="auth"><p>Loading…</p></div>
+
+  <!-- setup -->
+  <div id="v-setup" class="auth hide card">
+    <h1>Set up admin login</h1>
+    <div id="setup1">
+      <p>One time only. Use the setup code you got from Claude and choose your own password (at least 12 characters).</p>
+      <label for="s-code">Setup code</label><input id="s-code" autocomplete="off" autocapitalize="off">
+      <label for="s-pw">New password</label><input id="s-pw" type="password" autocomplete="new-password">
+      <label for="s-pw2">Repeat password</label><input id="s-pw2" type="password" autocomplete="new-password">
+      <div class="err" id="s-err"></div>
+      <button class="pri" id="s-next" style="width:100%">Next</button>
+    </div>
+    <div id="setup2" class="hide">
+      <p>Add Prisfallet to your authenticator app (Google Authenticator, Microsoft Authenticator or similar): scan the QR code, or tap the button if the app is on this phone.</p>
+      <img id="s-qr" class="qr" alt="QR code for the authenticator app">
+      <p style="text-align:center"><a id="s-link" class="btn" href="#">Open in authenticator app</a></p>
+      <p>Or type this key manually:</p><div class="mono" id="s-key"></div>
+      <label for="s-totp" style="display:block;margin-top:12px">Enter the 6-digit code the app shows</label>
+      <input id="s-totp" inputmode="numeric" autocomplete="one-time-code" maxlength="6">
+      <div class="err" id="s-err2"></div>
+      <button class="pri" id="s-done" style="width:100%">Finish</button>
+    </div>
+  </div>
+
+  <!-- login -->
+  <form id="v-login" class="auth hide card">
+    <h1>Log in</h1>
+    <p>Password and the code from your authenticator app.</p>
+    <label for="l-pw">Password</label><input id="l-pw" type="password" autocomplete="current-password" required>
+    <label for="l-totp">6-digit code</label><input id="l-totp" inputmode="numeric" autocomplete="one-time-code" maxlength="6" required>
+    <div class="err" id="l-err"></div>
+    <button class="pri" style="width:100%" type="submit">Log in</button>
+  </form>
+
+  <!-- not configured, no setup code -->
+  <div id="v-closed" class="auth hide card"><h1>Admin not set up</h1><p>Ask Claude for a setup code.</p></div>
+
+  <!-- dashboard -->
+  <div id="v-dash" class="hide">
+    <div class="tabs" id="range">
+      <button data-d="1">Today</button><button data-d="7" class="on">7 days</button><button data-d="30">30 days</button><button data-d="90">90 days</button><button data-d="365">1 year</button>
+    </div>
+
+    <div class="kpis">
+      <div class="kpi"><div class="l">Page views</div><div class="v" id="k-pv">–</div><div class="s" id="k-pv-s"></div></div>
+      <div class="kpi"><div class="l">Visits (from outside)</div><div class="v" id="k-visits">–</div><div class="s">people arriving on the site</div></div>
+      <div class="kpi"><div class="l">Searches</div><div class="v" id="k-search">–</div><div class="s" id="k-search-s"></div></div>
+      <div class="kpi"><div class="l">Deals opened</div><div class="v" id="k-views">–</div><div class="s"></div></div>
+      <div class="kpi acc"><div class="l">Clicks to shops</div><div class="v" id="k-clicks">–</div><div class="s" id="k-ctr"></div></div>
+      <div class="kpi"><div class="l">Earnings</div><div class="v" id="k-earn">–</div><div class="s">waiting for network approvals</div></div>
+    </div>
+
+    <div class="card">
+      <h2>Per day</h2>
+      <div class="chart" id="chart"></div>
+      <div class="legend"><span><i style="background:var(--c2)"></i>Page views</span><span><i style="background:var(--acc)"></i>Clicks to shops</span><span><i style="background:var(--mute)"></i>Searches</span></div>
+    </div>
+
+    <div class="grid">
+      <div class="card"><h2>Where visitors come from</h2><div class="bars" id="b-refs"></div></div>
+      <div class="card"><h2>Device</h2><div class="bars" id="b-dev"></div></div>
+      <div class="card"><h2>Region <small>Norway</small></h2><div class="bars" id="b-reg"></div></div>
+      <div class="card"><h2>Top searches <small>results shown</small></h2><div class="bars" id="b-search"></div></div>
+      <div class="card"><h2>Searches with no results <small>products to add</small></h2><div class="bars" id="b-zero"></div></div>
+      <div class="card"><h2>Most clicked deals</h2><div class="bars" id="b-cdeal"></div></div>
+      <div class="card"><h2>Clicks per shop</h2><div class="bars" id="b-cshop"></div></div>
+      <div class="card"><h2>Clicks per category</h2><div class="bars" id="b-ccat"></div></div>
+      <div class="card"><h2>Most opened deals</h2><div class="bars" id="b-vdeal"></div></div>
+      <div class="card"><h2>Categories chosen</h2><div class="bars" id="b-cats"></div></div>
+      <div class="card"><h2>Filters used</h2><div class="bars" id="b-filt"></div></div>
+      <div class="card"><h2>Site health</h2><div class="health" id="health"></div></div>
+    </div>
+    <div class="foot" id="foot"></div>
+  </div>
+</div>
+
+<script>
+const $ = (id) => document.getElementById(id);
+const show = (id) => ["v-loading","v-setup","v-login","v-closed","v-dash"].forEach((v) => $(v).classList.toggle("hide", v !== id));
+const nf = new Intl.NumberFormat("nb-NO");
+const fmt = (n) => (n == null ? "–" : nf.format(n));
+const CAT = {electronics:"TV, sound & mobile",computers:"Computers",gaming:"Gaming",photo:"Photo & video",appliances:"Home appliances",home:"Home & garden",kitchen:"Kitchen",beauty:"Beauty",toys:"Toys & baby",sports:"Sport",other:"Other"};
+const catName = (c) => CAT[c] || c || "(none)";
+
+async function api(path, opts = {}) {
+  const r = await fetch("/api/admin/" + path, { credentials: "same-origin", headers: { "Content-Type": "application/json" }, ...opts });
+  let data = {}; try { data = await r.json(); } catch (e) {}
+  return { ok: r.ok, status: r.status, data };
+}
+
+// ---------- start ----------
+let RANGE = 7, timer = 0;
+async function start() {
+  const s = await api("status");
+  if (!s.ok) { show("v-closed"); return; }
+  if (s.data.loggedIn) return openDash();
+  if (s.data.configured) return show("v-login");
+  if (s.data.setupPossible) return show("v-setup");
+  show("v-closed");
+}
+
+// ---------- setup ----------
+let setupCode = "";
+$("s-next").onclick = async () => {
+  $("s-err").textContent = "";
+  const code = $("s-code").value.trim(), pw = $("s-pw").value;
+  if (pw.length < 12) return ($("s-err").textContent = "Password must be at least 12 characters.");
+  if (pw !== $("s-pw2").value) return ($("s-err").textContent = "The two passwords are not the same.");
+  $("s-next").disabled = true;
+  const r = await api("setup/start", { method: "POST", body: JSON.stringify({ code, password: pw }) });
+  $("s-next").disabled = false;
+  if (!r.ok) return ($("s-err").textContent = r.data.error || "Something went wrong.");
+  setupCode = code;
+  $("s-key").textContent = r.data.secret.replace(/(.{4})/g, "$1 ").trim();
+  $("s-link").href = r.data.uri;
+  makeQR(r.data.uri);
+  $("setup1").classList.add("hide"); $("setup2").classList.remove("hide");
+};
+$("s-done").onclick = async () => {
+  $("s-err2").textContent = "";
+  const r = await api("setup/confirm", { method: "POST", body: JSON.stringify({ code: setupCode, totp: $("s-totp").value.trim() }) });
+  if (!r.ok) return ($("s-err2").textContent = r.data.error || "Something went wrong.");
+  openDash();
+};
+function makeQR(text) {
+  const s = document.createElement("script");
+  s.src = "/admin/qrcode.js"; // self-hosted (MIT, Kazuhiko Arase) so no third-party script sees the key
+  s.onload = () => { const q = qrcode(0, "M"); q.addData(text); q.make(); $("s-qr").src = q.createDataURL(6, 2); };
+  document.head.append(s);
+}
+
+// ---------- login ----------
+$("v-login").onsubmit = async (e) => {
+  e.preventDefault(); $("l-err").textContent = "";
+  const r = await api("login", { method: "POST", body: JSON.stringify({ password: $("l-pw").value, totp: $("l-totp").value.trim() }) });
+  if (!r.ok) { $("l-err").textContent = r.data.error || "Login failed."; $("l-totp").value = ""; return; }
+  $("l-pw").value = ""; $("l-totp").value = "";
+  openDash();
+};
+$("logout").onclick = async () => { await api("logout", { method: "POST", body: "{}" }); clearInterval(timer); $("topbtns").classList.add("hide"); show("v-login"); };
+$("refresh").onclick = () => load();
+$("range").onclick = (e) => { const b = e.target.closest("button"); if (!b) return; RANGE = +b.dataset.d;
+  [...$("range").children].forEach((x) => x.classList.toggle("on", x === b)); load(); };
+
+function openDash() {
+  show("v-dash"); $("topbtns").classList.remove("hide"); load();
+  clearInterval(timer); timer = setInterval(() => { if (document.visibilityState === "visible") load(); }, 60000);
+}
+document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible" && !$("v-dash").classList.contains("hide")) load(); });
+
+// ---------- dashboard ----------
+async function load() {
+  $("refresh").innerHTML = '<span class="spin">↻</span>';
+  const r = await api("stats?days=" + RANGE);
+  $("refresh").textContent = "↻";
+  if (r.status === 401) { clearInterval(timer); $("topbtns").classList.add("hide"); return show("v-login"); }
+  if (!r.ok) { $("foot").textContent = "Could not load data (" + r.status + ")."; return; }
+  render(r.data);
+}
+
+function sum(rows, k) { return rows.reduce((s, r) => s + (r[k] || 0), 0); }
+function bars(id, rows, label, emptyText) {
+  const el = $(id); el.replaceChildren();
+  if (!rows.length) { const p = document.createElement("div"); p.className = "empty"; p.textContent = emptyText || "No data yet."; el.append(p); return; }
+  const max = Math.max(...rows.map((r) => r.n));
+  rows.forEach((r) => {
+    const d = document.createElement("div"); d.className = "bar"; d.style.setProperty("--w", Math.max(4, (r.n / max) * 100) + "%");
+    const t = document.createElement("span"); t.className = "t"; t.textContent = label(r); t.title = label(r);
+    const n = document.createElement("span"); n.className = "n"; n.textContent = fmt(r.n) + (r.extra != null ? "  ·  " + r.extra : "");
+    d.append(t, n); el.append(d);
+  });
+}
+
+function render(s) {
+  window.__last = s;
+  const pv = sum(s.daily, "pv"), visits = sum(s.daily, "visits"), searches = sum(s.daily, "searches"),
+    views = sum(s.daily, "views"), clicks = sum(s.daily, "clicks");
+  $("k-pv").textContent = fmt(pv);
+  $("k-pv-s").textContent = s.days > 1 && s.daily.length ? "≈ " + fmt(Math.round(pv / s.days)) + " per day" : "";
+  $("k-visits").textContent = fmt(visits);
+  $("k-search").textContent = fmt(searches);
+  $("k-search-s").textContent = s.zero.length ? fmt(sum(s.zero, "n")) + " found nothing" : "";
+  $("k-views").textContent = fmt(views);
+  $("k-clicks").textContent = fmt(clicks);
+  $("k-ctr").textContent = pv ? (100 * clicks / pv).toFixed(1).replace(".", ",") + " % of page views" : "";
+  $("k-earn").textContent = "0 kr";
+
+  chart(s);
+  bars("b-refs", s.refs, (r) => r.ref === "direct" ? "Direct / typed address" : r.ref, "No visits logged yet.");
+  bars("b-dev", s.devices, (r) => ({ mobil: "Mobile", nettbrett: "Tablet", pc: "PC" }[r.device] || r.device));
+  bars("b-reg", s.regions, (r) => r.region);
+  bars("b-search", s.searches.map((r) => ({ ...r, extra: r.results != null ? r.results + " results" : null })), (r) => r.term, "No searches yet.");
+  bars("b-zero", s.zero, (r) => r.term, "None yet. Good!");
+  bars("b-cdeal", s.clicksDeal, (r) => r.deal + " — " + r.shop, "No clicks yet.");
+  bars("b-cshop", s.clicksShop, (r) => r.shop || "(unknown)", "No clicks yet.");
+  bars("b-ccat", s.clicksCat, (r) => catName(r.cat), "No clicks yet.");
+  bars("b-vdeal", s.viewsDeal, (r) => r.deal + " — " + r.shop, "No deals opened yet.");
+  bars("b-cats", s.cats, (r) => catName(r.cat));
+  bars("b-filt", s.filters, (r) => ({ sort: "Sort", min: "Min. discount %", price: "Price range", brand: "Brand", shop: "Shop" }[r.f] || r.f) + ": " + r.v);
+
+  const h = $("health"); h.replaceChildren();
+  const row = (label, value, good) => { const d = document.createElement("div"); const a = document.createElement("span");
+    const dot = document.createElement("i"); dot.className = "dot"; dot.style.background = good === true ? "var(--ok)" : good === false ? "var(--bad)" : "var(--mute)";
+    a.append(dot, label); const b = document.createElement("span"); b.textContent = value; b.style.color = "var(--mute)"; d.append(a, b); h.append(d); };
+  row("Site and database", "online", true);
+  if (s.feed) {
+    const age = s.feed.updated ? Math.round((Date.now() - Date.parse(s.feed.updated)) / 36e5) : null;
+    row("Deals on the site", fmt(s.feed.deals) + " from " + fmt(s.feed.shops) + " shops", s.feed.deals > 0);
+    row("Real feeds connected", s.feed.demo ? "no – sample data" : "yes", !s.feed.demo);
+    row("Prices last updated", age == null ? "–" : age < 48 ? age + " h ago" : Math.round(age / 24) + " days ago", age != null && age < 36);
+  } else row("Deals file", "could not read", false);
+  row("Last visitor activity", s.lastEvent ? new Date(s.lastEvent).toLocaleString("nb-NO", { dateStyle: "short", timeStyle: "short" }) : "none yet", null);
+
+  $("foot").textContent = "Live data · updated " + new Date(s.generated).toLocaleTimeString("nb-NO", { hour: "2-digit", minute: "2-digit" }) + " · refreshes every minute";
+}
+
+function chart(s) {
+  const el = $("chart"); el.replaceChildren();
+  const days = []; for (let i = s.days - 1; i >= 0; i--) days.push(new Date(Date.parse(s.today) - i * 864e5).toISOString().slice(0, 10));
+  const by = Object.fromEntries(s.daily.map((r) => [r.day, r]));
+  const data = days.map((d) => ({ day: d, pv: by[d]?.pv || 0, clicks: by[d]?.clicks || 0, searches: by[d]?.searches || 0 }));
+  const W = el.clientWidth || 600, H = el.clientHeight || 220, m = { t: 10, r: 10, b: 22, l: 34 };
+  const max = Math.max(1, ...data.map((r) => Math.max(r.pv, r.clicks, r.searches)));
+  const nice = Math.pow(10, Math.floor(Math.log10(max))); const top = Math.ceil(max / nice) * nice;
+  const x = (i) => m.l + (data.length === 1 ? (W - m.l - m.r) / 2 : (i * (W - m.l - m.r)) / (data.length - 1));
+  const y = (v) => H - m.b - (v / top) * (H - m.t - m.b);
+  const NS = "http://www.w3.org/2000/svg";
+  const svg = document.createElementNS(NS, "svg"); svg.setAttribute("viewBox", `0 0 ${W} ${H}`); svg.setAttribute("role", "img");
+  svg.setAttribute("aria-label", "Page views, clicks and searches per day");
+  const add = (tag, attrs, text) => { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); if (text != null) e.textContent = text; svg.append(e); return e; };
+  [0, 0.5, 1].forEach((f) => { const v = top * f; add("line", { x1: m.l, x2: W - m.r, y1: y(v), y2: y(v), stroke: "#2a2a32" });
+    add("text", { x: m.l - 6, y: y(v) + 4, "text-anchor": "end", fill: "#9a9aa3", "font-size": 11 }, fmt(v)); });
+  const step = Math.max(1, Math.ceil(data.length / Math.max(2, Math.floor(W / 70))));
+  data.forEach((r, i) => { if (i % step === 0 || i === data.length - 1) add("text", { x: x(i), y: H - 5, "text-anchor": "middle", fill: "#9a9aa3", "font-size": 11 }, r.day.slice(8) + "." + r.day.slice(5, 7)); });
+  [["searches", "#9a9aa3"], ["pv", "#7aa7ff"], ["clicks", "#d7ff3a"]].forEach(([k, c]) => {
+    if (data.length === 1) add("circle", { cx: x(0), cy: y(data[0][k]), r: 4, fill: c });
+    else add("polyline", { points: data.map((r, i) => x(i) + "," + y(r[k])).join(" "), fill: "none", stroke: c, "stroke-width": 2, "stroke-linejoin": "round" });
+  });
+  el.append(svg);
+  const tip = document.createElement("div"); tip.className = "tip"; tip.hidden = true; el.append(tip);
+  const move = (ev) => { const rect = svg.getBoundingClientRect(); const px = ((ev.clientX - rect.left) / rect.width) * W;
+    let i = Math.round(((px - m.l) / (W - m.l - m.r)) * (data.length - 1)); i = Math.max(0, Math.min(data.length - 1, i)); const r = data[i];
+    tip.hidden = false; tip.textContent = `${r.day.slice(8)}.${r.day.slice(5, 7)} · views ${fmt(r.pv)} · clicks ${fmt(r.clicks)} · searches ${fmt(r.searches)}`;
+    tip.style.left = Math.min(Math.max(0, (x(i) / W) * rect.width - 80), rect.width - 230) + "px"; };
+  svg.addEventListener("pointermove", move); svg.addEventListener("pointerdown", move);
+  svg.addEventListener("pointerleave", () => (tip.hidden = true));
+}
+window.addEventListener("resize", () => { if (window.__last) chart(window.__last); });
+
+if ("serviceWorker" in navigator) navigator.serviceWorker.register("/admin/sw.js", { scope: "/admin/" }).catch(() => {});
+start();
+</script>
+</body>
+</html>

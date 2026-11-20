@@ -3,5 +3,6 @@ Allow: /
 Disallow: /scripts/
 Disallow: /tests/
 Disallow: /api/
+Disallow: /admin/
 
 Sitemap: https://prisfallet.no/sitemap.xml
