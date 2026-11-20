@@ -7,7 +7,7 @@ function setTheme(t){root.dataset.theme=t;try{localStorage.setItem("pf-theme",t)
   var m=document.querySelector('meta[name=theme-color]');if(m)m.content=t==="dark"?"#0C0C0E":t==="light"?"#F3F4F6":"#262D35";
   document.querySelectorAll(".themes button").forEach(function(b){b.setAttribute("aria-pressed",b.dataset.t===t)})}
 window.pfConsent=function(){try{return localStorage.getItem("pf-consent")||""}catch(e){return ""}};
-var CF_TOKEN="";
+var CF_TOKEN="3b57f31c3f4c445ca22a95606278e83a";
 function loadStats(){if(!CF_TOKEN||document.getElementById("cfb"))return;var s=document.createElement("script");s.id="cfb";s.defer=true;
   s.src="https://static.cloudflareinsights.com/beacon.min.js";s.setAttribute("data-cf-beacon",JSON.stringify({token:CF_TOKEN}));document.head.appendChild(s)}
 function ask(){if(document.getElementById("ck"))return;var d=document.createElement("div");d.className="ck";d.id="ck";d.setAttribute("role","dialog");d.setAttribute("aria-label","Informasjonskapsler");
