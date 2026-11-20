@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nb">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Prisfallet.no – Norway's biggest price drops</title>
+<title>Prisfallet.no – de største prisfallene i norske nettbutikker</title>
+<meta name="description" content="De største prisfallene i norske nettbutikker samlet på ett sted – bare varer på lager med minst 30 % rabatt, oppdatert hver dag.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -154,6 +155,7 @@ footer a{color:var(--ink)}
 .demo{background:#ffcf3a;color:#111;font-size:13px;font-weight:600;text-align:center;padding:8px 12px}
 .basis{font-size:11px;color:var(--mute);margin-top:4px}.basis.v{color:#4be3a0}
 .card .body{position:relative}
+footer .links a{color:var(--ink);text-decoration:underline}
 </style>
 </head>
 <body>
@@ -164,8 +166,8 @@ footer a{color:var(--ink)}
 <div class="adbar"><b>Annonse</b> / Inneholder annonselenker — Prisfallet.no mottar provisjon ved kjøp eller klikk via lenkene.</div>
 <div class="demo" id="demo" hidden>Eksempeldata — dette er ikke ekte tilbud. Siden viser ekte tilbud når affiliate-feedene er koblet til.</div>
 <header class="wrap">
-  <div class="brand"><div class="logo" id="home">prisfallet<span>.</span>no</div><div class="tag">Only the big discounts from Norwegian shops · from official shop product feeds</div></div>
-  <div class="srchead"><span>Data sources</span><small id="srcsum"></small></div>
+  <div class="brand"><div class="logo" id="home">prisfallet<span>.</span>no</div><div class="tag">Bare de store rabattene fra norske nettbutikker · hentet fra butikkenes offisielle produktfeeder</div></div>
+  <div class="srchead"><span>Butikker</span><small id="srcsum"></small></div>
   <div class="srcs" id="srcs"></div>
   <div class="cats" id="cats"></div>
   <div class="subs" id="subs"></div>
@@ -173,37 +175,37 @@ footer a{color:var(--ink)}
 
 <div class="wrap layout">
   <aside id="side">
-    <h4>Sort</h4>
+    <h4>Sorter</h4>
     <select id="sort">
-      <option value="best">Best deal</option>
-      <option value="pct">Biggest discount %</option>
-      <option value="kr">Most kroner saved</option>
-      <option value="low">Lowest price</option>
-      <option value="high">Highest price</option>
+      <option value="best">Beste tilbud</option>
+      <option value="pct">Størst rabatt %</option>
+      <option value="kr">Flest kroner spart</option>
+      <option value="low">Lavest pris</option>
+      <option value="high">Høyest pris</option>
     </select>
-    <h4>Minimum discount</h4>
+    <h4>Minste rabatt</h4>
     <div class="range"><input type="range" id="min" min="0" max="70" step="5" value="30"><b id="minv">30%</b></div>
-    <h4>Price (kr)</h4>
-    <div class="pr"><input type="number" id="pmin" placeholder="From" min="0"><span>–</span><input type="number" id="pmax" placeholder="To" min="0"></div>
-    <h4>Deal quality</h4>
-    <label class="fx"><input type="checkbox" id="real"> Only vs. our verified 30-day lowest price</label>
-    <label class="fx" style="display:none"><input type="checkbox" id="reconly"> Record-low price only</label>
-    <label class="fx" style="display:none"><input type="checkbox" id="noclub"> Hide member/club prices</label>
-    <h4>Shop</h4>
+    <h4>Pris (kr)</h4>
+    <div class="pr"><input type="number" id="pmin" placeholder="Fra" min="0"><span>–</span><input type="number" id="pmax" placeholder="Til" min="0"></div>
+    <h4>Tilbudskvalitet</h4>
+    <label class="fx"><input type="checkbox" id="real"> Bare mot vår bekreftede laveste pris siste 30 dager</label>
+    <label class="fx" style="display:none"><input type="checkbox" id="reconly"> Bare rekordlav pris</label>
+    <label class="fx" style="display:none"><input type="checkbox" id="noclub"> Skjul medlems-/klubbpriser</label>
+    <h4>Butikk</h4>
     <div id="shops"></div>
-    <h4>Brand</h4>
-    <select id="brand"><option value="">All brands</option></select>
-    <button class="reset" id="reset">Reset all filters</button>
-    <button class="closef" id="closef">Show deals</button>
+    <h4>Merke</h4>
+    <select id="brand"><option value="">Alle merker</option></select>
+    <button class="reset" id="reset">Nullstill alle filtre</button>
+    <button class="closef" id="closef">Vis tilbud</button>
   </aside>
 
   <main>
     <div class="bar">
-      <input type="search" id="q" placeholder="Search products, brands, shops…">
-      <button class="fbtn" id="fbtn">Filters ⚙</button>
+      <input type="search" id="q" placeholder="Søk etter produkt, merke eller butikk…">
+      <button class="fbtn" id="fbtn">Filtre ⚙</button>
     </div>
     <div class="pills" id="pills"></div>
-    <h2 id="title">Best deals in Norway</h2>
+    <h2 id="title">De beste tilbudene i Norge</h2>
     <div class="sub" id="subtitle"></div>
     <div id="hint"></div>
     <div class="grid" id="grid"></div>
@@ -214,9 +216,10 @@ footer a{color:var(--ink)}
 
 <footer>
   <div class="wrap">
-    <p><b>Annonse.</b> All shop links on Prisfallet.no are affiliate links (annonselenker). If you buy or click through them, Prisfallet.no may get a commission from the shop or the affiliate network. This never changes the price you pay.</p>
-    <p>Prices, product names and photos come from the official product feeds that the shops publish through affiliate networks (<span id="netlist">Adtraction, Awin, Daisycon, Kelkoo</span>). Photos are shown straight from the shop or network, not copied. Updated once a day.</p>
-    <p><b>How we show discounts.</b> "Førpris (butikkens oppgitte)" is the before-price the shop gives in its feed. "Laveste pris siste 30 dager" is the lowest price Prisfallet.no itself has recorded for the product over the last 30 days. We only use the second label when we really have 30 days of our own price history. Only products in stock and at least 30% off are listed. Not affiliated with any shop.</p>
+    <p><b>Annonse.</b> Alle butikklenker på Prisfallet.no er annonselenker. Hvis du klikker eller kjøper via dem, kan Prisfallet.no få provisjon fra butikken eller affiliate-nettverket. Det endrer aldri prisen du betaler.</p>
+    <p>Priser, produktnavn og bilder kommer fra de offisielle produktfeedene butikkene publiserer gjennom affiliate-nettverk (<span id="netlist">Adtraction, Awin, Daisycon, Kelkoo</span>). Bildene vises direkte fra butikken eller nettverket og kopieres ikke. Oppdateres én gang i døgnet.</p>
+    <p><b>Slik viser vi rabatter.</b> «Førpris (butikkens oppgitte)» er førprisen butikken oppgir i feeden sin. «Laveste pris siste 30 dager» er den laveste prisen Prisfallet.no selv har registrert for produktet de siste 30 dagene – den brukes bare når vi faktisk har 30 dager med egen prishistorikk. Vi viser bare varer som er på lager og har minst 30 % rabatt. Prisfallet.no er ikke tilknyttet noen butikk.</p>
+    <p class="links"><a href="om.html">Om Prisfallet</a> · <a href="kontakt.html">Kontakt</a> · <a href="personvern.html">Personvern</a></p>
   </div>
 </footer>
 
@@ -312,31 +315,31 @@ const ico=k=>`<svg><use href="#i-${k}"/></svg>`;
 
 // ---------- taxonomy ----------
 const CATS=[
- {id:"electronics",name:"TV, Sound & Mobile",c:"#4fc3ff",icon:"headphones",subs:[
-  ["tv","TVs & projectors"],["soundbars","Soundbars"],["speakers","Speakers"],["headphones","Headphones"],["earbuds","Earbuds"],
-  ["phones","Phones"],["tablets","Tablets & e-readers"],["watches","Smartwatches"],["chargers","Chargers, cables & hubs"],["phoneacc","Cases & trackers"],["music","DJ & music gear"]]},
- {id:"computers",name:"Computers",c:"#b18cff",icon:"laptops",subs:[
-  ["laptops","Laptops"],["desktops","Desktop & mini PCs"],["monitors","Monitors"],["cpu","CPUs"],["gpu","Graphics cards"],["motherboards","Motherboards"],
-  ["ram","Memory (RAM)"],["storage","SSD & storage"],["psu","Power supplies"],["cases","PC cases"],["cooling","Cooling & fans"],
-  ["keyboards","Keyboards"],["mice","Mice"],["printers","Printers & ink"],["network","Routers & Wi-Fi"],["pcacc","Desk & PC accessories"]]},
+ {id:"electronics",name:"TV, lyd og mobil",c:"#4fc3ff",icon:"headphones",subs:[
+  ["tv","TV og projektorer"],["soundbars","Lydplanker"],["speakers","Høyttalere"],["headphones","Hodetelefoner"],["earbuds","Ørepropper"],
+  ["phones","Mobiltelefoner"],["tablets","Nettbrett og lesebrett"],["watches","Smartklokker"],["chargers","Ladere, kabler og huber"],["phoneacc","Deksler og sporere"],["music","DJ- og musikkutstyr"]]},
+ {id:"computers",name:"Data",c:"#b18cff",icon:"laptops",subs:[
+  ["laptops","Bærbare PC-er"],["desktops","Stasjonære og mini-PC-er"],["monitors","Skjermer"],["cpu","Prosessorer"],["gpu","Skjermkort"],["motherboards","Hovedkort"],
+  ["ram","Minne (RAM)"],["storage","SSD og lagring"],["psu","Strømforsyninger"],["cases","PC-kabinetter"],["cooling","Kjøling og vifter"],
+  ["keyboards","Tastaturer"],["mice","Mus"],["printers","Skrivere og blekk"],["network","Rutere og Wi-Fi"],["pcacc","PC-tilbehør"]]},
  {id:"gaming",name:"Gaming",c:"#ff5ad1",icon:"controllers",subs:[
-  ["consoles","Consoles"],["games","Games"],["controllers","Controllers & wheels"],["gheadsets","Gaming headsets"],["chairs","Gaming chairs"],["vr","VR"]]},
- {id:"photo",name:"Photo & Video",c:"#ffcf3a",icon:"cameras",subs:[
-  ["cameras","Cameras & lenses"],["actioncams","360 & action cameras"],["drones","Drones"],["gimbals","Gimbals"],["audio","Microphones & podcast"],
-  ["webcams","Webcams"],["calibration","Screen calibration"],["printing","Photo paper"],["bags","Bags & tripods"]]},
- {id:"appliances",name:"Appliances",c:"#7ad7ff",icon:"washers",subs:[
-  ["washers","Washers & dryers"],["fridges","Fridges & freezers"],["dishwashers","Dishwashers"],["ovens","Ovens, hobs & hoods"]]},
- {id:"home",name:"Home & Garden",c:"#4be3a0",icon:"robovac",subs:[
-  ["robovac","Robot vacuums"],["vacuums","Vacuums"],["climate","Air & heating"],["smarthome","Smart home"],["security","Security & doorbells"],
-  ["lighting","Lighting & decor"],["laundry","Irons & steamers"],["garden","Garden & grill"]]},
- {id:"kitchen",name:"Kitchen",c:"#ff8a5c",icon:"pots",subs:[
-  ["coffee","Coffee"],["smallapp","Small appliances"],["machines","Mixers & blenders"],["pans","Frying pans"],["pots","Pots & cast iron"],["knives","Knives"],
-  ["boards","Cutting boards"],["ovenware","Ovenware"],["utensils","Utensils & tools"],["tableware","Tableware & cutlery"],["food","Food & gifts"]]},
- {id:"beauty",name:"Beauty & Health",c:"#ff7ac6",icon:"hair",subs:[
-  ["hair","Hair styling"],["shaving","Shaving & IPL"],["oral","Toothbrushes"],["skincare","Skincare & perfume"],["wellness","Massage & health"]]},
- {id:"toys",name:"Toys & LEGO",c:"#ffd84d",icon:"lego",subs:[["lego","LEGO"],["toys","Toys & games"],["baby","Baby & kids"]]},
- {id:"sports",name:"Sports & Outdoor",c:"#5ee0c9",icon:"bikes",subs:[["clothing","Clothing"],["shoes","Shoes"],["winter","Ski & winter"],["bikes","Bikes & e-scooters"],["fitness","Fitness"],["outdoor","Outdoor & camping"]]},
- {id:"other",name:"Other",c:"#9a9aa3",icon:"other",subs:[["other","Other"]]}
+  ["consoles","Konsoller"],["games","Spill"],["controllers","Kontrollere og ratt"],["gheadsets","Gaming-headset"],["chairs","Gamingstoler"],["vr","VR"]]},
+ {id:"photo",name:"Foto og video",c:"#ffcf3a",icon:"cameras",subs:[
+  ["cameras","Kamera og objektiver"],["actioncams","360- og actionkamera"],["drones","Droner"],["gimbals","Gimbaler"],["audio","Mikrofoner og podkast"],
+  ["webcams","Webkamera"],["calibration","Skjermkalibrering"],["printing","Fotopapir"],["bags","Vesker og stativer"]]},
+ {id:"appliances",name:"Hvitevarer",c:"#7ad7ff",icon:"washers",subs:[
+  ["washers","Vaskemaskiner og tørketromler"],["fridges","Kjøleskap og frysere"],["dishwashers","Oppvaskmaskiner"],["ovens","Stekeovner, platetopper og ventilatorer"]]},
+ {id:"home",name:"Hjem og hage",c:"#4be3a0",icon:"robovac",subs:[
+  ["robovac","Robotstøvsugere"],["vacuums","Støvsugere"],["climate","Luft og oppvarming"],["smarthome","Smarthjem"],["security","Sikkerhet og ringeklokker"],
+  ["lighting","Belysning og interiør"],["laundry","Strykejern og dampere"],["garden","Hage og grill"]]},
+ {id:"kitchen",name:"Kjøkken",c:"#ff8a5c",icon:"pots",subs:[
+  ["coffee","Kaffe"],["smallapp","Småelektrisk"],["machines","Miksere og blendere"],["pans","Stekepanner"],["pots","Gryter og støpejern"],["knives","Kniver"],
+  ["boards","Skjærebrett"],["ovenware","Ildfaste former"],["utensils","Kjøkkenredskap"],["tableware","Servise og bestikk"],["food","Mat og gaver"]]},
+ {id:"beauty",name:"Skjønnhet og helse",c:"#ff7ac6",icon:"hair",subs:[
+  ["hair","Hårstyling"],["shaving","Barbering og IPL"],["oral","Tannbørster"],["skincare","Hudpleie og parfyme"],["wellness","Massasje og helse"]]},
+ {id:"toys",name:"Leker og LEGO",c:"#ffd84d",icon:"lego",subs:[["lego","LEGO"],["toys","Leker og spill"],["baby","Baby og barn"]]},
+ {id:"sports",name:"Sport og friluft",c:"#5ee0c9",icon:"bikes",subs:[["clothing","Klær"],["shoes","Sko"],["winter","Ski og vinter"],["bikes","Sykler og elsparkesykler"],["fitness","Trening"],["outdoor","Friluft og camping"]]},
+ {id:"other",name:"Annet",c:"#9a9aa3",icon:"other",subs:[["other","Annet"]]}
 ];
 const CAT=Object.fromEntries(CATS.map(c=>[c.id,c]));
 const SUBNAME={},SUB2CAT={};CATS.forEach(c=>c.subs.forEach(([k,n])=>{SUBNAME[k]=n;SUB2CAT[k]=c.id;}));
@@ -385,11 +388,11 @@ function match(d,opt={}){
 // ---------- render: categories ----------
 function renderCats(){
   const all=D.filter(d=>d.pct>=S.min);
-  let h=`<button class="cat${S.cat===""?" on":""}" style="--c:#d7ff3a" data-cat=""><span class="best">-${Math.max(...D.map(d=>d.pct))}%</span>${ico("all")}<b>All deals</b><small>${all.length} deals</small></button>`;
+  let h=`<button class="cat${S.cat===""?" on":""}" style="--c:#d7ff3a" data-cat=""><span class="best">-${Math.max(...D.map(d=>d.pct))}%</span>${ico("all")}<b>Alle tilbud</b><small>${all.length} tilbud</small></button>`;
   for(const c of CATS){
     const L=D.filter(d=>d.cat===c.id&&d.pct>=S.min);
     const best=Math.max(0,...D.filter(d=>d.cat===c.id).map(d=>d.pct));
-    h+=`<button class="cat${S.cat===c.id?" on":""}" data-cat="${c.id}" style="--c:${c.c};${L.length?"":"opacity:.5"}">${best?`<span class="best">-${best}%</span>`:""}${ico(c.icon)}<b>${c.name}</b><small>${L.length} deals</small></button>`;
+    h+=`<button class="cat${S.cat===c.id?" on":""}" data-cat="${c.id}" style="--c:${c.c};${L.length?"":"opacity:.5"}">${best?`<span class="best">-${best}%</span>`:""}${ico(c.icon)}<b>${c.name}</b><small>${L.length} tilbud</small></button>`;
   }
   $("cats").innerHTML=h;
 }
@@ -398,7 +401,7 @@ function renderSubs(){
   const c=CAT[S.cat];
   const cnt=k=>D.filter(d=>d.sub===k&&match(d,{ignoreSub:true})).length;
   const tot=D.filter(d=>match(d,{ignoreSub:true})).length;
-  $("subs").innerHTML=`<button class="chip${S.subs.size?"":" on"}" data-sub="">${ico(c.icon)}All ${esc(c.name)} <i>${tot}</i></button>`+
+  $("subs").innerHTML=`<button class="chip${S.subs.size?"":" on"}" data-sub="">${ico(c.icon)}Alle i ${esc(c.name)} <i>${tot}</i></button>`+
    c.subs.map(([k,n])=>{const x=cnt(k);return `<button class="chip${S.subs.has(k)?" on":""}" data-sub="${k}" style="${x?"":"opacity:.45"}">${ico(k)}${n} <i>${x}</i></button>`}).join("");
 }
 // ---------- side filters ----------
@@ -408,7 +411,7 @@ function renderSide(){
     return `<label class="fx"><input type="checkbox" data-shop="${esc(s)}"${S.shops.has(s)?" checked":""}> ${esc(s)}<i>${n}</i></label>`}).join("");
   const brands=[...new Set(D.filter(d=>match(d,{ignoreBrand:true})).map(d=>d.brand))].sort((a,b)=>a.localeCompare(b));
   if(S.brand&&!brands.includes(S.brand))brands.unshift(S.brand);
-  $("brand").innerHTML=`<option value="">All brands (${brands.length})</option>`+brands.map(b=>`<option${b===S.brand?" selected":""}>${esc(b)}</option>`).join("");
+  $("brand").innerHTML=`<option value="">Alle merker (${brands.length})</option>`+brands.map(b=>`<option${b===S.brand?" selected":""}>${esc(b)}</option>`).join("");
 }
 function renderPills(){
   const p=[];
@@ -417,23 +420,23 @@ function renderPills(){
   S.shops.forEach(s=>p.push(["shop:"+s,s]));
   if(S.brand)p.push(["brand",S.brand]);
   if(S.pmin!==""||S.pmax!=="")p.push(["price",`${S.pmin||0}–${S.pmax||"∞"} kr`]);
-  if(S.real)p.push(["real","Verified 30-day low"]);
-  if(S.rec)p.push(["rec","Record low"]);
-  if(S.noclub)p.push(["noclub","No club prices"]);
-  if(S.min!==30)p.push(["min",`Min ${S.min}%`]);
+  if(S.real)p.push(["real","Bekreftet 30-dagers lavpris"]);
+  if(S.rec)p.push(["rec","Rekordlav"]);
+  if(S.noclub)p.push(["noclub","Uten klubbpriser"]);
+  if(S.min!==30)p.push(["min",`Minst ${S.min}%`]);
   $("pills").innerHTML=p.map(([k,t])=>`<span class="pill" data-k="${esc(k)}">${esc(t)} ✕</span>`).join("");
 }
 // ---------- cards ----------
 function card(d){
   const c=CAT[d.cat].c, cls=d.pct>=50?"":d.pct>=30?" mid":" low";
   return `<div class="card" data-id="${d.id}">
-   <div class="thumb${d.img?" has-img":""}" style="--c:${c}">${ico(d.sub)}${d.img?`<img loading="lazy" referrerpolicy="no-referrer" alt="" src="${esc(d.img)}">`:""}<span class="badge${cls}">-${d.pct}%</span>${d.flag==="rec"?'<span class="rec">RECORD LOW</span>':""}<span class="brandtag">${esc(d.brand)}</span></div>
+   <div class="thumb${d.img?" has-img":""}" style="--c:${c}">${ico(d.sub)}${d.img?`<img loading="lazy" referrerpolicy="no-referrer" alt="" src="${esc(d.img)}">`:""}<span class="badge${cls}">-${d.pct}%</span>${d.flag==="rec"?'<span class="rec">REKORDLAV</span>':""}<span class="brandtag">${esc(d.brand)}</span></div>
    <div class="body">
      <div class="meta">${esc(d.shop)} · ${esc(SUBNAME[d.sub])}</div>
      <div class="name">${esc(d.name)}</div>
      <div class="prices"><span class="now">${nok(d.now)}</span><span class="was">${nok(d.was)}</span></div>
-     <div class="save">Save ${nok(d.kr)}</div>
-     <div class="basis${d.ref==="v"?" v":""}">vs. ${BASIS[d.ref]}</div>
+     <div class="save">Spar ${nok(d.kr)}</div>
+     <div class="basis${d.ref==="v"?" v":""}">mot ${BASIS[d.ref].toLowerCase()}</div>
    </div></div>`;
 }
 const SORT={best:(a,b)=>b.score-a.score,pct:(a,b)=>b.pct-a.pct||b.kr-a.kr,kr:(a,b)=>b.kr-a.kr,low:(a,b)=>a.now-b.now,high:(a,b)=>b.now-a.now};
@@ -441,14 +444,14 @@ function renderGrid(){
   const L=D.filter(d=>match(d)).sort(SORT[S.sort]);
   const base=D.filter(d=>match(d,{ignoreMin:true}));
   const hidden=base.length-L.length;
-  let t="Best deals in Norway";
+  let t="De beste tilbudene i Norge";
   if(S.cat){const c=CAT[S.cat];
-    t=S.subs.size===1?"Best "+SUBNAME[[...S.subs][0]].toLowerCase()+" deals":S.subs.size>1?"Best of "+[...S.subs].map(s=>SUBNAME[s]).join(", "):"Best of "+c.name;}
+    t=S.subs.size===1?"Beste tilbud: "+SUBNAME[[...S.subs][0]]:S.subs.size>1?"Beste tilbud: "+[...S.subs].map(s=>SUBNAME[s]).join(", "):"Beste tilbud: "+c.name;}
   $("title").textContent=t;
   const avg=L.length?Math.round(L.reduce((a,d)=>a+d.pct,0)/L.length):0;
-  $("subtitle").textContent=L.length?`${L.length} deals · average ${avg}% off · up to ${nok(Math.max(...L.map(d=>d.kr)))} saved on one product`:"";
-  $("hint").innerHTML=hidden>0?`<div class="hint">${hidden} more deal${hidden>1?"s":""} here ${hidden>1?"are":"is"} below ${S.min}% off. <button id="showall">Show them too</button></div>`:"";
-  $("grid").innerHTML=L.length?L.slice(0,LIMIT).map(card).join("")+(L.length>LIMIT?`<button class="morebtn" id="morebtn">Show more deals (${L.length-LIMIT} more)</button>`:""):`<div class="empty">No deals match these filters.</div>`;
+  $("subtitle").textContent=L.length?`${L.length} tilbud · i snitt ${avg}% rabatt · opptil ${nok(Math.max(...L.map(d=>d.kr)))} spart på ett produkt`:"";
+  $("hint").innerHTML=hidden>0?`<div class="hint">${hidden} tilbud til her har under ${S.min}% rabatt. <button id="showall">Vis dem også</button></div>`:"";
+  $("grid").innerHTML=L.length?L.slice(0,LIMIT).map(card).join("")+(L.length>LIMIT?`<button class="morebtn" id="morebtn">Vis flere tilbud (${L.length-LIMIT} til)</button>`:""):`<div class="empty">Ingen tilbud passer med disse filtrene.</div>`;
 }
 function wireImgs(root){root.querySelectorAll(".thumb.has-img img").forEach(im=>{
   const ok=()=>{if(im.naturalWidth>0)im.parentNode.classList.add("ok");};
@@ -463,34 +466,34 @@ function renderSources(){
     const s=SRC[k], n=D.filter(d=>d.src===k).length;
     const days=Math.round((new Date(today)-new Date(s.updated))/864e5);
     const isToday=days===0; if(isToday)fresh++;
-    const when=isToday?"Updated today":days===1?"Updated yesterday":"Updated "+new Date(s.updated).toLocaleDateString("en-GB",{day:"numeric",month:"short"});
-    return `<button class="src${S.shops.has(s.name)?" on":""}" data-shop="${esc(s.name)}" title="Show only ${esc(s.label)} deals">
+    const when=isToday?"Oppdatert i dag":days===1?"Oppdatert i går":"Oppdatert "+new Date(s.updated).toLocaleDateString("nb-NO",{day:"numeric",month:"short"});
+    return `<button class="src${S.shops.has(s.name)?" on":""}" data-shop="${esc(s.name)}" title="Vis bare tilbud fra ${esc(s.label)}">
       <span class="top"><span class="dot ${isToday?"fresh":days<=2?"old":""}"></span>${esc(s.label)}</span>
-      <small>${n} deals<span class="viatxt"> · ${esc(s.via)}</span></small>
+      <small>${n} tilbud<span class="viatxt"> · ${esc(s.via)}</span></small>
       <small class="${isToday?"f":""}">${when}</small></button>`;}).join("");
-  $("srcsum").textContent=keys.length?`${fresh} of ${keys.length} updated today · tap one to see only its deals`:"No feeds connected yet";
+  $("srcsum").textContent=keys.length?`${fresh} av ${keys.length} oppdatert i dag · trykk på en butikk for å se bare dens tilbud`:"Ingen butikker koblet til ennå";
 }
 function render(keep){if(!keep)LIMIT=60;renderSources();renderCats();renderSubs();renderSide();renderPills();renderGrid();wireImgs($("grid"));}
 
 // ---------- detail sheet ----------
 function openSheet(d){
   const c=CAT[d.cat].c, max=d.was;
-  const refTxt=d.ref==="v"?"Compared with the lowest price Prisfallet.no itself recorded for this product in the 30 days before today.":"Compared with the before-price the shop gives in its product feed. Prisfallet.no has not yet followed this product for 30 days, so we can't confirm it was the lowest price in that period.";
+  const refTxt=d.ref==="v"?"Sammenlignet med den laveste prisen Prisfallet.no selv har registrert for produktet de siste 30 dagene.":"Sammenlignet med førprisen butikken oppgir i produktfeeden sin. Prisfallet.no har ikke fulgt produktet i 30 dager ennå, så vi kan ikke bekrefte at det var laveste pris i den perioden.";
   $("sheet").innerHTML=`
-   <div class="thumb${d.img?" has-img":""}" style="--c:${c};position:relative">${ico(d.sub)}${d.img?`<img referrerpolicy="no-referrer" alt="" src="${esc(d.img)}"><span class="photo-tag">Photo: ${esc(d.shop)}</span>`:""}<span class="badge">-${d.pct}%</span>${d.flag==="rec"?'<span class="rec" style="right:52px">RECORD LOW</span>':""}<span class="brandtag">${esc(d.brand)}</span><button class="x" id="x">✕</button></div>
+   <div class="thumb${d.img?" has-img":""}" style="--c:${c};position:relative">${ico(d.sub)}${d.img?`<img referrerpolicy="no-referrer" alt="" src="${esc(d.img)}"><span class="photo-tag">Foto: ${esc(d.shop)}</span>`:""}<span class="badge">-${d.pct}%</span>${d.flag==="rec"?'<span class="rec" style="right:52px">REKORDLAV</span>':""}<span class="brandtag">${esc(d.brand)}</span><button class="x" id="x">✕</button></div>
    <div class="sb">
     <div class="meta">${esc(CAT[d.cat].name)} › ${esc(SUBNAME[d.sub])} · ${esc(d.shop)}</div>
     <h3>${esc(d.name)}</h3>
     <div class="prices"><span class="now" style="font-size:28px">${nok(d.now)}</span><span class="was">${nok(d.was)}</span></div>
-    <div class="save">You save ${nok(d.kr)} (${d.pct}%)</div>
-    <div class="chart"><h5>Price comparison</h5>
+    <div class="save">Du sparer ${nok(d.kr)} (${d.pct}%)</div>
+    <div class="chart"><h5>Prissammenligning</h5>
       <div class="brow"><span>${BASIS[d.ref]}</span><div class="tr"><div class="fl" style="width:100%;background:#6b6b78"></div></div><b>${nok(d.was)}</b></div>
-      <div class="brow"><span>Price now</span><div class="tr"><div class="fl" style="width:${Math.max(3,d.now/max*100)}%;background:${c}"></div></div><b>${nok(d.now)}</b></div>
+      <div class="brow"><span>Pris nå</span><div class="tr"><div class="fl" style="width:${Math.max(3,d.now/max*100)}%;background:${c}"></div></div><b>${nok(d.now)}</b></div>
       ${d.ref==="v"&&d.feedWas?`<div class="brow"><span>${BASIS.f}</span><div class="tr"><div class="fl" style="width:${Math.min(100,d.feedWas/max*100)}%;background:#4a4a55"></div></div><b>${nok(d.feedWas)}</b></div>`:""}
-      <div class="note">${refTxt} For the full price history graph, open Prisjakt below.</div>
+      <div class="note">${refTxt} Se hele prishistorikken på Prisjakt.</div>
     </div>
-    <div class="note">Sold by ${esc(d.shop)} · price from the ${esc(NET[d.net]||d.net)} product feed, ${esc(META.date||"")}. Prices can change, so check the price in the shop before you buy.</div>
-    <div class="acts"><a class="pri" target="_blank" rel="sponsored noopener" href="${esc(d.url)}">Se tilbud (annonselenke)</a><a target="_blank" rel="noopener" href="${pj(d)}">📈 Price history on Prisjakt</a></div>
+    <div class="note">Selges av ${esc(d.shop)} · pris fra produktfeeden via ${esc(NET[d.net]||d.net)}, ${esc(META.date||"")}. Prisene kan endre seg, så sjekk prisen i butikken før du kjøper.</div>
+    <div class="acts"><a class="pri" target="_blank" rel="sponsored noopener" href="${esc(d.url)}">Se tilbud (annonselenke)</a><a target="_blank" rel="noopener" href="${pj(d)}">📈 Prishistorikk på Prisjakt</a></div>
    </div>`;
   wireImgs($("sheet"));
   $("ov").classList.add("show");lockPage();$("sheet").scrollTop=0;
@@ -556,8 +559,8 @@ window.addEventListener("hashchange",()=>{readHash();render();});
 
 loadData().then(()=>{
   if(META.demo)$("demo").hidden=false;
-  if(!D.length){$("grid").innerHTML='<div class="empty">No deals yet. Connect at least one affiliate feed (see README) and run the daily update.</div>';$("srcsum").textContent="No feeds connected yet";return;}
-  readHash();render();}).catch(e=>{$("grid").innerHTML='<div class="empty">Could not load the deals. Please reload the page.</div>';console.error(e);});
+  if(!D.length){$("grid").innerHTML='<div class="empty">Ingen tilbud ennå. Kom tilbake snart.</div>';$("srcsum").textContent="Ingen butikker koblet til ennå";return;}
+  readHash();render();}).catch(e=>{$("grid").innerHTML='<div class="empty">Kunne ikke laste tilbudene. Last inn siden på nytt.</div>';console.error(e);});
 })();
 </script>
 </body>
