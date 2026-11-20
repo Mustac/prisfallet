@@ -7,6 +7,11 @@ image, linked, never downloaded); deals without a picture are hidden automatical
 Small, hand-picked selection read from visible campaign pages only — no bulk catalogue pulls
 from shop APIs (that was refused once as unauthorized access; don't try again).
 
+Daily refresh = re-collect each shop and REPLACE its list (add_deals.py), so a product whose
+discount is gone simply drops out. When a card/page says how long the offer lasts ("Tilbudet
+gjelder 11.11 - 30.11", "gyldig t.o.m 30.11"), store it as "until" (YYYY-MM-DD, 6th field of
+enrich.py): the build and the page both hide the deal after that day.
+
 Files: data/manual-deals.json (source), tools/add_deals.py (replace one shop's deals),
 tools/enrich.py (specs, rating, img), scripts/update_deals.py (build deals.json; drops deals
 not re-checked within 48 h). Then commit + push; Cloudflare deploys in ~1 min.

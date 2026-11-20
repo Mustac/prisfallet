@@ -118,7 +118,7 @@ h2{font-family:Rubik,sans-serif;font-size:24px;margin:2px 0 4px;letter-spacing:-
 .save{color:var(--acc);font-size:12.5px;font-weight:600}
 .rate{font-size:12px;color:#f5c542;margin-top:2px}.rate span{color:var(--mute)}
 .card{position:relative}
-.pop{display:none;position:absolute;left:8px;right:8px;bottom:8px;z-index:3;background:rgba(17,17,20,.96);border:1px solid #50505c;border-radius:10px;padding:10px 12px;font-size:12.5px;line-height:1.45;pointer-events:none}
+.pop{display:none;position:absolute;left:8px;right:8px;top:8px;max-height:134px;overflow:hidden;z-index:3;background:rgba(17,17,20,.96);border:1px solid #50505c;border-radius:10px;padding:10px 12px;font-size:12.5px;line-height:1.45;pointer-events:none}
 .pop b{display:block;font-size:11px;color:var(--mute);font-weight:600;margin-bottom:4px}
 .pop li,.specs li{margin:0 0 3px}.pop ul,.specs ul{margin:0;padding-left:16px}
 @media(hover:hover){.card:hover .pop{display:block}}
@@ -204,12 +204,11 @@ body{font-size:15px;-webkit-font-smoothing:antialiased}
 .topbar .lg{display:block;height:34px;cursor:pointer}.topbar .lg svg{height:100%;width:auto;display:block}
 .topbar nav{margin-left:auto;display:flex;align-items:center;gap:18px;font-size:14px}
 .topbar nav a{text-decoration:none;color:var(--mute)}.topbar nav a:hover{color:var(--ink)}
-.themes{display:flex;gap:4px;padding:3px;border:1px solid var(--line);border-radius:999px}
-.themes button{width:26px;height:26px;border-radius:50%;border:2px solid transparent;cursor:pointer;padding:0}
-.themes button[aria-pressed=true]{border-color:var(--acc)}
-.themes .t-slate{background:linear-gradient(135deg,#262D35 50%,#8DCB45 50%)}
-.themes .t-dark{background:linear-gradient(135deg,#0C0C0E 50%,#D7FF3A 50%)}
-.themes .t-light{background:linear-gradient(135deg,#FFFFFF 50%,#7DBE2E 50%);box-shadow:inset 0 0 0 1px #ccd}
+.themes{display:flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.themes button{font:inherit;font-size:13px;background:none;border:0;color:var(--mute);padding:6px 11px;cursor:pointer;line-height:1}
+.themes button+button{border-left:1px solid var(--line)}
+.themes button:hover{color:var(--ink)}
+.themes button[aria-pressed=true]{background:var(--panel2);color:var(--ink);font-weight:600}
 .hero{padding:26px 0 6px}
 .hero h1{font-size:clamp(24px,3.4vw,34px);font-weight:600;letter-spacing:-.4px;line-height:1.15;margin:0 0 6px}
 .hero p{margin:0;color:var(--mute);font-size:15px}
@@ -278,8 +277,7 @@ footer nav a:hover,footer nav button:hover{color:var(--acc-text)}
 </section>
 <header class="wrap" id="apphead">
   <div class="hero"><h1>De største prisfallene i norske nettbutikker</h1><p>Minst 30&nbsp;% rabatt, bare varer på lager, sjekket hver dag.</p></div>
-  <div class="srchead"><span>Butikker</span><small id="srcsum"></small></div>
-  <div class="srcs" id="srcs"></div>
+  <div hidden><small id="srcsum"></small><div id="srcs"></div></div>
   <div class="cats" id="cats"></div>
   <div class="subs" id="subs"></div>
 </header>
@@ -424,13 +422,13 @@ const ico=k=>`<svg><use href="#i-${k}"/></svg>`;
 const CATS=[
  {id:"electronics",name:"TV, lyd og mobil",c:"#4fc3ff",icon:"headphones",subs:[
   ["tv","TV og projektorer"],["soundbars","Lydplanker"],["speakers","Høyttalere"],["headphones","Hodetelefoner"],["earbuds","Ørepropper"],
-  ["phones","Mobiltelefoner"],["tablets","Nettbrett og lesebrett"],["watches","Smartklokker"],["chargers","Ladere, kabler og huber"],["phoneacc","Deksler og sporere"],["music","DJ- og musikkutstyr"]]},
+  ["phones","Mobiltelefoner"],["tablets","Nettbrett og lesebrett"],["watches","Smartklokker og aktivitetsmålere"],["chargers","Ladere, kabler og huber"],["phoneacc","Deksler og sporere"],["music","DJ- og musikkutstyr"]]},
  {id:"computers",name:"Data",c:"#b18cff",icon:"laptops",subs:[
   ["laptops","Bærbare PC-er"],["desktops","Stasjonære og mini-PC-er"],["monitors","Skjermer"],["cpu","Prosessorer"],["gpu","Skjermkort"],["motherboards","Hovedkort"],
   ["ram","Minne (RAM)"],["storage","SSD og lagring"],["psu","Strømforsyninger"],["cases","PC-kabinetter"],["cooling","Kjøling og vifter"],
   ["keyboards","Tastaturer"],["mice","Mus"],["printers","Skrivere og blekk"],["network","Rutere og Wi-Fi"],["pcacc","PC-tilbehør"]]},
  {id:"gaming",name:"Gaming",c:"#ff5ad1",icon:"controllers",subs:[
-  ["consoles","Konsoller"],["games","Spill"],["controllers","Kontrollere og ratt"],["gheadsets","Gaming-headset"],["chairs","Gamingstoler"],["vr","VR"]]},
+  ["consoles","Konsoller og tilbehør"],["games","Spill"],["controllers","Kontrollere og ratt"],["gheadsets","Gaming-headset"],["chairs","Gamingstoler og -bord"],["vr","VR"]]},
  {id:"photo",name:"Foto og video",c:"#ffcf3a",icon:"cameras",subs:[
   ["cameras","Kamera og objektiver"],["actioncams","360- og actionkamera"],["drones","Droner"],["gimbals","Gimbaler"],["audio","Mikrofoner og podkast"],
   ["webcams","Webkamera"],["calibration","Skjermkalibrering"],["printing","Fotopapir"],["bags","Vesker og stativer"]]},
@@ -445,7 +443,7 @@ const CATS=[
  {id:"beauty",name:"Skjønnhet og helse",c:"#ff7ac6",icon:"hair",subs:[
   ["hair","Hårstyling"],["shaving","Barbering og IPL"],["oral","Tannbørster"],["skincare","Hudpleie og parfyme"],["wellness","Massasje og helse"]]},
  {id:"toys",name:"Leker og LEGO",c:"#ffd84d",icon:"lego",subs:[["lego","LEGO"],["toys","Leker og spill"],["baby","Baby og barn"]]},
- {id:"sports",name:"Sport og friluft",c:"#5ee0c9",icon:"bikes",subs:[["clothing","Klær"],["shoes","Sko"],["winter","Ski og vinter"],["bikes","Sykler og elsparkesykler"],["fitness","Trening"],["outdoor","Friluft og camping"]]},
+ {id:"sports",name:"Sport og friluft",c:"#5ee0c9",icon:"bikes",subs:[["clothing","Klær"],["shoes","Sko"],["winter","Ski og vinter"],["bikes","Sykler og elsparkesykler"],["fitness","Trening"],["teamsport","Ballsport og racket"],["outdoor","Friluft og camping"]]},
  {id:"other",name:"Annet",c:"#9a9aa3",icon:"other",subs:[["other","Annet"]]}
 ];
 const CAT=Object.fromEntries(CATS.map(c=>[c.id,c]));
@@ -461,8 +459,9 @@ async function loadData(){
     const verified=x.price_basis==="verified_30d_low";
     const was=verified?x.verified_30d_low:x.feed_before_price, now=x.current_price;
     return {id:i,name:x.title,brand:x.brand||"",src:x.shop,shop:x.shop,net:x.source_network,now,was,cat:SUB2CAT[sub],sub,
-      ref:verified?"v":"f",flag:"",img:x.image_url||"",url:x.affiliate_url,checked:x.checked||"",specs:x.specs||[],rating:x.rating||0,reviews:x.reviews||0,feedWas:x.feed_before_price,low30:x.verified_30d_low,
+      ref:verified?"v":"f",flag:"",img:x.image_url||"",url:x.affiliate_url,checked:x.checked||"",until:x.until||"",specs:x.specs||[],rating:x.rating||0,reviews:x.reviews||0,feedWas:x.feed_before_price,low30:x.verified_30d_low,
       pct:x.discount_percent,kr:was-now};});
+  const today=localDay(new Date());D=D.filter(d=>!d.until||d.until>=today);
   D.forEach(d=>d.score=d.pct*(d.ref==="v"?1:0.9)+Math.log10(Math.max(1,d.kr))*2);
 }
 const BASIS={v:"Laveste pris siste 30 dager",f:"Førpris (butikkens oppgitte)"};
@@ -611,6 +610,7 @@ function openSheet(d){
       ${d.ref==="v"&&d.feedWas?`<div class="brow"><span>${BASIS.f}</span><div class="tr"><div class="fl" style="width:${Math.min(100,d.feedWas/max*100)}%;background:#4a4a55"></div></div><b>${nok(d.feedWas)}</b></div>`:""}
       <div class="note">${refTxt}</div>
     </div>
+    ${d.until?`<div class="note"><b>Tilbudet gjelder til ${new Date(d.until+"T12:00").toLocaleDateString("nb-NO",{day:"numeric",month:"long"})}</b> (ifølge butikken).</div>`:""}
     <div class="note">Selges av ${esc(d.shop)} · ${direct?`pris sjekket på butikkens nettside ${esc(when)}`:`pris fra produktfeeden via ${esc(NET[d.net]||d.net)}, ${esc(when)}`}. Prisene kan endre seg, så sjekk prisen i butikken før du kjøper.</div>
     <div class="acts">${aff?`<a class="pri" target="_blank" rel="sponsored noopener" href="${esc(d.url)}">Se tilbud (annonselenke)</a>`:`<a class="pri" target="_blank" rel="nofollow noopener" href="${esc(d.url)}">Gå til ${esc(d.shop)}</a>`}</div>
    </div>`;
@@ -634,7 +634,7 @@ function readHash(){
 
 // ---------- events ----------
 $("cats").onclick=e=>{const b=e.target.closest(".cat");if(!b)return;S.cat=b.dataset.cat;if(S.cat)track({t:"cat",c:S.cat});S.subs=new Set();S.brand="";setHash();render();
-  window.scrollTo({top:$("cats").offsetTop-10,behavior:"smooth"});};
+};
 $("subs").onclick=e=>{const b=e.target.closest(".chip");if(!b)return;const k=b.dataset.sub;
   if(!k)S.subs.clear();else S.subs.has(k)?S.subs.delete(k):S.subs.add(k);S.brand="";setHash();render();};
 $("srcs").onclick=e=>{const b=e.target.closest(".src");if(!b)return;const s=b.dataset.shop;if(!S.shops.has(s))track({t:"filter",f:"shop",v:s});

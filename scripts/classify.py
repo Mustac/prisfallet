@@ -8,6 +8,19 @@ import re
 
 # (subcategory id, regex) — order matters: specific before general
 RULES = [
+    # --- added 20 Nov: things that used to land in "Annet"
+    ("laptops", r"galaxy book|bærbar pc|chromebook"),
+    ("phones", r"\brealme\b|smarttelefon"),
+    ("watches", r"galaxy ring|smartring|aktivitetsarmbånd"),
+    ("bikes", r"grussykkel|terrengsykkel|el-sykkel|elsykkel|landeveissykkel|sparkesykkel"),
+    ("teamsport", r"hockey|padel|bordtennis|rebounder|fotball(?!sko)|håndball|innebandy|tennisracket"),
+    ("baby", r"matstol|vognpose|barnevogn|\btrille\b|løpevogn|sportsvogn|bilstol|beltestol|babygym|gåstol|stellebord|babycall|bæresele"),
+    ("toys", r"radiostyrt|karaoke|lekekjøkken|kjørbar|tusjer|malesett|leketøy|dukke|byggesett|puslespill|brettspill"),
+    ("controllers", r"racingratt|\bratt\b"),
+    ("smarthome", r"plugg|smart ?plug"),
+    ("outdoor", r"duffel|ryggsekk|telt\b|sovepose"),
+    ("cameras", r"zv-e10|systemkamera|speilrefleks|objektiv"),
+    ("chairs", r"gaming-skrivebord|gamingbord"),
     # --- early, very specific
     ("fridges", r"minikjøleskap"),
     ("security", r"overvåk(n)?ingskamera|eufycam|ringeklokke|video doorbell|arlo|ring (stick|spotlight|video)"),

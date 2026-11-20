@@ -23,7 +23,7 @@ for line in sys.stdin:
                 "url": link if link.startswith("https://") else prefix + link, "checked": now})
 old = {d["url"]: d for d in data["deals"] if d["shop"] == shop}
 for d in new:   # keep specs/ratings already collected for the same product
-    for k in ("specs", "rating", "reviews", "img"):
+    for k in ("specs", "rating", "reviews", "img", "until", "sub"):
         if k in old.get(d["url"], {}):
             d[k] = old[d["url"]][k]
 data["deals"] = [d for d in data["deals"] if d["shop"] != shop] + new

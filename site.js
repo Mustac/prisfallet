@@ -18,7 +18,7 @@ function ask(){if(document.getElementById("ck"))return;var d=document.createElem
 window.pfAskConsent=ask;
 function build(){
   var top=document.getElementById("pf-top");
-  if(top)top.outerHTML='<div class="topbar"><div class="wrap"><a class="lg" href="/" aria-label="Prisfallet.no forside">'+logo("pfm1")+'</a><nav><a href="/black-week">Black Week-guide</a><a href="/om">Om oss</a><div class="themes" role="group" aria-label="Fargetema"><button type="button" class="t-slate" data-t="slate" title="Skifer"></button><button type="button" class="t-dark" data-t="dark" title="Mørk"></button><button type="button" class="t-light" data-t="light" title="Lys"></button></div></nav></div></div>';
+  if(top)top.outerHTML='<div class="topbar"><div class="wrap"><a class="lg" href="/" aria-label="Prisfallet.no forside">'+logo("pfm1")+'</a><nav><a href="/black-week">Black Week-guide</a><a href="/om">Om oss</a><div class="themes" role="group" aria-label="Fargetema"><button type="button" data-t="slate">Skifer</button><button type="button" data-t="dark">Mørk</button><button type="button" data-t="light">Lys</button></div></nav></div></div>';
   var f=document.getElementById("pf-foot");
   if(f)f.outerHTML='<footer><div class="wrap cols"><div class="fl">'+logo("pfm2")+(f.dataset.text?'<div>'+f.dataset.text+'</div>':'')+'<p>&copy; '+new Date().getFullYear()+' Prisfallet.no</p></div><nav><a href="/black-week">Black Week 2026: unngå falske tilbud</a><a href="/om">Om Prisfallet</a><a href="/kontakt">Kontakt</a><a href="/personvern">Personvern</a><button type="button" id="ckopen">Innstillinger for informasjonskapsler</button></nav></div></footer>';
   document.querySelectorAll(".themes button").forEach(function(b){b.onclick=function(){setTheme(b.dataset.t)}});

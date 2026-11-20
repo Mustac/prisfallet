@@ -46,7 +46,8 @@
     "15,6\" IPS-skjerm",
     "16 GB RAM, 512 GB SSD"
    ],
-   "img": "https://www.elkjop.no/image/dv_web_D18000136031047/1014151/p.jpg"
+   "img": "https://www.elkjop.no/image/dv_web_D18000136031047/1014151/p.jpg",
+   "sub": "laptops"
   },
   {
    "shop": "Elkjøp",
@@ -858,7 +859,8 @@
    "checked": "2026-11-20T15:33+00:00",
    "rating": 4.3,
    "reviews": 3,
-   "img": "https://www.komplett.no/product-media/b2c/en-us/1200/1192175.jpg"
+   "img": "https://www.komplett.no/product-media/b2c/en-us/1200/1192175.jpg",
+   "sub": "chairs"
   },
   {
    "shop": "Komplett",
@@ -1209,7 +1211,8 @@
     "Ratt, pedaler og girspak",
     "Force feedback"
    ],
-   "img": "https://www.netonnet.no/GetFile/ProductImagePrimary/(1035967)_745946_largeHD.webp"
+   "img": "https://www.netonnet.no/GetFile/ProductImagePrimary/(1035967)_745946_largeHD.webp",
+   "sub": "controllers"
   },
   {
    "shop": "NetOnNet",
@@ -1350,7 +1353,8 @@
    "before": 11490.0,
    "url": "https://www.proshop.no/Mobiltelefoner/realme-GT-8-Pro-256GB12GB-Urban-Blue/3464212",
    "checked": "2026-11-20T15:38+00:00",
-   "img": "https://www.proshop.no/Images/915x900/3464212_e12d909fae65.png"
+   "img": "https://www.proshop.no/Images/915x900/3464212_e12d909fae65.png",
+   "sub": "phones"
   },
   {
    "shop": "Proshop",
@@ -1440,7 +1444,8 @@
    "before": 14990.0,
    "url": "https://www.proshop.no/Kamera/Sony-ZV-E10-II-PZ-16-50mm-OSS-II/3429868",
    "checked": "2026-11-20T15:38+00:00",
-   "img": "https://www.proshop.no/Images/915x900/3429868_a63c0b3972a8.jpg"
+   "img": "https://www.proshop.no/Images/915x900/3429868_a63c0b3972a8.jpg",
+   "sub": "cameras"
   },
   {
    "shop": "Proshop",
@@ -1536,7 +1541,8 @@
     "360-lyd med hodesporing",
     "Opptil 70 timers batteritid"
    ],
-   "img": "https://www.kjell.com/cdn-cgi/image/width=800,height=800,fit=pad,format=auto/globalassets/productimages/914342_24587_01.webp"
+   "img": "https://www.kjell.com/cdn-cgi/image/width=800,height=800,fit=pad,format=auto/globalassets/productimages/914342_24587_01.webp",
+   "sub": "headphones"
   },
   {
    "shop": "Kjell & Company",
@@ -1636,7 +1642,8 @@
     "Lett og vanntett",
     "7 dagers batteritid med ladeetui"
    ],
-   "img": "https://www.kjell.com/cdn-cgi/image/width=800,height=800,fit=pad,format=auto/globalassets/productimages/913442_24747-57.jpg"
+   "img": "https://www.kjell.com/cdn-cgi/image/width=800,height=800,fit=pad,format=auto/globalassets/productimages/913442_24747-57.jpg",
+   "sub": "watches"
   },
   {
    "shop": "Kjell & Company",
@@ -1717,7 +1724,8 @@
     "110° vidvinkel",
     "Automatisk lysjustering"
    ],
-   "img": "https://www.kjell.com/cdn-cgi/image/width=800,height=800,fit=pad,format=auto/globalassets/productimages/916476_13013_01.webp"
+   "img": "https://www.kjell.com/cdn-cgi/image/width=800,height=800,fit=pad,format=auto/globalassets/productimages/916476_13013_01.webp",
+   "sub": "consoles"
   },
   {
    "shop": "Kjell & Company",
@@ -1766,7 +1774,8 @@
     "Fungerer i TV-, håndholdt og bordmodus",
     "Justerbar nakke"
    ],
-   "img": "https://www.kjell.com/cdn-cgi/image/width=800,height=800,fit=pad,format=auto/globalassets/productimages/917795_13024_01.webp"
+   "img": "https://www.kjell.com/cdn-cgi/image/width=800,height=800,fit=pad,format=auto/globalassets/productimages/917795_13024_01.webp",
+   "sub": "consoles"
   },
   {
    "shop": "Kjell & Company",
@@ -1834,7 +1843,8 @@
     "IP54 for utendørs bruk",
     "Energimåling"
    ],
-   "img": "https://www.kjell.com/cdn-cgi/image/width=800,height=800,fit=pad,format=auto/globalassets/productimages/919899_60083_01.jpg"
+   "img": "https://www.kjell.com/cdn-cgi/image/width=800,height=800,fit=pad,format=auto/globalassets/productimages/919899_60083_01.jpg",
+   "sub": "smarthome"
   },
   {
    "shop": "Kjell & Company",
@@ -1871,7 +1881,8 @@
    "before": 799.0,
    "url": "https://www.xxl.no/stiga-rebounder-kicker-rebounder-oransje/p/1287908_1_Style",
    "checked": "2026-11-20T15:41+00:00",
-   "img": "https://cdn.xxl.no/filespin/9e1d143813dd4874920e598d2e60d8aa"
+   "img": "https://cdn.xxl.no/filespin/9e1d143813dd4874920e598d2e60d8aa",
+   "sub": "teamsport"
   },
   {
    "shop": "XXL",
@@ -1891,7 +1902,8 @@
    "before": 1699.0,
    "url": "https://www.xxl.no/fz-forza-ultra-power-2-padelracket-unisex-bla/p/1288479_1_Style",
    "checked": "2026-11-20T15:41+00:00",
-   "img": "https://cdn.xxl.no/filespin/9347042038734e0792f8773cbf9a891f"
+   "img": "https://cdn.xxl.no/filespin/9347042038734e0792f8773cbf9a891f",
+   "sub": "teamsport"
   },
   {
    "shop": "XXL",
@@ -1911,7 +1923,8 @@
    "before": 2399.0,
    "url": "https://www.xxl.no/ccm-trigger-limited-edition-2-0-26-27-hockeykolle-senior/p/1267367_1_Style",
    "checked": "2026-11-20T15:41+00:00",
-   "img": "https://cdn.xxl.no/filespin/20ecd52b15aa432d84c3e030b97227fc"
+   "img": "https://cdn.xxl.no/filespin/20ecd52b15aa432d84c3e030b97227fc",
+   "sub": "teamsport"
   },
   {
    "shop": "XXL",
@@ -1970,7 +1983,8 @@
    "before": 699.0,
    "url": "https://www.xxl.no/stiga-vision-4-star-bordtennisracket/p/1165974_1_Style",
    "checked": "2026-11-20T15:41+00:00",
-   "img": "https://cdn.xxl.no/filespin/1375a5adb946479392a709858d2f4cea"
+   "img": "https://cdn.xxl.no/filespin/1375a5adb946479392a709858d2f4cea",
+   "sub": "teamsport"
   },
   {
    "shop": "XXL",
@@ -1980,7 +1994,8 @@
    "before": 1499.0,
    "url": "https://www.xxl.no/ccm-99xr-helmet-26-27-hockeyhjelm-senior-svart/p/1266116_1_Style",
    "checked": "2026-11-20T15:41+00:00",
-   "img": "https://cdn.xxl.no/filespin/2ecad0d3845a44be82871743466206f1"
+   "img": "https://cdn.xxl.no/filespin/2ecad0d3845a44be82871743466206f1",
+   "sub": "teamsport"
   },
   {
    "shop": "XXL",
@@ -1990,7 +2005,8 @@
    "before": 16899.0,
    "url": "https://www.xxl.no/white-gx-ltd-brilliant-blue-grussykkel-bla/p/1267016_1_Style",
    "checked": "2026-11-20T15:41+00:00",
-   "img": "https://cdn.xxl.no/filespin/7f1e08a7e3374336839a8df82cf32078"
+   "img": "https://cdn.xxl.no/filespin/7f1e08a7e3374336839a8df82cf32078",
+   "sub": "bikes"
   },
   {
    "shop": "XXL",
@@ -2050,7 +2066,8 @@
    "before": 1399.0,
    "url": "https://www.xxl.no/helly-hansen-hh-duffel-bag-90l-duffelbag-90-liter-svart/p/1105163_1_Style",
    "checked": "2026-11-20T15:41+00:00",
-   "img": "https://cdn.xxl.no/filespin/8765bb560bf7463da18168fa9b9991b2"
+   "img": "https://cdn.xxl.no/filespin/8765bb560bf7463da18168fa9b9991b2",
+   "sub": "outdoor"
   },
   {
    "shop": "Jollyroom",
@@ -2080,7 +2097,8 @@
    "before": 1269.0,
    "url": "https://www.jollyroom.no/leker/radiostyrt/biler/syma-inferno-cruiser-radiostyrt-bil",
    "checked": "2026-11-20T15:42+00:00",
-   "img": "https://www.jollyroom.se/storage/576FA40DF054B9CCB08EFE98EF267C5794D56B9AC3274FDD1840BCE1D0C7E949/e7ce8826c02946e3bd5534717d1478e9/300-400-0-jpg.Jpeg/media/f0b07a47fdd64aeb8fbd17c760c1a4f3/51010-2139_1.jpeg"
+   "img": "https://www.jollyroom.se/storage/576FA40DF054B9CCB08EFE98EF267C5794D56B9AC3274FDD1840BCE1D0C7E949/e7ce8826c02946e3bd5534717d1478e9/300-400-0-jpg.Jpeg/media/f0b07a47fdd64aeb8fbd17c760c1a4f3/51010-2139_1.jpeg",
+   "sub": "toys"
   },
   {
    "shop": "Jollyroom",
@@ -2090,7 +2108,8 @@
    "before": 389.0,
    "url": "https://www.jollyroom.no/leker/tegning-hobby/tusjer-malersett/fippla-dobbelspiss-alkoholbasert-illustrasjonstusjer-120-stk",
    "checked": "2026-11-20T15:42+00:00",
-   "img": "https://www.jollyroom.se/storage/C563388DA516EBF8175AF0DD41FF545DDE565B787DAF741E0DFA0F49A26D2DC4/a1bbf0d9de664f1ea257fb494ffe5d5a/300-400-0-jpg.Jpeg/media/c55b9bd94fdf4d0b90cd0727111ee7a2/JH-MK-120-3689_1.jpeg"
+   "img": "https://www.jollyroom.se/storage/C563388DA516EBF8175AF0DD41FF545DDE565B787DAF741E0DFA0F49A26D2DC4/a1bbf0d9de664f1ea257fb494ffe5d5a/300-400-0-jpg.Jpeg/media/c55b9bd94fdf4d0b90cd0727111ee7a2/JH-MK-120-3689_1.jpeg",
+   "sub": "toys"
   },
   {
    "shop": "Jollyroom",
@@ -2100,7 +2119,8 @@
    "before": 4499.0,
    "url": "https://www.jollyroom.no/leker/elbiler-elkjoretoyer/biler/caterpillar-elektrisk-kjorbar-utv-gul",
    "checked": "2026-11-20T15:42+00:00",
-   "img": "https://www.jollyroom.se/storage/4C164E562A0174CD2144CB572B5D4F7550786C59FAADB9593DFBD8F1D00F2D2F/a780334654ed4fd2852a9d1218a697bc/300-400-0-jpg.Jpeg/media/d00376877ffc4791bf534ecd7fe93d46/70503202RLI-YELLOW-2896_1.jpeg"
+   "img": "https://www.jollyroom.se/storage/4C164E562A0174CD2144CB572B5D4F7550786C59FAADB9593DFBD8F1D00F2D2F/a780334654ed4fd2852a9d1218a697bc/300-400-0-jpg.Jpeg/media/d00376877ffc4791bf534ecd7fe93d46/70503202RLI-YELLOW-2896_1.jpeg",
+   "sub": "toys"
   },
   {
    "shop": "Jollyroom",
@@ -2110,7 +2130,8 @@
    "before": 869.0,
    "url": "https://www.jollyroom.no/leker/elektronikk-media/headset-hoyttalere/cloudberry-castle-disko-karaokesett-med-2-tradlose-mikrofoner",
    "checked": "2026-11-20T15:42+00:00",
-   "img": "https://www.jollyroom.se/storage/70C8DB601E45EC452C6A987E3C0373EE00CC3B7471A065D8313A444856F36683/89293093795347aabfd21cf6734e270b/300-400-0-jpg.Jpeg/media/e50a0e7646f7464f9b5f09f6fcb5bcd1/7878B-2974_1.jpeg"
+   "img": "https://www.jollyroom.se/storage/70C8DB601E45EC452C6A987E3C0373EE00CC3B7471A065D8313A444856F36683/89293093795347aabfd21cf6734e270b/300-400-0-jpg.Jpeg/media/e50a0e7646f7464f9b5f09f6fcb5bcd1/7878B-2974_1.jpeg",
+   "sub": "toys"
   },
   {
    "shop": "Jollyroom",
@@ -2120,7 +2141,8 @@
    "before": 779.0,
    "url": "https://www.jollyroom.no/leker/radiostyrt/kraner/silverlit-radiostyrt-kran-tooko",
    "checked": "2026-11-20T15:42+00:00",
-   "img": "https://www.jollyroom.se/storage/14BB489A3DA8CBE24A6073A3537B053D6F06016722B1DB48DB4095FA1639C4BF/d7cd956c6cac46d0ba9351c410d28f33/300-400-0-jpg.Jpeg/media/10d8ee9a8477422f8f8ef6b1cbcbb597/81488-3528_1.jpeg"
+   "img": "https://www.jollyroom.se/storage/14BB489A3DA8CBE24A6073A3537B053D6F06016722B1DB48DB4095FA1639C4BF/d7cd956c6cac46d0ba9351c410d28f33/300-400-0-jpg.Jpeg/media/10d8ee9a8477422f8f8ef6b1cbcbb597/81488-3528_1.jpeg",
+   "sub": "toys"
   },
   {
    "shop": "Jollyroom",
@@ -2149,7 +2171,8 @@
    "before": 1795.0,
    "url": "https://www.jollyroom.no/barnevogner/vognposer/vintervognposer/nordlys-thyra-lammeskinnvognpose-svart-hvit",
    "checked": "2026-11-20T15:42+00:00",
-   "img": "https://www.jollyroom.se/storage/6EEE53801398DE71B9A70FE4CF2586F3B22CF32E6D5DDDCC1E636932D9F2C79F/698746bd130d4207a3ac6083661eb597/300-400-0-jpg.Jpeg/media/5241c1c5691741b689bd4f898d54eeda/1956510_NLYS-Thyra-SvartVit-1882_1.jpeg"
+   "img": "https://www.jollyroom.se/storage/6EEE53801398DE71B9A70FE4CF2586F3B22CF32E6D5DDDCC1E636932D9F2C79F/698746bd130d4207a3ac6083661eb597/300-400-0-jpg.Jpeg/media/5241c1c5691741b689bd4f898d54eeda/1956510_NLYS-Thyra-SvartVit-1882_1.jpeg",
+   "sub": "baby"
   },
   {
    "shop": "Jollyroom",
@@ -2187,7 +2210,8 @@
    "before": 1399.0,
    "url": "https://www.jollyroom.no/babyutstyr/barnestoler-tilbehor/matstoler/beemoo-care-dine-matstol-truffle-beige",
    "checked": "2026-11-20T15:42+00:00",
-   "img": "https://www.jollyroom.se/storage/C298E2F731454EE1E4FDBB6AE65F0CE61C48864C3CD4271E4B9F082EE3BC43C8/f05774f6a0924f30ab5f394d00e3007c/300-400-0-jpg.Jpeg/media/d02e7ba77ceb46b6a2e67faa660ac248/BM-502N-BEIGE-1_5.jpeg"
+   "img": "https://www.jollyroom.se/storage/C298E2F731454EE1E4FDBB6AE65F0CE61C48864C3CD4271E4B9F082EE3BC43C8/f05774f6a0924f30ab5f394d00e3007c/300-400-0-jpg.Jpeg/media/d02e7ba77ceb46b6a2e67faa660ac248/BM-502N-BEIGE-1_5.jpeg",
+   "sub": "baby"
   },
   {
    "shop": "Jollyroom",
