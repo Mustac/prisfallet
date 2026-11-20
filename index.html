@@ -376,7 +376,7 @@ const BASIS={v:"Laveste pris siste 30 dager",f:"Førpris (butikkens oppgitte)"};
 const $=id=>document.getElementById(id);
 // anonymous usage log (no cookies, no IDs): what people search, open and click
 const TRACK=/(^|\.)prisfallet\.(no|pages\.dev)$/.test(location.hostname);
-function track(o){if(!TRACK)return;try{const b=JSON.stringify(o);
+function track(o){if(!TRACK)return;try{o.dev=innerWidth<768?"mobil":innerWidth<1100?"nettbrett":"pc";const b=JSON.stringify(o);
   if(!(navigator.sendBeacon&&navigator.sendBeacon("/api/log",new Blob([b],{type:"application/json"}))))
     fetch("/api/log",{method:"POST",body:b,keepalive:true,headers:{"Content-Type":"application/json"}}).catch(()=>{});}catch(e){}}
 let qTimer=0,qLast="",SHEET=null;
@@ -537,7 +537,7 @@ $("cats").onclick=e=>{const b=e.target.closest(".cat");if(!b)return;S.cat=b.data
   window.scrollTo({top:$("cats").offsetTop-10,behavior:"smooth"});};
 $("subs").onclick=e=>{const b=e.target.closest(".chip");if(!b)return;const k=b.dataset.sub;
   if(!k)S.subs.clear();else S.subs.has(k)?S.subs.delete(k):S.subs.add(k);S.brand="";setHash();render();};
-$("srcs").onclick=e=>{const b=e.target.closest(".src");if(!b)return;const s=b.dataset.shop;
+$("srcs").onclick=e=>{const b=e.target.closest(".src");if(!b)return;const s=b.dataset.shop;if(!S.shops.has(s))track({t:"filter",f:"shop",v:s});
   S.shops.has(s)?S.shops.delete(s):S.shops.add(s);render();};
 $("grid").onclick=e=>{if(e.target.id==="morebtn"){LIMIT+=60;render(true);return;}const c=e.target.closest(".card");if(c)openSheet(D[+c.dataset.id]);};
 $("hint").onclick=e=>{if(e.target.id==="showall"){S.min=0;$("min").value=0;$("minv").textContent="0%";render();}};
@@ -545,14 +545,17 @@ $("q").oninput=e=>{S.q=e.target.value.toLowerCase().trim();render();
   clearTimeout(qTimer);qTimer=setTimeout(()=>{const q=S.q;if(q.length<2||q===qLast)return;qLast=q;
     track({t:"search",q,n:D.filter(d=>match(d,{ignoreMin:true})).length});},1500);};
 $("sheet").addEventListener("click",e=>{const a=e.target.closest("a.pri");if(a&&SHEET)track({t:"click",d:SHEET.name,s:SHEET.shop,c:SHEET.cat});});
-$("sort").onchange=e=>{S.sort=e.target.value;render();};
-$("min").oninput=e=>{S.min=+e.target.value;$("minv").textContent=S.min+"%";render();};
-$("pmin").oninput=e=>{S.pmin=e.target.value;render();};
-$("pmax").oninput=e=>{S.pmax=e.target.value;render();};
+$("sort").onchange=e=>{S.sort=e.target.value;render();track({t:"filter",f:"sort",v:S.sort});};
+let fTimer={};const trackLater=(f,v)=>{clearTimeout(fTimer[f]);fTimer[f]=setTimeout(()=>track({t:"filter",f,v:String(v)}),1500);};
+(()=>{let r="direct";try{if(document.referrer){const h=new URL(document.referrer).hostname.replace(/^www\./,"");if(!/(^|\.)prisfallet\.(no|pages\.dev)$/.test(h))r=h;else r="";}}catch(e){}
+  if(r)track({t:"visit",r,c:location.hash.slice(1).split("-")[0]||""});})();
+$("min").oninput=e=>{S.min=+e.target.value;$("minv").textContent=S.min+"%";render();trackLater("min",S.min);};
+$("pmin").oninput=e=>{S.pmin=e.target.value;render();trackLater("price",(S.pmin||0)+"-"+(S.pmax||""));};
+$("pmax").oninput=e=>{S.pmax=e.target.value;render();trackLater("price",(S.pmin||0)+"-"+(S.pmax||""));};
 $("real").onchange=e=>{S.real=e.target.checked;render();};
 $("reconly").onchange=e=>{S.rec=e.target.checked;render();};
 $("noclub").onchange=e=>{S.noclub=e.target.checked;render();};
-$("brand").onchange=e=>{S.brand=e.target.value;render();};
+$("brand").onchange=e=>{S.brand=e.target.value;render();if(S.brand)track({t:"filter",f:"brand",v:S.brand});};
 $("shops").onchange=e=>{const s=e.target.dataset.shop;if(!s)return;e.target.checked?S.shops.add(s):S.shops.delete(s);render();};
 $("pills").onclick=e=>{const p=e.target.closest(".pill");if(!p)return;const k=p.dataset.k;
   if(k==="q"){S.q="";$("q").value="";}
