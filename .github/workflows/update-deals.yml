@@ -50,4 +50,16 @@ jobs:
           else
             git commit -m "Daily deals update $(date -u +%F)"
             git push
+            echo "changed=1" >> "$GITHUB_OUTPUT"
           fi
+        id: save
+
+      - name: Tell search engines (IndexNow - Bing, Yandex, Seznam, Naver)
+        if: steps.save.outputs.changed == '1'
+        continue-on-error: true
+        run: |
+          sleep 90   # let Cloudflare Pages deploy the new data first
+          curl -sS -X POST https://api.indexnow.org/indexnow \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -d '{"host":"prisfallet.no","key":"beb31fe7a19275fa2d6170f866e2922d","keyLocation":"https://prisfallet.no/beb31fe7a19275fa2d6170f866e2922d.txt","urlList":["https://prisfallet.no/","https://prisfallet.no/black-week"]}' \
+            -w "\nIndexNow HTTP %{http_code}\n"
