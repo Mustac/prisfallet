@@ -321,6 +321,12 @@ aside::-webkit-scrollbar-thumb,.sheet::-webkit-scrollbar-thumb{border-color:var(
   .sheet .x{position:fixed;top:12px;right:12px;z-index:30;width:40px;height:40px}
   .ov .sheet{transform:translateY(24px)}
 }
+/* popup: share button in the top-right corner, close button left of it */
+.sheet .x{right:10px}
+.sheet .x#x{right:52px}
+.shrx{display:flex;align-items:center;justify-content:center;padding:0;color:#fff}
+.sheet .thumb .shrx svg{width:17px!important;height:17px!important;opacity:1!important;stroke:#fff!important;fill:none!important;position:static!important;transform:none!important;margin:0!important;inset:auto!important}
+@media(max-width:699px){.sheet .x{right:12px}.sheet .x#x{right:60px}}
 </style>
 </head>
 <body>
@@ -665,7 +671,7 @@ function openSheet(d){
   const refTxt=d.ref==="v"?"Sammenlignet med den laveste prisen Prisfallet.no selv har registrert for produktet de siste 30 dagene.":direct?"Sammenlignet med førprisen butikken selv oppgir på produktsiden. Butikken er ansvarlig for at førprisen er riktig.":"Sammenlignet med førprisen butikken oppgir i produktfeeden sin. Prisfallet.no har ikke fulgt produktet i 30 dager ennå, så vi kan ikke bekrefte at det var laveste pris i den perioden.";
   const when=d.checked?new Date(d.checked).toLocaleString("nb-NO",{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"}):(META.date||"");
   $("sheet").innerHTML=`
-   <div class="thumb${d.img?" has-img":""}" style="--c:${c};position:relative">${ico(d.sub)}${d.img?`<img alt="" src="${esc(d.img)}"><span class="photo-tag">Foto: ${esc(d.shop)}</span>`:""}<span class="badge">-${d.pct}%</span>${d.flag==="rec"?'<span class="rec" style="right:52px">REKORDLAV</span>':""}<span class="brandtag">${esc(d.brand)}</span><button class="x" id="x">✕</button></div>
+   <div class="thumb${d.img?" has-img":""}" style="--c:${c};position:relative">${ico(d.sub)}${d.img?`<img alt="" src="${esc(d.img)}"><span class="photo-tag">Foto: ${esc(d.shop)}</span>`:""}<span class="badge">-${d.pct}%</span>${d.flag==="rec"?'<span class="rec" style="right:96px">REKORDLAV</span>':""}<span class="brandtag">${esc(d.brand)}</span><button class="x" id="x" aria-label="Lukk">✕</button><button class="x shrx" id="shrsheet" aria-label="Del tilbudet" title="Del">${SHARE_SVG}</button></div>
    <div class="sb">
     <div class="meta">${esc(CAT[d.cat].name)} › ${esc(SUBNAME[d.sub])} · ${esc(d.shop)}</div>
     <h3>${esc(d.name)}</h3>
@@ -681,7 +687,7 @@ function openSheet(d){
     </div>
     ${d.until?`<div class="note"><b>Tilbudet gjelder til ${new Date(d.until+"T12:00").toLocaleDateString("nb-NO",{day:"numeric",month:"long"})}</b> (ifølge butikken).</div>`:""}
     <div class="note">Selges av ${esc(d.shop)} · ${direct?`pris sjekket på butikkens nettside ${esc(when)}`:`pris fra produktfeeden via ${esc(NET[d.net]||d.net)}, ${esc(when)}`}. Prisene kan endre seg, så sjekk prisen i butikken før du kjøper.</div>
-    <div class="acts"><button class="shrbtn" type="button" id="shrsheet">${SHARE_SVG}Del</button>${aff?`<a class="pri" target="_blank" rel="sponsored noopener" href="${esc(d.url)}">Se tilbud (annonselenke)</a>`:`<a class="pri" target="_blank" rel="nofollow noopener" href="${esc(d.url)}">Gå til ${esc(d.shop)}</a>`}</div>
+    <div class="acts">${aff?`<a class="pri" target="_blank" rel="sponsored noopener" href="${esc(d.url)}">Se tilbud (annonselenke)</a>`:`<a class="pri" target="_blank" rel="nofollow noopener" href="${esc(d.url)}">Gå til ${esc(d.shop)}</a>`}</div>
    </div>`;
   wireImgs($("sheet"));
   $("ov").classList.add("show");lockPage();$("sheet").scrollTop=0;
