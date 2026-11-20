@@ -38,3 +38,15 @@ not re-checked within 48 h). Then commit + push; Cloudflare deploys in ~1 min.
   Pages are client-rendered: image from listing img data-src (jollyroom.se/storage/...).
 - Not done yet: Clas Ohlson, Maxkjøp, Lampegiganten, Kicks, Lyko, Lekekassen, Lekmer, Babyshop,
   Outnorth, Stormberg. Specs missing for Komplett, Power, Proshop, XXL, Jollyroom.
+
+## Lekekassen (added 2026-11-20)
+- Listing: /black-november (Magento). Fetch `/black-november?p=N&product_list_limit=48` in the browser and parse `li.product-item`.
+- Price: `[data-price-type=finalPrice]` / `[data-price-type=oldPrice]` `data-price-amount` (the visible text has other numbers).
+- Image: the img `data-src` (d189539ycils2q.cloudfront.net/media/catalog/product/cache/<hash>/…). In stock = has a `tocart` button.
+
+## Power, more categories (2026-11-20)
+- Also collect /kampanje/blackfriday/{hvitevarer,kjoekken,stoevsugere,kjoekkenmaskiner,skjoennhet-og-velvaere}/ and load with `tools/load_shop.py Power --append`.
+- Bad listing titles like "MONTERING: DIREKTE PÅ DØR" → use the name from the spec lines or the URL slug.
+
+## tools/load_shop.py
+- Tab-separated: title, brand, price, before, url, img, until, sub, specs(;). Replaces a shop's list; `--append` keeps the shop's other deals.
