@@ -164,6 +164,16 @@ footer a{color:var(--ink)}
 .closef{display:none;width:100%;margin-top:12px;background:var(--acc);color:#111;border:none;border-radius:10px;padding:11px;font-weight:600;cursor:pointer}
 .adbar{background:#1b1b22;border-bottom:1px solid var(--line);color:var(--ink);font-size:12.5px;text-align:center;padding:7px 12px}
 .adbar b{background:var(--acc);color:#111;border-radius:4px;padding:1px 6px;margin-right:4px}
+[hidden]{display:none!important}
+.launch{padding:56px 18px 30px;max-width:760px}
+.launch h1{font-family:"Bricolage Grotesque",sans-serif;font-size:clamp(34px,6vw,56px);letter-spacing:-1.5px;line-height:1.02;margin:0 0 14px}
+.launch h1 span{color:var(--acc)}
+.launch p{color:#d8d8d4;font-size:17px;line-height:1.6;margin:0 0 14px}
+.launch ul{list-style:none;padding:0;margin:22px 0;display:grid;gap:10px}
+.launch li{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px 14px;color:#d8d8d4}
+.launch li b{color:var(--ink)}
+.launch .cta{display:inline-block;background:var(--acc);color:#111;font-weight:700;text-decoration:none;border-radius:12px;padding:12px 18px;margin-top:6px}
+.launch .when{display:inline-block;background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:13px;color:var(--mute);margin-bottom:16px}
 .demo{background:#ffcf3a;color:#111;font-size:13px;font-weight:600;text-align:center;padding:8px 12px}
 .basis{font-size:11px;color:var(--mute);margin-top:4px}.basis.v{color:#4be3a0}
 .card .body{position:relative}
@@ -177,7 +187,19 @@ footer .links a{color:var(--ink);text-decoration:underline}
 
 <div class="adbar"><b>Annonse</b> / Inneholder annonselenker — Prisfallet.no mottar provisjon ved kjøp eller klikk via lenkene.</div>
 <div class="demo" id="demo" hidden>Eksempeldata — dette er ikke ekte tilbud. Siden viser ekte tilbud når affiliate-feedene er koblet til.</div>
-<header class="wrap">
+<section class="wrap launch" id="launch" hidden>
+  <div class="when">Black Friday er fredag 27. november</div>
+  <h1>Prisfallet.no åpner <span>snart</span></h1>
+  <p>Her samler vi de største prisfallene i norske nettbutikker på ett sted. Vi kobler nå til butikkenes offisielle produktfeeder, og de første tilbudene dukker opp her så snart butikkene er klare.</p>
+  <ul>
+    <li><b>Bare store rabatter.</b> Minst 30&nbsp;% rabatt, og bare varer som faktisk er på lager.</li>
+    <li><b>Ærlige førpriser.</b> Vi viser alltid hva rabatten er regnet ut fra – butikkens oppgitte førpris eller laveste pris siste 30 dager.</li>
+    <li><b>Alt på ett sted.</b> Elektronikk, data, gaming, hvitevarer, kjøkken, leker og mer – oppdatert hver dag.</li>
+  </ul>
+  <p>Mens du venter: les guiden vår om hvordan du avslører falske Black Week-tilbud.</p>
+  <a class="cta" href="black-week.html">Slik avslører du falske tilbud →</a>
+</section>
+<header class="wrap" id="apphead">
   <div class="brand"><div class="logo" id="home">prisfallet<span>.</span>no</div><div class="tag">Bare de store rabattene fra norske nettbutikker · hentet fra butikkenes offisielle produktfeeder</div></div>
   <div class="srchead"><span>Butikker</span><small id="srcsum"></small></div>
   <div class="srcs" id="srcs"></div>
@@ -185,7 +207,7 @@ footer .links a{color:var(--ink);text-decoration:underline}
   <div class="subs" id="subs"></div>
 </header>
 
-<div class="wrap layout">
+<div class="wrap layout" id="applayout">
   <aside id="side">
     <h4>Sorter</h4>
     <select id="sort">
@@ -229,7 +251,7 @@ footer .links a{color:var(--ink);text-decoration:underline}
 <footer>
   <div class="wrap">
     <p><b>Annonse.</b> Alle butikklenker på Prisfallet.no er annonselenker. Hvis du klikker eller kjøper via dem, kan Prisfallet.no få provisjon fra butikken eller affiliate-nettverket. Det endrer aldri prisen du betaler.</p>
-    <p>Priser, produktnavn og bilder kommer fra de offisielle produktfeedene butikkene publiserer gjennom affiliate-nettverk (<span id="netlist">Adtraction, Awin, Daisycon, Kelkoo</span>). Bildene vises direkte fra butikken eller nettverket og kopieres ikke. Oppdateres én gang i døgnet.</p>
+    <p>Priser, produktnavn og bilder kommer fra de offisielle produktfeedene butikkene publiserer gjennom affiliate-nettverk (<span id="netlist">Adtraction, Awin og Daisycon</span>). Bildene vises direkte fra butikken eller nettverket og kopieres ikke. Oppdateres én gang i døgnet.</p>
     <p><b>Slik viser vi rabatter.</b> «Førpris (butikkens oppgitte)» er førprisen butikken oppgir i feeden sin. «Laveste pris siste 30 dager» er den laveste prisen Prisfallet.no selv har registrert for produktet de siste 30 dagene – den brukes bare når vi faktisk har 30 dager med egen prishistorikk. Vi viser bare varer som er på lager og har minst 30 % rabatt. Prisfallet.no er ikke tilknyttet noen butikk.</p>
     <p class="links"><a href="black-week.html">Black Week 2026: unngå falske tilbud</a> · <a href="om.html">Om Prisfallet</a> · <a href="kontakt.html">Kontakt</a> · <a href="personvern.html">Personvern</a></p>
   </div>
@@ -583,7 +605,7 @@ $("closef").onclick=()=>{$("side").classList.remove("show");unlockPage();};
 window.addEventListener("hashchange",()=>{readHash();render();});
 
 loadData().then(()=>{
-  if(META.demo)$("demo").hidden=false;
+  if(META.demo){$("launch").hidden=false;$("apphead").hidden=true;$("applayout").hidden=true;return;}
   if(!D.length){$("grid").innerHTML='<div class="empty">Ingen tilbud ennå. Kom tilbake snart.</div>';$("srcsum").textContent="Ingen butikker koblet til ennå";return;}
   readHash();render();}).catch(e=>{$("grid").innerHTML='<div class="empty">Kunne ikke laste tilbudene. Last inn siden på nytt.</div>';console.error(e);});
 })();
