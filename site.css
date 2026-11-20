@@ -74,3 +74,13 @@ footer nav a:hover,footer nav button:hover{color:var(--acc-text)}
 .ck .b{display:flex;gap:8px;justify-content:flex-end}
 .ck button{font:inherit;font-weight:600;border-radius:9px;padding:9px 16px;cursor:pointer;border:1px solid var(--line);background:var(--panel2);color:var(--ink)}
 .ck button.y{background:var(--acc);border-color:var(--acc);color:var(--acc-ink)}
+/* scrollbars in the site's colours */
+html{scrollbar-color:color-mix(in srgb,var(--mute) 45%,var(--bg)) var(--bg)}
+aside,.sheet{scrollbar-width:thin;scrollbar-color:color-mix(in srgb,var(--mute) 40%,var(--panel)) transparent}
+::-webkit-scrollbar{width:12px;height:12px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:color-mix(in srgb,var(--mute) 45%,var(--bg));border-radius:999px;border:3px solid var(--bg)}
+::-webkit-scrollbar-thumb:hover{background:var(--acc)}
+aside::-webkit-scrollbar,.sheet::-webkit-scrollbar{width:8px}
+aside::-webkit-scrollbar-track,.sheet::-webkit-scrollbar-track{background:transparent}
+aside::-webkit-scrollbar-thumb,.sheet::-webkit-scrollbar-thumb{border-color:var(--panel)}
