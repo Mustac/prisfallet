@@ -29,7 +29,7 @@ const refHost = (r) => {
   return /^[a-z0-9.-]+$/i.test(t) ? t.toLowerCase() : null;
 };
 
-export async function onRequestPost({ request, env, waitUntil }) {
+export async function onRequestPost({ request, env }) {
   try {
     const origin = request.headers.get("Origin") || request.headers.get("Referer") || "";
     let host = "";
@@ -66,12 +66,7 @@ export async function onRequestPost({ request, env, waitUntil }) {
       b.t === "filter" ? clean(b.v, 60) : null
     ).run();
 
-    // Retention: occasionally delete events older than 13 months (stated on /personvern).
-    if (Math.random() < 0.002) {
-      const cutoff = now.getTime() - 396 * 24 * 3600 * 1000;
-      const del = env.DB.prepare("DELETE FROM events WHERE ts < ?").bind(cutoff).run();
-      if (waitUntil) waitUntil(del); else await del;
-    }
+    // Data is kept until the owner deletes it (anonymous, no personal data).
     return new Response(null, { status: 204 });
   } catch (e) {
     return new Response(null, { status: 204 });

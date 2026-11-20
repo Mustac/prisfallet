@@ -151,7 +151,11 @@ export async function onRequest(ctx) {
 
   if (route === "stats" && method === "GET") {
     const url = new URL(request.url);
-    const days = Math.max(1, Math.min(395, parseInt(url.searchParams.get("days") || "30", 10) || 30));
+    let days;
+    if (url.searchParams.get("days") === "all") {
+      const first = await db.prepare("SELECT MIN(day) d FROM events").first();
+      days = first?.d ? Math.max(1, Math.round((Date.parse(new Date().toISOString().slice(0, 10)) - Date.parse(first.d)) / 864e5) + 1) : 1;
+    } else days = Math.max(1, Math.min(3650, parseInt(url.searchParams.get("days") || "30", 10) || 30));
     return json(await stats(db, days, url.origin));
   }
 
