@@ -17,6 +17,8 @@ for line in sys.stdin:
     d = hits[0]
     if rating and reviews and float(rating) > 0 and int(float(reviews)) > 0:
         d["rating"] = round(float(rating), 1); d["reviews"] = int(float(reviews))
+    if len(p) >= 5 and p[4].strip().startswith("https://"):
+        d["img"] = p[4].strip()
     sp = [s.strip() for s in specs.split(";") if s.strip()][:4]
     if sp:
         d["specs"] = sp

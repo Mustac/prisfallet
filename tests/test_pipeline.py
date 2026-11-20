@@ -157,8 +157,8 @@ def test_manual_deals_expire_and_reject_bad_links(tmp_path):
     import update_deals as u
     now = dt.datetime(2026, 11, 20, 16, 0, tzinfo=dt.timezone.utc)
     deals = [
-        {"shop": "Elkjøp", "title": "Fresh laptop", "price": 5000, "before": 9000, "url": "https://www.elkjop.no/p/1", "checked": "2026-11-20T15:00:00Z"},
-        {"shop": "Elkjøp", "title": "Old laptop", "price": 5000, "before": 9000, "url": "https://www.elkjop.no/p/2", "checked": "2026-11-17T15:00:00Z"},
+        {"shop": "Elkjøp", "title": "Fresh laptop", "price": 5000, "before": 9000, "url": "https://www.elkjop.no/p/1", "img": "https://www.elkjop.no/image/x/1/p.jpg", "checked": "2026-11-20T15:00:00Z"},
+        {"shop": "Elkjøp", "title": "Old laptop", "price": 5000, "before": 9000, "url": "https://www.elkjop.no/p/2", "img": "https://www.elkjop.no/image/x/2/p.jpg", "checked": "2026-11-17T15:00:00Z"},
         {"shop": "X", "title": "Via prisjakt", "price": 1, "before": 2, "url": "https://www.prisjakt.no/x", "checked": "2026-11-20T15:00:00Z"},
         {"shop": "X", "title": "Not https", "price": 1, "before": 2, "url": "http://x.no/x", "checked": "2026-11-20T15:00:00Z"},
     ]

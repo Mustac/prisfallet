@@ -96,11 +96,13 @@ def manual_offers(path, now=None):
             url = m["url"].strip()
             if not url.startswith("https://") or "prisjakt" in url:
                 continue
+            if not str(m.get("img", "")).startswith("https://"):
+                continue   # his rule: every product shown has a real picture
             out.append({
                 "source_network": "direct", "shop": m["shop"].strip(), "sku": url,
                 "title": m["title"].strip(), "brand": (m.get("brand") or "").strip(),
                 "current_price": float(m["price"]), "before_price": float(m["before"]) if m.get("before") else None,
-                "image_url": "", "affiliate_url": url, "in_stock": m.get("in_stock", True),
+                "image_url": m["img"] if str(m.get("img", "")).startswith("https://") else "", "affiliate_url": url, "in_stock": m.get("in_stock", True),
                 "category_text": m.get("cat", ""), "checked": checked.astimezone(dt.timezone.utc).isoformat(timespec="minutes"),
                 "specs": [str(x)[:80] for x in (m.get("specs") or [])][:4],
                 "rating": float(m["rating"]) if m.get("rating") else None,

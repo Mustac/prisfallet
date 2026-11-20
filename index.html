@@ -478,7 +478,7 @@ function renderPills(){
 function card(d){
   const c=CAT[d.cat].c, cls=d.pct>=50?"":d.pct>=30?" mid":" low";
   return `<div class="card" data-id="${d.id}">
-   <div class="thumb${d.img?" has-img":""}" style="--c:${c}">${ico(d.sub)}${d.img?`<img loading="lazy" referrerpolicy="no-referrer" alt="" src="${esc(d.img)}">`:""}<span class="badge${cls}">-${d.pct}%</span>${d.flag==="rec"?'<span class="rec">REKORDLAV</span>':""}<span class="brandtag">${esc(d.brand)}</span></div>
+   <div class="thumb${d.img?" has-img":""}" style="--c:${c}">${ico(d.sub)}${d.img?`<img loading="lazy" alt="" src="${esc(d.img)}">`:""}<span class="badge${cls}">-${d.pct}%</span>${d.flag==="rec"?'<span class="rec">REKORDLAV</span>':""}<span class="brandtag">${esc(d.brand)}</span></div>
    <div class="body">
      <div class="meta">${esc(d.shop)} · ${esc(SUBNAME[d.sub])}</div>
      <div class="name">${esc(d.name)}</div>
@@ -532,7 +532,7 @@ function openSheet(d){
   const refTxt=d.ref==="v"?"Sammenlignet med den laveste prisen Prisfallet.no selv har registrert for produktet de siste 30 dagene.":direct?"Sammenlignet med førprisen butikken selv oppgir på produktsiden. Butikken er ansvarlig for at førprisen er riktig.":"Sammenlignet med førprisen butikken oppgir i produktfeeden sin. Prisfallet.no har ikke fulgt produktet i 30 dager ennå, så vi kan ikke bekrefte at det var laveste pris i den perioden.";
   const when=d.checked?new Date(d.checked).toLocaleString("nb-NO",{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"}):(META.date||"");
   $("sheet").innerHTML=`
-   <div class="thumb${d.img?" has-img":""}" style="--c:${c};position:relative">${ico(d.sub)}${d.img?`<img referrerpolicy="no-referrer" alt="" src="${esc(d.img)}"><span class="photo-tag">Foto: ${esc(d.shop)}</span>`:""}<span class="badge">-${d.pct}%</span>${d.flag==="rec"?'<span class="rec" style="right:52px">REKORDLAV</span>':""}<span class="brandtag">${esc(d.brand)}</span><button class="x" id="x">✕</button></div>
+   <div class="thumb${d.img?" has-img":""}" style="--c:${c};position:relative">${ico(d.sub)}${d.img?`<img alt="" src="${esc(d.img)}"><span class="photo-tag">Foto: ${esc(d.shop)}</span>`:""}<span class="badge">-${d.pct}%</span>${d.flag==="rec"?'<span class="rec" style="right:52px">REKORDLAV</span>':""}<span class="brandtag">${esc(d.brand)}</span><button class="x" id="x">✕</button></div>
    <div class="sb">
     <div class="meta">${esc(CAT[d.cat].name)} › ${esc(SUBNAME[d.sub])} · ${esc(d.shop)}</div>
     <h3>${esc(d.name)}</h3>
