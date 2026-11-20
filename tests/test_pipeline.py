@@ -82,6 +82,24 @@ class Rules(unittest.TestCase):
         d = self.run_build([offer()])[0]
         self.assertEqual(d["affiliate_url"], "https://example.com/t?sku=1&aff=1")
 
+    def test_same_shop_two_networks_keeps_cheaper(self):
+        a = offer(now=600); a["source_network"] = "awin"
+        b = offer(now=550); b["source_network"] = "adtraction"
+        out = self.run_build([a, b])
+        self.assertEqual(len(out), 1)
+        self.assertEqual(out[0]["current_price"], 550)
+
+    def test_same_price_uses_network_priority(self):
+        a = offer(); a["source_network"] = "daisycon"
+        b = offer(); b["source_network"] = "adtraction"
+        out = self.run_build([a, b])
+        self.assertEqual(len(out), 1)
+        self.assertEqual(out[0]["source_network"], "adtraction")
+
+    def test_same_product_other_shop_kept_separately(self):
+        a = offer(); b = offer(); b["shop"] = "Annen Butikk"
+        self.assertEqual(len(self.run_build([a, b])), 2)
+
     def test_schema(self):
         d = self.run_build([offer()])[0]
         self.assertEqual(set(d), {"id", "shop", "source_network", "title", "brand", "category", "current_price",

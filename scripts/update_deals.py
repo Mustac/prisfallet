@@ -30,6 +30,14 @@ from classify import classify                    # noqa: E402
 
 MIN_DISCOUNT = float(os.environ.get("MIN_DISCOUNT", "0.30"))
 MAX_DISCOUNT = 0.90          # bigger "discounts" are almost always feed errors
+# When one shop's product comes through several networks at the same price, use the network
+# listed first (set to the network that pays more / tracks longer for that shop).
+NETWORK_PRIORITY = [n.strip() for n in os.environ.get(
+    "NETWORK_PRIORITY", "adtraction,awin,daisycon,kelkoo,prisjakt").split(",") if n.strip()]
+
+
+def _net_rank(network):
+    return NETWORK_PRIORITY.index(network) if network in NETWORK_PRIORITY else len(NETWORK_PRIORITY)
 HISTORY_DAYS = 30
 DATA = os.path.join(ROOT, "data")
 
@@ -140,10 +148,14 @@ def build(offers, history, today):
             "in_stock": True,
             "last_seen": today,
         }
-        # the same product from two networks: keep the cheaper one
+        # The same product from the same shop via two networks is one deal: keep the cheaper
+        # offer; at equal price keep the network that comes first in NETWORK_PRIORITY.
+        # (The same product in different shops stays as separate deals - the visitor chooses.)
         key = (deal["shop"].lower(), re.sub(r"\W+", "", deal["title"].lower()))
-        if key in seen and seen[key]["current_price"] <= deal["current_price"]:
-            continue
+        if key in seen:
+            old = seen[key]
+            if (old["current_price"], _net_rank(old["source_network"])) <= (deal["current_price"], _net_rank(deal["source_network"])):
+                continue
         seen[key] = deal
     deals = sorted(seen.values(), key=lambda d: (-d["discount_percent"], d["current_price"]))
     return deals
