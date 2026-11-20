@@ -374,6 +374,12 @@ const BASIS={v:"Laveste pris siste 30 dager",f:"Førpris (butikkens oppgitte)"};
 
 // ---------- state ----------
 const $=id=>document.getElementById(id);
+// anonymous usage log (no cookies, no IDs): what people search, open and click
+const TRACK=/(^|\.)prisfallet\.(no|pages\.dev)$/.test(location.hostname);
+function track(o){if(!TRACK)return;try{const b=JSON.stringify(o);
+  if(!(navigator.sendBeacon&&navigator.sendBeacon("/api/log",new Blob([b],{type:"application/json"}))))
+    fetch("/api/log",{method:"POST",body:b,keepalive:true,headers:{"Content-Type":"application/json"}}).catch(()=>{});}catch(e){}}
+let qTimer=0,qLast="",SHEET=null;
 let LIMIT=60;
 const S={cat:"",subs:new Set(),q:"",min:30,pmin:"",pmax:"",real:false,rec:false,noclub:false,shops:new Set(),brand:"",sort:"best"};
 const nok=n=>n.toLocaleString("nb-NO").replace(/\s/g," ")+" kr";
@@ -489,6 +495,7 @@ function render(keep){if(!keep)LIMIT=60;renderSources();renderCats();renderSubs(
 
 // ---------- detail sheet ----------
 function openSheet(d){
+  track({t:"view",d:d.name,s:d.shop,c:d.cat});SHEET=d;
   const c=CAT[d.cat].c, max=d.was;
   const refTxt=d.ref==="v"?"Sammenlignet med den laveste prisen Prisfallet.no selv har registrert for produktet de siste 30 dagene.":"Sammenlignet med førprisen butikken oppgir i produktfeeden sin. Prisfallet.no har ikke fulgt produktet i 30 dager ennå, så vi kan ikke bekrefte at det var laveste pris i den perioden.";
   $("sheet").innerHTML=`
@@ -526,7 +533,7 @@ function readHash(){
 }
 
 // ---------- events ----------
-$("cats").onclick=e=>{const b=e.target.closest(".cat");if(!b)return;S.cat=b.dataset.cat;S.subs=new Set();S.brand="";setHash();render();
+$("cats").onclick=e=>{const b=e.target.closest(".cat");if(!b)return;S.cat=b.dataset.cat;if(S.cat)track({t:"cat",c:S.cat});S.subs=new Set();S.brand="";setHash();render();
   window.scrollTo({top:$("cats").offsetTop-10,behavior:"smooth"});};
 $("subs").onclick=e=>{const b=e.target.closest(".chip");if(!b)return;const k=b.dataset.sub;
   if(!k)S.subs.clear();else S.subs.has(k)?S.subs.delete(k):S.subs.add(k);S.brand="";setHash();render();};
@@ -534,7 +541,10 @@ $("srcs").onclick=e=>{const b=e.target.closest(".src");if(!b)return;const s=b.da
   S.shops.has(s)?S.shops.delete(s):S.shops.add(s);render();};
 $("grid").onclick=e=>{if(e.target.id==="morebtn"){LIMIT+=60;render(true);return;}const c=e.target.closest(".card");if(c)openSheet(D[+c.dataset.id]);};
 $("hint").onclick=e=>{if(e.target.id==="showall"){S.min=0;$("min").value=0;$("minv").textContent="0%";render();}};
-$("q").oninput=e=>{S.q=e.target.value.toLowerCase().trim();render();};
+$("q").oninput=e=>{S.q=e.target.value.toLowerCase().trim();render();
+  clearTimeout(qTimer);qTimer=setTimeout(()=>{const q=S.q;if(q.length<2||q===qLast)return;qLast=q;
+    track({t:"search",q,n:D.filter(d=>match(d,{ignoreMin:true})).length});},1500);};
+$("sheet").addEventListener("click",e=>{const a=e.target.closest("a.pri");if(a&&SHEET)track({t:"click",d:SHEET.name,s:SHEET.shop,c:SHEET.cat});});
 $("sort").onchange=e=>{S.sort=e.target.value;render();};
 $("min").oninput=e=>{S.min=+e.target.value;$("minv").textContent=S.min+"%";render();};
 $("pmin").oninput=e=>{S.pmin=e.target.value;render();};
