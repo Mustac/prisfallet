@@ -109,6 +109,15 @@ h2{font-family:"Bricolage Grotesque",sans-serif;font-size:24px;margin:2px 0 4px;
 .now{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:21px}
 .was{color:var(--mute);text-decoration:line-through;font-size:13px}
 .save{color:var(--acc);font-size:12.5px;font-weight:600}
+.rate{font-size:12px;color:#f5c542;margin-top:2px}.rate span{color:var(--mute)}
+.card{position:relative}
+.pop{display:none;position:absolute;left:8px;right:8px;bottom:8px;z-index:3;background:rgba(17,17,20,.96);border:1px solid #50505c;border-radius:10px;padding:10px 12px;font-size:12.5px;line-height:1.45;pointer-events:none}
+.pop b{display:block;font-size:11px;color:var(--mute);font-weight:600;margin-bottom:4px}
+.pop li,.specs li{margin:0 0 3px}.pop ul,.specs ul{margin:0;padding-left:16px}
+@media(hover:hover){.card:hover .pop{display:block}}
+.specs{margin:14px 0 4px;padding:12px 14px;border:1px solid var(--line);border-radius:12px;font-size:13.5px}
+.specs h5{margin:0 0 6px;font-size:12px;color:var(--mute);font-weight:600}
+.rev{margin-top:10px;font-size:13.5px}.rev .st{color:#f5c542;font-weight:600}.rev a{color:var(--acc)}
 .refw{color:var(--warn);font-size:11px}
 .morebtn{grid-column:1/-1;margin:6px 0 10px;padding:13px;border-radius:12px;border:1px solid var(--line);background:var(--panel);color:var(--ink);font-weight:600;cursor:pointer}
 .morebtn:hover{border-color:var(--acc);color:var(--acc)}
@@ -388,7 +397,7 @@ async function loadData(){
     const verified=x.price_basis==="verified_30d_low";
     const was=verified?x.verified_30d_low:x.feed_before_price, now=x.current_price;
     return {id:i,name:x.title,brand:x.brand||"",src:x.shop,shop:x.shop,net:x.source_network,now,was,cat:SUB2CAT[sub],sub,
-      ref:verified?"v":"f",flag:"",img:x.image_url||"",url:x.affiliate_url,checked:x.checked||"",feedWas:x.feed_before_price,low30:x.verified_30d_low,
+      ref:verified?"v":"f",flag:"",img:x.image_url||"",url:x.affiliate_url,checked:x.checked||"",specs:x.specs||[],rating:x.rating||0,reviews:x.reviews||0,feedWas:x.feed_before_price,low30:x.verified_30d_low,
       pct:x.discount_percent,kr:was-now};});
   D.forEach(d=>d.score=d.pct*(d.ref==="v"?1:0.9)+Math.log10(Math.max(1,d.kr))*2);
 }
@@ -475,8 +484,9 @@ function card(d){
      <div class="name">${esc(d.name)}</div>
      <div class="prices"><span class="now">${nok(d.now)}</span><span class="was">${nok(d.was)}</span></div>
      <div class="save">Spar ${nok(d.kr)}</div>
+     ${d.rating?`<div class="rate">★ ${d.rating.toLocaleString("nb-NO")} <span>(${d.reviews})</span></div>`:""}
      <div class="basis${d.ref==="v"?" v":""}">mot ${BASIS[d.ref].toLowerCase()}</div>
-   </div></div>`;
+   </div>${d.specs.length?`<div class="pop" aria-hidden="true"><b>Nøkkelinfo</b><ul>${d.specs.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>`:""}</div>`;
 }
 const SORT={best:(a,b)=>b.score-a.score,pct:(a,b)=>b.pct-a.pct||b.kr-a.kr,kr:(a,b)=>b.kr-a.kr,low:(a,b)=>a.now-b.now,high:(a,b)=>b.now-a.now};
 function renderGrid(){
@@ -528,6 +538,8 @@ function openSheet(d){
     <h3>${esc(d.name)}</h3>
     <div class="prices"><span class="now" style="font-size:28px">${nok(d.now)}</span><span class="was">${nok(d.was)}</span></div>
     <div class="save">Du sparer ${nok(d.kr)} (${d.pct}%)</div>
+    ${d.specs.length?`<div class="specs"><h5>Nøkkelinfo</h5><ul>${d.specs.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>`:""}
+    ${d.rating?`<div class="rev"><span class="st">★ ${d.rating.toLocaleString("nb-NO")} av 5</span> fra ${d.reviews} kundevurderinger hos ${esc(d.shop)} · <a target="_blank" rel="${direct?"nofollow":"sponsored"} noopener" href="${esc(d.url)}">Les anmeldelsene hos ${esc(d.shop)}</a></div>`:""}
     <div class="chart"><h5>Prissammenligning</h5>
       <div class="brow"><span>${BASIS[d.ref]}</span><div class="tr"><div class="fl" style="width:100%;background:#6b6b78"></div></div><b>${nok(d.was)}</b></div>
       <div class="brow"><span>Pris nå</span><div class="tr"><div class="fl" style="width:${Math.max(3,d.now/max*100)}%;background:${c}"></div></div><b>${nok(d.now)}</b></div>

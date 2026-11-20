@@ -8,7 +8,12 @@
    "price": 4295.0,
    "before": 8995.0,
    "url": "https://www.elkjop.no/product/1075320",
-   "checked": "2026-11-20T15:25+00:00"
+   "checked": "2026-11-20T15:25+00:00",
+   "specs": [
+    "AMD Ryzen 3 5400U-prosessor",
+    "15,6\" IPS FullHD-skjerm",
+    "8 GB DDR4, 128 GB SSD-lagring"
+   ]
   },
   {
    "shop": "Elkjøp",
@@ -17,7 +22,12 @@
    "price": 5995.0,
    "before": 11995.0,
    "url": "https://www.elkjop.no/product/1058451",
-   "checked": "2026-11-20T15:25+00:00"
+   "checked": "2026-11-20T15:25+00:00",
+   "specs": [
+    "AMD Ryzen 5 7520U-prosessor",
+    "15,6\" FHD SVA-skjerm",
+    "16 GB LPDDR5 RAM, 512 GB SSD"
+   ]
   },
   {
    "shop": "Elkjøp",
@@ -26,7 +36,14 @@
    "price": 5495.0,
    "before": 10995.0,
    "url": "https://www.elkjop.no/product/1014151",
-   "checked": "2026-11-20T15:25+00:00"
+   "checked": "2026-11-20T15:25+00:00",
+   "rating": 4.8,
+   "reviews": 8,
+   "specs": [
+    "Snapdragon X1-prosessor",
+    "15,6\" IPS-skjerm",
+    "16 GB RAM, 512 GB SSD"
+   ]
   },
   {
    "shop": "Elkjøp",
@@ -35,7 +52,14 @@
    "price": 6795.0,
    "before": 12995.0,
    "url": "https://www.elkjop.no/product/911988",
-   "checked": "2026-11-20T15:25+00:00"
+   "checked": "2026-11-20T15:25+00:00",
+   "rating": 4.2,
+   "reviews": 37,
+   "specs": [
+    "AMD Ryzen 7 7730U-prosessor",
+    "15,6\" FHD SVA-skjerm",
+    "16 GB DDR4 RAM, 1 TB SSD"
+   ]
   },
   {
    "shop": "Elkjøp",
@@ -44,7 +68,14 @@
    "price": 1995.0,
    "before": 3995.0,
    "url": "https://www.elkjop.no/product/1039022",
-   "checked": "2026-11-20T15:25+00:00"
+   "checked": "2026-11-20T15:25+00:00",
+   "rating": 5.0,
+   "reviews": 1,
+   "specs": [
+    "MediaTek Kompanio 540-prosessor",
+    "14\" WUXGA IPS-skjerm",
+    "4 GB LPDDR5X RAM, 64 GB flashminne"
+   ]
   },
   {
    "shop": "Elkjøp",
@@ -53,7 +84,12 @@
    "price": 8995.0,
    "before": 16184.0,
    "url": "https://www.elkjop.no/product/1046959",
-   "checked": "2026-11-20T15:25+00:00"
+   "checked": "2026-11-20T15:25+00:00",
+   "specs": [
+    "Intel Core Ultra 5-prosessor",
+    "16\" IPS-skjerm",
+    "16 GB DDR5 RAM, 512 GB SSD"
+   ]
   },
   {
    "shop": "Elkjøp",
@@ -62,7 +98,14 @@
    "price": 1990.0,
    "before": 3290.0,
    "url": "https://www.elkjop.no/product/1130695",
-   "checked": "2026-11-20T15:25+00:00"
+   "checked": "2026-11-20T15:25+00:00",
+   "rating": 4.8,
+   "reviews": 10,
+   "specs": [
+    "40 mm-drivere, ANC",
+    "Trådløs Bluetooth-tilkobling",
+    "Opptil 34 t batteri (27 t med NC)"
+   ]
   },
   {
    "shop": "Elkjøp",
@@ -71,7 +114,14 @@
    "price": 3490.0,
    "before": 5390.0,
    "url": "https://www.elkjop.no/product/942967",
-   "checked": "2026-11-20T15:25+00:00"
+   "checked": "2026-11-20T15:25+00:00",
+   "rating": 4.7,
+   "reviews": 45,
+   "specs": [
+    "ANC, Aware Mode",
+    "Immersion Mode, CustomTune",
+    "Opptil 30 timers batteriliv"
+   ]
   },
   {
    "shop": "Elkjøp",
@@ -80,7 +130,14 @@
    "price": 790.0,
    "before": 1190.0,
    "url": "https://www.elkjop.no/product/895031",
-   "checked": "2026-11-20T15:25+00:00"
+   "checked": "2026-11-20T15:25+00:00",
+   "rating": 4.7,
+   "reviews": 317,
+   "specs": [
+    "Adaptiv ANC, IP68",
+    "11 mm driver, BassUp-teknologi",
+    "48 timer musikk med etui"
+   ]
   },
   {
    "shop": "Elkjøp",
@@ -89,7 +146,14 @@
    "price": 1990.0,
    "before": 2890.0,
    "url": "https://www.elkjop.no/product/654216",
-   "checked": "2026-11-20T15:25+00:00"
+   "checked": "2026-11-20T15:25+00:00",
+   "rating": 4.7,
+   "reviews": 704,
+   "specs": [
+    "Aktiv støydemping",
+    "Justerbar EQ, BT-multipunkt",
+    "Opptil 24 timers spilletid"
+   ]
   },
   {
    "shop": "Elkjøp",
@@ -98,7 +162,14 @@
    "price": 49990.0,
    "before": 129990.0,
    "url": "https://www.elkjop.no/product/1139619",
-   "checked": "2026-11-20T15:25+00:00"
+   "checked": "2026-11-20T15:25+00:00",
+   "rating": 4.8,
+   "reviews": 12,
+   "specs": [
+    "4K (2160p), Mini LED Pro - RGB, 144 Hz",
+    "Tizen, HDR, skjermspeiling",
+    "Mini LED local dimming"
+   ]
   },
   {
    "shop": "Elkjøp",
@@ -107,7 +178,14 @@
    "price": 19990.0,
    "before": 54990.0,
    "url": "https://www.elkjop.no/product/1083331",
-   "checked": "2026-11-20T15:25+00:00"
+   "checked": "2026-11-20T15:25+00:00",
+   "rating": 5.0,
+   "reviews": 1,
+   "specs": [
+    "4K (2160p), Mini LED, 144+ Hz",
+    "Google TV, Dolby Vision, skjermspeiling",
+    "Mini LED local dimming"
+   ]
   },
   {
    "shop": "Elkjøp",
@@ -116,7 +194,12 @@
    "price": 12990.0,
    "before": 34990.0,
    "url": "https://www.elkjop.no/product/1083265",
-   "checked": "2026-11-20T15:25+00:00"
+   "checked": "2026-11-20T15:25+00:00",
+   "specs": [
+    "4K (2160p), Mini LED, 144+ Hz",
+    "Google TV, Dolby Vision, HDR10, HLG",
+    "Mini LED local dimming"
+   ]
   },
   {
    "shop": "Elkjøp",
@@ -125,7 +208,14 @@
    "price": 6745.0,
    "before": 13490.0,
    "url": "https://www.elkjop.no/product/1039743",
-   "checked": "2026-11-20T15:25+00:00"
+   "checked": "2026-11-20T15:25+00:00",
+   "rating": 4.8,
+   "reviews": 3222,
+   "specs": [
+    "6,3\" AMOLED 120 Hz-skjerm",
+    "50+12+10 MP-kameraoppsett",
+    "4300 mAh batteri, trådløs lading"
+   ]
   },
   {
    "shop": "Elkjøp",
@@ -134,7 +224,14 @@
    "price": 3245.0,
    "before": 6490.0,
    "url": "https://www.elkjop.no/product/1059805",
-   "checked": "2026-11-20T15:25+00:00"
+   "checked": "2026-11-20T15:25+00:00",
+   "rating": 4.6,
+   "reviews": 30,
+   "specs": [
+    "6,7\" 120 Hz FHD+ AMOLED-skjerm",
+    "50+12+5 MP trippelkamera",
+    "5000 mAh batteri, 45 W hurtiglading"
+   ]
   },
   {
    "shop": "Elkjøp",
@@ -143,7 +240,14 @@
    "price": 1745.0,
    "before": 3490.0,
    "url": "https://www.elkjop.no/product/950275",
-   "checked": "2026-11-20T15:25+00:00"
+   "checked": "2026-11-20T15:25+00:00",
+   "rating": 4.4,
+   "reviews": 1040,
+   "specs": [
+    "6,7\" FHD+ AMOLED-skjerm",
+    "50+5+2 MP kameraoppsett",
+    "5000 mAh batteri, 25 W lading"
+   ]
   },
   {
    "shop": "Elkjøp",
@@ -152,7 +256,14 @@
    "price": 1690.0,
    "before": 3590.0,
    "url": "https://www.elkjop.no/product/942252",
-   "checked": "2026-11-20T15:25+00:00"
+   "checked": "2026-11-20T15:25+00:00",
+   "rating": 4.7,
+   "reviews": 277,
+   "specs": [
+    "1,34\" Super AMOLED-skjerm",
+    "Pulsmåling, EKG, BIA, SpO2",
+    "Bluetooth 5.3, Wi-Fi, NFC"
+   ]
   },
   {
    "shop": "Elkjøp",
@@ -161,7 +272,14 @@
    "price": 890.0,
    "before": 1890.0,
    "url": "https://www.elkjop.no/product/852447",
-   "checked": "2026-11-20T15:25+00:00"
+   "checked": "2026-11-20T15:25+00:00",
+   "rating": 4.2,
+   "reviews": 131,
+   "specs": [
+    "1,3\" berøringsskjerm",
+    "IP65/68, GPS",
+    "Forhåndsinstallert norsk nano-SIM"
+   ]
   },
   {
    "shop": "Elkjøp",
@@ -170,7 +288,14 @@
    "price": 299.0,
    "before": 699.0,
    "url": "https://www.elkjop.no/product/922809",
-   "checked": "2026-11-20T15:25+00:00"
+   "checked": "2026-11-20T15:25+00:00",
+   "rating": 4.8,
+   "reviews": 40,
+   "specs": [
+    "Action, RPG",
+    "Oppfølgeren til Ghost of Tsushima",
+    "PlayStation 5"
+   ]
   },
   {
    "shop": "Elkjøp",
@@ -179,7 +304,14 @@
    "price": 877.0,
    "before": 1789.0,
    "url": "https://www.elkjop.no/product/841841",
-   "checked": "2026-11-20T15:25+00:00"
+   "checked": "2026-11-20T15:25+00:00",
+   "rating": 4.6,
+   "reviews": 15,
+   "specs": [
+    "50 mm drivere med titanmembran",
+    "Bluetooth, trådløs, USB-C",
+    "Opptil 90 timer batteriliv"
+   ]
   },
   {
    "shop": "Elkjøp",
@@ -188,7 +320,14 @@
    "price": 999.0,
    "before": 1999.0,
    "url": "https://www.elkjop.no/product/913979",
-   "checked": "2026-11-20T15:25+00:00"
+   "checked": "2026-11-20T15:25+00:00",
+   "rating": 4.7,
+   "reviews": 36,
+   "specs": [
+    "40 mm-drivere",
+    "USB-A trådløs, Bluetooth og kablet",
+    "70 timers batteriliv"
+   ]
   },
   {
    "shop": "Elkjøp",
@@ -197,7 +336,14 @@
    "price": 2890.0,
    "before": 4990.0,
    "url": "https://www.elkjop.no/product/756682",
-   "checked": "2026-11-20T15:25+00:00"
+   "checked": "2026-11-20T15:25+00:00",
+   "rating": 4.6,
+   "reviews": 1440,
+   "specs": [
+    "160 watt, lysshow",
+    "JBL Pro Sound, IPX4",
+    "12 timer spilletid"
+   ]
   },
   {
    "shop": "Elkjøp",
@@ -206,7 +352,14 @@
    "price": 599.0,
    "before": 990.0,
    "url": "https://www.elkjop.no/product/942597",
-   "checked": "2026-11-20T15:25+00:00"
+   "checked": "2026-11-20T15:25+00:00",
+   "rating": 4.5,
+   "reviews": 70,
+   "specs": [
+    "Puls- og aktivitetssporing døgnet rundt",
+    "Søvn- og kaloriesporing",
+    "Vanntett til 50 m, 10 dagers batteri"
+   ]
   },
   {
    "shop": "Elkjøp",
@@ -215,7 +368,12 @@
    "price": 899.0,
    "before": 1990.0,
    "url": "https://www.elkjop.no/product/1107916",
-   "checked": "2026-11-20T15:25+00:00"
+   "checked": "2026-11-20T15:25+00:00",
+   "specs": [
+    "15,6\" FHD IPS-panel",
+    "HDMI 2.1, DisplayPort 2.1",
+    "Magnetisk smartdeksel"
+   ]
   },
   {
    "shop": "Power",

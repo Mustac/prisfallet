@@ -102,6 +102,9 @@ def manual_offers(path, now=None):
                 "current_price": float(m["price"]), "before_price": float(m["before"]) if m.get("before") else None,
                 "image_url": "", "affiliate_url": url, "in_stock": m.get("in_stock", True),
                 "category_text": m.get("cat", ""), "checked": checked.astimezone(dt.timezone.utc).isoformat(timespec="minutes"),
+                "specs": [str(x)[:80] for x in (m.get("specs") or [])][:4],
+                "rating": float(m["rating"]) if m.get("rating") else None,
+                "reviews": int(m["reviews"]) if m.get("reviews") else None,
             })
         except (KeyError, ValueError, TypeError):
             continue
@@ -180,6 +183,9 @@ def build(offers, history, today):
         }
         if o.get("checked"):
             deal["checked"] = o["checked"]
+        for k in ("specs", "rating", "reviews"):
+            if o.get(k):
+                deal[k] = o[k]
         # The same product from the same shop via two networks is one deal: keep the cheaper
         # offer; at equal price keep the network that comes first in NETWORK_PRIORITY.
         # (The same product in different shops stays as separate deals - the visitor chooses.)
