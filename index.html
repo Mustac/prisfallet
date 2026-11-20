@@ -285,6 +285,15 @@ aside .chip i{margin-left:auto}
 aside .chip:hover{background:var(--panel2)}
 aside .chip.on{background:var(--panel2);color:var(--ink);font-weight:600;box-shadow:inset 3px 0 0 var(--acc)}
 aside .chip.on svg{stroke:var(--acc-text)}aside .chip.on i{color:var(--mute)}
+/* smooth popup + no layout jump when the page is locked */
+html{scrollbar-gutter:stable}
+.ov{display:flex;opacity:0;visibility:hidden;transition:opacity .2s ease,visibility 0s linear .2s}
+.ov.show{opacity:1;visibility:visible;transition:opacity .2s ease,visibility 0s}
+.ov .sheet{transform:translateY(14px) scale(.985);transition:transform .2s ease}
+.ov.show .sheet{transform:none}
+@keyframes cardin{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.grid .card{animation:cardin .25s ease both}
+@media(prefers-reduced-motion:reduce){.ov,.ov .sheet,.grid .card,.thumb img{transition:none!important;animation:none!important}}
 </style>
 </head>
 <body>
@@ -716,7 +725,7 @@ $("reset").onclick=resetAll;
   const max=el.scrollWidth-el.clientWidth;if((e.deltaY<0&&el.scrollLeft<=0)||(e.deltaY>0&&el.scrollLeft>=max-1))return;e.preventDefault();el.scrollLeft+=e.deltaY;},{passive:false}));
 let lockY=0;
 function lockPage(){if(document.body.classList.contains("lock"))return;lockY=window.scrollY;document.body.style.top=(-lockY)+"px";document.body.classList.add("lock");}
-function unlockPage(){if(!document.body.classList.contains("lock"))return;document.body.classList.remove("lock");document.body.style.top="";window.scrollTo(0,lockY);}
+function unlockPage(){if(!document.body.classList.contains("lock"))return;document.body.classList.remove("lock");document.body.style.top="";window.scrollTo({top:lockY,left:0,behavior:"instant"});}
 $("fbtn").onclick=()=>{$("side").classList.add("show");$("side").scrollTop=0;lockPage();};
 $("closef").onclick=()=>{$("side").classList.remove("show");unlockPage();};
 window.addEventListener("hashchange",()=>{readHash();render();});
