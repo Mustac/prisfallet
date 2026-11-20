@@ -304,6 +304,23 @@ aside,.sheet{scrollbar-width:thin;scrollbar-color:color-mix(in srgb,var(--mute) 
 aside::-webkit-scrollbar,.sheet::-webkit-scrollbar{width:8px}
 aside::-webkit-scrollbar-track,.sheet::-webkit-scrollbar-track{background:transparent}
 aside::-webkit-scrollbar-thumb,.sheet::-webkit-scrollbar-thumb{border-color:var(--panel)}
+/* share buttons */
+.shr{position:absolute;top:8px;right:8px;z-index:3;width:34px;height:34px;border-radius:50%;border:1px solid rgba(0,0,0,.08);background:rgba(255,255,255,.92);color:#1E242B;display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0;box-shadow:0 1px 4px rgba(0,0,0,.15);transition:transform .15s,background .15s}
+.shr svg{width:17px;height:17px}
+.shr:hover{transform:scale(1.08);background:#fff}
+.card .rec{right:50px}
+.shrbtn{display:flex;align-items:center;justify-content:center;gap:7px;flex:0 0 auto;padding:11px 16px;border-radius:10px;border:1px solid var(--line);background:var(--panel2);color:var(--ink);font:inherit;font-weight:600;font-size:13.5px;cursor:pointer}
+.shrbtn svg{width:17px;height:17px}.shrbtn:hover{border-color:var(--acc)}
+.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,20px);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:10px;font-weight:600;font-size:14px;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;z-index:50}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+/* phone: product popup fills the whole screen */
+@media(max-width:699px){
+  .ov{align-items:stretch;justify-content:stretch}
+  .sheet{max-width:none;width:100%;max-height:none;height:100%;height:100dvh;border-radius:0;border:0}
+  .sheet .thumb{height:240px}
+  .sheet .x{position:fixed;top:12px;right:12px;z-index:30;width:40px;height:40px}
+  .ov .sheet{transform:translateY(24px)}
+}
 </style>
 </head>
 <body>
@@ -507,10 +524,10 @@ async function loadData(){
     const sub=SUB2CAT[x.category]?x.category:"other";
     const verified=x.price_basis==="verified_30d_low";
     const was=verified?x.verified_30d_low:x.feed_before_price, now=x.current_price;
-    return {id:i,name:x.title,brand:x.brand||"",src:x.shop,shop:x.shop,net:x.source_network,now,was,cat:SUB2CAT[sub],sub,
+    return {id:i,key:String(x.id||i),name:x.title,brand:x.brand||"",src:x.shop,shop:x.shop,net:x.source_network,now,was,cat:SUB2CAT[sub],sub,
       ref:verified?"v":"f",flag:"",img:x.image_url||"",url:x.affiliate_url,checked:x.checked||"",until:x.until||"",specs:x.specs||[],rating:x.rating||0,reviews:x.reviews||0,feedWas:x.feed_before_price,low30:x.verified_30d_low,
       pct:x.discount_percent,kr:was-now};});
-  const today=localDay(new Date());D=D.filter(d=>!d.until||d.until>=today);
+  const today=localDay(new Date());D=D.filter(d=>!d.until||d.until>=today);D.forEach((d,i)=>d.id=i);
   D.forEach(d=>d.score=d.pct*(d.ref==="v"?1:0.9)+Math.log10(Math.max(1,d.kr))*2);
 }
 const BASIS={v:"Laveste pris siste 30 dager",f:"Førpris (butikkens oppgitte)"};
@@ -588,13 +605,14 @@ function renderPills(){
   $("pills").innerHTML=p.map(([k,t])=>`<span class="pill" data-k="${esc(k)}">${esc(t)} ✕</span>`).join("");
 }
 // ---------- cards ----------
+const SHARE_SVG=`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 8l5-5 5 5M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg>`;
 function stars(r){const w=Math.max(0,Math.min(100,r/5*100));return `<span class="st5" aria-hidden="true">★★★★★<i style="width:${w}%">★★★★★</i></span>`}
 function card(d){
   const c=CAT[d.cat].c;
   const spec=d.specs.slice(0,3).join(", ")||SUBNAME[d.sub]||"";
   const rate=d.rating?`${stars(d.rating)}<span>(${d.reviews})</span><span class="sh">hos <span class="at">${esc(d.shop)}</span></span>`:`<span class="sh">Hos <span class="at">${esc(d.shop)}</span></span>`;
   return `<div class="card" data-id="${d.id}">
-   <div class="thumb${d.img?" has-img":""}" style="--c:${c}">${ico(d.sub)}${d.img?`<img loading="lazy" alt="${esc(d.name)}" src="${esc(d.img)}">`:""}<span class="badge">-${d.pct}%</span>${d.flag==="rec"?'<span class="rec">REKORDLAV</span>':""}<span class="brandtag">${esc(d.brand)}</span></div>
+   <div class="thumb${d.img?" has-img":""}" style="--c:${c}">${ico(d.sub)}${d.img?`<img loading="lazy" alt="${esc(d.name)}" src="${esc(d.img)}">`:""}<span class="badge">-${d.pct}%</span>${d.flag==="rec"?'<span class="rec">REKORDLAV</span>':""}<span class="brandtag">${esc(d.brand)}</span><button class="shr" data-share="${d.id}" aria-label="Del tilbudet" title="Del">${SHARE_SVG}</button></div>
    <div class="body">
      <div class="name">${esc(d.name)}</div>
      <div class="spec">${esc(spec)}</div>
@@ -663,11 +681,11 @@ function openSheet(d){
     </div>
     ${d.until?`<div class="note"><b>Tilbudet gjelder til ${new Date(d.until+"T12:00").toLocaleDateString("nb-NO",{day:"numeric",month:"long"})}</b> (ifølge butikken).</div>`:""}
     <div class="note">Selges av ${esc(d.shop)} · ${direct?`pris sjekket på butikkens nettside ${esc(when)}`:`pris fra produktfeeden via ${esc(NET[d.net]||d.net)}, ${esc(when)}`}. Prisene kan endre seg, så sjekk prisen i butikken før du kjøper.</div>
-    <div class="acts">${aff?`<a class="pri" target="_blank" rel="sponsored noopener" href="${esc(d.url)}">Se tilbud (annonselenke)</a>`:`<a class="pri" target="_blank" rel="nofollow noopener" href="${esc(d.url)}">Gå til ${esc(d.shop)}</a>`}</div>
+    <div class="acts"><button class="shrbtn" type="button" id="shrsheet">${SHARE_SVG}Del</button>${aff?`<a class="pri" target="_blank" rel="sponsored noopener" href="${esc(d.url)}">Se tilbud (annonselenke)</a>`:`<a class="pri" target="_blank" rel="nofollow noopener" href="${esc(d.url)}">Gå til ${esc(d.shop)}</a>`}</div>
    </div>`;
   wireImgs($("sheet"));
   $("ov").classList.add("show");lockPage();$("sheet").scrollTop=0;
-  $("x").onclick=closeSheet;
+  $("x").onclick=closeSheet;$("shrsheet").onclick=()=>shareDeal(d);
 }
 function closeSheet(){$("ov").classList.remove("show");if(!$("side").classList.contains("show"))unlockPage();}
 $("ov").onclick=e=>{if(e.target.id==="ov")closeSheet();};
@@ -694,7 +712,16 @@ $("subs").onclick=e=>{const b=e.target.closest(".chip");if(!b)return;const k=b.d
   S.subs=new Set(k?[k]:[]);S.brand="";setHash();render();};
 $("srcs").onclick=e=>{const b=e.target.closest(".src");if(!b)return;const s=b.dataset.shop;if(!S.shops.has(s))track({t:"filter",f:"shop",v:s});
   S.shops.has(s)?S.shops.delete(s):S.shops.add(s);render();};
-$("grid").onclick=e=>{if(e.target.id==="morebtn"){LIMIT+=60;render(true);return;}const c=e.target.closest(".card");if(c)openSheet(D[+c.dataset.id]);};
+function toast(t){let el=document.getElementById("toast");if(!el){el=document.createElement("div");el.id="toast";el.className="toast";document.body.appendChild(el);}
+  el.textContent=t;el.classList.add("show");clearTimeout(el._t);el._t=setTimeout(()=>el.classList.remove("show"),2200);}
+async function shareDeal(d){
+  const url=location.origin+"/?p="+encodeURIComponent(d.key);
+  const text=`${d.name} – ${nok(d.now)} (-${d.pct}%) hos ${d.shop}`;
+  try{track({t:"share",id:d.key});}catch(e){}
+  if(navigator.share){try{await navigator.share({title:d.name,text,url});}catch(e){}return;}
+  try{await navigator.clipboard.writeText(text+" "+url);toast("Lenke kopiert");}catch(e){prompt("Kopier lenken:",url);}
+}
+$("grid").onclick=e=>{const sb=e.target.closest(".shr");if(sb){e.stopPropagation();shareDeal(D[+sb.dataset.share]);return;}if(e.target.id==="morebtn"){LIMIT+=60;render(true);return;}const c=e.target.closest(".card");if(c)openSheet(D[+c.dataset.id]);};
 $("hint").onclick=e=>{if(e.target.id==="showall"){S.min=0;$("min").value=0;$("minv").textContent="0%";render();}};
 $("q").oninput=e=>{S.q=e.target.value.toLowerCase().trim();render();
   clearTimeout(qTimer);qTimer=setTimeout(()=>{const q=S.q;if(q.length<2||q===qLast)return;qLast=q;
@@ -741,7 +768,9 @@ window.addEventListener("hashchange",()=>{readHash();render();});
 loadData().then(()=>{
   if(META.demo||!D.length){$("launch").hidden=false;$("apphead").hidden=true;$("applayout").hidden=true;return;}
   if(!D.length){$("grid").innerHTML='<div class="empty">Ingen tilbud ennå. Kom tilbake snart.</div>';$("srcsum").textContent="Ingen butikker koblet til ennå";return;}
-  readHash();render();}).catch(e=>{$("grid").innerHTML='<div class="empty">Kunne ikke laste tilbudene. Last inn siden på nytt.</div>';console.error(e);});
+  readHash();render();
+  const pk=new URLSearchParams(location.search).get("p");if(pk){const d=D.find(x=>x.key===pk);if(d)openSheet(d);else toast("Tilbudet er dessverre over");}
+  }).catch(e=>{$("grid").innerHTML='<div class="empty">Kunne ikke laste tilbudene. Last inn siden på nytt.</div>';console.error(e);});
 })();
 </script>
 <script src="/site.js"></script>
