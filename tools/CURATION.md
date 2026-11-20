@@ -51,3 +51,13 @@ not re-checked within 48 h). Then commit + push; Cloudflare deploys in ~1 min.
 ## tools/load_shop.py
 - Tab-separated: title, brand, price, before, url, img, until, sub, specs(;). Replaces a shop's list; `--append` keeps the shop's other deals.
 - Barn category subs: lego, toys, strollers (vogner/triller/vognpose), carseats (bilstol/beltestol), baby (babyutstyr: matstol, babygym, babycall...).
+
+## More shops' listing methods (20 Nov evening)
+- Elkjøp campaign pages paginate as /kampanje/black-friday/<cat>/page-N (48 per page); `__es(g)` from localStorage.exsrc. Ratings appear as the first "spec" line (e.g. "4.5").
+- Power: /kampanje/blackfriday/{pc-og-mac,skjermer,tv,hodetelefoner,mobiltelefoner,smartklokker,nettbrett,gaming,lydplanker-og-hoeyttalere,datatilbehoer}/
+- Komplett: /kampanje/black-friday?query=+&list_view=grid&kom__collections=<PC og tilbehør|lyd og bilde|Mobil tablets og klokker|Datautstyr|Gaming>&categoryPages=<id>;
+  cards render only when scrolled into view (scrollIntoView each card). Text has "P,- Spar S,- Førpris: B,-" and "Tilbudet gjelder fra .. til dd.mm.yy".
+- NetOnNet: /art/black-friday?afc_categoryTree.lvl0=<Data og nettbrett|Lyd|Gaming|Mobil og smartklokker>[&afc_categoryTree.lvl1=<lvl0> > Laptoper]; <article> tiles, "Pris å betale"/"Tidligere laveste pris", buyable = "Legg i handlevogn". Paging param doesn't work: use subcategory filters.
+- Proshop: fetch /<Black-Friday-...>?pn=N, parse li.site-productlist-item with a text-node walker (DOMParser docs have no innerText). HEAD gives false 404s: check links with GET.
+- Kjell: /no/black-friday/{lyd--bilde,mobilt,videospill--gaming}; stock + rating from product page JSON-LD (InStock, ratingValue); og:image.
+- Laptop specs matter for the RAM/CPU/GPU/storage filter: always fill specs (CPU; "16 GB RAM, 512 GB SSD"; GPU) for laptops.

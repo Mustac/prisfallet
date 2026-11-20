@@ -322,11 +322,20 @@ aside::-webkit-scrollbar-thumb,.sheet::-webkit-scrollbar-thumb{border-color:var(
   .ov .sheet{transform:translateY(24px)}
 }
 /* popup: share button in the top-right corner, close button left of it */
-.sheet .x{right:10px}
-.sheet .x#x{right:52px}
+.sheet .x#x{right:10px}
+.sheet .x.shrx{right:52px}
 .shrx{display:flex;align-items:center;justify-content:center;padding:0;color:#fff}
 .sheet .thumb .shrx svg{width:17px!important;height:17px!important;opacity:1!important;stroke:#fff!important;fill:none!important;position:static!important;transform:none!important;margin:0!important;inset:auto!important}
-@media(max-width:699px){.sheet .x{right:12px}.sheet .x#x{right:60px}}
+@media(max-width:699px){.sheet .x#x{right:12px}.sheet .x.shrx{right:60px}}
+/* hardware spec filters */
+.hwbox{margin:6px 0 4px;padding:10px 10px 6px;border:1px solid var(--line);border-radius:10px;background:var(--panel2)}
+.hwtitle{font-weight:700;font-size:13px;margin-bottom:2px}
+.hwbox h4{margin:10px 0 6px!important}
+.hwchips{display:flex;flex-wrap:wrap;gap:6px}
+.hwc{border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:999px;padding:5px 10px;font:inherit;font-size:12.5px;cursor:pointer;display:inline-flex;gap:6px;align-items:center}
+.hwc i{font-style:normal;color:var(--mute);font-size:11.5px}
+.hwc:hover{border-color:var(--acc)}
+.hwc.on{background:var(--acc);border-color:var(--acc);color:var(--acc-ink);font-weight:600}.hwc.on i{color:var(--acc-ink);opacity:.75}
 </style>
 </head>
 <body>
@@ -368,6 +377,7 @@ aside::-webkit-scrollbar-thumb,.sheet::-webkit-scrollbar-thumb{border-color:var(
     <div class="range"><input type="range" id="min" min="0" max="70" step="5" value="30"><b id="minv">30%</b></div>
     <h4>Pris (kr)</h4>
     <div class="pr"><input type="number" id="pmin" placeholder="Fra" min="0"><span>–</span><input type="number" id="pmax" placeholder="Til" min="0"></div>
+    <div id="hwf"></div>
     <h4>Tilbudskvalitet</h4>
     <label class="fx"><input type="checkbox" id="real"> Bare mot vår bekreftede laveste pris siste 30 dager</label>
     <label class="fx" style="display:none"><input type="checkbox" id="reconly"> Bare rekordlav pris</label>
@@ -533,7 +543,7 @@ async function loadData(){
     return {id:i,key:String(x.id||i),name:x.title,brand:x.brand||"",src:x.shop,shop:x.shop,net:x.source_network,now,was,cat:SUB2CAT[sub],sub,
       ref:verified?"v":"f",flag:"",img:x.image_url||"",url:x.affiliate_url,checked:x.checked||"",until:x.until||"",specs:x.specs||[],rating:x.rating||0,reviews:x.reviews||0,feedWas:x.feed_before_price,low30:x.verified_30d_low,
       pct:x.discount_percent,kr:was-now};});
-  const today=localDay(new Date());D=D.filter(d=>!d.until||d.until>=today);D.forEach((d,i)=>d.id=i);
+  const today=localDay(new Date());D=D.filter(d=>!d.until||d.until>=today);D.forEach((d,i)=>{d.id=i;d.hw=hwParse(d);});
   D.forEach(d=>d.score=d.pct*(d.ref==="v"?1:0.9)+Math.log10(Math.max(1,d.kr))*2);
 }
 const BASIS={v:"Laveste pris siste 30 dager",f:"Førpris (butikkens oppgitte)"};
@@ -548,10 +558,49 @@ function track(o){if(!TRACK||!consentYes())return;try{o.dev=innerWidth<768?"mobi
     fetch("/api/log",{method:"POST",body:b,keepalive:true,headers:{"Content-Type":"application/json"}}).catch(()=>{});}catch(e){}}
 let qTimer=0,qLast="",SHEET=null;
 let LIMIT=60;
-const S={cat:"",subs:new Set(),q:"",min:30,pmin:"",pmax:"",real:false,rec:false,noclub:false,shops:new Set(),brand:"",sort:"best"};
+const S={cat:"",subs:new Set(),q:"",min:30,pmin:"",pmax:"",real:false,rec:false,noclub:false,shops:new Set(),brand:"",sort:"best",hw:{ram:new Set(),sto:new Set(),cpu:new Set(),gpu:new Set()}};
 const nok=n=>n.toLocaleString("nb-NO").replace(/\s/g," ")+" kr";
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 
+// ---------- hardware specs (RAM, storage, CPU, GPU) parsed from title + specs ----------
+const HW_SUBS=new Set(["laptops","desktops","tablets","phones"]);
+const HW_DIMS=[["cpu","Prosessor"],["ram","RAM"],["sto","Lagring"],["gpu","Grafikkort"]];
+function hwParse(d){
+  if(!HW_SUBS.has(d.sub))return {};
+  const t=(d.name+" | "+d.specs.join(" | ")).replace(/[  ]/g," ");
+  let ram=0,sto=0,m;
+  if(m=t.match(/(\d{1,2})\s?GB(?:\s?(?:LPDDR\w*|DDR\w*))?\s?(?:RAM|minne)/i))ram=+m[1];
+  else if(m=t.match(/RAM:?\s?(\d{1,2})\s?GB/i))ram=+m[1];
+  if(m=t.match(/(\d{1,2})\s?GB\s?(?:RAM\s?)?\+\s?(\d{2,4})\s?GB/i)){ram=ram||+m[1];sto=+m[2];}
+  if(!sto&&(m=t.match(/(\d{2,4})GB\/(\d{1,2})GB/))){sto=+m[1];ram=ram||+m[2];}
+  if(!sto&&(m=t.match(/\b(\d{1,2})\s?GB\s?\/\s?(\d{2,4})\s?GB/))){ram=ram||+m[1];sto=+m[2];}
+  if(!sto&&(m=t.match(/\b(\d{1,2})\/(\d{2,4})(?:GB|\/|\b)/))&&+m[1]<=64&&+m[2]>=32){ram=ram||+m[1];sto=+m[2];}
+  if(!sto&&(m=t.match(/(\d{1,2})\s?GB\s?[|,]\s?(\d{3,4})\s?GB/))){ram=ram||+m[1];sto=+m[2];}
+  if(!sto&&(m=t.match(/(\d)\s?TB/i)))sto=+m[1]*1024;
+  if(!sto&&(m=t.match(/(\d{2,4})\s?GB\s?(?:SSD|lagring|flash|eMMC|lagringsplass)/i)))sto=+m[1];
+  if(!sto&&(m=t.match(/\b(64|128|256|512)\s?GB\b/)))sto=+m[1];
+  if(ram&&sto===ram)sto=0;
+  const hw={};
+  if(ram&&ram<=128)hw.ram=ram;
+  if(sto>=32)hw.sto=sto;
+  if(d.sub==="laptops"||d.sub==="desktops"){
+    let cpu="";
+    if(m=t.match(/Core\s?Ultra\s?(\d)|\bU(\d)-\d{3}/i))cpu="Intel Core Ultra "+(m[1]||m[2]);
+    else if(m=t.match(/Core\s?i(\d)|\bi(\d)[\/-]/i))cpu="Intel Core i"+(m[1]||m[2]);
+    else if(m=t.match(/Core\s?(\d)\b/i))cpu="Intel Core "+m[1];
+    else if(/Celeron|Pentium|Intel N\d|\bN\d{3,4}\b/i.test(t))cpu="Intel Celeron / N";
+    else if(m=t.match(/Ryzen\s?AI\s?(\d)|Ryzen(?:™)?\s?(\d)|\bR(\d)-\d{4}/i))cpu=(/Ryzen\s?AI/i.test(m[0])?"AMD Ryzen AI ":"AMD Ryzen ")+(m[1]||m[2]||m[3]);
+    else if(/Snapdragon/i.test(t))cpu="Snapdragon X";
+    else if(m=t.match(/\bM(\d)\b(?:\s?(?:Pro|Max|chip|CPU|-brikke))?/))cpu=/apple|macbook/i.test(t)?"Apple M"+m[1]:"";
+    else if(/MediaTek|Kompanio|MTK/i.test(t))cpu="MediaTek";
+    if(cpu)hw.cpu=cpu;
+    if(m=t.match(/\b(RTX|GTX)\s?(\d{4})/i))hw.gpu="NVIDIA "+m[1].toUpperCase()+" "+m[2];
+    else if(m=t.match(/\bRX\s?(\d{4})/i))hw.gpu="AMD Radeon RX "+m[1];
+    else if(cpu)hw.gpu="Integrert grafikk";
+  }
+  return hw;
+}
+const HW_LABEL={ram:v=>v+" GB",sto:v=>v>=1024?(v/1024)+" TB":v+" GB",cpu:v=>v,gpu:v=>v};
 // filtering: "base" = everything except the min-discount rule (used for counts + hint)
 function match(d,opt={}){
   if(S.cat&&d.cat!==S.cat)return false;
@@ -566,6 +615,7 @@ function match(d,opt={}){
   if(!opt.ignoreShop&&S.shops.size&&!S.shops.has(d.shop))return false;
   if(!opt.ignoreBrand&&S.brand&&d.brand!==S.brand)return false;
   if(!opt.ignoreMin&&d.pct<S.min)return false;
+  for(const [k] of HW_DIMS){if(opt.ignoreHw===k||!S.hw[k].size)continue;if(!S.hw[k].has(String(d.hw[k])))return false;}
   return true;
 }
 
@@ -597,12 +647,30 @@ function renderSide(){
   if(S.brand&&!brands.includes(S.brand))brands.unshift(S.brand);
   $("brand").innerHTML=`<option value="">Alle merker (${brands.length})</option>`+brands.map(b=>`<option${b===S.brand?" selected":""}>${esc(b)}</option>`).join("");
 }
+function renderHw(){
+  const show=S.cat===SUB2CAT.laptops||[...S.subs].some(x=>HW_SUBS.has(x));
+  if(!show){if(HW_DIMS.some(([k])=>S.hw[k].size)){HW_DIMS.forEach(([k])=>S.hw[k].clear());}$("hwf").innerHTML="";return;}
+  const pool=D.filter(d=>match(d,{ignoreHw:"__"})&&d.hw&&Object.keys(d.hw).length);
+  if(pool.length<3){$("hwf").innerHTML="";return;}
+  let html="";
+  for(const [k,label] of HW_DIMS){
+    const base=D.filter(d=>match(d,{ignoreHw:k})&&d.hw&&d.hw[k]!==undefined);
+    const vals=[...new Set(base.map(d=>String(d.hw[k])))];
+    S.hw[k].forEach(v=>{if(!vals.includes(v))vals.push(v)});
+    if(vals.length<2&&!S.hw[k].size)continue;
+    vals.sort((a,b)=>(+a&&+b)?(+a-+b):a.localeCompare(b,"nb"));
+    html+=`<h4>${label}</h4><div class="hwchips">`+vals.map(v=>{const n=base.filter(d=>String(d.hw[k])===v).length;
+      return `<button type="button" class="hwc${S.hw[k].has(v)?" on":""}" data-k="${k}" data-v="${esc(v)}">${esc(HW_LABEL[k](isNaN(+v)?v:+v))}<i>${n}</i></button>`}).join("")+`</div>`;
+  }
+  $("hwf").innerHTML=html?`<div class="hwbox"><div class="hwtitle">Spesifikasjoner</div>${html}</div>`:"";
+}
 function renderPills(){
   const p=[];
   if(S.q)p.push(["q",`“${S.q}”`]);
   S.subs.forEach(s=>p.push(["sub:"+s,SUBNAME[s]]));
   S.shops.forEach(s=>p.push(["shop:"+s,s]));
   if(S.brand)p.push(["brand",S.brand]);
+  HW_DIMS.forEach(([k])=>S.hw[k].forEach(v=>p.push(["hw:"+k+":"+v,HW_LABEL[k](isNaN(+v)?v:+v)])));
   if(S.pmin!==""||S.pmax!=="")p.push(["price",`${S.pmin||0}–${S.pmax||"∞"} kr`]);
   if(S.real)p.push(["real","Bekreftet 30-dagers lavpris"]);
   if(S.rec)p.push(["rec","Rekordlav"]);
@@ -616,7 +684,7 @@ function stars(r){const w=Math.max(0,Math.min(100,r/5*100));return `<span class=
 function card(d){
   const c=CAT[d.cat].c;
   const spec=d.specs.slice(0,3).join(", ")||SUBNAME[d.sub]||"";
-  const rate=d.rating?`${stars(d.rating)}<span>(${d.reviews})</span><span class="sh">hos <span class="at">${esc(d.shop)}</span></span>`:`<span class="sh">Hos <span class="at">${esc(d.shop)}</span></span>`;
+  const rate=d.rating?`${stars(d.rating)}${d.reviews?`<span>(${d.reviews})</span>`:""}<span class="sh">hos <span class="at">${esc(d.shop)}</span></span>`:`<span class="sh">Hos <span class="at">${esc(d.shop)}</span></span>`;
   return `<div class="card" data-id="${d.id}">
    <div class="thumb${d.img?" has-img":""}" style="--c:${c}">${ico(d.sub)}${d.img?`<img loading="lazy" alt="${esc(d.name)}" src="${esc(d.img)}">`:""}<span class="badge">-${d.pct}%</span>${d.flag==="rec"?'<span class="rec">REKORDLAV</span>':""}<span class="brandtag">${esc(d.brand)}</span><button class="shr" data-share="${d.id}" aria-label="Del tilbudet" title="Del">${SHARE_SVG}</button></div>
    <div class="body">
@@ -661,7 +729,7 @@ function renderSources(){
       <small class="${isToday?"f":""}">${when}</small></button>`;}).join("");
   $("srcsum").textContent=keys.length?`${fresh} av ${keys.length} oppdatert i dag · trykk på en butikk for å se bare dens tilbud`:"Ingen butikker koblet til ennå";
 }
-function render(keep){if(!keep)LIMIT=60;renderSources();renderCats();renderSubs();renderSide();renderPills();renderGrid();wireImgs($("grid"));}
+function render(keep){if(!keep)LIMIT=60;renderSources();renderCats();renderSubs();renderSide();renderHw();renderPills();renderGrid();wireImgs($("grid"));}
 
 // ---------- detail sheet ----------
 function openSheet(d){
@@ -751,16 +819,18 @@ $("pills").onclick=e=>{const p=e.target.closest(".pill");if(!p)return;const k=p.
   else if(k.startsWith("sub:"))S.subs.delete(k.slice(4));
   else if(k.startsWith("shop:"))S.shops.delete(k.slice(5));
   else if(k==="brand")S.brand="";
+  else if(k.startsWith("hw:")){const [,dim,...v]=k.split(":");S.hw[dim].delete(v.join(":"));}
   else if(k==="price"){S.pmin=S.pmax="";$("pmin").value=$("pmax").value="";}
   else if(k==="real"){S.real=false;$("real").checked=false;}
   else if(k==="rec"){S.rec=false;$("reconly").checked=false;}
   else if(k==="noclub"){S.noclub=false;$("noclub").checked=false;}
   else if(k==="min"){S.min=30;$("min").value=30;$("minv").textContent="30%";}
   setHash();render();};
-function resetAll(){Object.assign(S,{cat:"",subs:new Set(),q:"",min:30,pmin:"",pmax:"",real:false,rec:false,noclub:false,shops:new Set(),brand:"",sort:"best"});
+function resetAll(){HW_DIMS.forEach(([k])=>S.hw[k].clear());Object.assign(S,{cat:"",subs:new Set(),q:"",min:30,pmin:"",pmax:"",real:false,rec:false,noclub:false,shops:new Set(),brand:"",sort:"best"});
   $("q").value="";$("min").value=30;$("minv").textContent="30%";$("pmin").value=$("pmax").value="";
   $("real").checked=$("reconly").checked=$("noclub").checked=false;$("sort").value="best";setHash();render();}
 $("reset").onclick=resetAll;
+$("hwf").onclick=e=>{const b=e.target.closest(".hwc");if(!b)return;const k=b.dataset.k,v=b.dataset.v;S.hw[k].has(v)?S.hw[k].delete(v):S.hw[k].add(v);render();};
 // mouse wheel over a sideways row scrolls it sideways (narrow windows on a PC)
 ["cats","srcs","subs"].forEach(id=>$(id).addEventListener("wheel",e=>{const el=$(id);if(el.scrollWidth<=el.clientWidth+2||Math.abs(e.deltaX)>Math.abs(e.deltaY))return;
   const max=el.scrollWidth-el.clientWidth;if((e.deltaY<0&&el.scrollLeft<=0)||(e.deltaY>0&&el.scrollLeft>=max-1))return;e.preventDefault();el.scrollLeft+=e.deltaY;},{passive:false}));

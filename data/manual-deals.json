@@ -483,7 +483,12 @@
    "checked": "2026-11-20T15:33+00:00",
    "rating": 4.3,
    "reviews": 3,
-   "img": "https://www.komplett.no/product-media/b2c/en-us/1200/1342088.jpg"
+   "img": "https://www.komplett.no/product-media/b2c/en-us/1200/1342088.jpg",
+   "specs": [
+    "NVIDIA GeForce RTX 5050",
+    "Intel Core i5-13450HX",
+    "16 GB RAM, 512 GB SSD"
+   ]
   },
   {
    "shop": "Komplett",
@@ -3291,6 +3296,3334 @@
    "img": "https://d189539ycils2q.cloudfront.net/media/catalog/product/cache/ee248326738d481374479eaa17a4b685/e/d/edufun_aktivitetsvogn_i_tre_med_9_aktiviteter.jpg",
    "checked": "2026-11-20T16:40+00:00",
    "sub": "toys"
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "HP EliteBook 6 G1i 14\" bærbar PC (D29QKAT)",
+   "brand": "HP",
+   "price": 11995.0,
+   "before": 25495.0,
+   "url": "https://www.elkjop.no/product/1083688",
+   "img": "https://www.elkjop.no/image/dv_web_D1800014756829/1083688/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "sub": "laptops",
+   "specs": [
+    "Windows 11 Pro",
+    "14\" WUXGA-skjerm"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "dbramante1928 Amalienborg 15\" PC-veske (sort)",
+   "brand": "dbramante1928",
+   "price": 599.0,
+   "before": 1499.0,
+   "url": "https://www.elkjop.no/product/608297",
+   "img": "https://www.elkjop.no/image/dv_web_D1800010021416044/608297/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "specs": [
+    "Til enheter opptil 15\"",
+    "Ekte skinn"
+   ],
+   "rating": 4.5,
+   "sub": "bags"
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "HP Envy 6132 All-in-One blekkskriver",
+   "brand": "HP",
+   "price": 890.0,
+   "before": 1990.0,
+   "url": "https://www.elkjop.no/product/829048",
+   "img": "https://www.elkjop.no/image/dv_web_D1800014311627/829048/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "specs": [
+    "Skriv ut, skann, kopier",
+    "WiFi og mobil-app"
+   ],
+   "rating": 4.3,
+   "sub": "printers"
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "ASUS USB-BE92 Nano WiFi 7 USB-nettverksadapter",
+   "brand": "ASUS",
+   "price": 399.0,
+   "before": 890.0,
+   "url": "https://www.elkjop.no/product/902072",
+   "img": "https://www.elkjop.no/image/dv_web_D18000130345/902072/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "specs": [
+    "Tri-band Wi-Fi 7",
+    "Opptil 6,5 Gbps"
+   ],
+   "rating": 4.3,
+   "sub": "network"
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Logitech M330 Silent Plus trådløs mus (sort)",
+   "brand": "Logitech",
+   "price": 149.0,
+   "before": 349.0,
+   "url": "https://www.elkjop.no/product/LTM330",
+   "img": "https://www.elkjop.no/image/dv_web_D1800014311427/LTM330/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "sub": "mice",
+   "specs": [
+    "90 % mindre klikkestøy"
+   ],
+   "rating": 4.6
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Philips Brilliance 345B1C 34\" buet skjerm",
+   "brand": "Philips",
+   "price": 3495.0,
+   "before": 6449.0,
+   "url": "https://www.elkjop.no/product/147298",
+   "img": "https://www.elkjop.no/image/dv_web_D180001002391737/147298/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "sub": "monitors",
+   "specs": [
+    "Buet 34\" UWQHD VA-panel",
+    "21:9, 100 Hz"
+   ],
+   "rating": 4.7
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Garmin DriveSmart 86 GPS",
+   "brand": "Garmin",
+   "price": 2290.0,
+   "before": 4299.0,
+   "url": "https://www.elkjop.no/product/566280",
+   "img": "https://www.elkjop.no/image/dv_web_D1800010021262579/566280/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "specs": [
+    "8\" touchskjerm"
+   ],
+   "rating": 4.5,
+   "sub": "other"
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Epson EcoTank ET-2915 multifunksjonsskriver (sort)",
+   "brand": "Epson",
+   "price": 1899.0,
+   "before": 3595.0,
+   "url": "https://www.elkjop.no/product/1112570",
+   "img": "https://www.elkjop.no/image/dv_web_D180001466938/1112570/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "specs": [
+    "Skriver, skanner og kopimaskin",
+    "Blekktanker i stedet for patroner"
+   ],
+   "sub": "printers"
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "ASUS PCE-AXE5400 WiFi 6E PCIe-adapter",
+   "brand": "ASUS",
+   "price": 333.0,
+   "before": 690.0,
+   "url": "https://www.elkjop.no/product/599666",
+   "img": "https://www.elkjop.no/image/dv_web_D1800010021411970/599666/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "specs": [
+    "WiFi 6E og Bluetooth 5.2",
+    "Opptil 5400 Mbps"
+   ],
+   "rating": 4.9,
+   "sub": "network"
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "HP Smart Tank 5105 blekkskriver",
+   "brand": "HP",
+   "price": 1590.0,
+   "before": 2990.0,
+   "url": "https://www.elkjop.no/product/607081",
+   "img": "https://www.elkjop.no/image/dv_web_D1800014509134/607081/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "specs": [
+    "Skriv ut, skann, faks og kopier"
+   ],
+   "rating": 4.4,
+   "sub": "printers"
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "ASUS RT-AX3000E WiFi 6-ruter",
+   "brand": "ASUS",
+   "price": 499.0,
+   "before": 995.0,
+   "url": "https://www.elkjop.no/product/1078685",
+   "img": "https://www.elkjop.no/image/dv_web_D18000138464092/1078685/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "specs": [
+    "WiFi 6, opptil 3 Gbps",
+    "AiMesh-støtte"
+   ],
+   "sub": "network"
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Lenovo IdeaPad Slim 5 16IMH10 U5-135H/32/512 16\" bærbar PC",
+   "brand": "Lenovo",
+   "price": 10995.0,
+   "before": 18184.0,
+   "url": "https://www.elkjop.no/product/1046960",
+   "img": "https://www.elkjop.no/image/dv_web_D18000147517963/1046960/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "sub": "laptops",
+   "specs": [
+    "Intel Core Ultra 5-prosessor",
+    "32 GB RAM, 512 GB SSD",
+    "16\" IPS-skjerm"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Lenovo Chromebook Plus 15ITN11 Core 3 N355/8/128 15,3\" bærbar PC",
+   "brand": "Lenovo",
+   "price": 3995.0,
+   "before": 6995.0,
+   "url": "https://www.elkjop.no/product/1041823",
+   "img": "https://www.elkjop.no/image/dv_web_D1800014172385/1041823/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "sub": "laptops",
+   "specs": [
+    "Intel Core 3 N355-prosessor",
+    "15,3\" WUXGA IPS-skjerm",
+    "8 GB RAM, 128 GB lagring"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "ZTE K20 4G+ mobil bredbåndsruter",
+   "brand": "ZTE",
+   "price": 790.0,
+   "before": 1490.0,
+   "url": "https://www.elkjop.no/product/988049",
+   "img": "https://www.elkjop.no/image/dv_web_D18000134919086/988049/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "specs": [
+    "Wi-Fi 5, 4G+",
+    "Opptil 1200 Mbps"
+   ],
+   "sub": "network"
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Garmin zūmo XT2 MT-S motorsykkel-GPS",
+   "brand": "Garmin",
+   "price": 3890.0,
+   "before": 6690.0,
+   "url": "https://www.elkjop.no/product/602840",
+   "img": "https://www.elkjop.no/image/dv_web_D1800010021410166/602840/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "specs": [
+    "Laget for motorsykkel"
+   ],
+   "sub": "other"
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Sandstrøm Frameo WiFi 15,6\" digital fotoramme (brun)",
+   "brand": "Sandstrøm",
+   "price": 1299.0,
+   "before": 2299.0,
+   "url": "https://www.elkjop.no/product/775396",
+   "img": "https://www.elkjop.no/image/dv_web_D180001283486431/775396/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "specs": [
+    "1920x1080",
+    "Innebygd WiFi, Frameo-app"
+   ],
+   "rating": 4.7,
+   "sub": "network"
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "TP-Link Archer TBE400U Wi-Fi 7 USB-adapter",
+   "brand": "TP-Link",
+   "price": 429.0,
+   "before": 799.0,
+   "url": "https://www.elkjop.no/product/981634",
+   "img": "https://www.elkjop.no/image/dv_web_D1800013609846/981634/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "specs": [
+    "Tri-band Wi-Fi 7",
+    "Opptil 6500 Mbps"
+   ],
+   "sub": "network"
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Lenovo Chromebook 14M8911 MTK-540/8/128 14\" bærbar PC",
+   "brand": "Lenovo",
+   "price": 2995.0,
+   "before": 4995.0,
+   "url": "https://www.elkjop.no/product/1039024",
+   "img": "https://www.elkjop.no/image/dv_web_D1800013894165/1039024/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "sub": "laptops",
+   "specs": [
+    "MediaTek Kompanio 540-prosessor",
+    "14\" WUXGA IPS-skjerm",
+    "8 GB RAM, 128 GB lagring"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Essentials Single Spring skjermarm (sort)",
+   "brand": "Essentials",
+   "price": 379.0,
+   "before": 699.0,
+   "url": "https://www.elkjop.no/product/738479",
+   "img": "https://www.elkjop.no/image/dv_web_D1800010021778960/738479/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "specs": [
+    "Skjermer opptil 32\" og 9 kg",
+    "VESA 75/100"
+   ],
+   "rating": 4.8,
+   "sub": "pcacc"
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Logitech M750 L Signature Plus trådløs mus",
+   "brand": "Logitech",
+   "price": 349.0,
+   "before": 649.0,
+   "url": "https://www.elkjop.no/product/886021",
+   "img": "https://www.elkjop.no/image/dv_web_D18000128044081/886021/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "sub": "mice",
+   "specs": [
+    "Justerbar DPI",
+    "117 gram"
+   ],
+   "rating": 4.7
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "AOC 27E4U 27\" FHD IPS 120 Hz skjerm",
+   "brand": "AOC",
+   "price": 1349.0,
+   "before": 2295.0,
+   "url": "https://www.elkjop.no/product/1107714",
+   "img": "https://www.elkjop.no/image/dv_web_D1800014756903/1107714/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "sub": "monitors",
+   "specs": [
+    "27\" FHD IPS-panel",
+    "4 ms, 120 Hz",
+    "HDMI og DisplayPort"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Logitech MK545 trådløst tastatur og mus",
+   "brand": "Logitech",
+   "price": 444.0,
+   "before": 799.0,
+   "url": "https://www.elkjop.no/product/LTMK545",
+   "img": "https://www.elkjop.no/image/dv_web_D1800010021271907/LTMK545/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "specs": [
+    "Stille tastatur i full størrelse"
+   ],
+   "rating": 4.3,
+   "sub": "keyboards"
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "TCL 98\" QLED810L 4K QD-Mini LED TV (2026)",
+   "brand": "TCL",
+   "price": 18990.0,
+   "before": 69990.0,
+   "url": "https://www.elkjop.no/product/1083300",
+   "img": "https://www.elkjop.no/image/dv_web_D1800014159241/1083300/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "sub": "tv",
+   "specs": [
+    "4K, Mini LED, 144+ Hz",
+    "Google TV, Dolby Vision",
+    "Local dimming"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "TCL 85\" MSQLED80L 4K SQD-Mini LED TV (2026)",
+   "brand": "TCL",
+   "price": 17990.0,
+   "before": 59990.0,
+   "url": "https://www.elkjop.no/product/1083271",
+   "img": "https://www.elkjop.no/image/dv_web_D1800014585292/1083271/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "sub": "tv",
+   "specs": [
+    "4K, SQD Mini LED, 144+ Hz",
+    "Google TV, Dolby Vision",
+    "Local dimming"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "TCL 55\" C8L 4K SQD-Mini LED TV (2026)",
+   "brand": "TCL",
+   "price": 12990.0,
+   "before": 32990.0,
+   "url": "https://www.elkjop.no/product/1083292",
+   "img": "https://www.elkjop.no/image/dv_web_D1800014585301/1083292/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "sub": "tv",
+   "specs": [
+    "4K, SQD Mini LED, 144+ Hz",
+    "Google TV, Dolby Vision"
+   ],
+   "rating": 4.9
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "TCL 55\" A400 Pro 4K QD-Mini LED TV (2026)",
+   "brand": "TCL",
+   "price": 7990.0,
+   "before": 20990.0,
+   "url": "https://www.elkjop.no/product/1083302",
+   "img": "https://www.elkjop.no/image/dv_web_D18000141329591/1083302/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "sub": "tv",
+   "specs": [
+    "4K, Mini LED, 144+ Hz",
+    "Google TV, HLG",
+    "Local dimming"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "TCL 65\" A400 Pro 4K QD-Mini LED TV (2026)",
+   "brand": "TCL",
+   "price": 9990.0,
+   "before": 22990.0,
+   "url": "https://www.elkjop.no/product/1083312",
+   "img": "https://www.elkjop.no/image/dv_web_D18000141329208/1083312/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "sub": "tv",
+   "specs": [
+    "4K, Mini LED, 144+ Hz",
+    "Google TV, HLG",
+    "Local dimming"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "LG NS90TY soundbar",
+   "brand": "LG",
+   "price": 4290.0,
+   "before": 9490.0,
+   "url": "https://www.elkjop.no/product/751070",
+   "img": "https://www.elkjop.no/image/dv_web_D1800012698978/751070/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "sub": "soundbars",
+   "specs": [
+    "Dolby Atmos"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Philips 65\" PQS9081 4K QLED Ambilight Smart TV (2026)",
+   "brand": "Philips",
+   "price": 7990.0,
+   "before": 16490.0,
+   "url": "https://www.elkjop.no/product/1108234",
+   "img": "https://www.elkjop.no/image/dv_web_D18000141329654/1108234/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "sub": "tv",
+   "specs": [
+    "4K, 144+ Hz",
+    "Dolby Vision 2, HDR10+",
+    "Ambilight"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Philips 32\" PHS6050 HD Ready LED Smart TV (2025)",
+   "brand": "Philips",
+   "price": 2690.0,
+   "before": 5990.0,
+   "url": "https://www.elkjop.no/product/923275",
+   "img": "https://www.elkjop.no/image/dv_web_D18000132312442/923275/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "sub": "tv",
+   "specs": [
+    "HD Ready, 60 Hz",
+    "Titan OS, HDR10"
+   ],
+   "rating": 4.1
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Hisense PX3-PRO Laser Cinema 4K-prosjektor",
+   "brand": "Hisense",
+   "price": 25790.0,
+   "before": 49990.0,
+   "url": "https://www.elkjop.no/product/946327",
+   "img": "https://www.elkjop.no/image/dv_web_D18000133323708/946327/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "sub": "tv",
+   "specs": [
+    "3000 ANSI lumen, 4K",
+    "Opptil 150\" bilde, trippellaser"
+   ],
+   "rating": 4.8
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "LG NS70TY Dolby Atmos soundbar",
+   "brand": "LG",
+   "price": 2990.0,
+   "before": 6490.0,
+   "url": "https://www.elkjop.no/product/751067",
+   "img": "https://www.elkjop.no/image/dv_web_D1800012698977/751067/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "sub": "soundbars",
+   "specs": [
+    "400 W, 3.1.1 kanaler",
+    "Dolby Atmos og DTS:X"
+   ],
+   "rating": 4.7
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Hisense 85\" UR8S 4K RGB MiniLED Smart TV (2026)",
+   "brand": "Hisense",
+   "price": 27990.0,
+   "before": 52990.0,
+   "url": "https://www.elkjop.no/product/1103630",
+   "img": "https://www.elkjop.no/image/dv_web_D1800014585359/1103630/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "sub": "tv",
+   "specs": [
+    "4K, RGB Mini LED, 144 Hz",
+    "VIDAA, Dolby Vision, HDR10+"
+   ],
+   "rating": 4.9
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "TCL 55\" MQLED80L 4K QD-Mini LED TV (2026)",
+   "brand": "TCL",
+   "price": 8990.0,
+   "before": 17990.0,
+   "url": "https://www.elkjop.no/product/1083311",
+   "img": "https://www.elkjop.no/image/dv_web_D1800014159230/1083311/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "sub": "tv",
+   "specs": [
+    "4K, Mini LED, 144+ Hz",
+    "Google TV, Dolby Vision",
+    "Local dimming"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Samsung Galaxy S26 5G smarttelefon 12/256GB (cobalt violet)",
+   "brand": "Samsung",
+   "price": 6745.0,
+   "before": 13490.0,
+   "url": "https://www.elkjop.no/product/1039731",
+   "img": "https://www.elkjop.no/image/dv_web_D18000138322465/1039731/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "sub": "phones",
+   "specs": [
+    "6,3\" AMOLED 120 Hz-skjerm",
+    "50+12+10 MP kamera"
+   ],
+   "rating": 4.8
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Google Pixel 10a 5G smarttelefon 8/128 GB (obsidian)",
+   "brand": "Google",
+   "price": 3990.0,
+   "before": 7490.0,
+   "url": "https://www.elkjop.no/product/1027603",
+   "img": "https://www.elkjop.no/image/dv_web_D18000137536825/1027603/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "sub": "phones",
+   "specs": [
+    "6,3\" 60–120 Hz-skjerm",
+    "48+13 MP kamera"
+   ],
+   "rating": 4.6
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "realme C100x smarttelefon 4/256GB (mørkeblå)",
+   "brand": "realme",
+   "price": 1390.0,
+   "before": 2790.0,
+   "url": "https://www.elkjop.no/product/1116588",
+   "img": "https://www.elkjop.no/image/dv_web_D1800014172295/1116588/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "sub": "phones",
+   "specs": [
+    "120 Hz LCD-skjerm",
+    "50 MP kamera",
+    "7500 mAh, 45 W lading"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Huawei Watch Fit 4 Pro smartklokke (sort)",
+   "brand": "Huawei",
+   "price": 1590.0,
+   "before": 2990.0,
+   "url": "https://www.elkjop.no/product/913087",
+   "img": "https://www.elkjop.no/image/dv_web_D1800013202892/913087/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "sub": "watches",
+   "specs": [
+    "Golf, terrengløp, dykking til 40 m",
+    "EKG"
+   ],
+   "rating": 4.5
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Huawei Watch GT 5 sportsklokke 46 mm (sort)",
+   "brand": "Huawei",
+   "price": 1490.0,
+   "before": 2790.0,
+   "url": "https://www.elkjop.no/product/808477",
+   "img": "https://www.elkjop.no/image/dv_web_D180001283486539/808477/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "sub": "watches",
+   "specs": [
+    "1,43\" AMOLED-touchskjerm",
+    "Sport- og helsemåling"
+   ],
+   "rating": 4.7
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Motorola moto g67 5G smarttelefon 4/128 (grå)",
+   "brand": "Motorola",
+   "price": 1990.0,
+   "before": 3690.0,
+   "url": "https://www.elkjop.no/product/1026111",
+   "img": "https://www.elkjop.no/image/dv_web_D180001420812/1026111/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "sub": "phones",
+   "specs": [
+    "6,78\" AMOLED-skjerm",
+    "50+8 MP kamera"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Google Pixel 11 smarttelefon 12/256GB (obsidian)",
+   "brand": "Google",
+   "price": 6990.0,
+   "before": 11990.0,
+   "url": "https://www.elkjop.no/product/1122419",
+   "img": "https://www.elkjop.no/image/dv_web_D180001434590/1122419/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "sub": "phones"
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Huawei Watch GT 5 Pro sportsklokke 46 mm (sort)",
+   "brand": "Huawei",
+   "price": 2190.0,
+   "before": 3990.0,
+   "url": "https://www.elkjop.no/product/808481",
+   "img": "https://www.elkjop.no/image/dv_web_D180001283486559/808481/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "sub": "watches"
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Samsung Galaxy Tab A11+ 5G nettbrett 6/128GB (grå)",
+   "brand": "Samsung",
+   "price": 2390.0,
+   "before": 4290.0,
+   "url": "https://www.elkjop.no/product/1006807",
+   "img": "https://www.elkjop.no/image/dv_web_D18000135512756/1006807/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "sub": "tablets",
+   "specs": [
+    "11\" skjerm",
+    "MediaTek MT8775-prosessor",
+    "5G"
+   ],
+   "rating": 4.9
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "realme C100 5G smarttelefon 4/128GB (grønn)",
+   "brand": "realme",
+   "price": 1690.0,
+   "before": 3090.0,
+   "url": "https://www.elkjop.no/product/1116581",
+   "img": "https://www.elkjop.no/image/dv_web_D180001418410/1116581/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "sub": "phones",
+   "specs": [
+    "6,8\" 144 Hz-skjerm",
+    "6600 mAh, 45 W lading"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Samsung Galaxy Watch8 Classic 46mm LTE (sort)",
+   "brand": "Samsung",
+   "price": 3990.0,
+   "before": 6890.0,
+   "url": "https://www.elkjop.no/product/942251",
+   "img": "https://www.elkjop.no/image/dv_web_D18000135112870/942251/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "sub": "watches",
+   "specs": [
+    "1,34\" Super AMOLED",
+    "Puls, EKG, BIA, SpO2"
+   ],
+   "rating": 4.8
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Cherry Xtrfy M68W trådløs gamingmus (hvit)",
+   "brand": "Cherry Xtrfy",
+   "price": 299.0,
+   "before": 1099.0,
+   "url": "https://www.elkjop.no/product/806923",
+   "img": "https://www.elkjop.no/image/dv_web_D1800012824304095/806923/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "sub": "mice",
+   "specs": [
+    "PixArt 3395-sensor",
+    "400–26 000 DPI",
+    "2,4 GHz trådløs"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Cherry Xtrfy M64W trådløs gamingmus (hvit)",
+   "brand": "Cherry Xtrfy",
+   "price": 299.0,
+   "before": 1099.0,
+   "url": "https://www.elkjop.no/product/806927",
+   "img": "https://www.elkjop.no/image/dv_web_D1800012824304004/806927/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "sub": "mice",
+   "specs": [
+    "PixArt 3395-sensor",
+    "400–26 000 DPI",
+    "2,4 GHz trådløs"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "ASUS ROG Harpe Ace Aim Lab Edition trådløs gamingmus",
+   "brand": "ASUS",
+   "price": 649.0,
+   "before": 1599.0,
+   "url": "https://www.elkjop.no/product/764539",
+   "img": "https://www.elkjop.no/image/dv_web_D1800010021821831/764539/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "sub": "mice",
+   "specs": [
+    "ROG AimPoint-sensor",
+    "Opptil 36 000 DPI"
+   ],
+   "rating": 4.7
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Cherry Xtrfy K4V2 TKL gamingtastatur (hvit)",
+   "brand": "Cherry Xtrfy",
+   "price": 499.0,
+   "before": 1199.0,
+   "url": "https://www.elkjop.no/product/898691",
+   "img": "https://www.elkjop.no/image/dv_web_D18000128944748/898691/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "sub": "keyboards",
+   "specs": [
+    "Tenkeyless",
+    "Cherry MX2A Red-brytere"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Razer Tarok Essentials X gamingstol",
+   "brand": "Razer",
+   "price": 1555.0,
+   "before": 3095.0,
+   "url": "https://www.elkjop.no/product/726740",
+   "img": "https://www.elkjop.no/image/dv_web_D18000126314408/726740/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-12-24",
+   "sub": "chairs",
+   "specs": [
+    "Polstrede armlener",
+    "Setehøyde 42–52 cm"
+   ],
+   "rating": 4.3
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Samsung Odyssey OLED G5 G50SF 27\" QHD 180 Hz gamingskjerm",
+   "brand": "Samsung",
+   "price": 3490.0,
+   "before": 6490.0,
+   "url": "https://www.elkjop.no/product/992559",
+   "img": "https://www.elkjop.no/image/dv_web_D18000135515198/992559/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "sub": "monitors",
+   "specs": [
+    "27\" QHD QD-OLED",
+    "180 Hz, 0,03 ms"
+   ],
+   "rating": 4.7
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "SteelSeries Arctis Nova 3 trådløst gamingheadset (sort)",
+   "brand": "SteelSeries",
+   "price": 699.0,
+   "before": 1399.0,
+   "url": "https://www.elkjop.no/product/1059927",
+   "img": "https://www.elkjop.no/image/dv_web_D18000138377793/1059927/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "sub": "gheadsets",
+   "specs": [
+    "40 mm drivere",
+    "USB-C, 2,4 GHz og Bluetooth",
+    "40 timers batteri"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "LG UltraGear 27G411B 27\" FHD IPS 144 Hz gamingskjerm",
+   "brand": "LG",
+   "price": 1190.0,
+   "before": 2295.0,
+   "url": "https://www.elkjop.no/product/1140273",
+   "img": "https://www.elkjop.no/image/dv_web_D1800014508408/1140273/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "sub": "monitors",
+   "specs": [
+    "27\" FHD IPS",
+    "144 Hz",
+    "HDMI og DisplayPort"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Keychron K2 HE SE trådløst gamingtastatur (Wood Black)",
+   "brand": "Keychron",
+   "price": 1095.0,
+   "before": 2099.0,
+   "url": "https://www.elkjop.no/product/896172",
+   "img": "https://www.elkjop.no/image/dv_web_D18000128944816/896172/p.jpg",
+   "checked": "2026-11-20T20:44+00:00",
+   "until": "2026-11-30",
+   "sub": "keyboards",
+   "specs": [
+    "Magnetiske Gateron-brytere",
+    "2,4 GHz, Bluetooth, USB-C"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Acer Aspire Go 15 AG15-72P-53JZ 15,6\" bærbar PC",
+   "brand": "Acer",
+   "price": 5999.0,
+   "before": 9199.0,
+   "url": "https://www.power.no/data-og-tilbehoer/pc-og-mac/baerbar-pc/acer-aspire-go-15-ag15-72p-53jz-156-baerbar-pc/p-4161440/",
+   "img": "https://media.power-cdn.net/images/h-a1d7f3f761994cc9dcb607a0e45c62cc/products/4161440/4161440_9_600x600_t_g.webp",
+   "checked": "2026-11-20T20:48+00:00",
+   "sub": "laptops",
+   "specs": [
+    "Intel Core 5 120U",
+    "16 GB RAM, 512 GB SSD",
+    "Veier 1,53 kg"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Cepter Pulse 21,5\" Full HD-skjerm",
+   "brand": "Cepter",
+   "price": 799.0,
+   "before": 1999.0,
+   "url": "https://www.power.no/data-og-tilbehoer/skjermer/pc-skjerm/cepter-pulse-215-full-hd-skjerm/p-4005323/",
+   "img": "https://media.power-cdn.net/images/h-85e3fb2e13eca9614fc84f7ae8562c60/products/4005323/4005323_7_600x600_t_g.webp",
+   "checked": "2026-11-20T20:48+00:00",
+   "sub": "monitors",
+   "specs": [
+    "21,5\" VA Full HD",
+    "Rammeløst design"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Samsung Odyssey G7 LS40FG756EUXEN 40\" WUHD gamingskjerm",
+   "brand": "Samsung",
+   "price": 7490.0,
+   "before": 13990.0,
+   "url": "https://www.power.no/data-og-tilbehoer/skjermer/gamingskjerm/samsung-odyssey-g7-ls40fg756euxen-40-wuhd-gamingskjerm/p-4109264/",
+   "img": "https://media.power-cdn.net/images/h-0e761512345db88d422bb823efa45a73/products/4109264/4109264_34_600x600_t_g.webp",
+   "checked": "2026-11-20T20:48+00:00",
+   "sub": "monitors",
+   "specs": [
+    "40\" VA WUHD 5120 x 2160",
+    "Buet, 21:9",
+    "180 Hz"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Samsung Odyssey G7 LS37FG756EUXEN 37\" 4K UHD gamingskjerm",
+   "brand": "Samsung",
+   "price": 6990.0,
+   "before": 12990.0,
+   "url": "https://www.power.no/data-og-tilbehoer/skjermer/gamingskjerm/samsung-odyssey-g7-ls37fg756euxen-37-4k-uhd-gamingskjerm/p-4109262/",
+   "img": "https://media.power-cdn.net/images/h-d8f354406c28ad744d45797c4b0aea26/products/4109262/4109262_31_600x600_t_g.webp",
+   "checked": "2026-11-20T20:48+00:00",
+   "sub": "monitors",
+   "specs": [
+    "37\" VA 4K UHD",
+    "Buet 1000R",
+    "165 Hz"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Eletra Nano X 15,6\" bærbar Full HD-skjerm, grå",
+   "brand": "Eletra",
+   "price": 999.0,
+   "before": 1999.0,
+   "url": "https://www.power.no/data-og-tilbehoer/skjermer/pc-skjerm/eletra-nano-x-156-baerbar-full-hd-skjerm-graa/p-4168003/",
+   "img": "https://media.power-cdn.net/images/h-512ce294134db9e6b75fdbcf0993e9d1/products/4168003/4168003_10_600x600_t_g.webp",
+   "checked": "2026-11-20T20:48+00:00",
+   "sub": "monitors",
+   "specs": [
+    "15,6\" Full HD",
+    "Én USB-C-kabel",
+    "Slank og lett"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Cepter Ultra X 24,5\" Full HD-gamingskjerm",
+   "brand": "Cepter",
+   "price": 1299.0,
+   "before": 2499.0,
+   "url": "https://www.power.no/data-og-tilbehoer/skjermer/gamingskjerm/cepter-ultra-x-245-full-hd-gamingskjerm/p-2560639/",
+   "img": "https://media.power-cdn.net/images/h-e4b78c3a2397f35fe60e5a56f58d1556/products/2560639/2560639_2_600x600_t_g.webp",
+   "checked": "2026-11-20T20:48+00:00",
+   "sub": "monitors",
+   "specs": [
+    "24,5\" VA Full HD",
+    "240 Hz",
+    "1 ms"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Samsung Essential Monitor S3 27\" Full HD-skjerm",
+   "brand": "Samsung",
+   "price": 1090.0,
+   "before": 1790.0,
+   "url": "https://www.power.no/data-og-tilbehoer/skjermer/pc-skjerm/samsung-essential-monitor-s3-27-full-hd-skjerm/p-4185927/",
+   "img": "https://media.power-cdn.net/images/h-69624beea35387c4e82c12a7161826f2/products/4185927/4185927_11_600x600_t_g.webp",
+   "checked": "2026-11-20T20:48+00:00",
+   "sub": "monitors",
+   "specs": [
+    "27\" IPS Full HD",
+    "120 Hz"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Lenovo L27-4e 27\" Full HD-skjerm",
+   "brand": "Lenovo",
+   "price": 1199.0,
+   "before": 1899.0,
+   "url": "https://www.power.no/data-og-tilbehoer/skjermer/pc-skjerm/lenovo-l27-4e-27-full-hd-skjerm/p-4222631/",
+   "img": "https://media.power-cdn.net/images/h-647a864a00f50f155b1114d3146f4cb8/products/4222631/4222631_10_600x600_t_g.webp",
+   "checked": "2026-11-20T20:48+00:00",
+   "sub": "monitors",
+   "specs": [
+    "27\" IPS Full HD",
+    "99 % sRGB",
+    "100 Hz"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Lenovo L24-4e 23,8\" Full HD-skjerm",
+   "brand": "Lenovo",
+   "price": 949.0,
+   "before": 1499.0,
+   "url": "https://www.power.no/data-og-tilbehoer/skjermer/pc-skjerm/lenovo-l24-4e-238-full-hd-skjerm/p-4222629/",
+   "img": "https://media.power-cdn.net/images/h-761707c0232535e0b0f8860375836bc7/products/4222629/4222629_10_300x300_t_g.webp",
+   "checked": "2026-11-20T20:48+00:00",
+   "sub": "monitors",
+   "specs": [
+    "23,8\" IPS Full HD",
+    "99 % sRGB",
+    "100 Hz"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "LG 75\" QNED evo MiniLED 93 4K TV (2026) 75QNED93B6A",
+   "brand": "LG",
+   "price": 13990.0,
+   "before": 29990.0,
+   "url": "https://www.power.no/tv-og-lyd/tv/lg-75-qned-evo-miniled-93-4k-tv-2026-75qned93b6a/p-4317059/",
+   "img": "https://media.power-cdn.net/images/h-8240eb8fa788e413d6c3589911a3e6d3/products/4317059/4317059_15_600x600_t_g.webp",
+   "checked": "2026-11-20T20:48+00:00",
+   "sub": "tv",
+   "specs": [
+    "4K, Mini LED",
+    "webOS",
+    "Dolby Vision og Atmos"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Cepter 75\" 4K QLED Google TV CR75XM6002A 144 Hz",
+   "brand": "Cepter",
+   "price": 8999.0,
+   "before": 15999.0,
+   "url": "https://www.power.no/tv-og-lyd/tv/cepter-75-4k-qled-google-tv-cr75xm6002a-144-hz/p-4235095/",
+   "img": "https://media.power-cdn.net/images/h-c6924d737fb57a8d607ef7463148ea8c/products/4235095/4235095_13_600x600_t_g.webp",
+   "checked": "2026-11-20T20:48+00:00",
+   "sub": "tv",
+   "specs": [
+    "4K QLED, 144 Hz",
+    "Google TV",
+    "Dolby Vision og Atmos"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "LG 65\" Nano UHD 8E 4K TV (2026) 65NU8E0B3LA",
+   "brand": "LG",
+   "price": 5490.0,
+   "before": 9990.0,
+   "url": "https://www.power.no/tv-og-lyd/tv/lg-65-nano-uhd-8e-4k-tv-2026-65nu8e0b3la/p-4317071/",
+   "img": "https://media.power-cdn.net/images/h-983b88f34c89ada9ba2948c46d38e460/products/4317071/4317071_16_600x600_t_g.webp",
+   "checked": "2026-11-20T20:48+00:00",
+   "sub": "tv",
+   "specs": [
+    "4K",
+    "webOS"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "LG 100\" QNED evo MiniLED 87 4K TV (2026) 100QNED87B6",
+   "brand": "LG",
+   "price": 23990.0,
+   "before": 39999.0,
+   "url": "https://www.power.no/tv-og-lyd/tv/lg-100-qned-evo-miniled-87-4k-tv-2026-100qned87b6/p-4318140/",
+   "img": "https://media.power-cdn.net/images/h-e7cc3104881683c6102d7f311bbfee30/products/4318140/4318140_19_600x600_t_g.webp",
+   "checked": "2026-11-20T20:48+00:00",
+   "sub": "tv",
+   "specs": [
+    "4K, Mini LED",
+    "webOS"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Samsung 65\" 4K Micro RGB TV (2026) TMR65R85HAUXXC",
+   "brand": "Samsung",
+   "price": 14990.0,
+   "before": 23990.0,
+   "url": "https://www.power.no/tv-og-lyd/tv/samsung-65-4k-micro-rgb-tv-2026-tmr65r85hauxxc/p-4266249/",
+   "img": "https://media.power-cdn.net/images/h-29e30cc543eb7d708530503b5089ea05/products/4266249/4266249_16_600x600_t_g.webp",
+   "checked": "2026-11-20T20:48+00:00",
+   "sub": "tv",
+   "specs": [
+    "4K, Micro RGB",
+    "Tizen"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "LG 55\" QNED 71 4K TV (2026) 55QNED71B6B",
+   "brand": "LG",
+   "price": 4999.0,
+   "before": 8499.0,
+   "url": "https://www.power.no/tv-og-lyd/tv/lg-55-qned-71-4k-tv-2026-55qned71b6b/p-4317064/",
+   "img": "https://media.power-cdn.net/images/h-31c128783685e21fb87122868d40bdbb/products/4317064/4317064_20_600x600_t_g.webp",
+   "checked": "2026-11-20T20:48+00:00",
+   "sub": "tv",
+   "specs": [
+    "4K QNED",
+    "webOS"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Samsung 55\" 4K Mini LED TV (2026) TU55M80HAUXXC",
+   "brand": "Samsung",
+   "price": 5990.0,
+   "before": 9990.0,
+   "url": "https://www.power.no/tv-og-lyd/tv/samsung-55-4k-mini-led-tv-2026-tu55m80hauxxc/p-4266324/",
+   "img": "https://media.power-cdn.net/images/h-badcf7cdf76d80a26e90ab45cff496d6/products/4266324/4266324_22_600x600_t_g.webp",
+   "checked": "2026-11-20T20:48+00:00",
+   "sub": "tv",
+   "specs": [
+    "4K, Mini LED",
+    "Tizen"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Samsung 55\" 4K Neo QLED TV (2026) TQ55QN83HBUXNA",
+   "brand": "Samsung",
+   "price": 7990.0,
+   "before": 12999.0,
+   "url": "https://www.power.no/tv-og-lyd/tv/samsung-55-4k-neo-qled-tv-2026-tq55qn83hbuxna/p-4266300/",
+   "img": "https://media.power-cdn.net/images/h-712844d5fb08aec456f0118e97459bcd/products/4266300/4266300_15_600x600_t_g.webp",
+   "checked": "2026-11-20T20:48+00:00",
+   "sub": "tv",
+   "specs": [
+    "4K Neo QLED",
+    "Tizen"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "JBL Tour One M3 trådløse hodetelefoner, blå",
+   "brand": "JBL",
+   "price": 1799.0,
+   "before": 3998.0,
+   "url": "https://www.power.no/tv-og-lyd/hodetelefoner/traadloese-hodetelefoner/jbl-tour-one-m3-traadloese-hodetelefoner-blaa/p-4002763/",
+   "img": "https://media.power-cdn.net/images/h-09ea8eb9df99a6d350e750a3398a1449/products/4002763/4002763_1_600x600_t_g.webp",
+   "checked": "2026-11-20T20:48+00:00",
+   "sub": "headphones",
+   "specs": [
+    "Aktiv støyreduksjon",
+    "Trådløse over-ear"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Beats Powerbeats Pro 2 True Wireless ørepropper, kvikksand",
+   "brand": "Beats",
+   "price": 2190.0,
+   "before": 3690.0,
+   "url": "https://www.power.no/tv-og-lyd/hodetelefoner/true-wireless-hodetelefoner/beats-powerbeats-pro-2-true-wireless-oerepropper-kvikksand/p-3927994/",
+   "img": "https://media.power-cdn.net/images/h-6f454ad730fc6192138463c0423a099c/products/3927994/3927994_16_600x600_t_g.webp",
+   "checked": "2026-11-20T20:48+00:00",
+   "sub": "earbuds",
+   "specs": [
+    "Trening, øreklemmer",
+    "Aktiv støyreduksjon"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Sony WH-1000XM4C trådløse ANC-hodetelefoner, platina sølv",
+   "brand": "Sony",
+   "price": 1990.0,
+   "before": 3290.0,
+   "url": "https://www.power.no/tv-og-lyd/hodetelefoner/traadloese-hodetelefoner/sony-wh-1000xm4c-traadloese-anc-hodetelefoner-platina-soelv/p-4522402/",
+   "img": "https://media.power-cdn.net/images/h-78100f61d14c0f08b06a051f897aaa9d/products/4522402/4522402_19_600x600_t_g.webp",
+   "checked": "2026-11-20T20:48+00:00",
+   "sub": "headphones",
+   "specs": [
+    "Aktiv støyreduksjon",
+    "Trådløse over-ear"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Sony WH-CH720N trådløse støyreduserende hodetelefoner, blå",
+   "brand": "Sony",
+   "price": 790.0,
+   "before": 1290.0,
+   "url": "https://www.power.no/tv-og-lyd/hodetelefoner/traadloese-hodetelefoner/sony-wh-ch720n-traadloes-stoeyreduserende-hodetelefoner-blaa/p-1964204/",
+   "img": "https://media.power-cdn.net/images/h-081debf3e5130ee67c55b426d3215544/products/1964204/1964204_11_300x300_t_g.webp",
+   "checked": "2026-11-20T20:48+00:00",
+   "sub": "headphones",
+   "specs": [
+    "Bluetooth 5.2",
+    "35 timer batteri (ANC)",
+    "Aktiv støyreduksjon"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Garmin Instinct 2X Solar GPS-smartklokke, graphite",
+   "brand": "Garmin",
+   "price": 2390.0,
+   "before": 5149.0,
+   "url": "https://www.power.no/mobil-og-foto/smartklokker-og-wearables/sportsklokke/garmin-instinct-2x-solar-gps-smartklokke-graphite/p-2047902/",
+   "img": "https://media.power-cdn.net/images/h-28af74870bcc6a5397b38105b35b3b00/products/2047902/2047902_8_600x600_t_g.webp",
+   "checked": "2026-11-20T20:48+00:00",
+   "sub": "watches",
+   "specs": [
+    "Solcellelading",
+    "Innebygd lommelykt",
+    "GPS"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Garmin Venu X1 smartklokke, svart",
+   "brand": "Garmin",
+   "price": 4790.0,
+   "before": 9790.0,
+   "url": "https://www.power.no/mobil-og-foto/smartklokker-og-wearables/smartklokke/garmin-venu-x1-smartklokke-svart/p-4116050/",
+   "img": "https://media.power-cdn.net/images/h-1c12cb528c7fc7378f602100bb7de8ce/products/4116050/4116050_7_600x600_t_g.webp",
+   "checked": "2026-11-20T20:48+00:00",
+   "sub": "watches",
+   "specs": [
+    "2\" AMOLED-skjerm",
+    "Opptil 8 dagers batteri"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Garmin Bounce 2 smartklokke for barn, skifergrå",
+   "brand": "Garmin",
+   "price": 1880.0,
+   "before": 3690.0,
+   "url": "https://www.power.no/mobil-og-foto/smartklokker-og-wearables/smartklokke/garmin-bounce-2-smartklokke-for-barn-skifergraa/p-4163639/",
+   "img": "https://media.power-cdn.net/images/h-a401ba1c3dac6d9827c74c7fff3ae3f4/products/4163639/4163639_7_600x600_t_g.webp",
+   "checked": "2026-11-20T20:48+00:00",
+   "sub": "watches",
+   "specs": [
+    "Toveis samtaler og talemeldinger",
+    "GPS-sporing i sanntid",
+    "LTE"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Garmin Lily 2 smartklokke (2026), gull/krem",
+   "brand": "Garmin",
+   "price": 1690.0,
+   "before": 2990.0,
+   "url": "https://www.power.no/mobil-og-foto/smartklokker-og-wearables/smartklokke/garmin-lily-2-smartklokke-2026-gullkrem/p-4213904/",
+   "img": "https://media.power-cdn.net/images/h-9c9f426e004790da60ffce433f11660f/products/4213904/4213904_2_600x600_t_g.webp",
+   "checked": "2026-11-20T20:48+00:00",
+   "sub": "watches",
+   "specs": [
+    "Lett og behagelig",
+    "Søvnsporing",
+    "Pulssensor"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Samsung Galaxy Tab S11 Wi-Fi 128 GB, grå",
+   "brand": "Samsung",
+   "price": 6990.0,
+   "before": 11490.0,
+   "url": "https://www.power.no/data-og-tilbehoer/nettbrett-og-tilbehoer/nettbrett/samsung-galaxy-tab-s11-wi-fi-128-gb-graa/p-4124480/",
+   "img": "https://media.power-cdn.net/images/h-68ddffd1464bebaac3b790e2e3954ed6/products/4124480/4124480_7_600x600_t_g.webp",
+   "checked": "2026-11-20T20:48+00:00",
+   "sub": "tablets",
+   "specs": [
+    "11\" Dynamic AMOLED 2X",
+    "12 GB RAM, 128 GB",
+    "Wi-Fi 6E"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Samsung Galaxy Tab A11+ 5G 128 GB, grå",
+   "brand": "Samsung",
+   "price": 2490.0,
+   "before": 4290.0,
+   "url": "https://www.power.no/data-og-tilbehoer/nettbrett-og-tilbehoer/nettbrett/samsung-galaxy-tab-a11-5g-128-gb-graa/p-4204332/",
+   "img": "https://media.power-cdn.net/images/h-abcd69ff3bff9183bc831c1ac4b4abf0/products/4204332/4204332_7_600x600_t_g.webp",
+   "checked": "2026-11-20T20:48+00:00",
+   "sub": "tablets",
+   "specs": [
+    "11\" skjerm 1920 x 1200",
+    "6 GB RAM, 128 GB",
+    "5G"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Dacota Gaming Beam RGB gamingstol",
+   "brand": "Dacota",
+   "price": 1699.0,
+   "before": 3899.0,
+   "url": "https://www.power.no/gaming/gaming-moebler/gamingstol/dacota-gaming-beam-rgb-gamingstol/p-3435261/",
+   "img": "https://media.power-cdn.net/images/h-cda5cf9ee1f4021587191cc5057f19fe/products/3435261/3435261_9_600x600_t_g.webp",
+   "checked": "2026-11-20T20:48+00:00",
+   "sub": "chairs",
+   "specs": [
+    "Justerbare 2D-armlener",
+    "RGB-lys"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Samsung Odyssey OLED G61SH 27\" QHD gamingskjerm",
+   "brand": "Samsung",
+   "price": 3799.0,
+   "before": 7999.0,
+   "url": "https://www.power.no/data-og-tilbehoer/skjermer/gamingskjerm/samsung-odyssey-oled-g61sh-27-qhd-spillskjerm/p-4214435/",
+   "img": "https://media.power-cdn.net/images/h-5809e157ddde7dbe1c1a164b4bf31896/products/4214435/4214435_17_600x600_t_g.webp",
+   "checked": "2026-11-20T20:48+00:00",
+   "sub": "monitors",
+   "specs": [
+    "27\" OLED QHD",
+    "240 Hz, 0,03 ms",
+    "Glare Free"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Samsung Odyssey G5 G55C 32\" QHD gamingskjerm",
+   "brand": "Samsung",
+   "price": 1990.0,
+   "before": 3999.0,
+   "url": "https://www.power.no/data-og-tilbehoer/skjermer/gamingskjerm/samsung-odyssey-g5-g55c-32-qhd-gamingskjerm/p-3750570/",
+   "img": "https://media.power-cdn.net/images/h-396ea0e7c6be93a21e6cb41290ef63eb/products/3750570/3750570_33_300x300_t_g.webp",
+   "checked": "2026-11-20T20:48+00:00",
+   "sub": "monitors",
+   "specs": [
+    "32\" VA QHD",
+    "165 Hz",
+    "1 ms"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Samsung Odyssey G5 G55C 27\" QHD gamingskjerm",
+   "brand": "Samsung",
+   "price": 1590.0,
+   "before": 3199.0,
+   "url": "https://www.power.no/data-og-tilbehoer/skjermer/gamingskjerm/samsung-odyssey-g5-g55c-27-qhd-gamingskjerm/p-3750569/",
+   "img": "https://media.power-cdn.net/images/h-eb8e8da5f15d063844de7cb8064701c1/products/3750569/3750569_18_600x600_t_g.webp",
+   "checked": "2026-11-20T20:48+00:00",
+   "sub": "monitors",
+   "specs": [
+    "27\" VA QHD",
+    "165 Hz",
+    "1 ms"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Cepter Soundbar 3 2.1 lydplanke, grå",
+   "brand": "Cepter",
+   "price": 999.0,
+   "before": 2499.0,
+   "url": "https://www.power.no/tv-og-lyd/lydplanker/cepter-soundbar-3-21-lydplanke-graa/p-3076355/",
+   "img": "https://media.power-cdn.net/images/h-8281181f0d9bb083b288547f1e86df6d/products/3076355/3076355_6_600x600_t_g.webp",
+   "checked": "2026-11-20T20:48+00:00",
+   "sub": "soundbars",
+   "specs": [
+    "2.1-kanaler",
+    "Trådløs subwoofer",
+    "Bluetooth 5.4"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Senz SPA3226 partyhøyttaler",
+   "brand": "Senz",
+   "price": 689.0,
+   "before": 1499.0,
+   "url": "https://www.power.no/tv-og-lyd/traadloese-hoeyttalere/partyhoeyttaler/senz-spa3226-partyhoeyttaler/p-4229959/",
+   "img": "https://media.power-cdn.net/images/h-ebf43ed0a2822a7a3601075375a842f0/products/4229959/4229959_6_600x600_t_g.webp",
+   "checked": "2026-11-20T20:48+00:00",
+   "sub": "speakers"
+  },
+  {
+   "shop": "Power",
+   "title": "Polk Signa S3 System lydplanke",
+   "brand": "Polk",
+   "price": 2490.0,
+   "before": 4490.0,
+   "url": "https://www.power.no/tv-og-lyd/lydplanker/polk-signa-s3-system-lydplanke/p-1062811/",
+   "img": "https://media.power-cdn.net/images/h-a58ebf9c74f662165ef17f33ddd739a8/products/1062811/1062811_11_600x600_t_g.webp",
+   "checked": "2026-11-20T20:48+00:00",
+   "sub": "soundbars",
+   "specs": [
+    "Trådløs subwoofer"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "JBL Xtreme 4 Bluetooth-høyttaler, sort",
+   "brand": "JBL",
+   "price": 2190.0,
+   "before": 3979.0,
+   "url": "https://www.power.no/tv-og-lyd/traadloese-hoeyttalere/bluetooth-hoeyttaler/jbl-xtreme-4-bluetooth-hoeyttaler-sort/p-4118323/",
+   "img": "https://media.power-cdn.net/images/h-37def026c469c7eeb49476609ed57ec6/products/4118323/4118323_14_600x600_t_g.webp",
+   "checked": "2026-11-20T20:48+00:00",
+   "sub": "speakers",
+   "specs": [
+    "Bluetooth",
+    "Vanntett"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Senz SRD1225 DAB/FM-radio",
+   "brand": "Senz",
+   "price": 349.0,
+   "before": 699.0,
+   "url": "https://www.power.no/tv-og-lyd/hoeyttalere-radio-og-hifi/radio/senz-srd1225-dab-fm-radio/p-4013665/",
+   "img": "https://media.power-cdn.net/images/h-c3dfe5a5c6696199213f26c8e571e3aa/products/4013665/4013665_1_300x300_t_g.webp",
+   "checked": "2026-11-20T20:48+00:00",
+   "sub": "speakers",
+   "specs": [
+    "DAB+ og FM"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "HP Smart Tank 5106 alt-i-ett-skriver",
+   "brand": "HP",
+   "price": 1590.0,
+   "before": 3049.0,
+   "url": "https://www.power.no/data-og-tilbehoer/skriver-og-skanner/blekkskriver/hp-smart-tank-5106-alt-i-ett-skriver/p-2067841/",
+   "img": "https://media.power-cdn.net/images/h-40a15abf3de6b8da92cfd92c42dfdb4f/products/2067841/2067841_17_600x600_t_g.webp",
+   "checked": "2026-11-20T20:48+00:00",
+   "sub": "printers",
+   "specs": [
+    "Blekktank",
+    "Skriv ut, skann og kopier"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Epson EcoTank ET-2911 A4 multifunksjonsskriver",
+   "brand": "Epson",
+   "price": 1899.0,
+   "before": 3490.0,
+   "url": "https://www.power.no/data-og-tilbehoer/skriver-og-skanner/blekkskriver/epson-ecotank-et-2911-a4-multifunksjonsskriver/p-4287203/",
+   "img": "https://media.power-cdn.net/images/h-7676f8eb3d9e909ce80addbe2eaae377/products/4287203/4287203_9_600x600_t_g.webp",
+   "checked": "2026-11-20T20:48+00:00",
+   "sub": "printers",
+   "specs": [
+    "Blekktank",
+    "Skriv ut, skann og kopier"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "ZTE K20 4G Wi-Fi-ruter",
+   "brand": "ZTE",
+   "price": 790.0,
+   "before": 1399.0,
+   "url": "https://www.power.no/mobil-og-foto/mobilt-bredbaand/4g-mobilt-bredbaand/zte-k20-4g-wi-fi-ruter/p-3545640/",
+   "img": "https://media.power-cdn.net/images/h-bb9eb75534b9e4241e8d06e6acbeedc9/products/3545640/3545640_1_600x600_t_g.webp",
+   "checked": "2026-11-20T20:48+00:00",
+   "sub": "network",
+   "specs": [
+    "4G+",
+    "Wi-Fi"
+   ]
+  },
+  {
+   "shop": "Komplett",
+   "title": "Hisense 65\" E8S MiniLED Smart TV (2026)",
+   "brand": "Hisense",
+   "price": 7990.0,
+   "before": 17990.0,
+   "url": "https://www.komplett.no/product/1339483",
+   "img": "https://www.komplett.no/product-media/b2c/en-us/1200/1339483.jpg",
+   "checked": "2026-11-20T20:54+00:00",
+   "until": "2026-11-30",
+   "sub": "tv",
+   "specs": [
+    "144 Hz, HDR, FreeSync",
+    "HDMI 2.1, 4x HDMI",
+    "Dolby Atmos"
+   ]
+  },
+  {
+   "shop": "Komplett",
+   "title": "Samsung 85\" The Frame Pro Neo QLED 4K Mini LED Smart TV (2026)",
+   "brand": "Samsung",
+   "price": 24990.0,
+   "before": 49990.0,
+   "url": "https://www.komplett.no/product/1338883",
+   "img": "https://www.komplett.no/product-media/b2c/en-us/1200/1338883.jpg",
+   "checked": "2026-11-20T20:54+00:00",
+   "until": "2026-11-30",
+   "sub": "tv",
+   "specs": [
+    "144 Hz, Neo QLED Mini LED",
+    "NQ4 AI Gen3-prosessor",
+    "FreeSync Premium"
+   ]
+  },
+  {
+   "shop": "Komplett",
+   "title": "Philips 65\" PUS8001 4K Ambilight LED Smart TV (2026)",
+   "brand": "Philips",
+   "price": 6790.0,
+   "before": 14490.0,
+   "url": "https://www.komplett.no/product/1340317",
+   "img": "https://www.komplett.no/product-media/b2c/en-us/1200/1340317.jpg",
+   "checked": "2026-11-20T20:54+00:00",
+   "until": "2026-11-30",
+   "sub": "tv",
+   "specs": [
+    "4K UHD, Ambilight",
+    "Titan OS",
+    "3x HDMI, eARC"
+   ]
+  },
+  {
+   "shop": "Komplett",
+   "title": "Samsung HW-B410F soundbar med subwoofer (2025)",
+   "brand": "Samsung",
+   "price": 1290.0,
+   "before": 2990.0,
+   "url": "https://www.komplett.no/product/1327046",
+   "img": "https://www.komplett.no/product-media/b2c/en-us/1200/1327046.jpg",
+   "checked": "2026-11-20T20:54+00:00",
+   "until": "2026-11-29",
+   "sub": "soundbars",
+   "specs": [
+    "2.0-kanaler med basshøyttaler",
+    "Bluetooth"
+   ]
+  },
+  {
+   "shop": "Komplett",
+   "title": "TCL T8D 65\" 4K QD-Mini LED Smart TV (2026)",
+   "brand": "TCL",
+   "price": 8990.0,
+   "before": 17990.0,
+   "url": "https://www.komplett.no/product/1338650",
+   "img": "https://www.komplett.no/product-media/b2c/en-us/1200/1338650.jpg",
+   "checked": "2026-11-20T20:54+00:00",
+   "until": "2026-11-29",
+   "sub": "tv",
+   "specs": [
+    "144 Hz, QD-Mini LED",
+    "Google TV, HDR",
+    "Onkyo 2.1 lyd"
+   ]
+  },
+  {
+   "shop": "Komplett",
+   "title": "Samsung Galaxy S26 256GB (sky blue)",
+   "brand": "Samsung",
+   "price": 6745.0,
+   "before": 13490.0,
+   "url": "https://www.komplett.no/product/1339762",
+   "img": "https://www.komplett.no/product-media/b2c/en-us/1200/1339762.jpg",
+   "checked": "2026-11-20T20:54+00:00",
+   "until": "2026-11-30",
+   "sub": "phones",
+   "specs": [
+    "6,3\" FHD+ Dynamic AMOLED 2X",
+    "12 GB RAM",
+    "50+12+10 MP kamera"
+   ]
+  },
+  {
+   "shop": "Komplett",
+   "title": "Samsung Galaxy Watch8 40mm BT (sølv)",
+   "brand": "Samsung",
+   "price": 1690.0,
+   "before": 3590.0,
+   "url": "https://www.komplett.no/product/1325953",
+   "img": "https://www.komplett.no/product-media/b2c/en-us/1200/1325953.jpg",
+   "checked": "2026-11-20T20:54+00:00",
+   "until": "2026-11-30",
+   "sub": "watches",
+   "specs": [
+    "GPS, Bluetooth, IP68",
+    "Galaxy AI"
+   ]
+  },
+  {
+   "shop": "Komplett",
+   "title": "AOC Q27G42ZE 27\" QHD 240 Hz IPS gamingskjerm",
+   "brand": "AOC",
+   "price": 1399.0,
+   "before": 2990.0,
+   "url": "https://www.komplett.no/product/1324858",
+   "img": "https://www.komplett.no/product-media/b2c/en-us/1200/1324858.jpg",
+   "checked": "2026-11-20T20:54+00:00",
+   "until": "2026-11-30",
+   "sub": "monitors",
+   "specs": [
+    "2560 x 1440 IPS",
+    "240 Hz, 0,3 ms",
+    "HDR10"
+   ]
+  },
+  {
+   "shop": "Komplett",
+   "title": "Samsung Galaxy Tab S10+ 5G 512GB (moonstone gray)",
+   "brand": "Samsung",
+   "price": 9490.0,
+   "before": 17490.0,
+   "url": "https://www.komplett.no/product/1312675",
+   "img": "https://www.komplett.no/product-media/b2c/en-us/1200/1312675.jpg",
+   "checked": "2026-11-20T20:54+00:00",
+   "until": "2026-11-30",
+   "sub": "tablets",
+   "specs": [
+    "12,4\" Dynamic AMOLED 2X",
+    "12 GB RAM, 512 GB",
+    "5G"
+   ]
+  },
+  {
+   "shop": "Komplett",
+   "title": "Xplora XGO3 2. gen mobilklokke for barn (sort)",
+   "brand": "Xplora",
+   "price": 890.0,
+   "before": 1890.0,
+   "url": "https://www.komplett.no/product/1321579",
+   "img": "https://www.komplett.no/product-media/b2c/en-us/1200/1321579.jpg",
+   "checked": "2026-11-20T20:54+00:00",
+   "until": "2026-11-30",
+   "sub": "watches",
+   "specs": [
+    "1,3\" skjerm",
+    "GPS, 2 MP kamera",
+    "IP68"
+   ]
+  },
+  {
+   "shop": "Komplett",
+   "title": "LG 65\" G64 OLED evo 4K Smart TV (2026)",
+   "brand": "LG",
+   "price": 22990.0,
+   "before": 39990.0,
+   "url": "https://www.komplett.no/product/1339457",
+   "img": "https://www.komplett.no/product-media/b2c/en-us/1200/1339457.jpg",
+   "checked": "2026-11-20T20:54+00:00",
+   "until": "2026-11-30",
+   "sub": "tv",
+   "specs": [
+    "OLED, 165 Hz, antirefleks",
+    "Dolby Vision og Atmos",
+    "4x HDMI 2.1"
+   ]
+  },
+  {
+   "shop": "Komplett",
+   "title": "LG NS40TR lydplanke med subwoofer og bakhøyttalere",
+   "brand": "LG",
+   "price": 1990.0,
+   "before": 3990.0,
+   "url": "https://www.komplett.no/product/1331423",
+   "img": "https://www.komplett.no/product-media/b2c/en-us/1200/1331423.jpg",
+   "checked": "2026-11-20T20:54+00:00",
+   "until": "2026-11-29",
+   "sub": "soundbars",
+   "specs": [
+    "4.1-kanaler",
+    "Dolby Digital og DTS"
+   ]
+  },
+  {
+   "shop": "Komplett",
+   "title": "ASUS TUF VG34VQL3A 34\" buet 180 Hz gamingskjerm",
+   "brand": "ASUS",
+   "price": 2290.0,
+   "before": 4490.0,
+   "url": "https://www.komplett.no/product/1303929",
+   "img": "https://www.komplett.no/product-media/b2c/en-us/1200/1303929.jpg",
+   "checked": "2026-11-20T20:54+00:00",
+   "until": "2026-11-30",
+   "sub": "monitors",
+   "specs": [
+    "3440 x 1440 VA, buet",
+    "180 Hz, 1 ms",
+    "HDR400"
+   ]
+  },
+  {
+   "shop": "Komplett",
+   "title": "Garmin Bounce 2 mobilklokke for barn (skifergrå)",
+   "brand": "Garmin",
+   "price": 1880.0,
+   "before": 3690.0,
+   "url": "https://www.komplett.no/product/1329557",
+   "img": "https://www.komplett.no/product-media/b2c/en-us/1200/1329557.jpg",
+   "checked": "2026-11-20T20:54+00:00",
+   "until": "2026-11-30",
+   "sub": "watches",
+   "specs": [
+    "1,2\" AMOLED-skjerm",
+    "GPS, WiFi",
+    "Vanntett"
+   ]
+  },
+  {
+   "shop": "Komplett",
+   "title": "LG 77\" C64 OLED evo 4K Smart TV (2026)",
+   "brand": "LG",
+   "price": 22990.0,
+   "before": 38990.0,
+   "url": "https://www.komplett.no/product/1339450",
+   "img": "https://www.komplett.no/product-media/b2c/en-us/1200/1339450.jpg",
+   "checked": "2026-11-20T20:54+00:00",
+   "until": "2026-11-30",
+   "sub": "tv",
+   "specs": [
+    "OLED, 165 Hz",
+    "Dolby Vision og Atmos",
+    "4x HDMI 2.1, webOS"
+   ]
+  },
+  {
+   "shop": "Komplett",
+   "title": "LG 77\" G64 OLED evo 4K Smart TV (2026)",
+   "brand": "LG",
+   "price": 29990.0,
+   "before": 49990.0,
+   "url": "https://www.komplett.no/product/1339453",
+   "img": "https://www.komplett.no/product-media/b2c/en-us/1200/1339453.jpg",
+   "checked": "2026-11-20T20:54+00:00",
+   "until": "2026-11-30",
+   "sub": "tv",
+   "specs": [
+    "OLED, 165 Hz, antirefleks",
+    "Dolby Vision og Atmos",
+    "4x HDMI 2.1"
+   ]
+  },
+  {
+   "shop": "Komplett",
+   "title": "Samsung Galaxy Tab S11 WiFi 128GB (gray)",
+   "brand": "Samsung",
+   "price": 6990.0,
+   "before": 12490.0,
+   "url": "https://www.komplett.no/product/1344962",
+   "img": "https://www.komplett.no/product-media/b2c/en-us/1200/1344962.jpg",
+   "checked": "2026-11-20T20:54+00:00",
+   "until": "2026-11-30",
+   "sub": "tablets",
+   "specs": [
+    "11\" AMOLED 2X 2560 x 1600",
+    "12 GB RAM, 128 GB",
+    "8400 mAh"
+   ]
+  },
+  {
+   "shop": "Komplett",
+   "title": "MSI MPG 271QRX 27\" QD-OLED 360 Hz gamingskjerm",
+   "brand": "MSI",
+   "price": 6490.0,
+   "before": 11490.0,
+   "url": "https://www.komplett.no/product/1302664",
+   "img": "https://www.komplett.no/product-media/b2c/en-us/1200/1302664.jpg",
+   "checked": "2026-11-20T20:54+00:00",
+   "until": "2026-11-30",
+   "sub": "monitors",
+   "specs": [
+    "2560 x 1440 QD-OLED",
+    "360 Hz, 0,03 ms"
+   ]
+  },
+  {
+   "shop": "Komplett",
+   "title": "Nothing Phone (3) 256GB (sort)",
+   "brand": "Nothing",
+   "price": 5990.0,
+   "before": 10790.0,
+   "url": "https://www.komplett.no/product/1345164",
+   "img": "https://www.komplett.no/product-media/b2c/en-us/1200/1345164.jpg",
+   "checked": "2026-11-20T20:54+00:00",
+   "until": "2026-11-30",
+   "sub": "phones",
+   "specs": [
+    "6,67\" AMOLED",
+    "12 GB RAM",
+    "4x 50 MP kamera, IP68"
+   ]
+  },
+  {
+   "shop": "Komplett",
+   "title": "Samsung HW-S810D soundbar med subwoofer (sort)",
+   "brand": "Samsung",
+   "price": 4990.0,
+   "before": 8990.0,
+   "url": "https://www.komplett.no/product/1306920",
+   "img": "https://www.komplett.no/product-media/b2c/en-us/1200/1306920.jpg",
+   "checked": "2026-11-20T20:54+00:00",
+   "until": "2026-11-30",
+   "sub": "soundbars",
+   "specs": [
+    "3.1.2-kanaler, Dolby Atmos",
+    "AirPlay 2, Chromecast",
+    "HDMI eARC"
+   ]
+  },
+  {
+   "shop": "Komplett",
+   "title": "Lenovo Yoga Tab 256GB med tastatur og penn (Seashell)",
+   "brand": "Lenovo",
+   "price": 4990.0,
+   "before": 8890.0,
+   "url": "https://www.komplett.no/product/1346606",
+   "img": "https://www.komplett.no/product-media/b2c/en-us/1200/1346606.jpg",
+   "checked": "2026-11-20T20:54+00:00",
+   "until": "2026-11-30",
+   "sub": "tablets",
+   "specs": [
+    "11,1\" 3,2K-skjerm",
+    "12 GB RAM, 256 GB",
+    "Tastatur og penn følger med"
+   ]
+  },
+  {
+   "shop": "Komplett",
+   "title": "LG 65\" C64 OLED evo 4K Smart TV (2026)",
+   "brand": "LG",
+   "price": 17990.0,
+   "before": 29990.0,
+   "url": "https://www.komplett.no/product/1339456",
+   "img": "https://www.komplett.no/product-media/b2c/en-us/1200/1339456.jpg",
+   "checked": "2026-11-20T20:54+00:00",
+   "until": "2026-11-30",
+   "sub": "tv",
+   "specs": [
+    "OLED, 165 Hz",
+    "Dolby Vision og Atmos",
+    "4x HDMI 2.1, webOS"
+   ]
+  },
+  {
+   "shop": "Komplett",
+   "title": "Samsung 65\" The Frame Pro Neo QLED 4K Mini LED Smart TV (2026)",
+   "brand": "Samsung",
+   "price": 14990.0,
+   "before": 24990.0,
+   "url": "https://www.komplett.no/product/1338894",
+   "img": "https://www.komplett.no/product-media/b2c/en-us/1200/1338894.jpg",
+   "checked": "2026-11-20T20:54+00:00",
+   "until": "2026-11-30",
+   "sub": "tv",
+   "specs": [
+    "144 Hz, Neo QLED Mini LED",
+    "NQ4 AI Gen3-prosessor"
+   ]
+  },
+  {
+   "shop": "Komplett",
+   "title": "Motorola moto g67 5G 128GB (grønn)",
+   "brand": "Motorola",
+   "price": 1990.0,
+   "before": 3690.0,
+   "url": "https://www.komplett.no/product/1341578",
+   "img": "https://www.komplett.no/product-media/b2c/en-us/1200/1341578.jpg",
+   "checked": "2026-11-20T20:54+00:00",
+   "until": "2026-11-29",
+   "sub": "phones",
+   "specs": [
+    "AMOLED-skjerm",
+    "50 MP kamera"
+   ]
+  },
+  {
+   "shop": "Komplett",
+   "title": "Google Pixel 11 256GB (obsidian)",
+   "brand": "Google",
+   "price": 6990.0,
+   "before": 11990.0,
+   "url": "https://www.komplett.no/product/1341975",
+   "img": "https://www.komplett.no/product-media/b2c/en-us/1200/1341975.jpg",
+   "checked": "2026-11-20T20:54+00:00",
+   "until": "2026-11-30",
+   "sub": "phones",
+   "specs": [
+    "6,3\" OLED",
+    "12 GB RAM",
+    "48+10,8+13 MP kamera, IP68"
+   ]
+  },
+  {
+   "shop": "Komplett",
+   "title": "Samsung 65\" R95H Micro RGB 4K Smart TV (2026)",
+   "brand": "Samsung",
+   "price": 24990.0,
+   "before": 39990.0,
+   "url": "https://www.komplett.no/product/1338902",
+   "img": "https://www.komplett.no/product-media/b2c/en-us/1200/1338902.jpg",
+   "checked": "2026-11-20T20:54+00:00",
+   "until": "2026-11-30",
+   "sub": "tv",
+   "specs": [
+    "165 Hz, Micro RGB",
+    "FreeSync Premium Pro",
+    "eARC, VRR"
+   ]
+  },
+  {
+   "shop": "Komplett",
+   "title": "Samsung Galaxy Tab A11+ 5G 128GB (gray)",
+   "brand": "Samsung",
+   "price": 2390.0,
+   "before": 4290.0,
+   "url": "https://www.komplett.no/product/1344945",
+   "img": "https://www.komplett.no/product-media/b2c/en-us/1200/1344945.jpg",
+   "checked": "2026-11-20T20:54+00:00",
+   "until": "2026-11-30",
+   "sub": "tablets",
+   "specs": [
+    "11\" 1920 x 1200",
+    "6 GB RAM, 128 GB",
+    "5G, microSD"
+   ]
+  },
+  {
+   "shop": "Komplett",
+   "title": "MSI MPG 321CURX 32\" 4K buet QD-OLED 240 Hz gamingskjerm",
+   "brand": "MSI",
+   "price": 8990.0,
+   "before": 14990.0,
+   "url": "https://www.komplett.no/product/1320081",
+   "img": "https://www.komplett.no/product-media/b2c/en-us/1200/1320081.jpg",
+   "checked": "2026-11-20T20:54+00:00",
+   "until": "2026-11-30",
+   "sub": "monitors",
+   "specs": [
+    "3840 x 2160 QD-OLED, buet",
+    "240 Hz, 0,03 ms",
+    "HDR400"
+   ]
+  },
+  {
+   "shop": "Komplett",
+   "title": "GIGABYTE AORUS ELITE 16\" QHD 165 Hz gaming-laptop",
+   "brand": "GIGABYTE",
+   "price": 27990.0,
+   "before": 43490.0,
+   "url": "https://www.komplett.no/product/1345612",
+   "img": "https://www.komplett.no/product-media/b2c/en-us/1200/1345612.jpg",
+   "checked": "2026-11-20T20:54+00:00",
+   "until": "2026-12-18",
+   "sub": "laptops",
+   "specs": [
+    "GeForce RTX 5070",
+    "Intel Core Ultra 9 275HX",
+    "32 GB RAM, 2 TB SSD"
+   ]
+  },
+  {
+   "shop": "Komplett",
+   "title": "Samsung 75\" R85H Micro RGB 4K Smart TV (2026)",
+   "brand": "Samsung",
+   "price": 18990.0,
+   "before": 29990.0,
+   "url": "https://www.komplett.no/product/1338904",
+   "img": "https://www.komplett.no/product-media/b2c/en-us/1200/1338904.jpg",
+   "checked": "2026-11-20T20:54+00:00",
+   "until": "2026-11-30",
+   "sub": "tv",
+   "specs": [
+    "4K, Micro RGB",
+    "Tizen"
+   ]
+  },
+  {
+   "shop": "Komplett",
+   "title": "Samsung 100\" M90H 4K Mini LED Smart TV (2026)",
+   "brand": "Samsung",
+   "price": 18990.0,
+   "before": 29990.0,
+   "url": "https://www.komplett.no/product/1341881",
+   "img": "https://www.komplett.no/product-media/b2c/en-us/1200/1341881.jpg",
+   "checked": "2026-11-20T20:54+00:00",
+   "until": "2026-11-30",
+   "sub": "tv",
+   "specs": [
+    "144 Hz, Mini LED",
+    "HDR10+, Tizen"
+   ]
+  },
+  {
+   "shop": "Komplett",
+   "title": "AOC Q27G4ZD 27\" QHD OLED 280 Hz gamingskjerm",
+   "brand": "AOC",
+   "price": 3490.0,
+   "before": 5990.0,
+   "url": "https://www.komplett.no/product/1334028",
+   "img": "https://www.komplett.no/product-media/b2c/en-us/1200/1334028.jpg",
+   "checked": "2026-11-20T20:54+00:00",
+   "until": "2026-11-30",
+   "sub": "monitors",
+   "specs": [
+    "2560 x 1440 OLED",
+    "280 Hz, 0,3 ms",
+    "HDR400"
+   ]
+  },
+  {
+   "shop": "Komplett",
+   "title": "Samsung Galaxy Tab S11 5G 128GB (gray)",
+   "brand": "Samsung",
+   "price": 8490.0,
+   "before": 13990.0,
+   "url": "https://www.komplett.no/product/1344948",
+   "img": "https://www.komplett.no/product-media/b2c/en-us/1200/1344948.jpg",
+   "checked": "2026-11-20T20:54+00:00",
+   "until": "2026-11-30",
+   "sub": "tablets",
+   "specs": [
+    "11\" AMOLED 2X 2560 x 1600",
+    "12 GB RAM, 128 GB",
+    "5G"
+   ]
+  },
+  {
+   "shop": "Komplett",
+   "title": "ASUS Vivobook 14\" FHD Copilot+ PC (blå)",
+   "brand": "ASUS",
+   "price": 6990.0,
+   "before": 9990.0,
+   "url": "https://www.komplett.no/product/1333630",
+   "img": "https://www.komplett.no/product-media/b2c/en-us/1200/1333630.jpg",
+   "checked": "2026-11-20T20:54+00:00",
+   "until": "2026-12-06",
+   "sub": "laptops",
+   "specs": [
+    "14\" Full HD",
+    "Copilot+ PC med AI-funksjoner"
+   ]
+  },
+  {
+   "shop": "Komplett",
+   "title": "Acer Swift Edge 14 AI Copilot+ PC",
+   "brand": "Acer",
+   "price": 14990.0,
+   "before": 21490.0,
+   "url": "https://www.komplett.no/product/1339037",
+   "img": "https://www.komplett.no/product-media/b2c/en-us/1200/1339037.jpg",
+   "checked": "2026-11-20T20:54+00:00",
+   "until": "2026-11-30",
+   "sub": "laptops",
+   "specs": [
+    "Intel Core Ultra 7 355",
+    "16 GB RAM, 1 TB SSD",
+    "Windows 11 Home"
+   ]
+  },
+  {
+   "shop": "Komplett",
+   "title": "Acer Predator Helios Neo 16 AI PHN16-I71 16\" WQXGA gaming-laptop",
+   "brand": "Acer",
+   "price": 34990.0,
+   "before": 49990.0,
+   "url": "https://www.komplett.no/product/1339038",
+   "img": "https://www.komplett.no/product-media/b2c/en-us/1200/1339038.jpg",
+   "checked": "2026-11-20T20:54+00:00",
+   "until": "2026-11-30",
+   "sub": "laptops",
+   "specs": [
+    "GeForce RTX 5080",
+    "Intel Core Ultra 9 290HX Plus",
+    "32 GB RAM, 1 TB SSD"
+   ]
+  },
+  {
+   "shop": "Komplett",
+   "title": "Acer Swift Edge 16 AI Copilot+ PC",
+   "brand": "Acer",
+   "price": 15990.0,
+   "before": 22990.0,
+   "url": "https://www.komplett.no/product/1339041",
+   "img": "https://www.komplett.no/product-media/b2c/en-us/1200/1339041.jpg",
+   "checked": "2026-11-20T20:54+00:00",
+   "until": "2026-11-30",
+   "sub": "laptops",
+   "specs": [
+    "Copilot+ PC",
+    "Windows 11 Home"
+   ]
+  },
+  {
+   "shop": "Komplett",
+   "title": "GIGABYTE AERO X16 16\" QHD 165 Hz bærbar PC",
+   "brand": "GIGABYTE",
+   "price": 17790.0,
+   "before": 27990.0,
+   "url": "https://www.komplett.no/product/1345611",
+   "img": "https://www.komplett.no/product-media/b2c/en-us/1200/1345611.jpg",
+   "checked": "2026-11-20T20:54+00:00",
+   "until": "2026-12-18",
+   "sub": "laptops",
+   "specs": [
+    "GeForce RTX 5060",
+    "AMD Ryzen AI 7 350",
+    "16 GB RAM, 1 TB SSD"
+   ]
+  },
+  {
+   "shop": "NetOnNet",
+   "title": "Acer Aspire Lite 15 AL15-32 15,6\" bærbar PC",
+   "brand": "Acer",
+   "price": 3790.0,
+   "before": 6490.0,
+   "url": "https://www.netonnet.no/art/data-og-nettbrett/laptop/laptop-15-16-tommer/acer-acer-aspire-lite-15-al15-32-kompreur/1065389.10997/",
+   "img": "https://imagecontent.netonnet.com/n0e6ajgmrw5w/3NNsSBXx2OWmqsXH0QGOMG/0e0e8dcaaaf0f1c2e368193aadd54be5/acer-aspire-lite-15-al15-32p-non-fingerprint-non-backlit-wp-start-screen-silver-01-custom.PNG",
+   "checked": "2026-11-20T20:58+00:00",
+   "sub": "laptops",
+   "specs": [
+    "Intel Celeron N4500",
+    "8 GB RAM, 128 GB SSD",
+    "15,6\" FHD IPS-skjerm"
+   ]
+  },
+  {
+   "shop": "NetOnNet",
+   "title": "Acer Aspire Go 15 AG15-42P 15,6\" bærbar PC",
+   "brand": "Acer",
+   "price": 7490.0,
+   "before": 11990.0,
+   "url": "https://www.netonnet.no/art/data-og-nettbrett/laptop/laptop-15-16-tommer/acer-acer-aspire-go-15-ag15-42p-kompreur/1065386.10997/",
+   "img": "https://imagecontent.netonnet.com/n0e6ajgmrw5w/HgY3IQ26UiQKenx4pnoWv/9939b855f947580e7cd41fa5cbe212e3/Acer_Aspire_Go_15_AG15-42P__1_.PNG",
+   "checked": "2026-11-20T20:58+00:00",
+   "sub": "laptops",
+   "specs": [
+    "AMD Ryzen 5 7430U",
+    "16 GB RAM, 512 GB SSD",
+    "15,6\" FHD-skjerm"
+   ]
+  },
+  {
+   "shop": "NetOnNet",
+   "title": "Acer Swift Edge 16 AI 16\" OLED bærbar PC",
+   "brand": "Acer",
+   "price": 15990.0,
+   "before": 22990.0,
+   "url": "https://www.netonnet.no/art/data-og-nettbrett/laptop/laptop-15-16-tommer/acer-acer-acer-swift-edge-16-ai-kompreur/1065396.10997/",
+   "img": "https://imagecontent.netonnet.com/n0e6ajgmrw5w/17vFzOCnkq8quh7UWC2qbg/63bf750e20ed88acd8d7a4edca7f9e73/acer-swift-edge-16-ai-sfe16-i51__1_.JPG",
+   "checked": "2026-11-20T20:58+00:00",
+   "sub": "laptops",
+   "specs": [
+    "Intel Core Ultra 7 355",
+    "16 GB RAM, 1 TB SSD",
+    "16\" WQXGA+ OLED 2880 x 1800"
+   ]
+  },
+  {
+   "shop": "NetOnNet",
+   "title": "Acer Aspire 14 AI A14 14\" bærbar PC",
+   "brand": "Acer",
+   "price": 10990.0,
+   "before": 15990.0,
+   "url": "https://www.netonnet.no/art/data-og-nettbrett/laptop/laptop-12-14-tommer/acer-aspire-14-ai-a14-kompreur/1065391.10995/",
+   "img": "https://imagecontent.netonnet.com/n0e6ajgmrw5w/zLnmyNN0ybxs0xmFsm1P2/8fa2298662109090fbbbfbf2e674b322/acer-aspire-14-ai-a14-a71m-non-fingerprint-with-backlit-on-wp-oled-ksp-pure-silver-01-custom.PNG",
+   "checked": "2026-11-20T20:58+00:00",
+   "sub": "laptops",
+   "specs": [
+    "AMD Ryzen 5 430",
+    "16 GB RAM, 512 GB SSD",
+    "AI-funksjoner"
+   ]
+  },
+  {
+   "shop": "NetOnNet",
+   "title": "Lenovo IdeaPad Slim 3 15ABR 15,6\" bærbar PC",
+   "brand": "Lenovo",
+   "price": 8990.0,
+   "before": 12990.0,
+   "url": "https://www.netonnet.no/art/data-og-nettbrett/laptop/laptop-15-16-tommer/lenovo-lenovo-ideapad-slim-3-15abr-komprdkk/1065377.10997/",
+   "img": "https://imagecontent.netonnet.com/n0e6ajgmrw5w/4DVuCzfZgpUNNQXsbW9EgE/6ff96877f63ded361c08ed29e4a12886/LENOVO_IdeaPad_Slim_3_15ABR__1_.JPG",
+   "checked": "2026-11-20T20:58+00:00",
+   "sub": "laptops",
+   "specs": [
+    "AMD Ryzen 7 5825U",
+    "16 GB RAM, 512 GB SSD",
+    "15,6\" FHD-skjerm"
+   ]
+  },
+  {
+   "shop": "NetOnNet",
+   "title": "Acer PM161Q 16\" bærbar skjerm",
+   "brand": "Acer",
+   "price": 890.0,
+   "before": 2490.0,
+   "url": "https://www.netonnet.no/art/data-og-nettbrett/pc-skjerm/pc-skjermer-24-26-tommer/acer-acer-16-pm161q/1068642.10991/",
+   "img": "https://imagecontent.netonnet.com/n0e6ajgmrw5w/33abEkr6DQYyoaErp7ofya/8aa4e1e2a131aec19ad3db895db6fceb/acer-monitor-pm161q-j2-wp-black-01.PNG",
+   "checked": "2026-11-20T20:58+00:00",
+   "sub": "monitors",
+   "specs": [
+    "Full HD IPS",
+    "Slank og bærbar"
+   ]
+  },
+  {
+   "shop": "NetOnNet",
+   "title": "Acer PM161W 16\" WUXGA bærbar skjerm",
+   "brand": "Acer",
+   "price": 1111.0,
+   "before": 2490.0,
+   "url": "https://www.netonnet.no/art/data-og-nettbrett/pc-skjerm/pc-skjermer-24-26-tommer/acer-acer-16-pm161w/1068643.10991/",
+   "img": "https://imagecontent.netonnet.com/n0e6ajgmrw5w/1jZn5AaSA1Eq2kQ8DDFi8O/de30b8a621b11cd73d4d5c917ea41da6/PM161W_04_wp.PNG",
+   "checked": "2026-11-20T20:58+00:00",
+   "sub": "monitors",
+   "specs": [
+    "16\" WUXGA IPS",
+    "Tynn og bærbar"
+   ]
+  },
+  {
+   "shop": "NetOnNet",
+   "title": "Andersson MRM-M1950 skjermarm opptil 57\"",
+   "brand": "Andersson",
+   "price": 599.0,
+   "before": 1095.0,
+   "url": "https://www.netonnet.no/art/data-og-nettbrett/pc-skjerm/skjermfeste/andersson-mrm-m1950-monitor-arm-motion-single-57/1032575.11700/",
+   "img": "https://images.netonnet.com/rs/w:640/q:40/f:webp/plain/https://www.netonnet.no/GetFile/ProductImagePrimary/(1032575)_645896_largeHD.webp",
+   "checked": "2026-11-20T20:58+00:00",
+   "sub": "pcacc",
+   "specs": [
+    "Buede og rette skjermer",
+    "Maks 22 kg",
+    "Roter, vri og vipp"
+   ]
+  },
+  {
+   "shop": "NetOnNet",
+   "title": "Samsung Galaxy Tab A11+ WiFi 128GB (grå)",
+   "brand": "Samsung",
+   "price": 1890.0,
+   "before": 3790.0,
+   "url": "https://www.netonnet.no/art/data-og-nettbrett/nettbrett/android/samsung-galaxy-tab-a11-wifi-128gb-grey/1060457.21624/",
+   "img": "https://imagecontent.netonnet.com/n0e6ajgmrw5w/7uN5xnOgPKovwcAWEeYinh/fb43dd2fe27193c7154e98b803b337e4/Galaxy_Tab_A11_Plus_Gray_Product_Image_Combo.jpg",
+   "checked": "2026-11-20T20:58+00:00",
+   "sub": "tablets",
+   "specs": [
+    "11\" skjerm",
+    "6 GB RAM, 128 GB"
+   ]
+  },
+  {
+   "shop": "NetOnNet",
+   "title": "Lenovo Tab 10,1\" 64GB WiFi med deksel",
+   "brand": "Lenovo",
+   "price": 1590.0,
+   "before": 2290.0,
+   "url": "https://www.netonnet.no/art/data-og-nettbrett/nettbrett/lenovo-tab-101-64gb-wifi/1039572.10989/",
+   "img": "https://imagecontent.netonnet.com/n0e6ajgmrw5w/ffe1df56-d35b-4fd8-92a4-17f63af27720/c598796201b785075971201b9f72bcfa/1317285.jpg",
+   "checked": "2026-11-20T20:58+00:00",
+   "sub": "tablets",
+   "specs": [
+    "10,1\" FHD-skjerm",
+    "4 GB RAM, 64 GB",
+    "Deksel med stativ følger med"
+   ]
+  },
+  {
+   "shop": "NetOnNet",
+   "title": "Samsung HW-B410F soundbar",
+   "brand": "Samsung",
+   "price": 1290.0,
+   "before": 2990.0,
+   "url": "https://www.netonnet.no/art/lyd/hoyttaler/soundbar/samsung-hw-b410fxe/1054605.11392/",
+   "img": "https://images.netonnet.com/rs/w:1920/q:40/f:webp/plain/https://www.netonnet.no/GetFile/ProductImagePrimary/(1054605)_740379_largeHD.webp",
+   "checked": "2026-11-20T20:58+00:00",
+   "sub": "soundbars",
+   "specs": [
+    "2.0 med innebygd woofer",
+    "Bluetooth"
+   ]
+  },
+  {
+   "shop": "NetOnNet",
+   "title": "JBL Cinema SB510 3.1-kanals soundbar",
+   "brand": "JBL",
+   "price": 990.0,
+   "before": 1990.0,
+   "url": "https://www.netonnet.no/art/lyd/hoyttaler/soundbar/jbl-sb510/1058930.11392/",
+   "img": "https://imagecontent.netonnet.com/n0e6ajgmrw5w/5UcXft9FymBnsLQ8BKxqyH/0c40fd84607585c8c25bbe9754fbd766/01_JBL_JBLSB510BLKEP_.jpg",
+   "checked": "2026-11-20T20:58+00:00",
+   "sub": "soundbars",
+   "specs": [
+    "3.1-kanaler",
+    "200 W Dolby Audio"
+   ]
+  },
+  {
+   "shop": "NetOnNet",
+   "title": "JBL PartyBox Club 120 partyhøyttaler",
+   "brand": "JBL",
+   "price": 2890.0,
+   "before": 4990.0,
+   "url": "https://www.netonnet.no/art/lyd/hoyttaler/partyhoyttalere/jbl-partybox-club-120-black/1033556.16430/",
+   "img": "https://images.netonnet.com/rs/w:1920/q:40/f:webp/plain/https://www.netonnet.no/GetFile/ProductImagePrimary/(1033556)_662413_largeHD.webp",
+   "checked": "2026-11-20T20:58+00:00",
+   "sub": "speakers",
+   "specs": [
+    "Opptil 12 timer spilletid",
+    "AI Sound Boost",
+    "Lysshow"
+   ]
+  },
+  {
+   "shop": "NetOnNet",
+   "title": "Nothing CMF Buds 2 (light green)",
+   "brand": "CMF by Nothing",
+   "price": 390.0,
+   "before": 690.0,
+   "url": "https://www.netonnet.no/art/lyd/hodetelefoner/in-ear-hodetelefoner/nothing-cmf-buds-2-by-nothing-light-green/1054586.11399/",
+   "img": "https://images.netonnet.com/rs/w:1920/q:40/f:webp/plain/https://www.netonnet.no/GetFile/ProductImagePrimary/(1054586)_716840_largeHD.webp",
+   "checked": "2026-11-20T20:58+00:00",
+   "sub": "earbuds",
+   "specs": [
+    "13,5 + 42 timer batteri",
+    "48 dB hybrid støyreduksjon",
+    "IP55"
+   ]
+  },
+  {
+   "shop": "NetOnNet",
+   "title": "Andersson PYB-3300 partyhøyttaler",
+   "brand": "Andersson",
+   "price": 890.0,
+   "before": 1490.0,
+   "url": "https://www.netonnet.no/art/lyd/hoyttaler/partyhoyttalere/andersson-pyb-3300/1061475.16430/",
+   "img": "https://imagecontent.netonnet.com/n0e6ajgmrw5w/3Z6BVOzRdoB69N0UCac47S/2b34a6652f25fec913b484f34589fb72/1061475-PYB-3300__4_.jpg",
+   "checked": "2026-11-20T20:58+00:00",
+   "sub": "speakers",
+   "specs": [
+    "100 W",
+    "Bluetooth 5.3",
+    "RGB-lys"
+   ]
+  },
+  {
+   "shop": "NetOnNet",
+   "title": "Andersson PYS-C3000 partyhøyttaler",
+   "brand": "Andersson",
+   "price": 1290.0,
+   "before": 1990.0,
+   "url": "https://www.netonnet.no/art/lyd/hoyttaler/partyhoyttalere/andersson-pys-c3000/1061472.16430/",
+   "img": "https://imagecontent.netonnet.com/n0e6ajgmrw5w/31ghZfoeYt2hYmHc1a3dcF/22d92202fff72f07993472209110264b/PYS-C3000_party_speaker__01_.jpg",
+   "checked": "2026-11-20T20:58+00:00",
+   "sub": "speakers",
+   "specs": [
+    "240 W med dyp bass",
+    "To 9\" basselementer",
+    "LED-lys"
+   ]
+  },
+  {
+   "shop": "NetOnNet",
+   "title": "JBL Flip 7 bærbar Bluetooth-høyttaler (sort)",
+   "brand": "JBL",
+   "price": 990.0,
+   "before": 1490.0,
+   "url": "https://www.netonnet.no/art/lyd/hoyttaler/bluetooth-hoyttaler/jbl-flip-7-black/1054421.11359/",
+   "img": "https://images.netonnet.com/rs/w:1920/q:40/f:webp/plain/https://www.netonnet.no/GetFile/ProductImagePrimary/(1054421)_714047_largeHD.webp",
+   "checked": "2026-11-20T20:58+00:00",
+   "sub": "speakers",
+   "specs": [
+    "AI Sound Boost",
+    "Opptil 16 timer spilletid",
+    "Vanntett"
+   ]
+  },
+  {
+   "shop": "NetOnNet",
+   "title": "Huawei FreeBuds Pro 5 (sand)",
+   "brand": "Huawei",
+   "price": 1490.0,
+   "before": 2190.0,
+   "url": "https://www.netonnet.no/art/lyd/hodetelefoner/in-ear-hodetelefoner/huawei-huawei-freebuds-pro-5-sand/1065662.0/",
+   "img": "https://imagecontent.netonnet.com/n0e6ajgmrw5w/1S8eXBS6EphOsFwBT2jCoY/637213d014f80fe70fcdf086df4c56d8/FBPro5_Sand_HQ_JPG_800__6_.jpg",
+   "checked": "2026-11-20T20:58+00:00",
+   "sub": "earbuds",
+   "specs": [
+    "9 + 29 timer batteri",
+    "Intelligent støyreduksjon"
+   ]
+  },
+  {
+   "shop": "NetOnNet",
+   "title": "Bose QuietComfort støydempende hodetelefoner (sort)",
+   "brand": "Bose",
+   "price": 1990.0,
+   "before": 2890.0,
+   "url": "https://www.netonnet.no/art/lyd/hodetelefoner/over-ear-hodetelefoner/bose-quietcomfort-headphones-black/1031060.16281/",
+   "img": "https://images.netonnet.com/rs/w:1920/q:40/f:webp/plain/https://www.netonnet.no/GetFile/ProductImagePrimary/(1031060)_602584_largeHD.webp",
+   "checked": "2026-11-20T20:58+00:00",
+   "sub": "headphones",
+   "specs": [
+    "Opptil 24 timer batteri",
+    "Aktiv støydemping"
+   ]
+  },
+  {
+   "shop": "NetOnNet",
+   "title": "AOC CU34B3E 34\" WQHD buet skjerm",
+   "brand": "AOC",
+   "price": 1990.0,
+   "before": 3990.0,
+   "url": "https://www.netonnet.no/art/gaming/gamingskjerm/gamingskjerm-31-57-tommer/aoc-aoc-34-cu34b3e/1062781.18238/",
+   "img": "https://imagecontent.netonnet.com/n0e6ajgmrw5w/2FMYYG248fFLAvQ5xjcGfS/d44f18119eec3311f0e3023febeb6834/AOC_CU34B3E__1_.jpg",
+   "checked": "2026-11-20T20:58+00:00",
+   "sub": "monitors",
+   "specs": [
+    "34\" WQHD 3440 x 1440",
+    "120 Hz",
+    "1 ms"
+   ]
+  },
+  {
+   "shop": "NetOnNet",
+   "title": "AOC CQ32G4VE 32\" QHD 180 Hz gamingskjerm",
+   "brand": "AOC",
+   "price": 1999.0,
+   "before": 3490.0,
+   "url": "https://www.netonnet.no/art/gaming/gamingskjerm/gamingskjerm-31-57-tommer/aoc-32-cq32g4ve/1055051.18238/",
+   "img": "https://images.netonnet.com/rs/w:1920/q:40/f:webp/plain/https://www.netonnet.no/GetFile/ProductImagePrimary/(1055051)_744310_largeHD.webp",
+   "checked": "2026-11-20T20:58+00:00",
+   "sub": "monitors",
+   "specs": [
+    "32\" QHD 2560 x 1440",
+    "180 Hz",
+    "1 ms"
+   ]
+  },
+  {
+   "shop": "NetOnNet",
+   "title": "AOC C27G42ZE 27\" Full HD 260 Hz gamingskjerm",
+   "brand": "AOC",
+   "price": 1149.0,
+   "before": 1990.0,
+   "url": "https://www.netonnet.no/art/gaming/gamingskjerm/gamingskjerm-27-30-tommer/aoc-aoc-27-c27g42ze/1064748.18237/",
+   "img": "https://imagecontent.netonnet.com/n0e6ajgmrw5w/z2C3JGSvKjTzUqFIFcTn4/324e138e40981c40b2a4aabe9867ace5/C27G42ZE__1_.JPG",
+   "checked": "2026-11-20T20:58+00:00",
+   "sub": "monitors",
+   "specs": [
+    "27\" Full HD",
+    "260 Hz",
+    "0,3 ms"
+   ]
+  },
+  {
+   "shop": "NetOnNet",
+   "title": "MSI MAG 32CQ6F 32\" WQHD 180 Hz buet gamingskjerm",
+   "brand": "MSI",
+   "price": 2090.0,
+   "before": 3490.0,
+   "url": "https://www.netonnet.no/art/gaming/gamingskjerm/gamingskjerm-31-57-tommer/msi-mag-32cq6f/1039985.18238/",
+   "img": "https://images.netonnet.com/rs/w:640/q:40/f:webp/plain/https://www.netonnet.no/GetFile/ProductImagePrimary/(1039985)_702391_largeHD.webp",
+   "checked": "2026-11-20T20:58+00:00",
+   "sub": "monitors",
+   "specs": [
+    "32\" WQHD 2560 x 1440",
+    "180 Hz",
+    "0,5 ms"
+   ]
+  },
+  {
+   "shop": "NetOnNet",
+   "title": "SteelSeries Apex Pro Gen 3 gamingtastatur (nordisk)",
+   "brand": "SteelSeries",
+   "price": 1790.0,
+   "before": 2999.0,
+   "url": "https://www.netonnet.no/art/gaming/gamingtastatur/mekanisk-tastatur/steelseries-apex-pro-gen-3-nordic/1035414.18243/",
+   "img": "https://images.netonnet.com/rs/w:1920/q:40/f:webp/plain/https://www.netonnet.no/GetFile/ProductImagePrimary/(1035414)_683201_largeHD.webp",
+   "checked": "2026-11-20T20:58+00:00",
+   "sub": "keyboards",
+   "specs": [
+    "OmniPoint 3.0-brytere",
+    "GG QuickSet"
+   ]
+  },
+  {
+   "shop": "NetOnNet",
+   "title": "Thrustmaster T128 racingratt PS5/PS4",
+   "brand": "Thrustmaster",
+   "price": 1499.0,
+   "before": 2390.0,
+   "url": "https://www.netonnet.no/art/gaming/ratt-og-handkontroll/ratt/thrustmaster-t128-ps5ps4/1027700.0/",
+   "img": "https://images.netonnet.com/rs/w:1920/q:40/f:webp/plain/https://www.netonnet.no/GetFile/ProductImagePrimary/(1027700)_543280_largeHD.webp",
+   "checked": "2026-11-20T20:58+00:00",
+   "sub": "controllers",
+   "specs": [
+    "900° rotasjon",
+    "Force feedback"
+   ]
+  },
+  {
+   "shop": "NetOnNet",
+   "title": "HyperX Cloud Alpha Wireless gamingheadset",
+   "brand": "HyperX",
+   "price": 1190.0,
+   "before": 1790.0,
+   "url": "https://www.netonnet.no/art/gaming/gaming-headset/tradlost-headset/hyperx-cloud-alpha-wireless/1024687.18242/",
+   "img": "https://images.netonnet.com/rs/w:640/q:40/f:webp/plain/https://www.netonnet.no/GetFile/ProductImagePrimary/(1024687)_506464_largeHD.webp",
+   "checked": "2026-11-20T20:58+00:00",
+   "sub": "gheadsets",
+   "specs": [
+    "DTS Spatial Audio",
+    "2,4 GHz trådløs",
+    "300 timer batteri"
+   ]
+  },
+  {
+   "shop": "NetOnNet",
+   "title": "Samsung Galaxy Watch8 40mm BT (sølv)",
+   "brand": "Samsung",
+   "price": 1690.0,
+   "before": 3590.0,
+   "url": "https://www.netonnet.no/art/mobil-smartklokke/smartklokker/samsung-smartklokke/samsung-galaxy-watch8-40mm-bt-silver/1056978.0/",
+   "img": "https://images.netonnet.com/rs/w:1920/q:40/f:webp/plain/https://www.netonnet.no/GetFile/ProductImagePrimary/(1056978)_733960_largeHD.webp",
+   "checked": "2026-11-20T20:58+00:00",
+   "sub": "watches",
+   "specs": [
+    "Gemini AI",
+    "Opptil 40 timer",
+    "Bluetooth-samtaler"
+   ]
+  },
+  {
+   "shop": "NetOnNet",
+   "title": "Samsung Galaxy A17 5G 128GB (sort)",
+   "brand": "Samsung",
+   "price": 1745.0,
+   "before": 3490.0,
+   "url": "https://www.netonnet.no/art/mobil-smartklokke/mobiltelefoner/samsung/samsung-galaxy-a17-5g-128gb-black/1057961.11555/",
+   "img": "https://images.netonnet.com/rs/w:640/q:40/f:webp/plain/https://www.netonnet.no/GetFile/ProductImagePrimary/(1057961)_735437_largeHD.webp",
+   "checked": "2026-11-20T20:58+00:00",
+   "sub": "phones",
+   "specs": [
+    "6,7\" FHD+ Super AMOLED",
+    "4 GB RAM, 128 GB",
+    "5000 mAh"
+   ]
+  },
+  {
+   "shop": "NetOnNet",
+   "title": "Garmin Fenix 8 43mm AMOLED (sølv/whitestone)",
+   "brand": "Garmin",
+   "price": 5490.0,
+   "before": 8490.0,
+   "url": "https://www.netonnet.no/art/mobil-smartklokke/smartklokker/garmin-smartklokke/garmin-fenix-8-43mm-amoled-silver-with-whitestone-silicone-band/1035163.14441/",
+   "img": "https://images.netonnet.com/rs/w:1920/q:40/f:webp/plain/https://www.netonnet.no/GetFile/ProductImagePrimary/(1035163)_676079_largeHD.webp",
+   "checked": "2026-11-20T20:58+00:00",
+   "sub": "watches",
+   "specs": [
+    "1,4\" AMOLED",
+    "Opptil 16 dager batteri",
+    "Samtaler fra klokken"
+   ]
+  },
+  {
+   "shop": "NetOnNet",
+   "title": "Garmin Forerunner 265 46mm løpeklokke (sort)",
+   "brand": "Garmin",
+   "price": 2990.0,
+   "before": 4490.0,
+   "url": "https://www.netonnet.no/art/mobil-smartklokke/smartklokker/garmin-smartklokke/garmin-forerunner-265-46mm-black/1039608.14441/",
+   "img": "https://images.netonnet.com/rs/w:640/q:40/f:webp/plain/https://www.netonnet.no/GetFile/ProductImagePrimary/(1039608)_700310_largeHD.webp",
+   "checked": "2026-11-20T20:58+00:00",
+   "sub": "watches",
+   "specs": [
+    "1,3\" AMOLED",
+    "Opptil 13 dager batteri",
+    "Treningsplanlegging"
+   ]
+  },
+  {
+   "shop": "NetOnNet",
+   "title": "Garmin Forerunner 265S 42mm løpeklokke (whitestone)",
+   "brand": "Garmin",
+   "price": 2990.0,
+   "before": 4490.0,
+   "url": "https://www.netonnet.no/art/mobil-smartklokke/smartklokker/garmin-smartklokke/garmin-forerunner-265s-42mm-whitestone/1039610.14441/",
+   "img": "https://images.netonnet.com/rs/w:1920/q:40/f:webp/plain/https://www.netonnet.no/GetFile/ProductImagePrimary/(1039610)_700319_largeHD.webp",
+   "checked": "2026-11-20T20:58+00:00",
+   "sub": "watches",
+   "specs": [
+    "1,1\" AMOLED",
+    "Opptil 15 dager batteri"
+   ]
+  },
+  {
+   "shop": "NetOnNet",
+   "title": "Garmin Fenix 8 51mm AMOLED (slate grey)",
+   "brand": "Garmin",
+   "price": 6490.0,
+   "before": 9290.0,
+   "url": "https://www.netonnet.no/art/mobil-smartklokke/smartklokker/garmin-smartklokke/garmin-fenix-8-51mm-amoled-slate-grey-with-black-silicone-band/1035043.14441/",
+   "img": "https://images.netonnet.com/rs/w:1920/q:40/f:webp/plain/https://www.netonnet.no/GetFile/ProductImagePrimary/(1035043)_675923_largeHD.webp",
+   "checked": "2026-11-20T20:58+00:00",
+   "sub": "watches",
+   "specs": [
+    "1,4\" AMOLED",
+    "Opptil 16 dager batteri",
+    "Samtaler fra klokken"
+   ]
+  },
+  {
+   "shop": "Proshop",
+   "title": "Samsung Galaxy Book5 15,6\" Core Ultra 5/8/512 bærbar PC",
+   "brand": "Samsung",
+   "price": 6390.0,
+   "before": 11490.0,
+   "url": "https://www.proshop.no/Baerbar-PC/Samsung-Galaxy-Book5-156-Core-Ultra-5-8GB-512GB/3391550",
+   "img": "https://www.proshop.no/Images/915x900/3391550_60b18f145902.png",
+   "checked": "2026-11-20T21:00+00:00",
+   "sub": "laptops",
+   "specs": [
+    "Intel Core Ultra 5",
+    "8 GB RAM, 512 GB SSD",
+    "15,6\" skjerm, nordisk tastatur"
+   ]
+  },
+  {
+   "shop": "Proshop",
+   "title": "Lenovo IdeaPad Slim 3 16\" Ryzen 5/16/512 bærbar PC",
+   "brand": "Lenovo",
+   "price": 7290.0,
+   "before": 11490.0,
+   "url": "https://www.proshop.no/Baerbar-PC/Lenovo-IdeaPad-Slim-3-16-Ryzen-5-16GB-512GB/3443689",
+   "img": "https://www.proshop.no/Images/915x900/3443689_299472c0dc87.jpg",
+   "checked": "2026-11-20T21:00+00:00",
+   "sub": "laptops",
+   "specs": [
+    "AMD Ryzen 5",
+    "16 GB RAM, 512 GB SSD",
+    "16\" skjerm, nordisk tastatur"
+   ]
+  },
+  {
+   "shop": "Proshop",
+   "title": "HP OmniBook 3 16\" IPS Ryzen 5/16/512 bærbar PC",
+   "brand": "HP",
+   "price": 6490.0,
+   "before": 9390.0,
+   "url": "https://www.proshop.no/Baerbar-PC/HP-OmniBook-3-16-IPS-Ryzen-5-16-GB-RAM-512-GB-SSD/3442209",
+   "img": "https://www.proshop.no/Images/915x900/3442209_13ccce5cb476.png",
+   "checked": "2026-11-20T21:00+00:00",
+   "sub": "laptops",
+   "specs": [
+    "AMD Ryzen 5",
+    "16 GB RAM, 512 GB SSD",
+    "16\" IPS-skjerm"
+   ]
+  },
+  {
+   "shop": "Proshop",
+   "title": "Motorola moto sound flow bærbar høyttaler (PANTONE Carbon)",
+   "brand": "Motorola",
+   "price": 1290.0,
+   "before": 2490.0,
+   "url": "https://www.proshop.no/Baerbare-festhoeyttalere/Motorola-moto-sound-flow-PANTONE-Carbon/3440929",
+   "img": "https://www.proshop.no/Images/915x900/3440929_4417b4ab396b.jpg",
+   "checked": "2026-11-20T21:00+00:00",
+   "sub": "speakers",
+   "specs": [
+    "Lyd innstilt av Bose"
+   ]
+  },
+  {
+   "shop": "Proshop",
+   "title": "Canon PIXMA MG2551S multifunksjonsskriver",
+   "brand": "Canon",
+   "price": 290.0,
+   "before": 649.0,
+   "url": "https://www.proshop.no/Skriver/Canon-PIXMA-MG2551S-Multifunksjon-Farge-Blekk/3265408",
+   "img": "https://www.proshop.no/Images/915x900/3265408_a83c6ff72242.jpg",
+   "checked": "2026-11-20T21:00+00:00",
+   "sub": "printers",
+   "specs": [
+    "Skriv ut, skann og kopier"
+   ]
+  },
+  {
+   "shop": "Proshop",
+   "title": "Canon PIXMA PRO-200S fotoskriver A3+",
+   "brand": "Canon",
+   "price": 3990.0,
+   "before": 6990.0,
+   "url": "https://www.proshop.no/Skriver/Canon-PIXMA-PRO-200S-Farge-Blekk/3324357",
+   "img": "https://www.proshop.no/Images/915x900/3324357_5aa9fd859b5f.jpg",
+   "checked": "2026-11-20T21:00+00:00",
+   "sub": "printers",
+   "specs": [
+    "Fotoskriver A3+",
+    "8 fargeblekk"
+   ]
+  },
+  {
+   "shop": "Proshop",
+   "title": "Canon PIXMA TS8750 multifunksjonsskriver (sort)",
+   "brand": "Canon",
+   "price": 1290.0,
+   "before": 2190.0,
+   "url": "https://www.proshop.no/Skriver/Canon-PIXMA-TS8750-Black-Multifunksjon-Farge-Blekk/3196140",
+   "img": "https://www.proshop.no/Images/915x900/3196140_08f7f9dd8f93.jpg",
+   "checked": "2026-11-20T21:00+00:00",
+   "sub": "printers",
+   "specs": [
+    "Multifunksjon",
+    "Utskrift uten PC"
+   ]
+  },
+  {
+   "shop": "Proshop",
+   "title": "Canon imagePROGRAF PRO-310 A3+ fotoskriver, 10 farger",
+   "brand": "Canon",
+   "price": 6490.0,
+   "before": 9990.0,
+   "url": "https://www.proshop.no/Storformatsskriver/Canon-Storformatsskriver-imagePROGRAF-PRO-310-10-farger/3338510",
+   "img": "https://www.proshop.no/Images/915x900/3338510_6313e77553f0.jpg",
+   "checked": "2026-11-20T21:00+00:00",
+   "sub": "printers",
+   "specs": [
+    "Kantløs A3+",
+    "10 fargeblekk",
+    "3\" LCD-skjerm"
+   ]
+  },
+  {
+   "shop": "Proshop",
+   "title": "Canon PIXMA G3570 blekktank-multifunksjonsskriver (sort)",
+   "brand": "Canon",
+   "price": 1850.0,
+   "before": 2990.0,
+   "url": "https://www.proshop.no/Skriver/Canon-PIXMA-G3570-Black-Multifunksjon-Farge-Blekk/3122192",
+   "img": "https://www.proshop.no/Images/915x900/3122192_6663e68c9c83.jpg",
+   "checked": "2026-11-20T21:00+00:00",
+   "sub": "printers",
+   "specs": [
+    "Blekktank",
+    "Skriv ut, skann og kopier"
+   ]
+  },
+  {
+   "shop": "Proshop",
+   "title": "Canon Zoemini 2 lommefotoskriver",
+   "brand": "Canon",
+   "price": 888.0,
+   "before": 1390.0,
+   "url": "https://www.proshop.no/Skriver/Canon-Zoemini-2-White-Max-recommended-for/3136220",
+   "img": "https://www.proshop.no/Images/915x900/3136220_11c48d4fa9b3.jpg",
+   "checked": "2026-11-20T21:00+00:00",
+   "sub": "printers",
+   "specs": [
+    "Zink-fotopapir uten blekk"
+   ]
+  },
+  {
+   "shop": "Proshop",
+   "title": "Samsung Odyssey OLED G6 S27DG602SU 27\" QHD 360 Hz",
+   "brand": "Samsung",
+   "price": 4990.0,
+   "before": 10990.0,
+   "url": "https://www.proshop.no/Skjerm/27-Samsung-Odyssey-OLED-G6-S27DG602SU-2560x1440-QHD-360Hz-OLED/3257792",
+   "img": "https://www.proshop.no/Images/915x900/3257792_b97cbf09f3d2.png",
+   "checked": "2026-11-20T21:00+00:00",
+   "sub": "monitors",
+   "specs": [
+    "27\" OLED 2560 x 1440",
+    "360 Hz"
+   ]
+  },
+  {
+   "shop": "Proshop",
+   "title": "Samsung Odyssey G7 LS40FG756 40\" 5K2K 180 Hz",
+   "brand": "Samsung",
+   "price": 6490.0,
+   "before": 13990.0,
+   "url": "https://www.proshop.no/Skjerm/40-Samsung-LS40FG756EUXEN-5120x2160-5K2K-180Hz-VA/3404685",
+   "img": "https://www.proshop.no/Images/915x900/3404685_77e3e33b61ad.png",
+   "checked": "2026-11-20T21:00+00:00",
+   "sub": "monitors",
+   "specs": [
+    "40\" VA 5120 x 2160",
+    "180 Hz, buet"
+   ]
+  },
+  {
+   "shop": "Proshop",
+   "title": "Dell Alienware AW2725QF 27\" 4K 165 Hz gamingskjerm",
+   "brand": "Dell",
+   "price": 3790.0,
+   "before": 7990.0,
+   "url": "https://www.proshop.no/Skjerm/27-Dell-Alienware-AW2725QF-3840x2160-4K-165Hz-IPS/3301873",
+   "img": "https://www.proshop.no/Images/915x900/3301873_f1ac383e30ac.jpg",
+   "checked": "2026-11-20T21:00+00:00",
+   "sub": "monitors",
+   "specs": [
+    "27\" IPS 3840 x 2160",
+    "165 Hz (FHD 330 Hz)"
+   ]
+  },
+  {
+   "shop": "Proshop",
+   "title": "ASUS ROG Strix Scope II 96 trådløst gamingtastatur (nordisk)",
+   "brand": "ASUS",
+   "price": 989.0,
+   "before": 2189.0,
+   "url": "https://www.proshop.no/Tastatur/ASUS-ROG-Strix-Scope-II-96-Traadloest-Gamingtastatur-Nordisk-Svart/3180640",
+   "img": "https://www.proshop.no/Images/915x900/3180640_0c7fbd28b734.png",
+   "checked": "2026-11-20T21:00+00:00",
+   "sub": "keyboards",
+   "specs": [
+    "Trådløst",
+    "Nordisk oppsett"
+   ]
+  },
+  {
+   "shop": "Proshop",
+   "title": "DUTZO G49-VP165QC 49\" DQHD 165 Hz buet skjerm",
+   "brand": "DUTZO",
+   "price": 4990.0,
+   "before": 9790.0,
+   "url": "https://www.proshop.no/Skjerm/49-DUTZO-G49-VP165QC-5120x1440-DQHD-165Hz-VA-65W-USB-C-Buet/3410576",
+   "img": "https://www.proshop.no/Images/915x900/3410576_82597eaf5d57.jpg",
+   "checked": "2026-11-20T21:00+00:00",
+   "sub": "monitors",
+   "specs": [
+    "5120 x 1440 VA, buet",
+    "165 Hz",
+    "USB-C 65 W"
+   ]
+  },
+  {
+   "shop": "Proshop",
+   "title": "Samsung Odyssey OLED G8 S34DG850SU 34\" UWQHD 175 Hz",
+   "brand": "Samsung",
+   "price": 8490.0,
+   "before": 15990.0,
+   "url": "https://www.proshop.no/Skjerm/34-Samsung-Odyssey-OLED-G8-S34DG850SU-3440x1440-UWQHD-175Hz-OLED/3300133",
+   "img": "https://www.proshop.no/Images/915x900/3300133_8e775d15f977.png",
+   "checked": "2026-11-20T21:00+00:00",
+   "sub": "monitors",
+   "specs": [
+    "34\" OLED 3440 x 1440",
+    "175 Hz"
+   ]
+  },
+  {
+   "shop": "Proshop",
+   "title": "Samsung Odyssey G9 49\" DQHD 144 Hz buet skjerm",
+   "brand": "Samsung",
+   "price": 5990.0,
+   "before": 10990.0,
+   "url": "https://www.proshop.no/Skjerm/49-Samsung-Odyssey-G9-5120x1440-DQHD-144Hz-VA-Buet/3351163",
+   "img": "https://www.proshop.no/Images/915x900/3351163_debe17d52432.png",
+   "checked": "2026-11-20T21:00+00:00",
+   "sub": "monitors",
+   "specs": [
+    "5120 x 1440 VA, buet",
+    "144 Hz"
+   ]
+  },
+  {
+   "shop": "Proshop",
+   "title": "L33T FuzionX Ergo gamingstol (grå mesh)",
+   "brand": "L33T",
+   "price": 1329.0,
+   "before": 2490.0,
+   "url": "https://www.proshop.no/Gamingstol/L33T-FuzionX-Ergo-Gamingstol-Graa-Maskestoff-Opptil-120-kg/3432890",
+   "img": "https://www.proshop.no/Images/915x900/3432890_538f2990ce5e.jpg",
+   "checked": "2026-11-20T21:00+00:00",
+   "sub": "chairs",
+   "specs": [
+    "Pustende mesh",
+    "Opptil 120 kg"
+   ]
+  },
+  {
+   "shop": "Proshop",
+   "title": "Optoma Photon Life PK31 4K-prosjektor",
+   "brand": "Optoma",
+   "price": 4499.0,
+   "before": 10999.0,
+   "url": "https://www.proshop.no/Prosjektor/Optoma-Prosjektor-Photon-Life-PK31-3820-x-2160-900-ANSI-lumens/3403966",
+   "img": "https://www.proshop.no/Images/915x900/3403966_f82f777a2410.jpg",
+   "checked": "2026-11-20T21:00+00:00",
+   "sub": "tv",
+   "specs": [
+    "4K",
+    "900 ANSI lumen"
+   ]
+  },
+  {
+   "shop": "Proshop",
+   "title": "Canon PowerShot V10 Vlog Starter Kit (sort)",
+   "brand": "Canon",
+   "price": 2490.0,
+   "before": 5790.0,
+   "url": "https://www.proshop.no/Kamera/Canon-PowerShot-V10-Vlog-Starter-Kit-Black/3164807",
+   "img": "https://www.proshop.no/Images/915x900/3164807_4787a5ac4afe.jpg",
+   "checked": "2026-11-20T21:00+00:00",
+   "sub": "cameras",
+   "specs": [
+    "Lommestort vlog-kamera"
+   ]
+  },
+  {
+   "shop": "Proshop",
+   "title": "Yaber K2s Pro prosjektor med subwoofer",
+   "brand": "Yaber",
+   "price": 3499.0,
+   "before": 6999.0,
+   "url": "https://www.proshop.no/Prosjektor/Yaber-Prosjektor-K2s-Pro-subwoofer-1920-x-1080-1000-ANSI-lumens/3334771",
+   "img": "https://www.proshop.no/Images/915x900/3334771_527bfedd26ab.jpg",
+   "checked": "2026-11-20T21:00+00:00",
+   "sub": "tv",
+   "specs": [
+    "Full HD 1920 x 1080",
+    "1000 ANSI lumen",
+    "Wi-Fi 6 og Bluetooth"
+   ]
+  },
+  {
+   "shop": "Proshop",
+   "title": "Canon EF 100-400mm f/4.5-5.6L IS II USM objektiv",
+   "brand": "Canon",
+   "price": 17990.0,
+   "before": 31990.0,
+   "url": "https://www.proshop.no/Linser/Canon-LensEF-100-400mm-f45-56L-IS-II-USM/2463529",
+   "img": "https://www.proshop.no/Images/300x251/2463529_a87244eff350..png",
+   "checked": "2026-11-20T21:00+00:00",
+   "sub": "cameras",
+   "specs": [
+    "Telezoom",
+    "Bildestabilisering"
+   ]
+  },
+  {
+   "shop": "Proshop",
+   "title": "ASUS ROG Pelta gamingheadset (sort)",
+   "brand": "ASUS",
+   "price": 839.0,
+   "before": 1690.0,
+   "url": "https://www.proshop.no/Hodetelefoner/ASUS-ROG-Pelta-Gaming-Headset-Svart/3371456",
+   "img": "https://www.proshop.no/Images/915x900/3371456_2eb8dde5d07f.png",
+   "checked": "2026-11-20T21:00+00:00",
+   "sub": "gheadsets",
+   "specs": [
+    "Trådløst gamingheadset"
+   ]
+  },
+  {
+   "shop": "Proshop",
+   "title": "OnePlus Buds Pro 3 (safirblå)",
+   "brand": "OnePlus",
+   "price": 1290.0,
+   "before": 2490.0,
+   "url": "https://www.proshop.no/Hodetelefoner/OnePlus-Buds-Pro-3-Safirblaa/3326936",
+   "img": "https://www.proshop.no/Images/915x900/3326936_5a6ee7e3a0b0.jpg",
+   "checked": "2026-11-20T21:00+00:00",
+   "sub": "earbuds",
+   "specs": [
+    "Aktiv støyreduksjon"
+   ]
+  },
+  {
+   "shop": "Proshop",
+   "title": "Samsung Galaxy S25 Edge 256GB/12GB (titanium jetblack)",
+   "brand": "Samsung",
+   "price": 6490.0,
+   "before": 16490.0,
+   "url": "https://www.proshop.no/Mobiltelefoner/Samsung-Galaxy-S25-Edge-256GB12GB-Titanium-Jetblack/3352063",
+   "img": "https://www.proshop.no/Images/915x900/3352063_0b1218c4e4b8.png",
+   "checked": "2026-11-20T21:00+00:00",
+   "sub": "phones",
+   "specs": [
+    "12 GB RAM, 256 GB"
+   ]
+  },
+  {
+   "shop": "Proshop",
+   "title": "Nokia T10 4G nettbrett 64GB/4GB (blå)",
+   "brand": "Nokia",
+   "price": 990.0,
+   "before": 2290.0,
+   "url": "https://www.proshop.no/iPad-Nettbrett/Nokia-T10-4G-64GB4GB-Blue/3092618",
+   "img": "https://www.proshop.no/Images/915x900/3092618_3c29a27081ad.jpg",
+   "checked": "2026-11-20T21:00+00:00",
+   "sub": "tablets",
+   "specs": [
+    "4G",
+    "4 GB RAM, 64 GB"
+   ]
+  },
+  {
+   "shop": "Proshop",
+   "title": "INIU Leopard 140 W powerbank 25 000 mAh",
+   "brand": "INIU",
+   "price": 649.0,
+   "before": 1490.0,
+   "url": "https://www.proshop.no/Noedlader/INIU-Leopard-Power-140-W-25000-mAh/3403311",
+   "img": "https://www.proshop.no/Images/915x900/3403311_77e78e2ca474.jpg",
+   "checked": "2026-11-20T21:00+00:00",
+   "sub": "chargers",
+   "specs": [
+    "25 000 mAh",
+    "140 W"
+   ]
+  },
+  {
+   "shop": "Proshop",
+   "title": "Samsung Galaxy S26 256GB/12GB (cobalt violet)",
+   "brand": "Samsung",
+   "price": 6745.0,
+   "before": 12490.0,
+   "url": "https://www.proshop.no/Mobiltelefoner/Samsung-Galaxy-S26-256GB12GB-Cobalt-Violet/3440368",
+   "img": "https://www.proshop.no/Images/915x900/3440368_ca5439f3e3d1.jpg",
+   "checked": "2026-11-20T21:00+00:00",
+   "sub": "phones",
+   "specs": [
+    "12 GB RAM, 256 GB"
+   ]
+  },
+  {
+   "shop": "Proshop",
+   "title": "Samsung Galaxy A57 5G 128GB/8GB (awesome grey)",
+   "brand": "Samsung",
+   "price": 3245.0,
+   "before": 6190.0,
+   "url": "https://www.proshop.no/Mobiltelefoner/Samsung-Galaxy-A57-5G-128GB8GB-Awesome-Grey/3452560",
+   "img": "https://www.proshop.no/Images/915x900/3452560_34753ecf5d77.jpg",
+   "checked": "2026-11-20T21:00+00:00",
+   "sub": "phones",
+   "specs": [
+    "8 GB RAM, 128 GB",
+    "5G"
+   ]
+  },
+  {
+   "shop": "Proshop",
+   "title": "Samsung Galaxy S25 Ultra 256GB/12GB (titanium jetblack)",
+   "brand": "Samsung",
+   "price": 9990.0,
+   "before": 17990.0,
+   "url": "https://www.proshop.no/Mobiltelefoner/Samsung-Galaxy-S25-Ultra-256GB12GB-Titanium-JetBlack/3387408",
+   "img": "https://www.proshop.no/Images/915x900/3387408_96aa86c4184c.jpg",
+   "checked": "2026-11-20T21:00+00:00",
+   "sub": "phones",
+   "specs": [
+    "12 GB RAM, 256 GB"
+   ]
+  },
+  {
+   "shop": "Proshop",
+   "title": "realme 16 Pro 5G 512GB/8GB (pebble grey)",
+   "brand": "realme",
+   "price": 3590.0,
+   "before": 6690.0,
+   "url": "https://www.proshop.no/Mobiltelefoner/realme-16-Pro-5G-512GB8GB-Pebble-Grey/3464218",
+   "img": "https://www.proshop.no/Images/915x900/3464218_80a731bfd9bf.png",
+   "checked": "2026-11-20T21:00+00:00",
+   "sub": "phones",
+   "specs": [
+    "8 GB RAM, 512 GB",
+    "5G"
+   ]
+  },
+  {
+   "shop": "Kjell & Company",
+   "title": "Soundcore Rave Neo bærbar partyhøyttaler",
+   "brand": "Soundcore",
+   "price": 1395.0,
+   "before": 2790.0,
+   "url": "https://www.kjell.com/no/p/soundcore-rave-neo-baerbar-partyhoyttaler-p22002",
+   "img": "https://www.kjell.com/cdn-cgi/image/width=1000,height=1000,fit=pad,format=auto/globalassets/productimages/911371_22002.jpg",
+   "checked": "2026-11-20T21:02+00:00",
+   "sub": "speakers"
+  },
+  {
+   "shop": "Kjell & Company",
+   "title": "JBL PartyBox Encore Essential 2 partyhøyttaler",
+   "brand": "JBL",
+   "price": 1990.0,
+   "before": 3790.0,
+   "url": "https://www.kjell.com/no/p/jbl-partybox-encore-essential-2-p24599",
+   "img": "https://www.kjell.com/cdn-cgi/image/width=1000,height=1000,fit=pad,format=auto/globalassets/productimages/918046_24599_0.jpg",
+   "checked": "2026-11-20T21:02+00:00",
+   "sub": "speakers",
+   "rating": 5.0,
+   "reviews": 14
+  },
+  {
+   "shop": "Kjell & Company",
+   "title": "WiZ Sync Box startsett for TV 75\"–85\"",
+   "brand": "WiZ",
+   "price": 629.0,
+   "before": 1269.0,
+   "url": "https://www.kjell.com/no/p/wiz-sync-box-starter-kit-75-85-p66493",
+   "img": "https://www.kjell.com/cdn-cgi/image/width=1000,height=1000,fit=pad,format=auto/globalassets/productimages/916944_66493_01.jpg",
+   "checked": "2026-11-20T21:02+00:00",
+   "sub": "lighting",
+   "rating": 4.0,
+   "reviews": 3
+  },
+  {
+   "shop": "Kjell & Company",
+   "title": "WiZ Sync Box startsett for TV 55\"–65\"",
+   "brand": "WiZ",
+   "price": 559.0,
+   "before": 1039.0,
+   "url": "https://www.kjell.com/no/p/wiz-sync-box-starter-kit-55-65-p66414",
+   "img": "https://www.kjell.com/cdn-cgi/image/width=1000,height=1000,fit=pad,format=auto/globalassets/productimages/916928_66414_01.jpg",
+   "checked": "2026-11-20T21:02+00:00",
+   "sub": "lighting",
+   "rating": 4.0,
+   "reviews": 8
+  },
+  {
+   "shop": "Kjell & Company",
+   "title": "Trust Tytan 2.1 datahøyttalere",
+   "brand": "Trust",
+   "price": 549.0,
+   "before": 999.0,
+   "url": "https://www.kjell.com/no/p/trust-tytan-2.1-datahoyttalere-p95372",
+   "img": "https://www.kjell.com/cdn-cgi/image/width=1000,height=1000,fit=pad,format=auto/globalassets/productimages/513157_95372_2.jpg",
+   "checked": "2026-11-20T21:02+00:00",
+   "sub": "speakers",
+   "rating": 4.5,
+   "reviews": 27
+  },
+  {
+   "shop": "Kjell & Company",
+   "title": "Nothing CMF Buds 2 støydempende ørepropper (mørkegrå)",
+   "brand": "CMF by Nothing",
+   "price": 390.0,
+   "before": 690.0,
+   "url": "https://www.kjell.com/no/p/nothing-cmf-buds-2-morkegra-p24718",
+   "img": "https://www.kjell.com/cdn-cgi/image/width=1000,height=1000,fit=pad,format=auto/globalassets/productimages/914289_24718_03.webp",
+   "checked": "2026-11-20T21:02+00:00",
+   "sub": "earbuds",
+   "rating": 4.5,
+   "reviews": 547
+  },
+  {
+   "shop": "Kjell & Company",
+   "title": "Xiaomi trådløs høyttaler 40 W",
+   "brand": "Xiaomi",
+   "price": 599.0,
+   "before": 995.0,
+   "url": "https://www.kjell.com/no/p/xiaomi-tradlos-hoyttaler-40w-p24585",
+   "img": "https://www.kjell.com/cdn-cgi/image/width=1000,height=1000,fit=pad,format=auto/globalassets/productimages/911422_24585.webp",
+   "checked": "2026-11-20T21:02+00:00",
+   "sub": "speakers",
+   "rating": 4.5,
+   "reviews": 141
+  },
+  {
+   "shop": "Kjell & Company",
+   "title": "Belkin BoostCharge Pro 2-i-1 trådløs lader med Qi2 15 W (svart)",
+   "brand": "Belkin",
+   "price": 449.0,
+   "before": 899.0,
+   "url": "https://www.kjell.com/no/p/belkin-boostcharge-pro-2-i-1-med-qi2-15-w-svart-p65576",
+   "img": "https://www.kjell.com/cdn-cgi/image/width=1000,height=1000,fit=pad,format=auto/globalassets/productimages/895875_65576.webp",
+   "checked": "2026-11-20T21:02+00:00",
+   "sub": "chargers",
+   "rating": 4.5,
+   "reviews": 6
+  },
+  {
+   "shop": "Kjell & Company",
+   "title": "Anker 100 W ladestasjon for Anker Prime powerbank",
+   "brand": "Anker",
+   "price": 449.0,
+   "before": 899.0,
+   "url": "https://www.kjell.com/no/p/anker-100w-ladestasjon-for-anker-prime-powerbank-p88982",
+   "img": "https://www.kjell.com/cdn-cgi/image/width=1000,height=1000,fit=pad,format=auto/globalassets/productimages/911322_88982.webp",
+   "checked": "2026-11-20T21:02+00:00",
+   "sub": "chargers",
+   "rating": 4.5,
+   "reviews": 3
+  },
+  {
+   "shop": "Kjell & Company",
+   "title": "Linocell Premium magnetisk tastaturetui for iPad (10. gen) og iPad A16",
+   "brand": "Linocell",
+   "price": 400.0,
+   "before": 799.0,
+   "url": "https://www.kjell.com/no/p/linocell-premium-magnetisk-tastaturetui-for-ipad-10.-gen-og-ipad-a16-p22938",
+   "img": "https://www.kjell.com/cdn-cgi/image/width=1000,height=1000,fit=pad,format=auto/globalassets/productimages/892731_22938_04_p315n-a_00.jpg",
+   "checked": "2026-11-20T21:02+00:00",
+   "sub": "phoneacc",
+   "rating": 4.0,
+   "reviews": 77
+  },
+  {
+   "shop": "Kjell & Company",
+   "title": "Fixed Flex 3-i-1 trådløs lader for Samsung",
+   "brand": "Fixed",
+   "price": 385.0,
+   "before": 769.0,
+   "url": "https://www.kjell.com/no/p/fixed-flex-samsung-3-in-1-p12115",
+   "img": "https://www.kjell.com/cdn-cgi/image/width=1000,height=1000,fit=pad,format=auto/globalassets/productimages/917514_12115_01.webp",
+   "checked": "2026-11-20T21:02+00:00",
+   "sub": "chargers"
+  },
+  {
+   "shop": "Kjell & Company",
+   "title": "Samsung Galaxy Tab A11+ 11\" nettbrett Wi-Fi 128 GB",
+   "brand": "Samsung",
+   "price": 1990.0,
+   "before": 3590.0,
+   "url": "https://www.kjell.com/no/p/samsung-galaxy-tab-a11-11-nettbrett-wi-fi-128-gb-p80546",
+   "img": "https://www.kjell.com/cdn-cgi/image/width=1000,height=1000,fit=pad,format=auto/globalassets/productimages/934522_80546_01.webp",
+   "checked": "2026-11-20T21:02+00:00",
+   "sub": "tablets",
+   "rating": 4.5,
+   "reviews": 16
+  },
+  {
+   "shop": "Kjell & Company",
+   "title": "Ugreen Nexode Pro 65 W GaN-lader med 3 porter",
+   "brand": "Ugreen",
+   "price": 299.0,
+   "before": 599.0,
+   "url": "https://www.kjell.com/no/p/ugreen-nexode-pro-65-w-gan-lader-med-3-porter-p21297",
+   "img": "https://www.kjell.com/cdn-cgi/image/width=1000,height=1000,fit=pad,format=auto/globalassets/productimages/937977_21297_01.webp",
+   "checked": "2026-11-20T21:02+00:00",
+   "sub": "chargers",
+   "rating": 5.0,
+   "reviews": 63
+  },
+  {
+   "shop": "Kjell & Company",
+   "title": "Ugreen Nexode Pro 160 W GaN-lader med 4 porter",
+   "brand": "Ugreen",
+   "price": 749.0,
+   "before": 1390.0,
+   "url": "https://www.kjell.com/no/p/ugreen-nexode-pro-160-w-gan-lader-med-4-porter-p21285",
+   "img": "https://www.kjell.com/cdn-cgi/image/width=1000,height=1000,fit=pad,format=auto/globalassets/productimages/947819_21285_01.webp",
+   "checked": "2026-11-20T21:02+00:00",
+   "sub": "chargers",
+   "rating": 5.0,
+   "reviews": 10
+  },
+  {
+   "shop": "Kjell & Company",
+   "title": "Samsung Galaxy Tab A11+ 11\" nettbrett 5G 128 GB",
+   "brand": "Samsung",
+   "price": 2490.0,
+   "before": 4290.0,
+   "url": "https://www.kjell.com/no/p/samsung-galaxy-tab-a11-11-nettbrett-5g-128-gb-p80544",
+   "img": "https://www.kjell.com/cdn-cgi/image/width=1000,height=1000,fit=pad,format=auto/globalassets/productimages/934484_80544_01.webp",
+   "checked": "2026-11-20T21:02+00:00",
+   "sub": "tablets",
+   "rating": 5.0,
+   "reviews": 4
+  },
+  {
+   "shop": "Kjell & Company",
+   "title": "Trust GXT 490 Fayzo 7.1 gamingheadset",
+   "brand": "Trust",
+   "price": 249.0,
+   "before": 899.0,
+   "url": "https://www.kjell.com/no/p/gxtrust-gxt-490-fayzo-7.1-gamingheadset-p69543",
+   "img": "https://www.kjell.com/cdn-cgi/image/width=1000,height=1000,fit=pad,format=auto/globalassets/productimages/898548_69543.webp",
+   "checked": "2026-11-20T21:02+00:00",
+   "sub": "gheadsets",
+   "rating": 4.5,
+   "reviews": 21
+  },
+  {
+   "shop": "Kjell & Company",
+   "title": "Logitech G Pro trådløs gamingmus",
+   "brand": "Logitech G",
+   "price": 499.0,
+   "before": 999.0,
+   "url": "https://www.kjell.com/no/p/logitech-g-pro-tradlos-gaming-mus-for-proffene-p62110",
+   "img": "https://www.kjell.com/cdn-cgi/image/width=1000,height=1000,fit=pad,format=auto/globalassets/productimages/754125_62110.webp",
+   "checked": "2026-11-20T21:02+00:00",
+   "sub": "mice",
+   "rating": 4.5,
+   "reviews": 30
+  },
+  {
+   "shop": "Kjell & Company",
+   "title": "Logitech G321 trådløst gamingheadset (svart)",
+   "brand": "Logitech G",
+   "price": 539.0,
+   "before": 899.0,
+   "url": "https://www.kjell.com/no/p/logitech-g321-tradlost-gamingheadset-svart-p70002",
+   "img": "https://www.kjell.com/cdn-cgi/image/width=1000,height=1000,fit=pad,format=auto/globalassets/productimages/921490_70002_01.webp",
+   "checked": "2026-11-20T21:02+00:00",
+   "sub": "gheadsets"
+  },
+  {
+   "shop": "Kjell & Company",
+   "title": "Logitech G502 HERO gamingmus",
+   "brand": "Logitech G",
+   "price": 379.0,
+   "before": 629.0,
+   "url": "https://www.kjell.com/no/p/logitech-g-502-hero-profesjonell-gamingmus-p62647",
+   "img": "https://www.kjell.com/cdn-cgi/image/width=1000,height=1000,fit=pad,format=auto/globalassets/productimages/764144_62647.webp",
+   "checked": "2026-11-20T21:02+00:00",
+   "sub": "mice",
+   "rating": 5.0,
+   "reviews": 71
   }
  ]
 }
