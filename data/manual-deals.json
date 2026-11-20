@@ -2,405 +2,6 @@
  "note": "Hand-picked deals with direct links to the shop. Prices checked on the shop's own product page.",
  "deals": [
   {
-   "shop": "Elkjøp",
-   "title": "Acer Aspire Lite 15-47P R3-5400U/8/128/IPS 15,6\" bærbar PC",
-   "brand": "Acer",
-   "price": 4295.0,
-   "before": 8995.0,
-   "url": "https://www.elkjop.no/product/1075320",
-   "checked": "2026-11-20T15:25+00:00",
-   "specs": [
-    "AMD Ryzen 3 5400U-prosessor",
-    "15,6\" IPS FullHD-skjerm",
-    "8 GB DDR4, 128 GB SSD-lagring"
-   ],
-   "img": "https://www.elkjop.no/image/dv_web_D180001414806/1075320/p.jpg"
-  },
-  {
-   "shop": "Elkjøp",
-   "title": "HP Laptop 15 R5-7520U/16/512 15,6\" bærbar PC",
-   "brand": "HP",
-   "price": 5995.0,
-   "before": 11995.0,
-   "url": "https://www.elkjop.no/product/1058451",
-   "checked": "2026-11-20T15:25+00:00",
-   "specs": [
-    "AMD Ryzen 5 7520U-prosessor",
-    "15,6\" FHD SVA-skjerm",
-    "16 GB LPDDR5 RAM, 512 GB SSD"
-   ],
-   "img": "https://www.elkjop.no/image/dv_web_D18000138433159/1058451/p.jpg"
-  },
-  {
-   "shop": "Elkjøp",
-   "title": "Samsung Galaxy Book4 Edge 15 Snapdragon X1/16/512/IPS",
-   "brand": "Samsung",
-   "price": 5495.0,
-   "before": 10995.0,
-   "url": "https://www.elkjop.no/product/1014151",
-   "checked": "2026-11-20T15:25+00:00",
-   "rating": 4.8,
-   "reviews": 8,
-   "specs": [
-    "Snapdragon X1-prosessor",
-    "15,6\" IPS-skjerm",
-    "16 GB RAM, 512 GB SSD"
-   ],
-   "img": "https://www.elkjop.no/image/dv_web_D18000136031047/1014151/p.jpg",
-   "sub": "laptops"
-  },
-  {
-   "shop": "Elkjøp",
-   "title": "HP Laptop 15-fc0852no R7-7730U/16/1024 15,6\" bærbar PC",
-   "brand": "HP",
-   "price": 6795.0,
-   "before": 12995.0,
-   "url": "https://www.elkjop.no/product/911988",
-   "checked": "2026-11-20T15:25+00:00",
-   "rating": 4.2,
-   "reviews": 37,
-   "specs": [
-    "AMD Ryzen 7 7730U-prosessor",
-    "15,6\" FHD SVA-skjerm",
-    "16 GB DDR4 RAM, 1 TB SSD"
-   ],
-   "img": "https://www.elkjop.no/image/dv_web_D1800013123843/911988/p.jpg"
-  },
-  {
-   "shop": "Elkjøp",
-   "title": "Lenovo Chromebook 14M8911 MTK-540/4/64 14\" bærbar PC",
-   "brand": "Lenovo",
-   "price": 1995.0,
-   "before": 3995.0,
-   "url": "https://www.elkjop.no/product/1039022",
-   "checked": "2026-11-20T15:25+00:00",
-   "rating": 5.0,
-   "reviews": 1,
-   "specs": [
-    "MediaTek Kompanio 540-prosessor",
-    "14\" WUXGA IPS-skjerm",
-    "4 GB LPDDR5X RAM, 64 GB flashminne"
-   ],
-   "img": "https://www.elkjop.no/image/dv_web_D1800013894152/1039022/p.jpg"
-  },
-  {
-   "shop": "Elkjøp",
-   "title": "Lenovo IdeaPad Slim 5 16IMH10 U5-135H/16/512/IPS 16\" bærbar PC",
-   "brand": "Lenovo",
-   "price": 8995.0,
-   "before": 16184.0,
-   "url": "https://www.elkjop.no/product/1046959",
-   "checked": "2026-11-20T15:25+00:00",
-   "specs": [
-    "Intel Core Ultra 5-prosessor",
-    "16\" IPS-skjerm",
-    "16 GB DDR5 RAM, 512 GB SSD"
-   ],
-   "img": "https://www.elkjop.no/image/dv_web_D18000147517962/1046959/p.jpg"
-  },
-  {
-   "shop": "Elkjøp",
-   "title": "Sony WH-1000XM4C trådløse over-ear hodetelefoner (sort)",
-   "brand": "Sony",
-   "price": 1990.0,
-   "before": 3290.0,
-   "url": "https://www.elkjop.no/product/1130695",
-   "checked": "2026-11-20T15:25+00:00",
-   "rating": 4.8,
-   "reviews": 10,
-   "specs": [
-    "40 mm-drivere, ANC",
-    "Trådløs Bluetooth-tilkobling",
-    "Opptil 34 t batteri (27 t med NC)"
-   ],
-   "img": "https://www.elkjop.no/image/dv_web_D18000144033/1130695/p.jpg"
-  },
-  {
-   "shop": "Elkjøp",
-   "title": "Bose QuietComfort Ultra (2nd Gen) trådløse around-ear hodetelefoner (sort)",
-   "brand": "Bose",
-   "price": 3490.0,
-   "before": 5390.0,
-   "url": "https://www.elkjop.no/product/942967",
-   "checked": "2026-11-20T15:25+00:00",
-   "rating": 4.7,
-   "reviews": 45,
-   "specs": [
-    "ANC, Aware Mode",
-    "Immersion Mode, CustomTune",
-    "Opptil 30 timers batteriliv"
-   ],
-   "img": "https://www.elkjop.no/image/dv_web_D1800013385005/942967/p.jpg"
-  },
-  {
-   "shop": "Elkjøp",
-   "title": "Soundcore Sport X20 helt trådløse in-ear hodetelefoner (sort)",
-   "brand": "Soundcore",
-   "price": 790.0,
-   "before": 1190.0,
-   "url": "https://www.elkjop.no/product/895031",
-   "checked": "2026-11-20T15:25+00:00",
-   "rating": 4.7,
-   "reviews": 317,
-   "specs": [
-    "Adaptiv ANC, IP68",
-    "11 mm driver, BassUp-teknologi",
-    "48 timer musikk med etui"
-   ],
-   "img": "https://www.elkjop.no/image/dv_web_D18000128927966/895031/p.jpg"
-  },
-  {
-   "shop": "Elkjøp",
-   "title": "Bose QuietComfort trådløse around-ear hodetelefoner (sort)",
-   "brand": "Bose",
-   "price": 1990.0,
-   "before": 2890.0,
-   "url": "https://www.elkjop.no/product/654216",
-   "checked": "2026-11-20T15:25+00:00",
-   "rating": 4.7,
-   "reviews": 704,
-   "specs": [
-    "Aktiv støydemping",
-    "Justerbar EQ, BT-multipunkt",
-    "Opptil 24 timers spilletid"
-   ],
-   "img": "https://www.elkjop.no/image/dv_web_D1800010021660952/654216/p.jpg"
-  },
-  {
-   "shop": "Elkjøp",
-   "title": "Samsung 100\" R85H 4K Micro RGB Smart TV (2026)",
-   "brand": "Samsung",
-   "price": 49990.0,
-   "before": 129990.0,
-   "url": "https://www.elkjop.no/product/1139619",
-   "checked": "2026-11-20T15:25+00:00",
-   "rating": 4.8,
-   "reviews": 12,
-   "specs": [
-    "4K (2160p), Mini LED Pro - RGB, 144 Hz",
-    "Tizen, HDR, skjermspeiling",
-    "Mini LED local dimming"
-   ],
-   "img": "https://www.elkjop.no/image/dv_web_D1800014517710/1139619/p.jpg"
-  },
-  {
-   "shop": "Elkjøp",
-   "title": "TCL 98\" MQLED80L 4K QD-Mini LED TV (2026)",
-   "brand": "TCL",
-   "price": 19990.0,
-   "before": 54990.0,
-   "url": "https://www.elkjop.no/product/1083331",
-   "checked": "2026-11-20T15:25+00:00",
-   "rating": 5.0,
-   "reviews": 1,
-   "specs": [
-    "4K (2160p), Mini LED, 144+ Hz",
-    "Google TV, Dolby Vision, skjermspeiling",
-    "Mini LED local dimming"
-   ],
-   "img": "https://www.elkjop.no/image/dv_web_D1800014159236/1083331/p.jpg"
-  },
-  {
-   "shop": "Elkjøp",
-   "title": "TCL 85\" QLED810L 4K QD-Mini LED TV (2026)",
-   "brand": "TCL",
-   "price": 12990.0,
-   "before": 34990.0,
-   "url": "https://www.elkjop.no/product/1083265",
-   "checked": "2026-11-20T15:25+00:00",
-   "specs": [
-    "4K (2160p), Mini LED, 144+ Hz",
-    "Google TV, Dolby Vision, HDR10, HLG",
-    "Mini LED local dimming"
-   ],
-   "img": "https://www.elkjop.no/image/dv_web_D1800014585284/1083265/p.jpg"
-  },
-  {
-   "shop": "Elkjøp",
-   "title": "Samsung Galaxy S26 5G smarttelefon 12/256GB (sort)",
-   "brand": "Samsung",
-   "price": 6745.0,
-   "before": 13490.0,
-   "url": "https://www.elkjop.no/product/1039743",
-   "checked": "2026-11-20T15:25+00:00",
-   "rating": 4.8,
-   "reviews": 3222,
-   "specs": [
-    "6,3\" AMOLED 120 Hz-skjerm",
-    "50+12+10 MP-kameraoppsett",
-    "4300 mAh batteri, trådløs lading"
-   ],
-   "img": "https://www.elkjop.no/image/dv_web_D18000138322470/1039743/p.jpg"
-  },
-  {
-   "shop": "Elkjøp",
-   "title": "Samsung Galaxy A57 5G smarttelefon 8/128GB (navy)",
-   "brand": "Samsung",
-   "price": 3245.0,
-   "before": 6490.0,
-   "url": "https://www.elkjop.no/product/1059805",
-   "checked": "2026-11-20T15:25+00:00",
-   "rating": 4.6,
-   "reviews": 30,
-   "specs": [
-    "6,7\" 120 Hz FHD+ AMOLED-skjerm",
-    "50+12+5 MP trippelkamera",
-    "5000 mAh batteri, 45 W hurtiglading"
-   ],
-   "img": "https://www.elkjop.no/image/dv_web_D1800013844775/1059805/p.jpg"
-  },
-  {
-   "shop": "Elkjøp",
-   "title": "Samsung Galaxy A17 5G smarttelefon 128GB (sort)",
-   "brand": "Samsung",
-   "price": 1745.0,
-   "before": 3490.0,
-   "url": "https://www.elkjop.no/product/950275",
-   "checked": "2026-11-20T15:25+00:00",
-   "rating": 4.4,
-   "reviews": 1040,
-   "specs": [
-    "6,7\" FHD+ AMOLED-skjerm",
-    "50+5+2 MP kameraoppsett",
-    "5000 mAh batteri, 25 W lading"
-   ],
-   "img": "https://www.elkjop.no/image/dv_web_D1800013388132/950275/p.jpg"
-  },
-  {
-   "shop": "Elkjøp",
-   "title": "Samsung Galaxy Watch8 40mm BT (grafitt)",
-   "brand": "Samsung",
-   "price": 1690.0,
-   "before": 3590.0,
-   "url": "https://www.elkjop.no/product/942252",
-   "checked": "2026-11-20T15:25+00:00",
-   "rating": 4.7,
-   "reviews": 277,
-   "specs": [
-    "1,34\" Super AMOLED-skjerm",
-    "Pulsmåling, EKG, BIA, SpO2",
-    "Bluetooth 5.3, Wi-Fi, NFC"
-   ],
-   "img": "https://www.elkjop.no/image/dv_web_D1800013465216/942252/p.jpg"
-  },
-  {
-   "shop": "Elkjøp",
-   "title": "Xplora XGO3 XConnect Gen2 smartklokke for barn med SIM-kort (sort)",
-   "brand": "Xplora",
-   "price": 890.0,
-   "before": 1890.0,
-   "url": "https://www.elkjop.no/product/852447",
-   "checked": "2026-11-20T15:25+00:00",
-   "rating": 4.2,
-   "reviews": 131,
-   "specs": [
-    "1,3\" berøringsskjerm",
-    "IP65/68, GPS",
-    "Forhåndsinstallert norsk nano-SIM"
-   ],
-   "img": "https://www.elkjop.no/image/dv_web_D18000127479582/852447/p.jpg"
-  },
-  {
-   "shop": "Elkjøp",
-   "title": "Ghost of Yotei (PS5)",
-   "brand": "Sony",
-   "price": 299.0,
-   "before": 699.0,
-   "url": "https://www.elkjop.no/product/922809",
-   "checked": "2026-11-20T15:25+00:00",
-   "rating": 4.8,
-   "reviews": 40,
-   "specs": [
-    "Action, RPG",
-    "Oppfølgeren til Ghost of Tsushima",
-    "PlayStation 5"
-   ],
-   "img": "https://www.elkjop.no/image/dv_web_D1800013129945/922809/p.jpg"
-  },
-  {
-   "shop": "Elkjøp",
-   "title": "ASUS ROG Pelta Wireless gamingheadset (Black)",
-   "brand": "Asus",
-   "price": 877.0,
-   "before": 1789.0,
-   "url": "https://www.elkjop.no/product/841841",
-   "checked": "2026-11-20T15:25+00:00",
-   "rating": 4.6,
-   "reviews": 15,
-   "specs": [
-    "50 mm drivere med titanmembran",
-    "Bluetooth, trådløs, USB-C",
-    "Opptil 90 timer batteriliv"
-   ],
-   "img": "https://www.elkjop.no/image/dv_web_D1800013766080/841841/p.jpg"
-  },
-  {
-   "shop": "Elkjøp",
-   "title": "Logitech G522 trådløst gaming-headsett (Black)",
-   "brand": "Logitech G",
-   "price": 999.0,
-   "before": 1999.0,
-   "url": "https://www.elkjop.no/product/913979",
-   "checked": "2026-11-20T15:25+00:00",
-   "rating": 4.7,
-   "reviews": 36,
-   "specs": [
-    "40 mm-drivere",
-    "USB-A trådløs, Bluetooth og kablet",
-    "70 timers batteriliv"
-   ],
-   "img": "https://www.elkjop.no/image/dv_web_D180001382678/913979/p.jpg"
-  },
-  {
-   "shop": "Elkjøp",
-   "title": "JBL Box Club 120 bluetooth-høyttaler",
-   "brand": "JBL",
-   "price": 2890.0,
-   "before": 4990.0,
-   "url": "https://www.elkjop.no/product/756682",
-   "checked": "2026-11-20T15:25+00:00",
-   "rating": 4.6,
-   "reviews": 1440,
-   "specs": [
-    "160 watt, lysshow",
-    "JBL Pro Sound, IPX4",
-    "12 timer spilletid"
-   ],
-   "img": "https://www.elkjop.no/image/dv_web_D1800010021820450/756682/p.jpg"
-  },
-  {
-   "shop": "Elkjøp",
-   "title": "Fitbit Inspire 3 aktivitetsarmbånd (sort/midnight zen)",
-   "brand": "Fitbit",
-   "price": 599.0,
-   "before": 990.0,
-   "url": "https://www.elkjop.no/product/942597",
-   "checked": "2026-11-20T15:25+00:00",
-   "rating": 4.5,
-   "reviews": 70,
-   "specs": [
-    "Puls- og aktivitetssporing døgnet rundt",
-    "Søvn- og kaloriesporing",
-    "Vanntett til 50 m, 10 dagers batteri"
-   ],
-   "img": "https://www.elkjop.no/image/dv_web_D1800010021096729/942597/p.jpg"
-  },
-  {
-   "shop": "Elkjøp",
-   "title": "AOC 16T20E2 15.6\" bærbar skjerm",
-   "brand": "AOC",
-   "price": 899.0,
-   "before": 1990.0,
-   "url": "https://www.elkjop.no/product/1107916",
-   "checked": "2026-11-20T15:25+00:00",
-   "specs": [
-    "15,6\" FHD IPS-panel",
-    "HDMI 2.1, DisplayPort 2.1",
-    "Magnetisk smartdeksel"
-   ],
-   "img": "https://www.elkjop.no/image/dv_web_D1800014311001/1107916/p.jpg"
-  },
-  {
    "shop": "Power",
    "title": "Lenovo ThinkBook 14 G9 14\" bærbar PC (21V0004UMX)",
    "brand": "Lenovo",
@@ -2222,6 +1823,744 @@
    "url": "https://www.jollyroom.no/leker/babyleker/babygym/beemoo-play-bunny-babygym-beige",
    "checked": "2026-11-20T15:42+00:00",
    "img": "https://www.jollyroom.se/storage/63ED7DDDE0B63AC3B8B556DFA26615305986B36AE8DD2721E11F1ADD5D3001D9/127269e599ca43ec81370aaa5f8b37e4/267-400-0-jpg.Jpeg/media/a60978e066454615a476f89c0c63339b/BM-BUNNYGYM-BEIGE-1895_5.jpeg"
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Acer Aspire Lite 15-47P R3-5400U/8/128/IPS 15,6\" bærbar PC",
+   "brand": "Acer",
+   "price": 4295.0,
+   "before": 8995.0,
+   "url": "https://www.elkjop.no/product/1075320",
+   "img": "https://www.elkjop.no/image/dv_web_D180001414806/1075320/p.jpg",
+   "checked": "2026-11-20T16:34+00:00",
+   "until": "2026-11-30",
+   "sub": "laptops",
+   "specs": [
+    "AMD Ryzen 3 5400U-prosessor",
+    "15,6\" IPS Full HD-skjerm",
+    "8 GB DDR4, 128 GB SSD"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "HP Laptop 15 R5-7520U/16/512 15,6\" bærbar PC",
+   "brand": "HP",
+   "price": 5995.0,
+   "before": 11995.0,
+   "url": "https://www.elkjop.no/product/1058451",
+   "img": "https://www.elkjop.no/image/dv_web_D18000138433159/1058451/p.jpg",
+   "checked": "2026-11-20T16:34+00:00",
+   "until": "2026-11-30",
+   "sub": "laptops",
+   "specs": [
+    "AMD Ryzen 5 7520U-prosessor",
+    "15,6\" FHD-skjerm",
+    "16 GB LPDDR5 RAM, 512 GB SSD"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "AOC 16T20E2 15,6\" bærbar skjerm",
+   "brand": "AOC",
+   "price": 899.0,
+   "before": 1990.0,
+   "url": "https://www.elkjop.no/product/1107916",
+   "img": "https://www.elkjop.no/image/dv_web_D1800014311001/1107916/p.jpg",
+   "checked": "2026-11-20T16:34+00:00",
+   "until": "2026-11-30",
+   "sub": "monitors",
+   "specs": [
+    "15,6\" FHD IPS-panel",
+    "HDMI 2.1, DisplayPort 2.1",
+    "Magnetisk smartdeksel"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Samsung Galaxy Book4 Edge 15 Snapdragon X1/16/512/IPS",
+   "brand": "Samsung",
+   "price": 5495.0,
+   "before": 10995.0,
+   "url": "https://www.elkjop.no/product/1014151",
+   "img": "https://www.elkjop.no/image/dv_web_D18000136031047/1014151/p.jpg",
+   "checked": "2026-11-20T16:34+00:00",
+   "until": "2026-11-30",
+   "sub": "laptops",
+   "specs": [
+    "Snapdragon X1-prosessor",
+    "15,6\" IPS-skjerm",
+    "16 GB RAM, 512 GB SSD"
+   ],
+   "rating": 4.8,
+   "reviews": 8
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Logik trådløs mus",
+   "brand": "Logik",
+   "price": 69.0,
+   "before": 179.0,
+   "url": "https://www.elkjop.no/product/466493",
+   "img": "https://www.elkjop.no/image/dv_web_D1800010021173317/466493/p.jpg",
+   "checked": "2026-11-20T16:34+00:00",
+   "until": "2026-11-30",
+   "sub": "mice",
+   "specs": [
+    "Optisk sensor",
+    "1000 DPI"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "HP Laptop 15-fc0852no R7-7730U/16/1024 15,6\" bærbar PC",
+   "brand": "HP",
+   "price": 6795.0,
+   "before": 12995.0,
+   "url": "https://www.elkjop.no/product/911988",
+   "img": "https://www.elkjop.no/image/dv_web_D1800013123843/911988/p.jpg",
+   "checked": "2026-11-20T16:34+00:00",
+   "until": "2026-11-30",
+   "sub": "laptops",
+   "specs": [
+    "AMD Ryzen 7 7730U-prosessor",
+    "15,6\" FHD-skjerm",
+    "16 GB DDR4 RAM, 1 TB SSD"
+   ],
+   "rating": 4.2,
+   "reviews": 37
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Lenovo Chromebook 14M8911 MTK-540/4/64 14\" bærbar PC",
+   "brand": "Lenovo",
+   "price": 1995.0,
+   "before": 3995.0,
+   "url": "https://www.elkjop.no/product/1039022",
+   "img": "https://www.elkjop.no/image/dv_web_D1800013894152/1039022/p.jpg",
+   "checked": "2026-11-20T16:34+00:00",
+   "until": "2026-11-30",
+   "sub": "laptops",
+   "specs": [
+    "MediaTek Kompanio 540-prosessor",
+    "14\" WUXGA IPS-skjerm",
+    "4 GB RAM, 64 GB lagring"
+   ],
+   "rating": 5.0,
+   "reviews": 1
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Lenovo IdeaPad Slim 5 16IMH10 U5-135H/16/512/IPS 16\" bærbar PC",
+   "brand": "Lenovo",
+   "price": 8995.0,
+   "before": 16184.0,
+   "url": "https://www.elkjop.no/product/1046959",
+   "img": "https://www.elkjop.no/image/dv_web_D18000147517962/1046959/p.jpg",
+   "checked": "2026-11-20T16:34+00:00",
+   "sub": "laptops",
+   "specs": [
+    "Intel Core Ultra 5-prosessor",
+    "16\" IPS-skjerm",
+    "16 GB DDR5 RAM, 512 GB SSD"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Samsung 100\" R85H 4K Micro RGB Smart TV (2026)",
+   "brand": "Samsung",
+   "price": 49990.0,
+   "before": 129990.0,
+   "url": "https://www.elkjop.no/product/1139619",
+   "img": "https://www.elkjop.no/image/dv_web_D1800014517710/1139619/p.jpg",
+   "checked": "2026-11-20T16:34+00:00",
+   "until": "2026-11-30",
+   "sub": "tv",
+   "specs": [
+    "4K, Mini LED Pro RGB, 144 Hz",
+    "Tizen, HDR, skjermspeiling"
+   ],
+   "rating": 4.8,
+   "reviews": 12
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "TCL 98\" MQLED80L 4K QD-Mini LED TV (2026)",
+   "brand": "TCL",
+   "price": 19990.0,
+   "before": 54990.0,
+   "url": "https://www.elkjop.no/product/1083331",
+   "img": "https://www.elkjop.no/image/dv_web_D1800014159236/1083331/p.jpg",
+   "checked": "2026-11-20T16:34+00:00",
+   "until": "2026-11-30",
+   "sub": "tv",
+   "specs": [
+    "4K, Mini LED, 144+ Hz",
+    "Google TV, Dolby Vision",
+    "Local dimming"
+   ],
+   "rating": 5.0,
+   "reviews": 1
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "TCL 85\" QLED810L 4K QD-Mini LED TV (2026)",
+   "brand": "TCL",
+   "price": 12990.0,
+   "before": 34990.0,
+   "url": "https://www.elkjop.no/product/1083265",
+   "img": "https://www.elkjop.no/image/dv_web_D1800014585284/1083265/p.jpg",
+   "checked": "2026-11-20T16:34+00:00",
+   "until": "2026-11-30",
+   "sub": "tv",
+   "specs": [
+    "4K, Mini LED, 144+ Hz",
+    "Google TV, Dolby Vision, HDR10",
+    "Local dimming"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "TCL 75\" MSQLED85L 4K SQD-Mini LED TV (2026)",
+   "brand": "TCL",
+   "price": 16990.0,
+   "before": 44990.0,
+   "url": "https://www.elkjop.no/product/1083322",
+   "img": "https://www.elkjop.no/image/dv_web_D1800014159232/1083322/p.jpg",
+   "checked": "2026-11-20T16:34+00:00",
+   "until": "2026-11-30",
+   "sub": "tv",
+   "specs": [
+    "4K, SQD Mini LED, 144+ Hz",
+    "Google TV, Dolby Vision",
+    "Local dimming"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "TCL 65\" MSQLED85L 4K SQD-Mini LED TV (2026)",
+   "brand": "TCL",
+   "price": 13990.0,
+   "before": 34990.0,
+   "url": "https://www.elkjop.no/product/1083325",
+   "img": "https://www.elkjop.no/image/dv_web_D1800014159240/1083325/p.jpg",
+   "checked": "2026-11-20T16:34+00:00",
+   "until": "2026-11-30",
+   "sub": "tv",
+   "specs": [
+    "4K, SQD Mini LED, 144+ Hz",
+    "Google TV, Dolby Vision",
+    "Local dimming"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "TCL 55\" MSQLED85L 4K SQD-Mini LED TV (2026)",
+   "brand": "TCL",
+   "price": 11990.0,
+   "before": 27990.0,
+   "url": "https://www.elkjop.no/product/1083304",
+   "img": "https://www.elkjop.no/image/dv_web_D1800014172317/1083304/p.jpg",
+   "checked": "2026-11-20T16:34+00:00",
+   "until": "2026-11-30",
+   "sub": "tv",
+   "specs": [
+    "4K, SQD Mini LED, 144+ Hz",
+    "Google TV, Dolby Vision",
+    "Local dimming"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Samsung 100\" QN80H Neo QLED 4K MiniLED smart-TV (2026)",
+   "brand": "Samsung",
+   "price": 24990.0,
+   "before": 49990.0,
+   "url": "https://www.elkjop.no/product/1082776",
+   "img": "https://www.elkjop.no/image/dv_web_D180001449650/1082776/p.jpg",
+   "checked": "2026-11-20T16:34+00:00",
+   "until": "2026-11-30",
+   "sub": "tv",
+   "specs": [
+    "4K, Mini LED, 144 Hz",
+    "Tizen, HDR10+",
+    "Local dimming"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Samsung Galaxy S26 5G smarttelefon 12/256GB (sort)",
+   "brand": "Samsung",
+   "price": 6745.0,
+   "before": 13490.0,
+   "url": "https://www.elkjop.no/product/1039743",
+   "img": "https://www.elkjop.no/image/dv_web_D18000138322470/1039743/p.jpg",
+   "checked": "2026-11-20T16:34+00:00",
+   "until": "2026-11-30",
+   "sub": "phones",
+   "specs": [
+    "6,3\" AMOLED 120 Hz-skjerm",
+    "50+12+10 MP kamera"
+   ],
+   "rating": 4.8,
+   "reviews": 3222
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Samsung Galaxy Watch8 40mm BT (grafitt)",
+   "brand": "Samsung",
+   "price": 1690.0,
+   "before": 3590.0,
+   "url": "https://www.elkjop.no/product/942252",
+   "img": "https://www.elkjop.no/image/dv_web_D1800013465216/942252/p.jpg",
+   "checked": "2026-11-20T16:34+00:00",
+   "until": "2026-11-30",
+   "sub": "watches",
+   "specs": [
+    "1,34\" Super AMOLED-skjerm",
+    "Puls, EKG, BIA, SpO2"
+   ],
+   "rating": 4.7,
+   "reviews": 277
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Samsung Galaxy A57 5G smarttelefon 8/128GB (navy)",
+   "brand": "Samsung",
+   "price": 3245.0,
+   "before": 6490.0,
+   "url": "https://www.elkjop.no/product/1059805",
+   "img": "https://www.elkjop.no/image/dv_web_D1800013844775/1059805/p.jpg",
+   "checked": "2026-11-20T16:34+00:00",
+   "until": "2026-11-30",
+   "sub": "phones",
+   "specs": [
+    "6,7\" 120 Hz FHD+ AMOLED-skjerm",
+    "50+12+5 MP trippelkamera",
+    "5000 mAh, 45 W hurtiglading"
+   ],
+   "rating": 4.6,
+   "reviews": 30
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Samsung Galaxy Tab A11+ Wi-Fi nettbrett 6/128GB (grå)",
+   "brand": "Samsung",
+   "price": 1890.0,
+   "before": 3790.0,
+   "url": "https://www.elkjop.no/product/1006805",
+   "img": "https://www.elkjop.no/image/dv_web_D18000135512751/1006805/p.jpg",
+   "checked": "2026-11-20T16:34+00:00",
+   "until": "2026-11-30",
+   "sub": "tablets",
+   "specs": [
+    "11\" skjerm",
+    "MediaTek MT8775-prosessor"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Samsung Galaxy A17 5G smarttelefon 128GB (sort)",
+   "brand": "Samsung",
+   "price": 1745.0,
+   "before": 3490.0,
+   "url": "https://www.elkjop.no/product/950275",
+   "img": "https://www.elkjop.no/image/dv_web_D1800013388132/950275/p.jpg",
+   "checked": "2026-11-20T16:34+00:00",
+   "until": "2026-11-30",
+   "sub": "phones",
+   "specs": [
+    "6,7\" FHD+ AMOLED-skjerm",
+    "50+5+2 MP kamera",
+    "5000 mAh batteri"
+   ],
+   "rating": 4.4,
+   "reviews": 1040
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Samsung Essential G3 G31H 27\" FHD IPS 144 Hz skjerm",
+   "brand": "Samsung",
+   "price": 1149.0,
+   "before": 2495.0,
+   "url": "https://www.elkjop.no/product/1137609",
+   "img": "https://www.elkjop.no/image/dv_web_D180001461218/1137609/p.jpg",
+   "checked": "2026-11-20T16:34+00:00",
+   "until": "2026-11-30",
+   "sub": "monitors",
+   "specs": [
+    "27\" Full HD IPS",
+    "144 Hz, FreeSync",
+    "HDMI 2.0, DisplayPort 1.4"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Ghost of Yotei (PS5)",
+   "brand": "Sony",
+   "price": 299.0,
+   "before": 699.0,
+   "url": "https://www.elkjop.no/product/922809",
+   "img": "https://www.elkjop.no/image/dv_web_D1800013129945/922809/p.jpg",
+   "checked": "2026-11-20T16:34+00:00",
+   "until": "2026-12-02",
+   "sub": "games",
+   "specs": [
+    "Action, RPG",
+    "Oppfølgeren til Ghost of Tsushima",
+    "PlayStation 5"
+   ],
+   "rating": 4.8,
+   "reviews": 40
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "ASUS ROG Pelta Wireless gamingheadset (Black)",
+   "brand": "ASUS",
+   "price": 877.0,
+   "before": 1789.0,
+   "url": "https://www.elkjop.no/product/841841",
+   "img": "https://www.elkjop.no/image/dv_web_D1800013766080/841841/p.jpg",
+   "checked": "2026-11-20T16:34+00:00",
+   "until": "2026-12-24",
+   "sub": "gheadsets",
+   "specs": [
+    "50 mm drivere med titanmembran",
+    "Bluetooth, trådløs, USB-C",
+    "Opptil 90 timer batteri"
+   ],
+   "rating": 4.6,
+   "reviews": 15
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Logitech G522 trådløst gaming-headsett (Black)",
+   "brand": "Logitech G",
+   "price": 999.0,
+   "before": 1999.0,
+   "url": "https://www.elkjop.no/product/913979",
+   "img": "https://www.elkjop.no/image/dv_web_D180001382678/913979/p.jpg",
+   "checked": "2026-11-20T16:34+00:00",
+   "until": "2026-11-30",
+   "sub": "gheadsets",
+   "specs": [
+    "40 mm-drivere",
+    "Trådløs, Bluetooth og kablet",
+    "70 timers batteritid"
+   ],
+   "rating": 4.7,
+   "reviews": 36
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Samsung Odyssey G9 G91F 49\" DQHD VA 144 Hz buet gamingskjerm",
+   "brand": "Samsung",
+   "price": 5990.0,
+   "before": 10990.0,
+   "url": "https://www.elkjop.no/product/898698",
+   "img": "https://www.elkjop.no/image/dv_web_D18000130339442/898698/p.jpg",
+   "checked": "2026-11-20T16:34+00:00",
+   "until": "2026-11-30",
+   "sub": "monitors",
+   "specs": [
+    "Buet 49\" VA-panel",
+    "1 ms, 144 Hz",
+    "AMD FreeSync Premium"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "LG kombiskap GBBSJ10DSW (hvit)",
+   "brand": "LG",
+   "price": 4995.0,
+   "before": 11995.0,
+   "url": "https://www.elkjop.no/product/1046724",
+   "img": "https://www.elkjop.no/image/dv_web_D18000138371216/1046724/p.jpg",
+   "checked": "2026-11-20T16:34+00:00",
+   "until": "2026-11-30",
+   "sub": "fridges",
+   "specs": [
+    "H 186 x B 59,7 x D 67,4 cm"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Bosch Serie 6 vaskemaskin WGG244ZTSN (9 kg)",
+   "brand": "Bosch",
+   "price": 4795.0,
+   "before": 10995.0,
+   "url": "https://www.elkjop.no/product/764454",
+   "img": "https://www.elkjop.no/image/dv_web_D18000130371340/764454/p.jpg",
+   "checked": "2026-11-20T16:34+00:00",
+   "until": "2026-11-30",
+   "sub": "washers",
+   "specs": [
+    "9 kg",
+    "1400 o/min sentrifugering"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Hisense kombinert vaskemaskin/tørketrommel WD1I1142BWL2 (11/7 kg)",
+   "brand": "Hisense",
+   "price": 3995.0,
+   "before": 8995.0,
+   "url": "https://www.elkjop.no/product/1052335",
+   "img": "https://www.elkjop.no/image/dv_web_D1800013941223/1052335/p.jpg",
+   "checked": "2026-11-20T16:34+00:00",
+   "until": "2026-11-30",
+   "sub": "washers",
+   "specs": [
+    "11 kg vask / 7 kg tørk",
+    "1400 o/min",
+    "Damp"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "TCL P5 vaskemaskin FP1154WA1NE (11 kg)",
+   "brand": "TCL",
+   "price": 3995.0,
+   "before": 8995.0,
+   "url": "https://www.elkjop.no/product/1054200",
+   "img": "https://www.elkjop.no/image/dv_web_D180001476142/1054200/p.jpg",
+   "checked": "2026-11-20T16:34+00:00",
+   "until": "2026-11-30",
+   "sub": "washers",
+   "specs": [
+    "11 kg",
+    "1400 o/min",
+    "Automatisk flekkfjerning"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Electrolux 800 innbyggingsovn OOS1180NB (svart)",
+   "brand": "Electrolux",
+   "price": 12995.0,
+   "before": 25995.0,
+   "url": "https://www.elkjop.no/product/991261",
+   "img": "https://www.elkjop.no/image/dv_web_D1800014524579/991261/p.jpg",
+   "checked": "2026-11-20T16:34+00:00",
+   "until": "2026-11-30",
+   "sub": "ovens",
+   "specs": [
+    "SteamPro med tre dampnivåer",
+    "Sous vide"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Samsung Serie 70 fryseskap RZ70H32KDVEF (hvit)",
+   "brand": "Samsung",
+   "price": 7495.0,
+   "before": 14995.0,
+   "url": "https://www.elkjop.no/product/1047083",
+   "img": "https://www.elkjop.no/image/dv_web_D18000141017066/1047083/p.jpg",
+   "checked": "2026-11-20T16:34+00:00",
+   "until": "2026-11-30",
+   "sub": "fridges",
+   "specs": [
+    "H 185,8 x B 59,5 x D 64,4 cm",
+    "Netto volum 323 l"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Electrolux Serie 300 oppvaskmaskin CSA47305UW (hvit)",
+   "brand": "Electrolux",
+   "price": 3995.0,
+   "before": 7995.0,
+   "url": "https://www.elkjop.no/product/943342",
+   "img": "https://www.elkjop.no/image/dv_web_D18000130343800/943342/p.jpg",
+   "checked": "2026-11-20T16:34+00:00",
+   "until": "2026-11-30",
+   "sub": "dishwashers",
+   "specs": [
+    "H 81,8 x B 59,7 x D 57,6 cm",
+    "44 dB, 13 kuverter"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Kenwood kombiskap KNF186W26E (hvit)",
+   "brand": "Kenwood",
+   "price": 3995.0,
+   "before": 7995.0,
+   "url": "https://www.elkjop.no/product/1054267",
+   "img": "https://www.elkjop.no/image/dv_web_D18000144031/1054267/p.jpg",
+   "checked": "2026-11-20T16:34+00:00",
+   "until": "2026-11-30",
+   "sub": "fridges",
+   "specs": [
+    "H 186 x B 60 x D 59 cm",
+    "210/83 l",
+    "39 dB"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Roborock Saros 20 Sonic robotstøvsuger S20S02-00 (hvit)",
+   "brand": "Roborock",
+   "price": 7490.0,
+   "before": 15990.0,
+   "url": "https://www.elkjop.no/product/1079412",
+   "img": "https://www.elkjop.no/image/dv_web_D18000138424881/1079412/p.jpg",
+   "checked": "2026-11-20T16:34+00:00",
+   "sub": "robovac",
+   "specs": [
+    "190 min brukstid",
+    "36 000 Pa sugeeffekt",
+    "4 l vann / 2,5 l støv"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Nespresso Vertuo POP kapselmaskin + melkeskummer fra DeLonghi ENV90.BAE",
+   "brand": "DeLonghi",
+   "price": 799.0,
+   "before": 1799.0,
+   "url": "https://www.elkjop.no/product/633792",
+   "img": "https://www.elkjop.no/image/dv_web_D1800010021640291/633792/p.jpg",
+   "checked": "2026-11-20T16:34+00:00",
+   "sub": "coffee",
+   "specs": [
+    "0,56 l vanntank",
+    "Sentrifusjonsteknologi"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Kenwood Chef XL Pro kjøkkenmaskin KVL88.003BK (sort)",
+   "brand": "Kenwood",
+   "price": 4499.0,
+   "before": 8999.0,
+   "url": "https://www.elkjop.no/product/1037515",
+   "img": "https://www.elkjop.no/image/dv_web_D18000137230758/1037515/p.jpg",
+   "checked": "2026-11-20T16:34+00:00",
+   "sub": "machines",
+   "specs": [
+    "1700 W"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Epoq by Woll sautépanne 28 cm aluminium",
+   "brand": "Epoq",
+   "price": 1295.0,
+   "before": 2695.0,
+   "url": "https://www.elkjop.no/product/955526",
+   "img": "https://www.elkjop.no/image/dv_web_D18000134112671/955526/p.jpg",
+   "checked": "2026-11-20T16:34+00:00",
+   "until": "2026-11-30",
+   "sub": "pans",
+   "specs": [
+    "Støpt aluminium",
+    "28 cm",
+    "8 mm tykk bunn"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Philips OneUp 5000 Series elektrisk mopp XV5113/01 (blå)",
+   "brand": "Philips",
+   "price": 999.0,
+   "before": 2099.0,
+   "url": "https://www.elkjop.no/product/969840",
+   "img": "https://www.elkjop.no/image/dv_web_D18000133828388/969840/p.jpg",
+   "checked": "2026-11-20T16:34+00:00",
+   "until": "2026-11-30",
+   "sub": "vacuums",
+   "specs": [
+    "70 min driftstid",
+    "360° roterende hengsel"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "LEGO Fortnite Durrr Burger 77070",
+   "brand": "LEGO",
+   "price": 99.0,
+   "before": 199.0,
+   "url": "https://www.elkjop.no/product/881193",
+   "img": "https://www.elkjop.no/image/dv_web_D180001382681/881193/p.jpg",
+   "checked": "2026-11-20T16:34+00:00",
+   "until": "2026-11-30",
+   "sub": "lego"
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "LEGO City Traktor 60498",
+   "brand": "LEGO",
+   "price": 99.0,
+   "before": 199.0,
+   "url": "https://www.elkjop.no/product/1018184",
+   "img": "https://www.elkjop.no/image/dv_web_D1800014004239/1018184/p.jpg",
+   "checked": "2026-11-20T16:34+00:00",
+   "until": "2026-11-30",
+   "sub": "lego",
+   "specs": [
+    "Fra 6 år"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "LEGO Kpop: Demonjegerne Derpy Tiger og Sussie Bird 72537",
+   "brand": "LEGO",
+   "price": 399.0,
+   "before": 729.0,
+   "url": "https://www.elkjop.no/product/1104504",
+   "img": "https://www.elkjop.no/image/dv_web_D180001419910/1104504/p.jpg",
+   "checked": "2026-11-20T16:34+00:00",
+   "until": "2026-11-30",
+   "sub": "lego"
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Philips i9000 Prestige barbermaskin XP9203/30 (gull)",
+   "brand": "Philips",
+   "price": 1999.0,
+   "before": 4999.0,
+   "url": "https://www.elkjop.no/product/904703",
+   "img": "https://www.elkjop.no/image/dv_web_D18000133815360/904703/p.jpg",
+   "checked": "2026-11-20T16:34+00:00",
+   "until": "2026-11-30",
+   "sub": "shaving",
+   "specs": [
+    "60 minutters brukstid",
+    "SkinIQ Pro, ladestativ"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Braun Series 7 barbermaskin 72-C7200cc (gull)",
+   "brand": "Braun",
+   "price": 1599.0,
+   "before": 3399.0,
+   "url": "https://www.elkjop.no/product/944418",
+   "img": "https://www.elkjop.no/image/dv_web_D18000133312129/944418/p.jpg",
+   "checked": "2026-11-20T16:34+00:00",
+   "until": "2026-11-30",
+   "sub": "shaving",
+   "specs": [
+    "60 min brukstid",
+    "Våt og tørr bruk"
+   ]
+  },
+  {
+   "shop": "Elkjøp",
+   "title": "Philips Lumea 9900 Series IPL hårfjerner BRI951/01 (hvit)",
+   "brand": "Philips",
+   "price": 3999.0,
+   "before": 7999.0,
+   "url": "https://www.elkjop.no/product/944842",
+   "img": "https://www.elkjop.no/image/dv_web_D1800013534404/944842/p.jpg",
+   "checked": "2026-11-20T16:34+00:00",
+   "until": "2026-11-30",
+   "sub": "shaving",
+   "specs": [
+    "SenseIQ-teknologi",
+    "SmartSkin-sensor"
+   ]
   }
  ]
 }
