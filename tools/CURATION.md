@@ -50,3 +50,4 @@ not re-checked within 48 h). Then commit + push; Cloudflare deploys in ~1 min.
 
 ## tools/load_shop.py
 - Tab-separated: title, brand, price, before, url, img, until, sub, specs(;). Replaces a shop's list; `--append` keeps the shop's other deals.
+- Barn category subs: lego, toys, strollers (vogner/triller/vognpose), carseats (bilstol/beltestol), baby (babyutstyr: matstol, babygym, babycall...).

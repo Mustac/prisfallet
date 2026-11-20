@@ -1753,7 +1753,8 @@
    "before": 6799.0,
    "url": "https://www.jollyroom.no/barnevogner/multibarnevogner/lopevogner/cybex-sport-avi-lopevogn-black-silver-pink",
    "checked": "2026-11-20T15:42+00:00",
-   "img": "https://www.jollyroom.se/storage/EE376C57826DA96B0FDDD9557E845E1F5AEFFFA1DBA1C0259BE50524D2D4D90F/e413f15f85c242e099de8902cca4aa4e/300-400-0-jpg.Jpeg/media/fecf684fe1ef45a4ae98c9b6b65ddc1c/AVIONE-520004797-3606_1.jpeg"
+   "img": "https://www.jollyroom.se/storage/EE376C57826DA96B0FDDD9557E845E1F5AEFFFA1DBA1C0259BE50524D2D4D90F/e413f15f85c242e099de8902cca4aa4e/300-400-0-jpg.Jpeg/media/fecf684fe1ef45a4ae98c9b6b65ddc1c/AVIONE-520004797-3606_1.jpeg",
+   "sub": "strollers"
   },
   {
    "shop": "Jollyroom",
@@ -1762,7 +1763,8 @@
    "price": 2295.0,
    "before": 3995.0,
    "url": "https://www.jollyroom.no/barnevogner/sportsvogner/framovervendt-sittedel/beemoo-pro-twist-sportsvogn-coffee-black",
-   "checked": "2026-11-20T15:42+00:00"
+   "checked": "2026-11-20T15:42+00:00",
+   "sub": "strollers"
   },
   {
    "shop": "Jollyroom",
@@ -1773,7 +1775,7 @@
    "url": "https://www.jollyroom.no/barnevogner/vognposer/vintervognposer/nordlys-thyra-lammeskinnvognpose-svart-hvit",
    "checked": "2026-11-20T15:42+00:00",
    "img": "https://www.jollyroom.se/storage/6EEE53801398DE71B9A70FE4CF2586F3B22CF32E6D5DDDCC1E636932D9F2C79F/698746bd130d4207a3ac6083661eb597/300-400-0-jpg.Jpeg/media/5241c1c5691741b689bd4f898d54eeda/1956510_NLYS-Thyra-SvartVit-1882_1.jpeg",
-   "sub": "baby"
+   "sub": "strollers"
   },
   {
    "shop": "Jollyroom",
@@ -1783,7 +1785,8 @@
    "before": 5495.0,
    "url": "https://www.jollyroom.no/barnevogner/triller/triller/baby-jogger-city-mini-gt-2-1-opulent-black",
    "checked": "2026-11-20T15:42+00:00",
-   "img": "https://www.jollyroom.se/storage/E2761C870B7EE40FA17A297F647B60DDDE978DEE8ECC331820A1CEBA53DA096E/23ec658abff34988be6a230c5113f527/300-400-0-jpg.Jpeg/media/28c48b5c1065473691db4dd725fc2813/CITYMINIGT2.1-BJ2149111-1817_1.jpeg"
+   "img": "https://www.jollyroom.se/storage/E2761C870B7EE40FA17A297F647B60DDDE978DEE8ECC331820A1CEBA53DA096E/23ec658abff34988be6a230c5113f527/300-400-0-jpg.Jpeg/media/28c48b5c1065473691db4dd725fc2813/CITYMINIGT2.1-BJ2149111-1817_1.jpeg",
+   "sub": "strollers"
   },
   {
    "shop": "Jollyroom",
@@ -1792,7 +1795,8 @@
    "price": 1295.0,
    "before": 2599.0,
    "url": "https://www.jollyroom.no/bilstoler/beltestoler/isofix/cbx-by-cybex-solution-b3-i-fix-beltestol-grey",
-   "checked": "2026-11-20T15:42+00:00"
+   "checked": "2026-11-20T15:42+00:00",
+   "sub": "carseats"
   },
   {
    "shop": "Jollyroom",
@@ -3088,7 +3092,7 @@
    "url": "https://www.lekekassen.no/fisher-price-little-people-traktor-med-tilhenger-og-figurer-jlm99",
    "img": "https://d189539ycils2q.cloudfront.net/media/catalog/product/cache/ee248326738d481374479eaa17a4b685/j/l/jlm99-fisher-price-little-people-bondegard-traktor.jpg",
    "checked": "2026-11-20T16:40+00:00",
-   "sub": "baby"
+   "sub": "toys"
   },
   {
    "shop": "Lekekassen",
@@ -3286,7 +3290,7 @@
    "url": "https://www.lekekassen.no/edufun-aktivitetsvogn-i-tre-med-9-aktiviteter-2129",
    "img": "https://d189539ycils2q.cloudfront.net/media/catalog/product/cache/ee248326738d481374479eaa17a4b685/e/d/edufun_aktivitetsvogn_i_tre_med_9_aktiviteter.jpg",
    "checked": "2026-11-20T16:40+00:00",
-   "sub": "baby"
+   "sub": "toys"
   }
  ]
 }

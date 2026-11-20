@@ -14,7 +14,9 @@ RULES = [
     ("watches", r"galaxy ring|smartring|aktivitetsarmbånd"),
     ("bikes", r"grussykkel|terrengsykkel|el-sykkel|elsykkel|landeveissykkel|sparkesykkel"),
     ("teamsport", r"hockey|padel|bordtennis|rebounder|fotball(?!sko)|håndball|innebandy|tennisracket"),
-    ("baby", r"matstol|vognpose|barnevogn|\btrille\b|løpevogn|sportsvogn|bilstol|beltestol|babygym|gåstol|stellebord|babycall|bæresele"),
+    ("strollers", r"vognpose|barnevogn|\btrille\b|løpevogn|sportsvogn|sittevogn|kombivogn|duovogn|tvillingvogn|vognpakke"),
+    ("carseats", r"bilstol|beltestol|babysete|isofix"),
+    ("baby", r"matstol|babygym|gåstol|stellebord|babycall|bæresele"),
     ("toys", r"radiostyrt|karaoke|lekekjøkken|kjørbar|tusjer|malesett|leketøy|dukke|byggesett|puslespill|brettspill"),
     ("controllers", r"racingratt|\bratt\b"),
     ("smarthome", r"plugg|smart ?plug"),
@@ -126,7 +128,9 @@ RULES = [
     ("skincare", r"parfyme|eau de|hudpleie|serum|ansiktskrem|sminke|mascara|skincare"),
     ("wellness", r"massasje|massage|massasjepistol|kompresjon|vekt\b.*kropp|personvekt|blodtrykk|helse"),
     # --- toys
-    ("baby", r"barnevogn|bilstol|babycall|babymonitor|stellebord|tåteflaske|bæresele|babynest|sittevogn|\bbaby"),
+    ("strollers", r"barnevogn|sittevogn|sportsvogn|\btrille\b"),
+    ("carseats", r"bilstol|beltestol"),
+    ("baby", r"babycall|babymonitor|stellebord|tåteflaske|bæresele|babynest|\bbaby"),
     ("lego", r"\blego\b"),
     ("toys", r"leke|leketøy|dukke|bamse|brettspill|puslespill|\btoy|playmobil|barbie|hot wheels|nerf|fjernstyrt|rc-bil"),
     # --- sports & outdoor
