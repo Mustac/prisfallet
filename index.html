@@ -693,7 +693,7 @@ $("cats").onclick=e=>{const b=e.target.closest(".cat");if(!b)return;S.cat=b.data
   const place=()=>{if(mq.matches){const sel=$("sort");sel.after(el);}else home.after(el);};
   place();mq.addEventListener?mq.addEventListener("change",place):mq.addListener(place);})();
 $("subs").onclick=e=>{const b=e.target.closest(".chip");if(!b)return;const k=b.dataset.sub;
-  if(!k)S.subs.clear();else S.subs.has(k)?S.subs.delete(k):S.subs.add(k);S.brand="";setHash();render();};
+  S.subs=new Set(k?[k]:[]);S.brand="";setHash();render();};
 $("srcs").onclick=e=>{const b=e.target.closest(".src");if(!b)return;const s=b.dataset.shop;if(!S.shops.has(s))track({t:"filter",f:"shop",v:s});
   S.shops.has(s)?S.shops.delete(s):S.shops.add(s);render();};
 $("grid").onclick=e=>{if(e.target.id==="morebtn"){LIMIT+=60;render(true);return;}const c=e.target.closest(".card");if(c)openSheet(D[+c.dataset.id]);};
