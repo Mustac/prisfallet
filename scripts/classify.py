@@ -13,7 +13,7 @@ RULES = [
     ("security", r"overvåk(n)?ingskamera|eufycam|ringeklokke|video doorbell|arlo|ring (stick|spotlight|video)"),
     ("cooling", r"cpu-kjøler|cpu kjøler|kjølepasta|\bcooler\b(?! master m)"),
     ("smarthome", r"fotoramme|frameo"),
-    ("tablets", r"apple pencil|stylus|ipad"),
+    ("tablets", r"apple pencil|stylus|ipad|galaxy tab|nettbrett|lenovo (idea )?tab|\btab (s|a)\d|tab nexus"),
     ("climate", r"adax|panelovn|varmeovn|oljeovn|termostat|puresense|avfukter"),
     ("machines", r"kenwood (chef|kmix)|chef xl"),
     ("hair", r"varmluftsbørste|varmluftstyler|multistyler|airstyle|flexstyle|hårstyler|\bstyler\b|magic style"),
