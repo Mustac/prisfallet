@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#0c0c0e">
+<title>Reset admin login – Prisfallet</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<style>
+:root{--bg:#0c0c0e;--panel:#16161a;--panel2:#1d1d23;--line:#2a2a32;--ink:#f3f3f1;--mute:#9a9aa3;--acc:#d7ff3a;--bad:#ff6b6b;--ok:#5ee08a;--c2:#7aa7ff}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-tap-highlight-color:transparent}
+body{padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}
+.wrap{max-width:1100px;margin:0 auto;padding:16px 14px 80px}
+.top{display:flex;align-items:center;gap:10px;justify-content:space-between;margin-bottom:14px}
+.logo{font-weight:800;font-size:22px;letter-spacing:-.6px}.logo span{color:var(--acc)}
+.tag{font-size:11px;background:var(--panel2);border:1px solid var(--line);border-radius:999px;padding:2px 8px;color:var(--mute);margin-left:6px;vertical-align:middle}
+button,.btn{font:inherit;border:1px solid var(--line);background:var(--panel2);color:var(--ink);border-radius:10px;padding:9px 14px;cursor:pointer}
+button.pri{background:var(--acc);color:#111;border-color:var(--acc);font-weight:700}
+button:disabled{opacity:.5}
+input{font:inherit;width:100%;background:var(--panel2);color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:12px;margin:6px 0 12px}
+input:focus{outline:2px solid var(--acc);outline-offset:1px}
+label{font-size:13px;color:var(--mute)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px;margin-bottom:12px}
+.auth{max-width:380px;margin:8vh auto 0}
+.auth h1{font-size:22px;margin:0 0 4px}.auth p{color:var(--mute);margin:0 0 16px}
+.err{color:var(--bad);min-height:20px;font-size:14px}
+.tabs{display:flex;gap:6px;overflow-x:auto;margin-bottom:12px;scrollbar-width:none}
+.tabs button{white-space:nowrap;border-radius:999px;padding:7px 14px}
+.tabs button.on{background:var(--ink);color:#111;border-color:var(--ink);font-weight:600}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:12px}
+.kpi{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:14px}
+.kpi .l{font-size:12.5px;color:var(--mute)}.kpi .v{font-size:30px;font-weight:800;letter-spacing:-1px;font-variant-numeric:tabular-nums;margin-top:2px}
+.kpi .s{font-size:12px;color:var(--mute)}
+.kpi.acc .v{color:var(--acc)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:12px}
+.grid .card{margin:0}
+h2{font-size:15px;margin:0 0 10px;font-weight:700}
+h2 small{font-weight:400;color:var(--mute);font-size:12.5px;margin-left:6px}
+.chart{position:relative;height:220px}
+.chart svg{width:100%;height:100%;display:block}
+.chart .tip{position:absolute;top:0;pointer-events:none;background:#000c;border:1px solid var(--line);border-radius:8px;padding:6px 9px;font-size:12.5px;white-space:nowrap}
+.legend{display:flex;gap:14px;font-size:12.5px;color:var(--mute);margin-top:6px}.legend i{display:inline-block;width:10px;height:3px;border-radius:2px;margin-right:5px;vertical-align:middle}
+.bars{display:flex;flex-direction:column;gap:7px}
+.bar{display:grid;grid-template-columns:1fr auto;gap:8px;font-size:13.5px;position:relative;padding:5px 8px;border-radius:8px;overflow:hidden}
+.bar::before{content:"";position:absolute;inset:0;width:var(--w);background:var(--panel2);z-index:0}
+.bar>*{position:relative;z-index:1}.bar .n{font-variant-numeric:tabular-nums;color:var(--mute)}
+.bar .t{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.empty{color:var(--mute);font-size:13.5px;padding:6px 0}
+.health div{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px solid var(--line);font-size:14px}
+.health div:last-child{border-bottom:0}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:7px;vertical-align:middle}
+.foot{color:var(--mute);font-size:12px;text-align:center;margin-top:16px}
+.qr{background:#fff;border-radius:12px;padding:12px;width:220px;margin:8px auto;display:block}
+.mono{font-family:ui-monospace,Consolas,monospace;word-break:break-all;background:var(--panel2);padding:8px;border-radius:8px;font-size:13px}
+.hide{display:none!important}
+.spin{animation:spin 1s linear infinite;display:inline-block}@keyframes spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.spin{animation:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><div class="logo">prisfallet<span>.</span>no <span class="tag">admin reset</span></div></div>
+  <div class="auth card">
+    <h1>Reset admin login</h1>
+    <div id="step1">
+      <p>Use the reset code you put in the database from the Cloudflare dashboard (valid for 60 minutes). Choose a new password. All devices will be logged out.</p>
+      <label for="r-code">Reset code</label><input id="r-code" autocomplete="off" autocapitalize="off">
+      <label for="r-pw">New password</label><input id="r-pw" type="password" autocomplete="new-password">
+      <label for="r-pw2">Repeat password</label><input id="r-pw2" type="password" autocomplete="new-password">
+      <div class="err" id="r-err"></div>
+      <button class="pri" id="r-next" style="width:100%">Next</button>
+    </div>
+    <div id="step2" class="hide">
+      <p>Remove the old "Prisfallet.no" entry from your authenticator app, then add the new one: scan the QR code, or tap the button if the app is on this phone.</p>
+      <img id="r-qr" class="qr" alt="QR code for the authenticator app">
+      <p style="text-align:center"><a id="r-link" class="btn" href="#">Open in authenticator app</a></p>
+      <p>Or type this key manually:</p><div class="mono" id="r-key"></div>
+      <label for="r-totp" style="display:block;margin-top:12px">Enter the 6-digit code the app shows</label>
+      <input id="r-totp" inputmode="numeric" autocomplete="one-time-code" maxlength="6">
+      <div class="err" id="r-err2"></div>
+      <button class="pri" id="r-done" style="width:100%">Finish</button>
+    </div>
+    <div id="step3" class="hide"><p>Done. Your new password and code are active.</p><a class="btn" href="/admin/">Open the admin app</a></div>
+  </div>
+</div>
+<script src="/admin/qrcode.js"></script>
+<script>
+const $ = (id) => document.getElementById(id);
+async function api(path, data) {
+  const r = await fetch("/api/admin/" + path, { method: "POST", credentials: "same-origin", headers: { "Content-Type": "application/json" }, body: JSON.stringify(data) });
+  let d = {}; try { d = await r.json(); } catch (e) {}
+  return { ok: r.ok, data: d };
+}
+let code = "";
+$("r-next").onclick = async () => {
+  $("r-err").textContent = "";
+  code = $("r-code").value.trim(); const pw = $("r-pw").value;
+  if (pw.length < 12) return ($("r-err").textContent = "Password must be at least 12 characters.");
+  if (pw !== $("r-pw2").value) return ($("r-err").textContent = "The two passwords are not the same.");
+  $("r-next").disabled = true;
+  const r = await api("reset/start", { code, password: pw });
+  $("r-next").disabled = false;
+  if (!r.ok) return ($("r-err").textContent = r.data.error || "Something went wrong.");
+  $("r-key").textContent = r.data.secret.replace(/(.{4})/g, "$1 ").trim();
+  $("r-link").href = r.data.uri;
+  const q = qrcode(0, "M"); q.addData(r.data.uri); q.make(); $("r-qr").src = q.createDataURL(6, 2);
+  $("step1").classList.add("hide"); $("step2").classList.remove("hide");
+};
+$("r-done").onclick = async () => {
+  $("r-err2").textContent = "";
+  const r = await api("reset/confirm", { code, totp: $("r-totp").value.trim() });
+  if (!r.ok) return ($("r-err2").textContent = r.data.error || "Something went wrong.");
+  $("step2").classList.add("hide"); $("step3").classList.remove("hide");
+};
+</script>
+</body>
+</html>

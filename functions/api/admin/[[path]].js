@@ -1,7 +1,7 @@
 // Admin API for Prisfallet.no: setup, login (password + TOTP), logout and live stats.
 // All responses are no-store. Everything except setup/login/status needs a valid session.
 import {
-  COOKIE, SESSION_DAYS, MAX_FAILS, LOCK_MINUTES, hashPassword, verifyPassword, verifyTotp,
+  COOKIE, SESSION_DAYS, MAX_FAILS, LOCK_MINUTES, PBKDF2_ITER, hashPassword, verifyPassword, verifyTotp,
   base32Encode, randomBytes, makeSession, readSession, sessionCookie, timingSafeEqual,
 } from "../../_lib/auth.js";
 
@@ -12,7 +12,7 @@ const json = (data, status = 200, headers = {}) =>
   });
 
 const SCHEMA = [
-  "CREATE TABLE IF NOT EXISTS admin_auth (id INTEGER PRIMARY KEY CHECK (id = 1), pass_hash TEXT, salt TEXT, iter INTEGER, totp_secret TEXT, totp_last INTEGER DEFAULT -1, gen INTEGER DEFAULT 1, pending_totp TEXT, created INTEGER)",
+  "CREATE TABLE IF NOT EXISTS admin_auth (id INTEGER PRIMARY KEY CHECK (id = 1), pass_hash TEXT, salt TEXT, iter INTEGER, totp_secret TEXT, totp_last INTEGER DEFAULT -1, gen INTEGER DEFAULT 1, pending_totp TEXT, created INTEGER, reset_code TEXT, reset_at INTEGER, pending_pass TEXT, pending_salt TEXT)",
   "CREATE TABLE IF NOT EXISTS admin_attempts (ts INTEGER NOT NULL, ok INTEGER NOT NULL)",
 ];
 async function ensureSchema(db) { for (const s of SCHEMA) await db.prepare(s).run(); }
@@ -82,6 +82,40 @@ export async function onRequest(ctx) {
     if (ctr < 0) return json({ error: "Code does not match. Check that the phone clock is correct." }, 400);
     await db.prepare("UPDATE admin_auth SET totp_secret = pending_totp, pending_totp = NULL, totp_last = ? WHERE id = 1").bind(ctr).run();
     const cookie = await makeSession(secret, auth.gen || 1);
+    return json({ ok: true }, 200, { "Set-Cookie": sessionCookie(cookie, SESSION_DAYS * 86400) });
+  }
+
+  // ----- password reset (hidden page /admin/reset/) -----
+  // Only works after a reset code has been put in the database from the Cloudflare dashboard
+  // (D1 console), and only for 60 minutes after that. Logs out every device when finished.
+  if ((route === "reset/start" || route === "reset/confirm") && method === "POST") {
+    if (!configured) return json({ error: "Not set up yet" }, 409);
+    // No shared lockout here, so someone spamming the login page can't block a reset.
+    // The reset code is long, random-ish, set by the owner and only valid for 60 minutes.
+    const b = await body(request);
+    const fresh = auth.reset_code && auth.reset_at && Date.now() - auth.reset_at < 60 * 60000;
+    if (!b || !fresh || String(auth.reset_code).length < 12 || !timingSafeEqual(String(b.code || ""), String(auth.reset_code))) {
+      await logAttempt(db, false);
+      return json({ error: "Wrong or expired reset code" }, 403);
+    }
+    if (route === "reset/start") {
+      const pw = String(b.password || "");
+      if (pw.length < 12) return json({ error: "Password must be at least 12 characters" }, 400);
+      const { hash, salt } = await hashPassword(pw);
+      const totp = base32Encode(randomBytes(20));
+      await db.prepare("UPDATE admin_auth SET pending_pass = ?, pending_salt = ?, pending_totp = ? WHERE id = 1").bind(hash, salt, totp).run();
+      const uri = `otpauth://totp/Prisfallet.no:admin?secret=${totp}&issuer=Prisfallet.no&algorithm=SHA1&digits=6&period=30`;
+      return json({ secret: totp, uri });
+    }
+    if (!auth.pending_totp || !auth.pending_pass) return json({ error: "Start the reset again" }, 400);
+    const ctr = await verifyTotp(auth.pending_totp, b.totp);
+    if (ctr < 0) return json({ error: "Code does not match. Check that the phone clock is correct." }, 400);
+    await db.prepare(
+      "UPDATE admin_auth SET pass_hash = pending_pass, salt = pending_salt, iter = ?, totp_secret = pending_totp, totp_last = ?, " +
+      "pending_pass = NULL, pending_salt = NULL, pending_totp = NULL, reset_code = NULL, reset_at = NULL, gen = gen + 1 WHERE id = 1"
+    ).bind(PBKDF2_ITER, ctr).run();
+    await db.prepare("DELETE FROM admin_attempts").run();
+    const cookie = await makeSession(secret, (auth.gen || 1) + 1);
     return json({ ok: true }, 200, { "Set-Cookie": sessionCookie(cookie, SESSION_DAYS * 86400) });
   }
 
