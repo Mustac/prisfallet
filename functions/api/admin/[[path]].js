@@ -137,6 +137,26 @@ export async function onRequest(ctx) {
     return json({ ok: true }, 200, { "Set-Cookie": sessionCookie(cookie, SESSION_DAYS * 86400) });
   }
 
+  // ----- backup export (read-only, for the backup script on the owner's PC) -----
+  // Auth: "Authorization: Bearer <BACKUP_KEY>" (Pages secret). Returns anonymous events
+  // with id > after, oldest first, so the script can fetch only what is new.
+  if (route === "export" && method === "GET") {
+    const auth = request.headers.get("Authorization") || "";
+    const key = env.BACKUP_KEY || "";
+    if (key.length < 32 || !timingSafeEqual(auth, "Bearer " + key)) {
+      await logAttempt(db, false);
+      return json({ error: "Unauthorized" }, 401);
+    }
+    const url = new URL(request.url);
+    const after = Math.max(0, parseInt(url.searchParams.get("after") || "0", 10) || 0);
+    const limit = Math.max(1, Math.min(20000, parseInt(url.searchParams.get("limit") || "10000", 10) || 10000));
+    const r = await db.prepare(
+      "SELECT id, day, ts, type, term, deal, shop, cat, country, n, region, device, ref, f, v FROM events WHERE id > ? ORDER BY id LIMIT ?"
+    ).bind(after, limit).all();
+    const rows = r.results || [];
+    return json({ rows, last_id: rows.length ? rows[rows.length - 1].id : after, more: rows.length === limit });
+  }
+
   // ----- everything below needs a session -----
   const session = configured ? await readSession(secret, request.headers.get("Cookie"), auth.gen) : null;
   if (!session) return json({ error: "Not logged in" }, 401);
