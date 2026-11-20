@@ -186,7 +186,7 @@ footer .links a{color:var(--ink);text-decoration:underline}
 <defs id="icons"></defs>
 </svg>
 
-<div class="adbar"><b>Annonse</b> / Inneholder annonselenker — Prisfallet.no mottar provisjon ved kjøp eller klikk via lenkene.</div>
+<div class="adbar">Prisfallet.no kan få provisjon via lenker merket <b>«annonselenke»</b>. Andre lenker går rett til butikken uten provisjon.</div>
 <div class="demo" id="demo" hidden>Eksempeldata — dette er ikke ekte tilbud. Siden viser ekte tilbud når affiliate-feedene er koblet til.</div>
 <section class="wrap launch" id="launch" hidden>
   <h1>Prisfallet.no åpner <span>snart</span></h1>
@@ -200,7 +200,7 @@ footer .links a{color:var(--ink);text-decoration:underline}
   <a class="cta" href="black-week.html">Slik avslører du falske tilbud →</a>
 </section>
 <header class="wrap" id="apphead">
-  <div class="brand"><div class="logo" id="home">prisfallet<span>.</span>no</div><div class="tag">Bare de store rabattene fra norske nettbutikker · hentet fra butikkenes offisielle produktfeeder</div></div>
+  <div class="brand"><div class="logo" id="home">prisfallet<span>.</span>no</div><div class="tag">Bare de store rabattene fra norske nettbutikker · håndplukket fra norske nettbutikker hver dag</div></div>
   <div class="srchead"><span>Butikker</span><small id="srcsum"></small></div>
   <div class="srcs" id="srcs"></div>
   <div class="cats" id="cats"></div>
@@ -250,9 +250,9 @@ footer .links a{color:var(--ink);text-decoration:underline}
 
 <footer>
   <div class="wrap">
-    <p><b>Annonse.</b> Alle butikklenker på Prisfallet.no er annonselenker. Hvis du klikker eller kjøper via dem, kan Prisfallet.no få provisjon fra butikken eller affiliate-nettverket. Det endrer aldri prisen du betaler.</p>
+    <p><b>Annonse.</b> Lenker merket «annonselenke» er annonselenker: hvis du klikker eller kjøper via dem, kan Prisfallet.no få provisjon fra butikken eller affiliate-nettverket. Det endrer aldri prisen du betaler. Lenker merket «Gå til …» går rett til butikken, og Prisfallet.no får ingenting for dem.</p>
     <p>Priser, produktnavn og bilder kommer fra de offisielle produktfeedene butikkene publiserer gjennom affiliate-nettverk (<span id="netlist">Adtraction, Awin og Daisycon</span>). Bildene vises direkte fra butikken eller nettverket og kopieres ikke. Oppdateres én gang i døgnet.</p>
-    <p><b>Slik viser vi rabatter.</b> «Førpris (butikkens oppgitte)» er førprisen butikken oppgir i feeden sin. «Laveste pris siste 30 dager» er den laveste prisen Prisfallet.no selv har registrert for produktet de siste 30 dagene – den brukes bare når vi faktisk har 30 dager med egen prishistorikk. Vi viser bare varer som er på lager og har minst 30 % rabatt. Prisfallet.no er ikke tilknyttet noen butikk.</p>
+    <p><b>Slik viser vi rabatter.</b> «Førpris (butikkens oppgitte)» er førprisen butikken selv oppgir på produktsiden eller i produktfeeden sin. «Laveste pris siste 30 dager» er den laveste prisen Prisfallet.no selv har registrert for produktet de siste 30 dagene – den brukes bare når vi faktisk har 30 dager med egen prishistorikk. Vi viser bare varer som er på lager og har minst 30 % rabatt. Prisfallet.no er ikke tilknyttet noen butikk.</p>
     <p class="links"><a href="black-week.html">Black Week 2026: unngå falske tilbud</a> · <a href="om.html">Om Prisfallet</a> · <a href="kontakt.html">Kontakt</a> · <a href="personvern.html">Personvern</a></p>
   </div>
 </footer>
@@ -378,7 +378,7 @@ const CATS=[
 const CAT=Object.fromEntries(CATS.map(c=>[c.id,c]));
 const SUBNAME={},SUB2CAT={};CATS.forEach(c=>c.subs.forEach(([k,n])=>{SUBNAME[k]=n;SUB2CAT[k]=c.id;}));
 let SRC={}, D=[], META={};
-const NET={adtraction:"Adtraction",awin:"Awin",daisycon:"Daisycon",kelkoo:"Kelkoo",prisjakt:"Prisjakt"};
+const NET={adtraction:"Adtraction",awin:"Awin",daisycon:"Daisycon",kelkoo:"Kelkoo",direct:"butikkens nettside"};
 async function loadData(){
   const r=await fetch("data/deals.json",{cache:"no-cache"}); const j=await r.json();
   META=j; SRC={};
@@ -388,7 +388,7 @@ async function loadData(){
     const verified=x.price_basis==="verified_30d_low";
     const was=verified?x.verified_30d_low:x.feed_before_price, now=x.current_price;
     return {id:i,name:x.title,brand:x.brand||"",src:x.shop,shop:x.shop,net:x.source_network,now,was,cat:SUB2CAT[sub],sub,
-      ref:verified?"v":"f",flag:"",img:x.image_url||"",url:x.affiliate_url,feedWas:x.feed_before_price,low30:x.verified_30d_low,
+      ref:verified?"v":"f",flag:"",img:x.image_url||"",url:x.affiliate_url,checked:x.checked||"",feedWas:x.feed_before_price,low30:x.verified_30d_low,
       pct:x.discount_percent,kr:was-now};});
   D.forEach(d=>d.score=d.pct*(d.ref==="v"?1:0.9)+Math.log10(Math.max(1,d.kr))*2);
 }
@@ -406,7 +406,6 @@ let LIMIT=60;
 const S={cat:"",subs:new Set(),q:"",min:30,pmin:"",pmax:"",real:false,rec:false,noclub:false,shops:new Set(),brand:"",sort:"best"};
 const nok=n=>n.toLocaleString("nb-NO").replace(/\s/g," ")+" kr";
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const pj=d=>"https://www.prisjakt.no/search?search="+encodeURIComponent(d.name.replace(/\(.*?\)/g,"").replace(/["+,]/g," ").replace(/\s+/g," ").trim());
 
 // filtering: "base" = everything except the min-discount rule (used for counts + hint)
 function match(d,opt={}){
@@ -519,7 +518,9 @@ function render(keep){if(!keep)LIMIT=60;renderSources();renderCats();renderSubs(
 function openSheet(d){
   track({t:"view",d:d.name,s:d.shop,c:d.cat});SHEET=d;
   const c=CAT[d.cat].c, max=d.was;
-  const refTxt=d.ref==="v"?"Sammenlignet med den laveste prisen Prisfallet.no selv har registrert for produktet de siste 30 dagene.":"Sammenlignet med førprisen butikken oppgir i produktfeeden sin. Prisfallet.no har ikke fulgt produktet i 30 dager ennå, så vi kan ikke bekrefte at det var laveste pris i den perioden.";
+  const direct=d.net==="direct", aff=!direct;
+  const refTxt=d.ref==="v"?"Sammenlignet med den laveste prisen Prisfallet.no selv har registrert for produktet de siste 30 dagene.":direct?"Sammenlignet med førprisen butikken selv oppgir på produktsiden. Butikken er ansvarlig for at førprisen er riktig.":"Sammenlignet med førprisen butikken oppgir i produktfeeden sin. Prisfallet.no har ikke fulgt produktet i 30 dager ennå, så vi kan ikke bekrefte at det var laveste pris i den perioden.";
+  const when=d.checked?new Date(d.checked).toLocaleString("nb-NO",{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"}):(META.date||"");
   $("sheet").innerHTML=`
    <div class="thumb${d.img?" has-img":""}" style="--c:${c};position:relative">${ico(d.sub)}${d.img?`<img referrerpolicy="no-referrer" alt="" src="${esc(d.img)}"><span class="photo-tag">Foto: ${esc(d.shop)}</span>`:""}<span class="badge">-${d.pct}%</span>${d.flag==="rec"?'<span class="rec" style="right:52px">REKORDLAV</span>':""}<span class="brandtag">${esc(d.brand)}</span><button class="x" id="x">✕</button></div>
    <div class="sb">
@@ -531,10 +532,10 @@ function openSheet(d){
       <div class="brow"><span>${BASIS[d.ref]}</span><div class="tr"><div class="fl" style="width:100%;background:#6b6b78"></div></div><b>${nok(d.was)}</b></div>
       <div class="brow"><span>Pris nå</span><div class="tr"><div class="fl" style="width:${Math.max(3,d.now/max*100)}%;background:${c}"></div></div><b>${nok(d.now)}</b></div>
       ${d.ref==="v"&&d.feedWas?`<div class="brow"><span>${BASIS.f}</span><div class="tr"><div class="fl" style="width:${Math.min(100,d.feedWas/max*100)}%;background:#4a4a55"></div></div><b>${nok(d.feedWas)}</b></div>`:""}
-      <div class="note">${refTxt} Se hele prishistorikken på Prisjakt.</div>
+      <div class="note">${refTxt}</div>
     </div>
-    <div class="note">Selges av ${esc(d.shop)} · pris fra produktfeeden via ${esc(NET[d.net]||d.net)}, ${esc(META.date||"")}. Prisene kan endre seg, så sjekk prisen i butikken før du kjøper.</div>
-    <div class="acts"><a class="pri" target="_blank" rel="sponsored noopener" href="${esc(d.url)}">Se tilbud (annonselenke)</a><a target="_blank" rel="noopener" href="${pj(d)}">📈 Prishistorikk på Prisjakt</a></div>
+    <div class="note">Selges av ${esc(d.shop)} · ${direct?`pris sjekket på butikkens nettside ${esc(when)}`:`pris fra produktfeeden via ${esc(NET[d.net]||d.net)}, ${esc(when)}`}. Prisene kan endre seg, så sjekk prisen i butikken før du kjøper.</div>
+    <div class="acts">${aff?`<a class="pri" target="_blank" rel="sponsored noopener" href="${esc(d.url)}">Se tilbud (annonselenke)</a>`:`<a class="pri" target="_blank" rel="nofollow noopener" href="${esc(d.url)}">Gå til ${esc(d.shop)}</a>`}</div>
    </div>`;
   wireImgs($("sheet"));
   $("ov").classList.add("show");lockPage();$("sheet").scrollTop=0;
@@ -605,7 +606,7 @@ $("closef").onclick=()=>{$("side").classList.remove("show");unlockPage();};
 window.addEventListener("hashchange",()=>{readHash();render();});
 
 loadData().then(()=>{
-  if(META.demo){$("launch").hidden=false;$("apphead").hidden=true;$("applayout").hidden=true;return;}
+  if(META.demo||!D.length){$("launch").hidden=false;$("apphead").hidden=true;$("applayout").hidden=true;return;}
   if(!D.length){$("grid").innerHTML='<div class="empty">Ingen tilbud ennå. Kom tilbake snart.</div>';$("srcsum").textContent="Ingen butikker koblet til ennå";return;}
   readHash();render();}).catch(e=>{$("grid").innerHTML='<div class="empty">Kunne ikke laste tilbudene. Last inn siden på nytt.</div>';console.error(e);});
 })();

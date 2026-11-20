@@ -150,3 +150,22 @@ class EndToEnd(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+def test_manual_deals_expire_and_reject_bad_links(tmp_path):
+    import datetime as dt, json as _j
+    import update_deals as u
+    now = dt.datetime(2026, 11, 20, 16, 0, tzinfo=dt.timezone.utc)
+    deals = [
+        {"shop": "Elkjøp", "title": "Fresh laptop", "price": 5000, "before": 9000, "url": "https://www.elkjop.no/p/1", "checked": "2026-11-20T15:00:00Z"},
+        {"shop": "Elkjøp", "title": "Old laptop", "price": 5000, "before": 9000, "url": "https://www.elkjop.no/p/2", "checked": "2026-11-17T15:00:00Z"},
+        {"shop": "X", "title": "Via prisjakt", "price": 1, "before": 2, "url": "https://www.prisjakt.no/x", "checked": "2026-11-20T15:00:00Z"},
+        {"shop": "X", "title": "Not https", "price": 1, "before": 2, "url": "http://x.no/x", "checked": "2026-11-20T15:00:00Z"},
+    ]
+    f = tmp_path / "manual-deals.json"
+    f.write_text(_j.dumps({"deals": deals}), encoding="utf-8")
+    got = u.manual_offers(str(f), now)
+    assert [o["title"] for o in got] == ["Fresh laptop"]
+    assert got[0]["source_network"] == "direct" and got[0]["affiliate_url"] == "https://www.elkjop.no/p/1"
+    built = u.build([dict(o, id="") for o in got], {}, "2026-11-20")
+    assert built[0]["discount_percent"] == 44 and built[0]["checked"].startswith("2026-11-20T15:00")

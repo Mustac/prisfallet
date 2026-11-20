@@ -40,6 +40,11 @@ def _net_rank(network):
     return NETWORK_PRIORITY.index(network) if network in NETWORK_PRIORITY else len(NETWORK_PRIORITY)
 HISTORY_DAYS = 30
 DATA = os.path.join(ROOT, "data")
+# Hand-picked deals (direct shop links, no affiliate network) live in data/manual-deals.json.
+# Each one carries the time its price was checked on the shop's own page; a deal that has not
+# been re-checked within MANUAL_MAX_AGE_H hours is dropped, so stale prices never stay up.
+MANUAL_FILE = "manual-deals.json"
+MANUAL_MAX_AGE_H = float(os.environ.get("MANUAL_MAX_AGE_H", "48"))
 
 
 def log(msg):
@@ -76,6 +81,31 @@ def collect(fixtures_dir=None):
             status[name] = "ok" if got else "empty"
             offers += got
     return offers, status
+
+
+def manual_offers(path, now=None):
+    """Read hand-picked deals. Returns offers in the same shape as feed offers."""
+    now = now or dt.datetime.now(dt.timezone.utc)
+    data = load_json(path, {})
+    out = []
+    for m in data.get("deals", []):
+        try:
+            checked = dt.datetime.fromisoformat(m["checked"].replace("Z", "+00:00"))
+            if (now - checked).total_seconds() > MANUAL_MAX_AGE_H * 3600:
+                continue
+            url = m["url"].strip()
+            if not url.startswith("https://") or "prisjakt" in url:
+                continue
+            out.append({
+                "source_network": "direct", "shop": m["shop"].strip(), "sku": url,
+                "title": m["title"].strip(), "brand": (m.get("brand") or "").strip(),
+                "current_price": float(m["price"]), "before_price": float(m["before"]) if m.get("before") else None,
+                "image_url": "", "affiliate_url": url, "in_stock": m.get("in_stock", True),
+                "category_text": m.get("cat", ""), "checked": checked.astimezone(dt.timezone.utc).isoformat(timespec="minutes"),
+            })
+        except (KeyError, ValueError, TypeError):
+            continue
+    return out
 
 
 def load_json(path, default):
@@ -148,6 +178,8 @@ def build(offers, history, today):
             "in_stock": True,
             "last_seen": today,
         }
+        if o.get("checked"):
+            deal["checked"] = o["checked"]
         # The same product from the same shop via two networks is one deal: keep the cheaper
         # offer; at equal price keep the network that comes first in NETWORK_PRIORITY.
         # (The same product in different shops stays as separate deals - the visitor chooses.)
@@ -172,7 +204,14 @@ def main(argv=None):
 
     log(f"Prisfallet feed update {today}")
     offers, status = collect(a.fixtures)
-    if not a.fixtures and not offers:
+    if not a.fixtures:
+        manual = manual_offers(os.path.join(a.out, MANUAL_FILE))
+        if manual:
+            status["direct"] = "ok"
+            offers += manual
+            log(f"  hand-picked deals: {len(manual)} still fresh")
+    has_manual_file = os.path.exists(os.path.join(a.out, MANUAL_FILE))
+    if not a.fixtures and not offers and not has_manual_file:
         # No network connected yet (or all feeds failed): keep the current site data
         # instead of replacing it with an empty list.
         log("No offers from any source - keeping the existing data/deals.json unchanged.")
