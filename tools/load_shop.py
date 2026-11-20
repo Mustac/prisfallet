@@ -4,6 +4,7 @@ title, brand, price, before, url, img, until(YYYY-MM-DD or ''), sub, specs(';'-s
 Ratings already stored for the same URL are kept."""
 import sys, json, os, datetime as dt
 shop = sys.argv[1]
+append = "--append" in sys.argv[2:]  # keep this shop's other deals
 path = os.path.join(os.path.dirname(__file__), "..", "data", "manual-deals.json")
 data = json.load(open(path, encoding="utf-8"))
 now = dt.datetime.now(dt.timezone.utc).isoformat(timespec="minutes")
@@ -28,6 +29,7 @@ for line in sys.stdin:
         if k in o: d[k] = o[k]
     if not sp and o.get("specs"): d["specs"] = o["specs"]
     new.append(d)
-data["deals"] = [d for d in data["deals"] if d["shop"] != shop] + new
+urls = {d["url"] for d in new}
+data["deals"] = [d for d in data["deals"] if d["shop"] != shop or (append and d["url"] not in urls)] + new
 json.dump(data, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 print(f"{shop}: {len(new)} deals, {len(data['deals'])} total")

@@ -2561,6 +2561,479 @@
     "SenseIQ-teknologi",
     "SmartSkin-sensor"
    ]
+  },
+  {
+   "shop": "Power",
+   "title": "Bosch Series 8 BGL8XALL støvsuger",
+   "brand": "Bosch",
+   "price": 1999.0,
+   "before": 5399.0,
+   "url": "https://www.power.no/hjem-og-hage/rengjoering-og-stoevsuging/stoevsuger/bosch-series-8-bgl8xall-stoevsuger/p-4535173/",
+   "img": "https://media.power-cdn.net/images/h-d1c69aa4d418c3bee225410dd0dacb8d/products/4535173/4535173_6_600x600_t_g.webp",
+   "checked": "2026-11-20T16:37+00:00",
+   "sub": "vacuums",
+   "specs": [
+    "Bosch Motor Technology for konstant høy ytelse",
+    "15 m driftsradius"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Bosch Serie 6 BGL6BA3 støvsuger, sort",
+   "brand": "Bosch",
+   "price": 1299.0,
+   "before": 3299.0,
+   "url": "https://www.power.no/hjem-og-hage/rengjoering-og-stoevsuging/stoevsuger/bosch-serie-6-bgl6ba3-stoevsuger-sort/p-1930442/",
+   "img": "https://media.power-cdn.net/images/h-a694ebce453c0d25600acb036df339a6/products/1930442/1930442_10_600x600_t_g.webp",
+   "checked": "2026-11-20T16:37+00:00",
+   "sub": "vacuums",
+   "specs": [
+    "Effekt 600 W",
+    "Driftsområde 12 m",
+    "HEPA-filter"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Dreame D20 robotstøvsuger, hvit",
+   "brand": "Dreame",
+   "price": 1290.0,
+   "before": 2990.0,
+   "url": "https://www.power.no/hjem-og-hage/rengjoering-og-stoevsuging/robotstoevsuger/dreame-d20-robotstoevsuger-hvit/p-4122725/",
+   "img": "https://media.power-cdn.net/images/h-7dd168db44fff1e82fd6ff335ea5d566/products/4122725/4122725_9_600x600_t_g.webp",
+   "checked": "2026-11-20T16:37+00:00",
+   "sub": "robovac",
+   "specs": [
+    "Støvsuging og mopping i opptil 285 minutter",
+    "Kompakt ladestasjon",
+    "Smart Pathfinder-navigering"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Bosch BCHF2MX16 trådløs støvsuger, grå",
+   "brand": "Bosch",
+   "price": 949.0,
+   "before": 2199.0,
+   "url": "https://www.power.no/hjem-og-hage/rengjoering-og-stoevsuging/traadloes-stoevsuger/bosch-bchf2mx16-traadloes-stoevsuger-graa/p-1066728/",
+   "img": "https://media.power-cdn.net/images/h-c03c49741a619682542396aa5b188af3/products/1066728/1066728_12_600x600_t_g.webp",
+   "checked": "2026-11-20T16:37+00:00",
+   "sub": "vacuums",
+   "specs": [
+    "Driftstid opptil 40 min",
+    "2-i-1 håndholdt og stangstøvsuger",
+    "Veier 2,4 kg"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Bosch Series 4 BGL38BU1 støvsuger, blå",
+   "brand": "Bosch",
+   "price": 899.0,
+   "before": 2099.0,
+   "url": "https://www.power.no/hjem-og-hage/rengjoering-og-stoevsuging/stoevsuger/bosch-series-4-bgl38bu1-stoevsuger-blaa/p-4518421/",
+   "img": "https://media.power-cdn.net/images/h-25207e332439fb4d5a9924664f183de9/products/4518421/4518421_7_600x600_t_g.webp",
+   "checked": "2026-11-20T16:37+00:00",
+   "sub": "vacuums",
+   "specs": [
+    "Effekt 600 W",
+    "Aksjonsradius 10 m",
+    "PowerProtect System"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Point 300 Series POB300 støvsuger",
+   "brand": "Point",
+   "price": 799.0,
+   "before": 1799.0,
+   "url": "https://www.power.no/hjem-og-hage/rengjoering-og-stoevsuging/stoevsuger/point-300-series-pob300-stoevsuger/p-4118387/",
+   "img": "https://media.power-cdn.net/images/h-acdb99223ce4f158e796d544c13ff9a4/products/4118387/4118387_18_600x600_t_g.webp",
+   "checked": "2026-11-20T16:37+00:00",
+   "sub": "vacuums",
+   "specs": [
+    "Effekt 700 W",
+    "Arbeidsradius 8 m",
+    "Støvpose 3,5 l"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Point Pencil+ trådløs støvsuger",
+   "brand": "Point",
+   "price": 899.0,
+   "before": 1999.0,
+   "url": "https://www.power.no/hjem-og-hage/rengjoering-og-stoevsuging/traadloes-stoevsuger/point-pencil-traadloes-stoevsuger/p-2862382/",
+   "img": "https://media.power-cdn.net/images/h-9a3d3b03083ac728dade1a61933407e4/products/2862382/2862382_8_600x600_t_g.webp",
+   "checked": "2026-11-20T16:37+00:00",
+   "sub": "vacuums",
+   "specs": [
+    "Effekt 150 W",
+    "Batterilevetid opptil 40 min",
+    "Sammenleggbar slange"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "De'Longhi La Specialista Touch EC9455.M espressomaskin",
+   "brand": "De'Longhi",
+   "price": 5499.0,
+   "before": 11999.0,
+   "url": "https://www.power.no/kjoekkenmaskiner/kaffe-og-te/kaffe-og-espressomaskiner/manuell-espressomaskin/delonghi-la-specialista-touch-ec9455m-espressomaskin/p-4222543/",
+   "img": "https://media.power-cdn.net/images/h-64ef6c21cf21d029d7e05633a117fc38/products/4222543/4222543_20_300x300_t_g.webp",
+   "checked": "2026-11-20T16:37+00:00",
+   "sub": "coffee",
+   "specs": [
+    "Effekt 1450 W",
+    "15 bar pumpetrykk",
+    "Bean Adapt Technology"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Point POIC5000 iskremmaskin",
+   "brand": "Point",
+   "price": 999.0,
+   "before": 2399.0,
+   "url": "https://www.power.no/kjoekkenmaskiner/kjoekkenmaskiner-og-miksere/iskrem-og-slushmaskin/point-poic5000-iskremmaskin/p-4191942/",
+   "img": "https://media.power-cdn.net/images/h-03209bce3986b5d84fa18b11de022ef8/products/4191942/4191942_8_600x600_t_g.webp",
+   "checked": "2026-11-20T16:37+00:00",
+   "sub": "smallapp",
+   "specs": [
+    "10 automatiske programmer",
+    "Digital skjerm"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "OBH Nordica Optigrill Extra smørbrødgrill",
+   "brand": "OBH Nordica",
+   "price": 1499.0,
+   "before": 3099.0,
+   "url": "https://www.power.no/kjoekkenmaskiner/kjoekkenapparater/toastjern/obh-nordica-optigrill-extra-smoerbroedgrill/p-2358006/",
+   "img": "https://media.power-cdn.net/images/h-05566967232c1ac5436a970f2a8933de/products/2358006/2358006_13_600x600_t_g.webp",
+   "checked": "2026-11-20T16:37+00:00",
+   "sub": "smallapp",
+   "specs": [
+    "Effekt 2000 W",
+    "Seks automatiske programmer",
+    "Sensor justerer tid og temperatur"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Nespresso Vertuo Next kapselmaskin by De'Longhi, matt svart",
+   "brand": "De'Longhi",
+   "price": 799.0,
+   "before": 1693.0,
+   "url": "https://www.power.no/kjoekkenmaskiner/kaffe-og-te/kapselmaskin/nespresso-vertuo-next-kapselmaskin-by-delonghi-matt-svart/p-2001985/",
+   "img": "https://media.power-cdn.net/images/h-ba0a715630cb1b59d25605efb1f5ebf2/products/2001985/2001985_12_600x600_t_g.webp",
+   "checked": "2026-11-20T16:37+00:00",
+   "sub": "coffee",
+   "specs": [
+    "Centrifusion-teknologi",
+    "7 kaffestørrelser 25–535 ml"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "De'Longhi ECAM22.112.B Magnifica S kaffemaskin",
+   "brand": "De'Longhi",
+   "price": 2795.0,
+   "before": 5499.0,
+   "url": "https://www.power.no/kjoekkenmaskiner/kaffe-og-te/kaffe-og-espressomaskiner/automatisk-kaffemaskin/delonghi-ecam22112b-magnifica-s-kaffemaskin/p-2353915/",
+   "img": "https://media.power-cdn.net/images/h-f9376ccf793b4d3de153bddbfd594947/products/2353915/2353915_5_600x600_t_g.webp",
+   "checked": "2026-11-20T16:37+00:00",
+   "sub": "coffee",
+   "specs": [
+    "Effekt 1450 W",
+    "15 bar trykk",
+    "Kaffebønner eller malt kaffe"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Siemens TQ515R03 kaffemaskin, rustfritt stål",
+   "brand": "Siemens",
+   "price": 4999.0,
+   "before": 8998.0,
+   "url": "https://www.power.no/kjoekkenmaskiner/kaffe-og-te/kaffe-og-espressomaskiner/automatisk-kaffemaskin/siemens-tq515r03-kaffemaskin-rustfritt-staal/p-2323627/",
+   "img": "https://media.power-cdn.net/images/h-ec16e86dc83569eb28570b6e31c95e2c/products/2323627/2323627_8_600x600_t_g.webp",
+   "checked": "2026-11-20T16:37+00:00",
+   "sub": "coffee",
+   "specs": [
+    "coffeeSelect-skjerm",
+    "To kopper med ett trykk",
+    "1,9 l avtakbar vanntank"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Point POAS220 Viva varmluftsbørste",
+   "brand": "Point",
+   "price": 399.0,
+   "before": 1299.0,
+   "url": "https://www.power.no/skjoennhet-og-velvaere/haarpleie/varmluftsboerste/point-poas220-viva-varmluftsboerste/p-4078209/",
+   "img": "https://media.power-cdn.net/images/h-0fc49869a5697bea0cf7007f7c714dd7/products/4078209/4078209_14_600x600_t_g.webp",
+   "checked": "2026-11-20T16:37+00:00",
+   "sub": "hair",
+   "specs": [
+    "Krøll, tørk og volum",
+    "2 hastigheter, 4 temperaturer",
+    "Ion-funksjon"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Braun Series 9 Sport S9150cc barbermaskin",
+   "brand": "Braun",
+   "price": 2499.0,
+   "before": 6699.0,
+   "url": "https://www.power.no/skjoennhet-og-velvaere/haarfjerning-for-menn/barbermaskin/braun-series-9-sport-s9150cc-barbermaskin/p-4313164/",
+   "img": "https://media.power-cdn.net/images/h-462074eb27f28a7295cac9989747b70b/products/4313164/4313164_20_600x600_t_g.webp",
+   "checked": "2026-11-20T16:37+00:00",
+   "sub": "shaving",
+   "specs": [
+    "100 % vanntett, våt og tørr",
+    "40° fleksibelt barberhode",
+    "SensoAdapt-teknologi"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Braun NEVO 15000c barbermaskin",
+   "brand": "Braun",
+   "price": 4290.0,
+   "before": 9149.0,
+   "url": "https://www.power.no/skjoennhet-og-velvaere/haarfjerning-for-menn/barbermaskin/braun-nevo-15000c-barbermaskin/p-4313166/",
+   "img": "https://media.power-cdn.net/images/h-aa5683831fa1ef673de81ae51be5d9e9/products/4313166/4313166_12_600x600_t_g.webp",
+   "checked": "2026-11-20T16:37+00:00",
+   "sub": "shaving",
+   "specs": [
+    "AeroTouch-teknologi",
+    "250 diamantskarpe blader",
+    "NEVO Smart Processor"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "NOOA Allure varmluftstyler",
+   "brand": "NOOA",
+   "price": 998.0,
+   "before": 2298.0,
+   "url": "https://www.power.no/skjoennhet-og-velvaere/haarpleie/varmluftsboerste/nooa-allure-varmluftstyler/p-1926275/",
+   "img": "https://media.power-cdn.net/images/h-bf91fc115c53b8bea03c363d8407248c/products/1926275/1926275_5_600x600_t_g.webp",
+   "checked": "2026-11-20T16:37+00:00",
+   "sub": "hair",
+   "specs": [
+    "Hårtørking og krølling",
+    "8 tilbehør",
+    "BLDC-motor 1200 W"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Braun Series 5 52-N1500S barbermaskin",
+   "brand": "Braun",
+   "price": 699.0,
+   "before": 1499.0,
+   "url": "https://www.power.no/skjoennhet-og-velvaere/haarfjerning-for-menn/barbermaskin/braun-series-5-52-n1500s-barbermaskin/p-4519528/",
+   "img": "https://media.power-cdn.net/images/h-99ccf703ddd18c7e7ab4ddd7da558065/products/4519528/4519528_7_600x600_t_g.webp",
+   "checked": "2026-11-20T16:37+00:00",
+   "sub": "shaving",
+   "specs": [
+    "100 % vanntett, våt og tørr",
+    "3 fleksible blader"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "BORA GP4U induksjonstopp med resirkulerende ventilator",
+   "brand": "BORA",
+   "price": 24999.0,
+   "before": 49999.0,
+   "url": "https://www.power.no/hvitevarer/matlaging/platetopp/platetopp-med-integrert-ventilator/bora-gp4u-induksjonstopp-med-resirkulerende-ventilator/p-4280412/",
+   "img": "https://media.power-cdn.net/images/h-c0082faac63f727c7e77e275ea9ec1e4/products/4280412/4280412_6_600x600_t_g.webp",
+   "checked": "2026-11-20T16:37+00:00",
+   "sub": "ovens",
+   "specs": [
+    "76 cm induksjonstopp med kjøkkenventilator",
+    "Planlimt eller nedfelt"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Siemens iQ500 ED851HQ26E induksjonstopp m/ventilator",
+   "brand": "Siemens",
+   "price": 14999.0,
+   "before": 29999.0,
+   "url": "https://www.power.no/hvitevarer/matlaging/platetopp/platetopp-med-integrert-ventilator/siemens-iq500-ed851hq26e-induksjonstopp-mventilator/p-3217377/",
+   "img": "https://media.power-cdn.net/images/h-9ba4eb29b2e153134978a2155c3418a1/products/3217377/3217377_3_600x600_t_g.webp",
+   "checked": "2026-11-20T16:37+00:00",
+   "sub": "ovens",
+   "specs": [
+    "80 cm induksjonstopp med ventilator",
+    "Rammeløs med fasetterte kanter"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Siemens iQ300 HB572ABS4 stekeovn",
+   "brand": "Siemens",
+   "price": 5299.0,
+   "before": 10999.0,
+   "url": "https://www.power.no/hvitevarer/matlaging/innbyggingsovn/siemens-iq300-hb572abs4-stekeovn/p-4143229/",
+   "img": "https://media.power-cdn.net/images/h-a8e359a6dd779f4c7c766a7134e66335/products/4143229/4143229_1_600x600_t_g.webp",
+   "checked": "2026-11-20T16:37+00:00",
+   "sub": "ovens",
+   "specs": [
+    "71 l ovnskapasitet",
+    "Pyrolytisk og hydrolytisk rengjøring",
+    "cookControl10-programmer"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Samsung WW90DG6U25LEU3 vaskemaskin",
+   "brand": "Samsung",
+   "price": 4799.0,
+   "before": 9999.0,
+   "url": "https://www.power.no/hvitevarer/klesvask/frontbetjent-vaskemaskin/samsung-ww90dg6u25leu3-vaskemaskin/p-3199486/",
+   "img": "https://media.power-cdn.net/images/h-a317bd243fa08966b792f6e9cbd42476/products/3199486/3199486_12_600x600_t_g.webp",
+   "checked": "2026-11-20T16:37+00:00",
+   "sub": "washers",
+   "specs": [
+    "AI EcoBubble",
+    "9 kg",
+    "1400 o/min"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "LG WS5D7230G integrert stekeovn",
+   "brand": "LG",
+   "price": 4799.0,
+   "before": 9999.0,
+   "url": "https://www.power.no/hvitevarer/matlaging/innbyggingsovn/lg-ws5d7230g-integrert-stekeovn/p-4266078/",
+   "img": "https://media.power-cdn.net/images/h-d87003a23f773156d5a68c1f759b7135/products/4266078/4266078_3_600x600_t_g.webp",
+   "checked": "2026-11-20T16:37+00:00",
+   "sub": "ovens",
+   "specs": [
+    "72 l ovnskapasitet",
+    "Pyrolytisk selvrens",
+    "Air Fry-funksjon"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "AEG 8000-serien TP8SB73XAB stekeovn",
+   "brand": "AEG",
+   "price": 12999.0,
+   "before": 24999.0,
+   "url": "https://www.power.no/hvitevarer/matlaging/innbyggingsovn/aeg-8000-serien-tp8sb73xab-stekeovn/p-4037302/",
+   "img": "https://media.power-cdn.net/images/h-6583b202033fd1d328243694ba7da200/products/4037302/4037302_1_600x600_t_g.webp",
+   "checked": "2026-11-20T16:37+00:00",
+   "sub": "ovens",
+   "specs": [
+    "70 l ovnskapasitet",
+    "Damprengjøring",
+    "Damp og SousVide"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Siemens iQ500 KI81RADC0 integrert kjøleskap",
+   "brand": "Siemens",
+   "price": 12999.0,
+   "before": 24999.0,
+   "url": "https://www.power.no/hvitevarer/kjoel-frys-og-kombiskap/kjoeleskap/siemens-iq500-ki81radc0-integrert-kjoeleskap/p-4229839/",
+   "img": "https://media.power-cdn.net/images/h-0dfdf912f022bae5cffeda5ec8ded93a/products/4229839/4229839_3_300x300_t_g.webp",
+   "checked": "2026-11-20T16:37+00:00",
+   "sub": "fridges",
+   "specs": [
+    "Kapasitet 310 l",
+    "Integrert, montering direkte på dør"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "AEG 6000-serien LR624P14A vaskemaskin",
+   "brand": "AEG",
+   "price": 5499.0,
+   "before": 10999.0,
+   "url": "https://www.power.no/hvitevarer/klesvask/frontbetjent-vaskemaskin/aeg-6000-serien-lr624p14a-vaskemaskin/p-1646185/",
+   "img": "https://media.power-cdn.net/images/h-a67eb98586235a4ab7468681522db7d9/products/1646185/1646185_4_600x600_t_g.webp",
+   "checked": "2026-11-20T16:37+00:00",
+   "sub": "washers",
+   "specs": [
+    "ProSense-mengdeautomatikk",
+    "10 kg",
+    "1400 o/min"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Siemens iQ100 EH651BEB6E induksjonstopp",
+   "brand": "Siemens",
+   "price": 3999.0,
+   "before": 7999.0,
+   "url": "https://www.power.no/hvitevarer/matlaging/platetopp/induksjonstopp/siemens-iq100-eh651beb6e-induksjonstopp/p-3217376/",
+   "img": "https://media.power-cdn.net/images/h-e77b326c2530b53faf432c3150c8d94a/products/3217376/3217376_2_600x600_t_g.webp",
+   "checked": "2026-11-20T16:37+00:00",
+   "sub": "ovens",
+   "specs": [
+    "60 cm induksjonstopp",
+    "Rammeløs",
+    "touchControl"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Gorenje G2WP9AW vaskemaskin",
+   "brand": "Gorenje",
+   "price": 3999.0,
+   "before": 7999.0,
+   "url": "https://www.power.no/hvitevarer/klesvask/frontbetjent-vaskemaskin/gorenje-g2wp9aw-vaskemaskin/p-4253039/",
+   "img": "https://media.power-cdn.net/images/h-3f8aa202f22e531f42170511ad112f30/products/4253039/4253039_10_600x600_t_g.webp",
+   "checked": "2026-11-20T16:37+00:00",
+   "sub": "washers",
+   "specs": [
+    "JetAssist",
+    "9 kg",
+    "1400 o/min"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Senz SPC30B2 drikkekjøler 30 l",
+   "brand": "Senz",
+   "price": 1199.0,
+   "before": 2499.0,
+   "url": "https://www.power.no/hvitevarer/kjoel-frys-og-kombiskap/minikjoeleskap-og-drikkekjoeler/senz-spc30b2-kjoeler/p-4246900/",
+   "img": "https://media.power-cdn.net/images/h-2a940cea46e132d0d53bf69f6ce29a17/products/4246900/4246900_1_600x600_t_g.webp",
+   "checked": "2026-11-20T16:37+00:00",
+   "sub": "fridges",
+   "specs": [
+    "Kapasitet 30 l",
+    "0–10 °C",
+    "Mekanisk termostat"
+   ]
+  },
+  {
+   "shop": "Power",
+   "title": "Electrolux 500-serien EKI64408NW induksjonskomfyr",
+   "brand": "Electrolux",
+   "price": 7499.0,
+   "before": 13999.0,
+   "url": "https://www.power.no/hvitevarer/matlaging/komfyr/induksjonskomfyr/electrolux-500-serien-eki64408nw-induksjonskomfyr/p-3461503/",
+   "img": "https://media.power-cdn.net/images/h-f1b57338c27c479a559a1c7697bd371b/products/3461503/3461503_7_600x600_t_g.webp",
+   "checked": "2026-11-20T16:37+00:00",
+   "sub": "ovens",
+   "specs": [
+    "73 l ovnskapasitet",
+    "Katalytisk rengjøring",
+    "Grill og varmluft"
+   ]
   }
  ]
 }
