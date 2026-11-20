@@ -160,6 +160,11 @@ def main(argv=None):
 
     log(f"Prisfallet feed update {today}")
     offers, status = collect(a.fixtures)
+    if not a.fixtures and not offers:
+        # No network connected yet (or all feeds failed): keep the current site data
+        # instead of replacing it with an empty list.
+        log("No offers from any source - keeping the existing data/deals.json unchanged.")
+        return None
     for o in offers:
         o["id"] = offer_id(o)
     hist_path = os.path.join(a.out, "price-history.json")
