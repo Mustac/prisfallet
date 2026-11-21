@@ -38,6 +38,7 @@ def fits(g, sub):
     allowed = set()
     for rx, ok in HINTS:
         if _re.search(rx, g): allowed |= ok
+    if allowed & {"electronics", "computers", "gaming"}: allowed |= {"mobil", "laptop", "desktop"}
     return not allowed or TOP.get(sub) in allowed
 
 shop, base, src = sys.argv[1], sys.argv[2].rstrip("/"), sys.argv[3]

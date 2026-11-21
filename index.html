@@ -507,11 +507,14 @@ const ico=k=>`<svg><use href="#i-${k}"/></svg>`;
 
 // ---------- taxonomy ----------
 const CATS=[
- {id:"electronics",name:"TV, lyd og mobil",c:"#4fc3ff",icon:"headphones",subs:[
+ {id:"mobil",name:"Mobiltelefoner",c:"#39d98a",icon:"phones",subs:[["phones","Mobiltelefoner"],["phoneacc","Deksler og sporere"],["chargers","Ladere, kabler og huber"]]},
+ {id:"laptop",name:"Bærbare PC-er",c:"#8f7bff",icon:"laptops",subs:[["laptops","Bærbare PC-er"]]},
+ {id:"desktop",name:"Stasjonære PC-er",c:"#ff9f43",icon:"desktops",subs:[["desktops","Stasjonære og mini-PC-er"]]},
+ {id:"electronics",name:"TV og lyd",c:"#4fc3ff",icon:"headphones",subs:[
   ["tv","TV og projektorer"],["soundbars","Lydplanker"],["speakers","Høyttalere"],["headphones","Hodetelefoner"],["earbuds","Ørepropper"],
-  ["phones","Mobiltelefoner"],["tablets","Nettbrett og lesebrett"],["watches","Smartklokker og aktivitetsmålere"],["chargers","Ladere, kabler og huber"],["phoneacc","Deksler og sporere"],["music","DJ- og musikkutstyr"]]},
+  ["tablets","Nettbrett og lesebrett"],["watches","Smartklokker og aktivitetsmålere"],["music","DJ- og musikkutstyr"]]},
  {id:"computers",name:"Data",c:"#b18cff",icon:"laptops",subs:[
-  ["laptops","Bærbare PC-er"],["desktops","Stasjonære og mini-PC-er"],["monitors","Skjermer"],["cpu","Prosessorer"],["gpu","Skjermkort"],["motherboards","Hovedkort"],
+  ["monitors","Skjermer"],["cpu","Prosessorer"],["gpu","Skjermkort"],["motherboards","Hovedkort"],
   ["ram","Minne (RAM)"],["storage","SSD og lagring"],["psu","Strømforsyninger"],["cases","PC-kabinetter"],["cooling","Kjøling og vifter"],
   ["keyboards","Tastaturer"],["mice","Mus"],["printers","Skrivere og blekk"],["network","Rutere og Wi-Fi"],["pcacc","PC-tilbehør"]]},
  {id:"gaming",name:"Gaming",c:"#ff5ad1",icon:"controllers",subs:[
@@ -658,7 +661,7 @@ function renderSide(){
   $("brand").innerHTML=`<option value="">Alle merker (${brands.length})</option>`+brands.map(b=>`<option${b===S.brand?" selected":""}>${esc(b)}</option>`).join("");
 }
 function renderHw(){
-  const show=S.cat===SUB2CAT.laptops||[...S.subs].some(x=>HW_SUBS.has(x));
+  const show=["laptop","desktop","mobil"].includes(S.cat)||[...S.subs].some(x=>HW_SUBS.has(x));
   if(!show){if(HW_DIMS.some(([k])=>S.hw[k].size)){HW_DIMS.forEach(([k])=>S.hw[k].clear());}$("hwf").innerHTML="";return;}
   const pool=D.filter(d=>match(d,{ignoreHw:"__"})&&d.hw&&Object.keys(d.hw).length);
   if(pool.length<3){$("hwf").innerHTML="";return;}
