@@ -8,7 +8,22 @@ import re
 
 # (subcategory id, regex) — order matters: specific before general
 RULES = [
-    ("dishwashers", r"electrolux e[dfs][ie]\d|oppvaskmaskin"),
+    ("washers", r"tørketrommel|\bvaskemaskin|electrolux e[fd]i\d"),
+    ("ovens", r"varmluftovn|innebygd ovn|stekeovn"),
+    ("printers", r"laminer"),
+    ("laptops", r"msi (?:modern|prestige|katana|cyborg|thin|venture|stealth|raider|vector|crosshair|sword|pulse) \d"),
+    ("drop", r"\bzen \d+ briller|veggfeste|takfeste|tv-?feste"),
+    ("pcacc", r"usb-c hub|usb hub|dockingstasjon|dokkingstasjon|laptop-?(?:sekk|ryggsekk|veske|bag|backpack|sleeve|stativ)|laptopveske|(?:macbook|laptop)[^|]*hardcase|monitorarm"),
+    ("phoneacc", r"antirefleks|antireflekterende|beskyttelsesfilm|skjermbeskytter"),
+    ("mice", r"keychron m\d|optisk mus"),
+    ("machines", r"pop ?corn|cotton candy|pizzeria gourmet"),
+    ("tablets", r"yoga tab|idea tab|lenovo tab\b"),
+    ("desktops", r"revo rb\d|revo box|mini-pc"),
+    ("speakers", r"party speaker"),
+    ("controllers", r"driving force|\bg92[03]\b|racing ?ratt"),
+    ("keyboards", r"mx keys|mk295|keychron"),
+    ("watches", r"xplora x\d|xplora xgo"),
+    ("dishwashers", r"oppvaskmaskin"),
     ("security", r"doorbell|dørklokke|ringeklokke|tapo d\d"),
     ("watches", r"moto watch|oneplus watch|xiaomi watch|huawei watch"),
     ("phoneacc", r"lens guard|moto tag|torras|airtag"),

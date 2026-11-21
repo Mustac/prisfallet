@@ -20,7 +20,7 @@ for _c, _subs in _re.findall(r'\{id:"([a-z]+)".*?subs:\[(.*?)\]\}', open(os.path
 # fit the shop's own category is dropped, so one bad keyword rule can never put shoes among board games.
 HINTS = [
     (r"tv-lyd|tv-og-lyd|/tv/|/lyd/|lydplank|hoeyttal|hodetelefon|mobil|smartklokk|nettbrett|foto", {"electronics", "photo", "computers", "gaming"}),
-    (r"data|pc-og-mac|skjermer|datatilbeh|kontor", {"computers", "electronics", "gaming"}),
+    (r"data|pc-og-mac|skjermer|datatilbeh|kontor", {"computers", "electronics", "gaming", "photo"}),
     (r"gaming", {"gaming", "computers", "electronics"}),
     (r"hvitevar", {"appliances", "kitchen", "home"}),
     (r"husholdning|stoevsug|kjoekken|kjokken", {"home", "kitchen", "appliances"}),
@@ -68,6 +68,18 @@ for x in items:
     t = re.sub(r"\s+", " ", (x.get("t") or "")).strip()
     for _ in range(3):
         t = re.sub(r"^(kun online|ny lavere pris!?|nyhet|bestselger|black week|-?\d[\d ]*,-)\s*", "", t, flags=re.I).strip()
+    t = re.sub(r"(\s*\((?:KOMP|REUR|RDKK|RDEU|RNOR)\))+\s*$", "", t).strip()   # NetOnNet stock codes like (KOMP)(REUR)
+    w = t.split()
+    if len(w) > 2 and w[1].isupper() and w[1] != w[0] and w[1].lower() == w[0].lower():   # "Acer ACER Acer Swift" -> "Acer Swift"
+        w.pop(1)
+        if w[1] == w[0]: w.pop(1)
+    t = " ".join(w)
+    if "--desc" in args and x.get("specs") and len(t) < 30 and not re.search(r"[a-zæøå]{3}", " ".join(w[1:])):
+        dsc = x["specs"][0].strip()
+        tl = {z.lower() for z in t.split()}
+        dw = dsc.split()
+        while dw and dw[0].lower() in tl: dw.pop(0)
+        if dw: t = t + " – " + " ".join(dw)
     u = x.get("u") or ""
     url = u if u.startswith("http") else base + u
     try: p, b = float(x.get("p") or 0), float(x.get("b") or 0)
@@ -76,7 +88,7 @@ for x in items:
     letters = [c for c in t if c.isalpha()]
     upper = sum(c.isupper() for c in letters) / max(1, len(letters))
     if (len(t) < 8 or (len(t) < 22 and re.match(r"\d", t)) or t.lower() in ("nyhet", "tilbud", "bestselger", "kampanje", "outlet") or "*" in t
-            or (upper > 0.6 and len(letters) > 8) or re.match(r"(få|prøv|opptil|spar|inkl|gratis|samle|kjøp|bonus|cashback|\d+ ?mnd)\b", t, re.I)):
+            or (upper > 0.6 and len(letters) > 8 and not re.search(r"[A-Za-zÆØÅæøå]*[a-zæøå]{3}", t)) or re.match(r"(få|prøv|opptil|spar|inkl|gratis|samle|kjøp|bonus|cashback|\d+ ?mnd)\b", t, re.I)):
         skip("title"); continue
     if not t or not p or b <= p: skip("noprice"); continue
     pct = 1 - p / b
