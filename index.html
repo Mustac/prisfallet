@@ -481,6 +481,7 @@ coffee:"M8 16h26v14a10 10 0 0 1-10 10h-6A10 10 0 0 1 8 30z M34 20h4a5 5 0 0 1 0 
 shaving:"M16 4h16v14H16z M18 18h12l-2 26h-8z M16 9h16",
 oral:"M22 4h4v20h-4z M20 24h8v20h-8z M22 8h4 M22 12h4 M22 16h4",
 skincare:"M18 4h12v6H18z M14 10h20v34H14z M14 20h20",
+tools:"M30 6a9 9 0 0 0-8.5 12L7 32.5a3.5 3.5 0 0 0 5 5L26.5 23A9 9 0 0 0 38.5 13.5l-5.5 5.5-5-1-1-5 5.5-5.5A9 9 0 0 0 30 6z",
 kids:"M24 9a10 10 0 1 0 0 20a10 10 0 1 0 0-20z M19.48 10.08A4.5 4.5 0 1 0 14.84 15 M33.16 15A4.5 4.5 0 1 0 28.52 10.08 M21 22.5a3 3 0 0 0 6 0 M20.5 17.5v.5 M27.5 17.5v.5 M16 30.5c-3 2.5-5 6-5 9.5a4 4 0 0 0 4 4h18a4 4 0 0 0 4-4c0-3.5-2-7-5-9.5",
 lego:"M6 18h36v22H6z M12 12h8v6h-8z M28 12h8v6h-8z",
 toys:"M24 8a8 8 0 1 1 0 16a8 8 0 0 1 0-16z M14 10a4 4 0 1 1 0 .1 M34 10a4 4 0 1 1 0 .1 M12 44c0-12 6-20 12-20s12 8 12 20z",
@@ -518,13 +519,15 @@ const CATS=[
   ["washers","Vaskemaskiner og tørketromler"],["fridges","Kjøleskap og frysere"],["dishwashers","Oppvaskmaskiner"],["ovens","Stekeovner, platetopper og ventilatorer"]]},
  {id:"home",name:"Hjem og hage",c:"#4be3a0",icon:"robovac",subs:[
   ["robovac","Robotstøvsugere"],["vacuums","Støvsugere"],["climate","Luft og oppvarming"],["smarthome","Smarthjem"],["security","Sikkerhet og ringeklokker"],
-  ["lighting","Belysning og interiør"],["laundry","Strykejern og dampere"],["garden","Hage og grill"]]},
+  ["lighting","Belysning og interiør"],["laundry","Strykejern og dampere"],["garden","Hage og grill"],["christmas","Julepynt og julelys"]]},
+ {id:"tools",name:"Verktøy og bil",c:"#ffa53a",icon:"tools",subs:[
+  ["powertools","Elektroverktøy"],["handtools","Håndverktøy"],["workshop","Verksted og kompressor"],["car","Bil og MC"],["storage","Oppbevaring og hyller"],["build","Bygg og maling"]]},
  {id:"kitchen",name:"Kjøkken",c:"#ff8a5c",icon:"pots",subs:[
   ["coffee","Kaffe"],["smallapp","Småelektrisk"],["machines","Miksere og blendere"],["pans","Stekepanner"],["pots","Gryter og støpejern"],["knives","Kniver"],
   ["boards","Skjærebrett"],["ovenware","Ildfaste former"],["utensils","Kjøkkenredskap"],["tableware","Servise og bestikk"],["food","Mat og gaver"]]},
  {id:"beauty",name:"Skjønnhet og helse",c:"#ff7ac6",icon:"hair",subs:[
   ["hair","Hårstyling"],["shaving","Barbering og IPL"],["oral","Tannbørster"],["skincare","Hudpleie og parfyme"],["wellness","Massasje og helse"]]},
- {id:"toys",name:"Barn og leker",c:"#ffd84d",icon:"kids",subs:[["lego","LEGO"],["toys","Leker og spill"],["strollers","Barnevogner og triller"],["carseats","Bilstoler"],["baby","Babyutstyr"]]},
+ {id:"toys",name:"Barn og leker",c:"#ffd84d",icon:"kids",subs:[["lego","LEGO"],["toys","Leker"],["boardgames","Spill og puslespill"],["dolls","Kosedyr og dukker"],["rc","Radiostyrt"],["outdoorkids","Utelek og aking"],["crafts","Hobby og kreativt"],["strollers","Barnevogner og triller"],["carseats","Bilstoler"],["baby","Babyutstyr"]]},
  {id:"sports",name:"Sport og friluft",c:"#5ee0c9",icon:"bikes",subs:[["clothing","Klær"],["shoes","Sko"],["winter","Ski og vinter"],["bikes","Sykler og elsparkesykler"],["fitness","Trening"],["teamsport","Ballsport og racket"],["outdoor","Friluft og camping"]]},
  {id:"other",name:"Annet",c:"#9a9aa3",icon:"other",subs:[["other","Annet"]]}
 ];

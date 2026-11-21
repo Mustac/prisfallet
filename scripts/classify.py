@@ -8,6 +8,24 @@ import re
 
 # (subcategory id, regex) — order matters: specific before general
 RULES = [
+    # --- added 21 Nov: kids (before everything else, so "radiostyrt" toys don't land in electronics)
+    ("climate", r"dieselvarmer|parafinovn|byggvarmer|byggtørker|vifteovn|vedovnsvifte|baderomsvarmer|gassvarmer|terrassevarmer"),
+    ("build", r"sagbukk|bjelkesko|vinkelbeslag|beslag\b"),
+    ("rc", r"radiostyrt|fjernstyrt|rc-bil|rc bil|\brc\b"),
+    ("outdoorkids", r"akebrett|rattkjelke|kjelke|akematte|akemadrass|snøscooter for barn|sparkstøtting|trampoline|lekestue|sandkasse|huske(stativ)?\b|sklie|barneski|snowracer|\bstiga\b"),
+    ("boardgames", r"brettspill|puslespill|kortspill|familiespill|selskapsspill|\bpuslespill|\bspill for barn|kids spill|monopol|ludo|alias\b|uno\b|yatzy|sjakk"),
+    ("dolls", r"kosedyr|bamse|plysj|dukke|barbie|baby born|squishmallow|\bplush"),
+    ("crafts", r"perler|hama|tegnesett|malesett|tusjer|fargeblyant|modellkitt|leire|slim\b|kreativ|hobbysett|tegnebrett|klistremerke"),
+    # --- tools (Jula, Biltema, Clas Ohlson...)
+    ("garden", r"motorsag|kjedesag|vedkløyver|hekksaks|gresstrimmer|løvblåser|gressklipper|snøfreser|snøskuffe|snøslynge"),
+    ("powertools", r"drill|skrutrekker(?!sett)|slagtrekker|muttertrekker|vinkelsliper|sirkelsag|stikksag|kappsag|bajonettsag|multiverktøy|multicutter|slipemaskin|eksentersliper|båndsliper|høvel|overfres|borhammer|meiselhammer|batteridrevet (?!.*(lys|lampe|lyskaster|radio))|\b18 ?v\b(?!.*(lys|lampe|led))|batteripakke|varmluftpistol|limpistol|el-verktøy"),
+    ("garden", r"høytrykks?spyler"),
+    ("workshop", r"kompressor|sveis|trykkluft|jekk|garasjejekk|arbeidsbenk|verktøyvogn|verktøyskap|verktøykasse|verktøytralle|lodd(e|ing)|skruestikke|tvinge|arbeidslampe|batterilader|startbooster|starthjelp|arbeidsbukk"),
+    ("handtools", r"verktøysett|pipenøkkel|fastnøkkel|momentnøkkel|unbrako|\bbits\b|bitssett|tang\b|nebbtang|avbitertang|hammer|skrutrekkersett|vater|målebånd|tommestokk|kniv(sett)?\b.*(tapet|hobby)|tapetkniv|baufil|håndsag|meisel|filsett"),
+    ("car", r"bil(pleie|vask|voks|polering|lakk|dekk|matte|matter|lader)|vindusvisker|frontrute|takboks|lastholder|sykkelholder|hengerfeste|snøkjetting|dekkskift|felg|\bmc\b|motorsykkel|motorolje|kjølervæske|spylervæske|ladekabel elbil|elbillader|bremse|tanklokk|lyspære.*(h4|h7)"),
+    ("storage", r"oppbevaringshylle|lagerreol|reol\b|hyllesystem|oppbevaringskasse|oppbevaringsboks|veggpanel|verktøyoppheng|plastboks|stablekasse"),
+    ("build", r"maling|pensel|malerull|fugemasse|silikon|sparkel|grunning|lakk\b|beis|stige|stillas|lim\b|tape\b|byggfolie|isolasjon|skruer|spiker|plugger"),
+    ("christmas", r"julepynt|julelys|juletre|julebelysning|lysgirlander|lysslynge|lyslenke|adventsstake|adventslys|julestjerne|nisse|juledekor|kunstig juletre|lysgardin|lysfigur|julekule|led-lys.*(jul|stjerne)|stjerne.*led|utendørs ?lys.*jul"),
     # --- added 20 Nov: things that used to land in "Annet"
     ("laptops", r"galaxy book|bærbar pc|chromebook"),
     ("phones", r"\brealme\b|smarttelefon"),
@@ -19,7 +37,7 @@ RULES = [
     ("baby", r"matstol|babygym|gåstol|stellebord|babycall|bæresele"),
     ("toys", r"radiostyrt|karaoke|lekekjøkken|kjørbar|tusjer|malesett|leketøy|dukke|byggesett|puslespill|brettspill"),
     ("controllers", r"racingratt|\bratt\b"),
-    ("smarthome", r"plugg|smart ?plug"),
+    ("smarthome", r"smartplugg|smart ?plug|wifi-plugg"),
     ("outdoor", r"duffel|ryggsekk|telt\b|sovepose"),
     ("cameras", r"zv-e10|systemkamera|speilrefleks|objektiv"),
     ("chairs", r"gaming-skrivebord|gamingbord"),
@@ -99,7 +117,7 @@ RULES = [
     ("washers", r"vaskemaskin|tørketrommel|tørkeskap|washing machine|dryer|vask og tørk|vask-tork"),
     ("fridges", r"kjøleskap|fryser|kombiskap|vinskap|fridge|freezer"),
     ("dishwashers", r"oppvaskmaskin|dishwasher"),
-    ("ovens", r"stekeovn|komfyr|platetopp|induksjon|kokeplate|ventilator|kjøkkenvifte|avtrekk|mikrobølgeovn|microwave"),
+    ("ovens", r"stekeovn|komfyr|platetopp|induksjon|kokeplate|ventilator|kjøkkenvifte|avtrekkshette|avtrekksvifte|mikrobølgeovn|microwave"),
     # --- home
     ("robovac", r"robotstøvsuger|robot vacuum|roborock|roomba|dreame (x|l)\d|ecovacs|deebot"),
     ("vacuums", r"støvsuger|vacuum|våt/tørr|vaskemopp|wet ?dry|dyson v\d|gulvvasker"),
@@ -161,7 +179,9 @@ PATH_HINTS = [
     ("/robotstovsuger", "robovac"), ("/stovsuger", "vacuums"),
     ("/kaffe", "coffee"), ("/kjokkenmaskin", "machines"), ("/airfryer", "smallapp"),
     ("/harfoner", "hair"), ("/rettetang", "hair"), ("/harpleie", "hair"), ("/barbering", "shaving"), ("/tannpleie", "oral"),
-    ("/lego", "lego"), ("/leker", "toys"),
+    ("/lego", "lego"), ("/leker", "toys"), ("/leketoy", "toys"), ("/vinterleker", "outdoorkids"), ("/utendorsleker", "outdoorkids"), ("/utelek", "outdoorkids"), ("/radiostyrte", "rc"),
+    ("/el-verktoy", "powertools"), ("/handverktoy", "handtools"), ("/trykkluft", "workshop"), ("/sveising", "workshop"), ("/bilverktoy", "workshop"), ("/verksted", "workshop"),
+    ("/bil---mc/", "car"), ("/bil-og-garasje/", "car"), ("/biltilbehor", "car"), ("/bilpleie", "car"), ("/oppbevaring", "storage"), ("/maling", "build"), ("/stiger", "build"), ("/jul/", "christmas"), ("/julebelysning", "christmas"), ("/julepynt", "christmas"),
     ("/el-sparkesykkel", "bikes"), ("/sykkel", "bikes"), ("/trening", "fitness"),
     ("/printer", "printers"), ("/nettverk", "network"), ("/ruter", "network"),
     ("/tastatur", "keyboards"), ("/mus/", "mice"), ("/pc-mus", "mice"),
