@@ -61,3 +61,28 @@ not re-checked within 48 h). Then commit + push; Cloudflare deploys in ~1 min.
 - Proshop: fetch /<Black-Friday-...>?pn=N, parse li.site-productlist-item with a text-node walker (DOMParser docs have no innerText). HEAD gives false 404s: check links with GET.
 - Kjell: /no/black-friday/{lyd--bilde,mobilt,videospill--gaming}; stock + rating from product page JSON-LD (InStock, ratingValue); og:image.
 - Laptop specs matter for the RAM/CPU/GPU/storage filter: always fill specs (CPU; "16 GB RAM, 512 GB SSD"; GPU) for laptops.
+
+## Full sale listings (since 21 Nov) — the daily routine
+Collect each shop's whole sale listing in his Chrome, save it as Downloads/pf-<shop>.json
+(one download per tab: Chrome blocks a second automatic download in the same tab, so save from a
+fresh tab opened on the shop's /robots.txt, reading the data from that origin's localStorage),
+move it to Downloads/prisfallet-data/, stage it, then `tools/reimport.sh`.
+- Elkjøp: iframe over /kampanje/black-friday/<cat>/page-N for each category; `__es` from localStorage.exsrc (pfx key).
+- Power: iframe per /kampanje/blackfriday/<cat>/ + "Vis flere" clicks; `__pw`/`__pm` (pall2).
+- NetOnNet: iframe over /no/art/art-category/black-friday?p=N (0-based); name = first leaf element in the product link, description = h2/h3 (nnall).
+- Proshop: fetch /Black-Friday?pn=N + DOMParser; image is img data-src (lazy) or src; ~4 req/s gets 429 — keep it slower (psall).
+- Jollyroom: iframe /blackweek/blackweek-{leker,barnevogner,bilstoler,babyutstyr}?page=N, tiles .product-item__inner,
+  picture = img with /storage/ in data-src (NOT the colour swatch) (jrall).
+- Lekekassen: fetch /black-november?p=N&product_list_limit=48, Magento li.product-item, data-price-amount.
+- Extra Leker: fetch /leker-pa-tilbud?p=N&product_list_limit=48 (Magento), picture in img data-amsrc.
+- Jula: /tilbud/?pl-pageSize=300 + scroll; title = p.text-md.font-bold; skip JulaClub-only prices.
+- Biltema: /pristilbud/nedsatt-pris/ + click "Neste"; li.productEntity.
+- XXL: /kampanje + click "Neste" (183 items); "Førpris" value is on the next line.
+Quality gates (tools/import_listing.py): 30–75 % off, real https picture matching the shop's image host
+(tools/shops.py), in stock, minimum saving/price, junk/badge titles skipped, category from
+scripts/classify.py must agree with the shop's own category path (HINTS) or falls back to it, else dropped;
+toy shops: everything stays in "Barn og leker". data/overrides.json = manual fixes (url -> sub or "drop").
+Before deploy: tools/inspect.py (0 problems), tools/review.py (eyeball new titles per category),
+picture check (Image() load of every deal on the preview) and link check (data/verify.js in each shop tab:
+200 + page title matches our name; stop at 403/429 and resume slower with the start index).
+Preview = branch `preview` -> https://preview.prisfallet.pages.dev ; production = merge to main.
