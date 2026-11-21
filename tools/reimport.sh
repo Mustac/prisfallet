@@ -12,6 +12,7 @@ I="python3 tools/import_listing.py"
 [ -f $D/pf-elkjop.json ] && python3 tools/convert.py elkjop $D/pf-elkjop.json /tmp/in/ek.json && $I Elkjøp https://www.elkjop.no /tmp/in/ek.json --minsave 50 --minprice 99 --drop-other
 [ -f $D/pf-power.json ] && python3 tools/convert.py power $D/pf-power.json /tmp/in/pw.json && $I Power https://www.power.no /tmp/in/pw.json --minsave 50 --minprice 99 --drop-other
 [ -f $D/pf-xxl.json ] && $I XXL https://www.xxl.no $D/pf-xxl.json --minsave 50 --minprice 99 --drop-other
+[ -f $D/pf-komplett.json ] && python3 -c "import json,sys;M={'pc':'pc-og-mac','mobil':'mobil','data':'data','gaming':'gaming','tv':'tv-lyd'};d=json.load(open(sys.argv[1]));[x.update(g=M.get(x.get('g'),x.get('g'))) for x in d];json.dump(d,open(sys.argv[2],'w'),ensure_ascii=False)" $D/pf-komplett.json /tmp/in/komplett.json && $I Komplett https://www.komplett.no /tmp/in/komplett.json --minsave 50 --minprice 99 --drop-other
 for s in netonnet proshop; do
   [ -f $D/pf-$s.json ] && python3 -c "import json,sys;d=json.load(open(sys.argv[1]));json.dump(list(d.values()) if isinstance(d,dict) else d,open(sys.argv[2],'w'),ensure_ascii=False)" $D/pf-$s.json /tmp/in/$s.json
 done

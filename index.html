@@ -507,11 +507,14 @@ const ico=k=>`<svg><use href="#i-${k}"/></svg>`;
 
 // ---------- taxonomy ----------
 const CATS=[
- {id:"electronics",name:"TV, lyd og mobil",c:"#4fc3ff",icon:"headphones",subs:[
+ {id:"mobil",name:"Mobiltelefoner",c:"#39d98a",icon:"phones",subs:[["phones","Mobiltelefoner"],["phoneacc","Deksler og sporere"],["chargers","Ladere, kabler og huber"]]},
+ {id:"laptop",name:"Bærbare PC-er",c:"#8f7bff",icon:"laptops",subs:[["laptops","Bærbare PC-er"]]},
+ {id:"desktop",name:"Stasjonære PC-er",c:"#ff9f43",icon:"desktops",subs:[["desktops","Stasjonære og mini-PC-er"]]},
+ {id:"electronics",name:"TV og lyd",c:"#4fc3ff",icon:"headphones",subs:[
   ["tv","TV og projektorer"],["soundbars","Lydplanker"],["speakers","Høyttalere"],["headphones","Hodetelefoner"],["earbuds","Ørepropper"],
-  ["phones","Mobiltelefoner"],["tablets","Nettbrett og lesebrett"],["watches","Smartklokker og aktivitetsmålere"],["chargers","Ladere, kabler og huber"],["phoneacc","Deksler og sporere"],["music","DJ- og musikkutstyr"]]},
+  ["tablets","Nettbrett og lesebrett"],["watches","Smartklokker og aktivitetsmålere"],["music","DJ- og musikkutstyr"]]},
  {id:"computers",name:"Data",c:"#b18cff",icon:"laptops",subs:[
-  ["laptops","Bærbare PC-er"],["desktops","Stasjonære og mini-PC-er"],["monitors","Skjermer"],["cpu","Prosessorer"],["gpu","Skjermkort"],["motherboards","Hovedkort"],
+  ["monitors","Skjermer"],["cpu","Prosessorer"],["gpu","Skjermkort"],["motherboards","Hovedkort"],
   ["ram","Minne (RAM)"],["storage","SSD og lagring"],["psu","Strømforsyninger"],["cases","PC-kabinetter"],["cooling","Kjøling og vifter"],
   ["keyboards","Tastaturer"],["mice","Mus"],["printers","Skrivere og blekk"],["network","Rutere og Wi-Fi"],["pcacc","PC-tilbehør"]]},
  {id:"gaming",name:"Gaming",c:"#ff5ad1",icon:"controllers",subs:[
@@ -631,6 +634,7 @@ function renderCats(){
   const all=D.filter(d=>d.pct>=S.min);
   let h=`<button class="cat${S.cat===""?" on":""}" style="--c:#d7ff3a" data-cat=""><span class="best">-${Math.max(...D.map(d=>d.pct))}%</span>${ico("all")}<b>Alle tilbud</b><small>${all.length} tilbud</small></button>`;
   for(const c of CATS){
+    if(S.cat!==c.id&&!D.some(d=>d.cat===c.id))continue;  // never show an empty category
     const L=D.filter(d=>d.cat===c.id&&d.pct>=S.min);
     const best=Math.max(0,...D.filter(d=>d.cat===c.id).map(d=>d.pct));
     h+=`<button class="cat${S.cat===c.id?" on":""}" data-cat="${c.id}" style="--c:${c.c};${L.length?"":"opacity:.5"}">${best?`<span class="best">-${best}%</span>`:""}${ico(c.icon)}<b>${c.name}</b><small>${L.length} tilbud</small></button>`;
@@ -658,7 +662,7 @@ function renderSide(){
   $("brand").innerHTML=`<option value="">Alle merker (${brands.length})</option>`+brands.map(b=>`<option${b===S.brand?" selected":""}>${esc(b)}</option>`).join("");
 }
 function renderHw(){
-  const show=S.cat===SUB2CAT.laptops||[...S.subs].some(x=>HW_SUBS.has(x));
+  const show=["laptop","desktop","mobil"].includes(S.cat)||[...S.subs].some(x=>HW_SUBS.has(x));
   if(!show){if(HW_DIMS.some(([k])=>S.hw[k].size)){HW_DIMS.forEach(([k])=>S.hw[k].clear());}$("hwf").innerHTML="";return;}
   const pool=D.filter(d=>match(d,{ignoreHw:"__"})&&d.hw&&Object.keys(d.hw).length);
   if(pool.length<3){$("hwf").innerHTML="";return;}
@@ -707,7 +711,8 @@ function card(d){
 }
 const SORT={best:(a,b)=>b.score-a.score,pct:(a,b)=>b.pct-a.pct||b.kr-a.kr,kr:(a,b)=>b.kr-a.kr,low:(a,b)=>a.now-b.now,high:(a,b)=>b.now-a.now};
 function renderGrid(){
-  const L=D.filter(d=>match(d)).sort(SORT[S.sort]);
+  const MAIN={mobil:"phones",laptop:"laptops",desktop:"desktops"}[S.cat];  // in Mobiltelefoner, the phones come before cases and chargers
+  const L=D.filter(d=>match(d)).sort((a,b)=>(MAIN?(b.sub===MAIN)-(a.sub===MAIN):0)||SORT[S.sort](a,b));
   const base=D.filter(d=>match(d,{ignoreMin:true}));
   const hidden=base.length-L.length;
   let t="De beste tilbudene i Norge";
