@@ -634,6 +634,7 @@ function renderCats(){
   const all=D.filter(d=>d.pct>=S.min);
   let h=`<button class="cat${S.cat===""?" on":""}" style="--c:#d7ff3a" data-cat=""><span class="best">-${Math.max(...D.map(d=>d.pct))}%</span>${ico("all")}<b>Alle tilbud</b><small>${all.length} tilbud</small></button>`;
   for(const c of CATS){
+    if(S.cat!==c.id&&!D.some(d=>d.cat===c.id))continue;  // never show an empty category
     const L=D.filter(d=>d.cat===c.id&&d.pct>=S.min);
     const best=Math.max(0,...D.filter(d=>d.cat===c.id).map(d=>d.pct));
     h+=`<button class="cat${S.cat===c.id?" on":""}" data-cat="${c.id}" style="--c:${c.c};${L.length?"":"opacity:.5"}">${best?`<span class="best">-${best}%</span>`:""}${ico(c.icon)}<b>${c.name}</b><small>${L.length} tilbud</small></button>`;
