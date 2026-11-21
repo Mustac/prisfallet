@@ -721,7 +721,7 @@ function renderGrid(){
 }
 function wireImgs(root){root.querySelectorAll(".thumb.has-img img").forEach(im=>{
   const ok=()=>{if(im.naturalWidth>0)im.parentNode.classList.add("ok");};
-  const bad=()=>{im.parentNode.classList.remove("has-img");im.remove();};
+  const bad=()=>{const c=im.closest(".card");if(c)c.style.display="none";else{im.parentNode.classList.remove("has-img");im.remove();}};
   if(im.complete){im.naturalWidth>0?ok():bad();}else{im.addEventListener("load",ok);im.addEventListener("error",bad);}});}
 function localDay(d){return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");}
 function renderSources(){
