@@ -86,3 +86,19 @@ Before deploy: tools/inspect.py (0 problems), tools/review.py (eyeball new title
 picture check (Image() load of every deal on the preview) and link check (data/verify.js in each shop tab:
 200 + page title matches our name; stop at 403/429 and resume slower with the start index).
 Preview = branch `preview` -> https://preview.prisfallet.pages.dev ; production = merge to main.
+
+## Komplett full listing (since 21 Nov)
+- Collections: /kampanje/black-friday?query=+&list_view=grid&kom__collections=<C>&categoryPages=<id> for
+  "PC og tilbehør"/10723 (g pc), "Mobil tablets og klokker"/10444 (mobil), Datautstyr/10000 (data), Gaming/10431 (gaming), "lyd og bilde"/10719 (tv).
+- Extractor source is in localStorage.kxsrc on komplett.no: `eval(localStorage.kxsrc); __kx('<g>')`, poll window.__kr.
+  It scrolls (infinite scroll) until the card count stops growing, then scrollIntoView each KOMPLETT-PRODUCT-CARD (shadow DOM,
+  walk with __deep/__dt). Title = H3, desc = P (kept as specs only if it looks like specs). Price from KOMPLETT-PRODUCT-CARD-PRICE:
+  "P,- Spar S,- Førpris: B,-" (P+S must equal B). KLUBB (member-price) cards are skipped. Results in localStorage.kxall.
+- Save from komplett.no/robots.txt as pf-komplett.json. reimport.sh maps g -> hint (pc-og-mac, mobil, data, gaming, tv-lyd).
+- Komplett-PC collection tops out at 25 %: not collected.
+
+## Checks added 21 Nov
+- data/img-overrides.json: url -> hand-checked working image (used when the listing image is broken).
+- data/verify-new.json + verify.js accepting a .json src: verify only new/changed deals:
+  `__verify(shop, "https://preview.prisfallet.pages.dev/data/verify-new.json", 2, 500)`.
+- NetOnNet code-only titles ("TCL 98T8D") get " – <description>"; (KOMP)(REUR) stock codes are stripped.

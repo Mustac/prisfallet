@@ -1,7 +1,7 @@
 """Per-shop expectations used by the importer and the inspection: link host and picture URL pattern."""
 import re
 SHOPS = {
-    "Elkjøp": ("elkjop.no", r"^https://www\.elkjop\.no/image/dv_web_[^/]+/[^/]+/p\.jpg$"),
+    "Elkjøp": ("elkjop.no", r"^https://www\.elkjop\.no/image/dv_web_[^/]+/[A-Za-z0-9]+/[a-z0-9-]+\.jpg$"),
     "Power": ("power.no", r"^https://media\.power-cdn\.net/images/.+/products/\d+/"),
     "Komplett": ("komplett.no", r"^https://www\.komplett\.no/product-media/"),
     "NetOnNet": ("netonnet.no", r"^https://(imagecontent|images)\.netonnet\.com/|^https://www\.netonnet\.no/GetFile/"),

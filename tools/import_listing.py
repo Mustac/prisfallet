@@ -57,6 +57,7 @@ now = dt.datetime.now(dt.timezone.utc).isoformat(timespec="minutes")
 old = {d["url"]: d for d in data["deals"]}
 items = json.load(open(src, encoding="utf-8"))
 OVR_P = os.path.join(os.path.dirname(__file__), "..", "data", "overrides.json")
+IMGO = json.load(open(os.path.join(os.path.dirname(__file__), "..", "data", "img-overrides.json"))) if os.path.exists(os.path.join(os.path.dirname(__file__), "..", "data", "img-overrides.json")) else {}  # url -> working image (checked by hand)
 OVR = json.load(open(OVR_P, encoding="utf-8")) if os.path.exists(OVR_P) else {}  # url -> sub or "drop" (from manual review)
 new, seen, why = [], set(), {}
 def _pct(x):
@@ -84,7 +85,7 @@ for x in items:
     url = u if u.startswith("http") else base + u
     try: p, b = float(x.get("p") or 0), float(x.get("b") or 0)
     except ValueError: skip("price"); continue
-    img = x.get("img") or ""
+    img = IMGO.get(u if u.startswith("http") else base + u) or x.get("img") or ""
     letters = [c for c in t if c.isalpha()]
     upper = sum(c.isupper() for c in letters) / max(1, len(letters))
     if (len(t) < 8 or (len(t) < 22 and re.match(r"\d", t)) or t.lower() in ("nyhet", "tilbud", "bestselger", "kampanje", "outlet") or "*" in t
