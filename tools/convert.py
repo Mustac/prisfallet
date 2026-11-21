@@ -12,13 +12,13 @@ for x in vals:
         if x.get("g") in ("strollers", "carseats"): y["sub"] = x["g"]
         if x.get("g") == "baby": y["kdef"] = "baby"
     elif shop == "elkjop":
-        if not x.get("img"): continue
+        if not x.get("img") or not x.get("t"): continue
         sp = [s for s in x.get("sp", []) if not re.fullmatch(r"[\d.,]+", s)]
         y = {"u": "/product/" + x["id"], "t": x["t"], "p": x["p"], "b": x["b"], "st": x.get("st"),
-             "img": f"https://www.elkjop.no/image/{x['img']}/{x['id']}/p.jpg", "specs": sp[:3], "until": x.get("until") or ""}
+             "img": f"https://www.elkjop.no/image/{x['img']}/{x['id']}/p.jpg", "specs": sp[:3], "until": x.get("until") or "", "g": x.get("g") if x.get("g") not in ("bf", "julegaver", "nye-tilbud") else ""}
     elif shop == "power":
         if "bedrift" in (x.get("g") or "") or re.search(r"repower|renovert|demo", x["t"], re.I): continue
-        y = {"u": x["u"], "t": x["t"], "p": x["p"], "b": x["b"], "st": x.get("st"), "img": x.get("img", ""), "specs": x.get("sp", [])[:3]}
+        y = {"u": x["u"], "t": x["t"], "p": x["p"], "b": x["b"], "st": x.get("st"), "img": x.get("img", ""), "specs": x.get("sp", [])[:3], "g": x.get("u", "")}
     else:
         y = x
     out.append(y)
