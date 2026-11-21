@@ -48369,7 +48369,11 @@
    "sub": "laptops",
    "until": "2026-11-30",
    "rating": 4.0,
-   "reviews": 1
+   "reviews": 1,
+   "specs": [
+    "Intel Core 3",
+    "4 GB RAM"
+   ]
   },
   {
    "shop": "Komplett",
@@ -48626,7 +48630,10 @@
    "img": "https://www.komplett.no/product-media/b2c/en-us/1200/1336221.jpg",
    "checked": "2026-11-21T11:38+00:00",
    "sub": "laptops",
-   "until": "2026-12-06"
+   "until": "2026-12-06",
+   "specs": [
+    "AMD Ryzen AI"
+   ]
   },
   {
    "shop": "Komplett",
@@ -49462,7 +49469,10 @@
    "checked": "2026-11-21T11:38+00:00",
    "sub": "laptops",
    "until": "2026-11-30",
-   "reviews": 7
+   "reviews": 7,
+   "specs": [
+    "Intel N50"
+   ]
   },
   {
    "shop": "Komplett",
