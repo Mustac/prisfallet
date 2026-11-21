@@ -711,7 +711,8 @@ function card(d){
 }
 const SORT={best:(a,b)=>b.score-a.score,pct:(a,b)=>b.pct-a.pct||b.kr-a.kr,kr:(a,b)=>b.kr-a.kr,low:(a,b)=>a.now-b.now,high:(a,b)=>b.now-a.now};
 function renderGrid(){
-  const L=D.filter(d=>match(d)).sort(SORT[S.sort]);
+  const MAIN={mobil:"phones",laptop:"laptops",desktop:"desktops"}[S.cat];  // in Mobiltelefoner, the phones come before cases and chargers
+  const L=D.filter(d=>match(d)).sort((a,b)=>(MAIN?(b.sub===MAIN)-(a.sub===MAIN):0)||SORT[S.sort](a,b));
   const base=D.filter(d=>match(d,{ignoreMin:true}));
   const hidden=base.length-L.length;
   let t="De beste tilbudene i Norge";
