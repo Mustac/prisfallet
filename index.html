@@ -637,7 +637,7 @@ function renderCats(){
   }
   $("cats").innerHTML=h;
   const kids=D.filter(d=>d.cat==="toys"&&d.pct>=S.min).length;
-  $("xmas").innerHTML=`<span class="xi">🎄</span><span><b>Julegaver til barna</b><small>${kids} leker og barneutstyr med minst 30&nbsp;% rabatt</small></span><span class="xa">Se alle →</span>`;
+  $("xmas").innerHTML=`<span class="xi">🎁</span><span><b>Det er aldri for tidlig for julegaver</b><small>${kids} leker og barneutstyr med minst 30&nbsp;% rabatt</small></span><span class="xa">Se alle →</span>`;
   $("xmas").style.display=kids&&S.cat!=="toys"?"":"none";
 }
 function renderSubs(){
@@ -646,7 +646,7 @@ function renderSubs(){
   const cnt=k=>D.filter(d=>d.sub===k&&match(d,{ignoreSub:true})).length;
   const tot=D.filter(d=>match(d,{ignoreSub:true})).length;
   $("subs").innerHTML=`<h4 class="subh">${esc(c.name)}</h4><button class="chip${S.subs.size?"":" on"}" data-sub="">${ico(c.icon)}Alle i ${esc(c.name)} <i>${tot}</i></button>`+
-   c.subs.map(([k,n])=>{const x=cnt(k);return `<button class="chip${S.subs.has(k)?" on":""}" data-sub="${k}" style="${x?"":"opacity:.45"}">${ico(k)}${n} <i>${x}</i></button>`}).join("");
+   c.subs.map(([k,n])=>{const x=cnt(k);if(!x&&!S.subs.has(k))return "";return `<button class="chip${S.subs.has(k)?" on":""}" data-sub="${k}" style="${x?"":"opacity:.45"}">${ico(k)}${n} <i>${x}</i></button>`}).join("");
 }
 // ---------- side filters ----------
 function renderSide(){
