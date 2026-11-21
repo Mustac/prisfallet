@@ -17,5 +17,5 @@ for s in netonnet proshop; do
   [ -f $D/pf-$s.json ] && python3 -c "import json,sys;d=json.load(open(sys.argv[1]));json.dump(list(d.values()) if isinstance(d,dict) else d,open(sys.argv[2],'w'),ensure_ascii=False)" $D/pf-$s.json /tmp/in/$s.json
 done
 [ -f /tmp/in/netonnet.json ] && $I NetOnNet https://www.netonnet.no /tmp/in/netonnet.json --minsave 50 --minprice 99 --drop-other --desc
-# PAUSED 21 Nov (pictures blocked from other sites): [ -f /tmp/in/proshop.json ] && $I Proshop https://www.proshop.no /tmp/in/proshop.json --minsave 50 --minprice 99 --drop-other
+[ -f /tmp/in/proshop.json ] && $I Proshop https://www.proshop.no /tmp/in/proshop.json --minsave 50 --minprice 99 --drop-other
 python3 tools/inspect.py | head -5

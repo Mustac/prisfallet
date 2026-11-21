@@ -8,12 +8,15 @@ import re
 
 # (subcategory id, regex) — order matters: specific before general
 RULES = [
+    ("drop", r"\brefurbished\b|teqcycle|\bb grade\b|tablet mirror"),
+    ("mice", r"glass pad|superglide"),
+    ("laptops", r"omnibook \d"),
     ("washers", r"tørketrommel|\bvaskemaskin|electrolux e[fd]i\d"),
     ("ovens", r"varmluftovn|innebygd ovn|stekeovn"),
     ("printers", r"laminer"),
     ("laptops", r"msi (?:modern|prestige|katana|cyborg|thin|venture|stealth|raider|vector|crosshair|sword|pulse) \d"),
     ("drop", r"\bzen \d+ briller|veggfeste|takfeste|tv-?feste"),
-    ("pcacc", r"usb-c hub|usb hub|dockingstasjon|dokkingstasjon|laptop-?(?:sekk|ryggsekk|veske|bag|backpack|sleeve|stativ)|laptopveske|(?:macbook|laptop)[^|]*hardcase|monitorarm"),
+    ("pcacc", r"usb-c hub|usb hub|dockingstasjon|dokkingstasjon|dokkingsstasjon|docking station|laptop-?(?:sekk|ryggsekk|veske|bag|backpack|sleeve|stativ)|laptopveske|(?:macbook|laptop)[^|]*hardcase|monitorarm"),
     ("phoneacc", r"antirefleks|antireflekterende|beskyttelsesfilm|skjermbeskytter"),
     ("mice", r"keychron m\d|optisk mus"),
     ("machines", r"pop ?corn|cotton candy|pizzeria gourmet"),
